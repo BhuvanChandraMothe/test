@@ -1,0 +1,1202 @@
+[
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Alfreds Futterkiste_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Berlin",
+      "CompanyName": "Alfreds Futterkiste",
+      "ContactName": "Maria Anders",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Ana Trujillo Emparedados y helados_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "México D.F.",
+      "CompanyName": "Ana Trujillo Emparedados y helados",
+      "ContactName": "Ana Trujillo",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Antonio Moreno Taquería_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "México D.F.",
+      "CompanyName": "Antonio Moreno Taquería",
+      "ContactName": "Antonio Moreno",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Around the Horn_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "London",
+      "CompanyName": "Around the Horn",
+      "ContactName": "Thomas Hardy",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Aux joyeux ecclésiastiques_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Paris",
+      "CompanyName": "Aux joyeux ecclésiastiques",
+      "ContactName": "Guylène Nodier",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Berglunds snabbköp_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Luleå",
+      "CompanyName": "Berglunds snabbköp",
+      "ContactName": "Christina Berglund",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Bigfoot Breweries_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Bend",
+      "CompanyName": "Bigfoot Breweries",
+      "ContactName": "Cheryl Saylor",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Blauer See Delikatessen_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Mannheim",
+      "CompanyName": "Blauer See Delikatessen",
+      "ContactName": "Hanna Moos",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Blondesddsl père et fils_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Strasbourg",
+      "CompanyName": "Blondesddsl père et fils",
+      "ContactName": "Frédérique Citeaux",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Bólido Comidas preparadas_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Madrid",
+      "CompanyName": "Bólido Comidas preparadas",
+      "ContactName": "Martín Sommer",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Bon app'_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Marseille",
+      "CompanyName": "Bon app'",
+      "ContactName": "Laurence Lebihan",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Bottom-Dollar Markets_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Tsawassen",
+      "CompanyName": "Bottom-Dollar Markets",
+      "ContactName": "Elizabeth Lincoln",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "B's Beverages_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "London",
+      "CompanyName": "B's Beverages",
+      "ContactName": "Victoria Ashworth",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Cactus Comidas para llevar_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Buenos Aires",
+      "CompanyName": "Cactus Comidas para llevar",
+      "ContactName": "Patricio Simpson",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Centro comercial Moctezuma_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "México D.F.",
+      "CompanyName": "Centro comercial Moctezuma",
+      "ContactName": "Francisco Chang",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Chop-suey Chinese_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Bern",
+      "CompanyName": "Chop-suey Chinese",
+      "ContactName": "Yang Wang",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Comércio Mineiro_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Sao Paulo",
+      "CompanyName": "Comércio Mineiro",
+      "ContactName": "Pedro Afonso",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Consolidated Holdings_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "London",
+      "CompanyName": "Consolidated Holdings",
+      "ContactName": "Elizabeth Brown",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Cooperativa de Quesos 'Las Cabras'_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Oviedo",
+      "CompanyName": "Cooperativa de Quesos 'Las Cabras'",
+      "ContactName": "Antonio del Valle Saavedra",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Die Wandernde Kuh_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Stuttgart",
+      "CompanyName": "Die Wandernde Kuh",
+      "ContactName": "Rita Müller",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Drachenblut Delikatessen_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Aachen",
+      "CompanyName": "Drachenblut Delikatessen",
+      "ContactName": "Sven Ottlieb",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Du monde entier_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Nantes",
+      "CompanyName": "Du monde entier",
+      "ContactName": "Janine Labrune",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Eastern Connection_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "London",
+      "CompanyName": "Eastern Connection",
+      "ContactName": "Ann Devon",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Ernst Handel_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Graz",
+      "CompanyName": "Ernst Handel",
+      "ContactName": "Roland Mendel",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Escargots Nouveaux_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Montceau",
+      "CompanyName": "Escargots Nouveaux",
+      "ContactName": "Marie Delamare",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Exotic Liquids_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "London",
+      "CompanyName": "Exotic Liquids",
+      "ContactName": "Charlotte Cooper",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Familia Arquibaldo_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Sao Paulo",
+      "CompanyName": "Familia Arquibaldo",
+      "ContactName": "Aria Cruz",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "FISSA Fabrica Inter. Salchichas S.A._Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Madrid",
+      "CompanyName": "FISSA Fabrica Inter. Salchichas S.A.",
+      "ContactName": "Diego Roel",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Folies gourmandes_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Lille",
+      "CompanyName": "Folies gourmandes",
+      "ContactName": "Martine Rancé",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Folk och fä HB_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Bräcke",
+      "CompanyName": "Folk och fä HB",
+      "ContactName": "Maria Larsson",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Forêts d'érables_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Ste-Hyacinthe",
+      "CompanyName": "Forêts d'érables",
+      "ContactName": "Chantal Goulet",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Formaggi Fortini s.r.l._Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Ravenna",
+      "CompanyName": "Formaggi Fortini s.r.l.",
+      "ContactName": "Elio Rossi",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "France restauration_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Nantes",
+      "CompanyName": "France restauration",
+      "ContactName": "Carine Schmitt",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Franchi S.p.A._Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Torino",
+      "CompanyName": "Franchi S.p.A.",
+      "ContactName": "Paolo Accorti",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Frankenversand_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "München",
+      "CompanyName": "Frankenversand",
+      "ContactName": "Peter Franken",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Furia Bacalhau e Frutos do Mar_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Lisboa",
+      "CompanyName": "Furia Bacalhau e Frutos do Mar",
+      "ContactName": "Lino Rodriguez",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Gai pâturage_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Annecy",
+      "CompanyName": "Gai pâturage",
+      "ContactName": "Eliane Noz",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Galería del gastrónomo_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Barcelona",
+      "CompanyName": "Galería del gastrónomo",
+      "ContactName": "Eduardo Saavedra",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "G'day, Mate_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Sydney",
+      "CompanyName": "G'day, Mate",
+      "ContactName": "Wendy Mackenzie",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Godos Cocina Típica_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Sevilla",
+      "CompanyName": "Godos Cocina Típica",
+      "ContactName": "José Pedro Freyre",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Gourmet Lanchonetes_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Campinas",
+      "CompanyName": "Gourmet Lanchonetes",
+      "ContactName": "André Fonseca",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Grandma Kelly's Homestead_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Ann Arbor",
+      "CompanyName": "Grandma Kelly's Homestead",
+      "ContactName": "Regina Murphy",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Great Lakes Food Market_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Eugene",
+      "CompanyName": "Great Lakes Food Market",
+      "ContactName": "Howard Snyder",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "GROSELLA-Restaurante_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Caracas",
+      "CompanyName": "GROSELLA-Restaurante",
+      "ContactName": "Manuel Pereira",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Hanari Carnes_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Rio de Janeiro",
+      "CompanyName": "Hanari Carnes",
+      "ContactName": "Mario Pontes",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Heli Süßwaren GmbH & Co. KG_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Berlin",
+      "CompanyName": "Heli Süßwaren GmbH & Co. KG",
+      "ContactName": "Petra Winkler",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "HILARION-Abastos_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "San Cristóbal",
+      "CompanyName": "HILARION-Abastos",
+      "ContactName": "Carlos Hernández",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Hungry Coyote Import Store_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Elgin",
+      "CompanyName": "Hungry Coyote Import Store",
+      "ContactName": "Yoshi Latimer",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Hungry Owl All-Night Grocers_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Cork",
+      "CompanyName": "Hungry Owl All-Night Grocers",
+      "ContactName": "Patricia McKenna",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Island Trading_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Cowes",
+      "CompanyName": "Island Trading",
+      "ContactName": "Helen Bennett",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Karkki Oy_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Lappeenranta",
+      "CompanyName": "Karkki Oy",
+      "ContactName": "Anne Heikkonen",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Königlich Essen_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Brandenburg",
+      "CompanyName": "Königlich Essen",
+      "ContactName": "Philip Cramer",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "La corne d'abondance_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Versailles",
+      "CompanyName": "La corne d'abondance",
+      "ContactName": "Daniel Tonini",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "La maison d'Asie_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Toulouse",
+      "CompanyName": "La maison d'Asie",
+      "ContactName": "Annette Roulet",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Laughing Bacchus Wine Cellars_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Vancouver",
+      "CompanyName": "Laughing Bacchus Wine Cellars",
+      "ContactName": "Yoshi Tannamuri",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Lazy K Kountry Store_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Walla Walla",
+      "CompanyName": "Lazy K Kountry Store",
+      "ContactName": "John Steel",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Lehmanns Marktstand_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Frankfurt a.M.",
+      "CompanyName": "Lehmanns Marktstand",
+      "ContactName": "Renate Messner",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Leka Trading_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Singapore",
+      "CompanyName": "Leka Trading",
+      "ContactName": "Chandra Leka",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Let's Stop N Shop_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "San Francisco",
+      "CompanyName": "Let's Stop N Shop",
+      "ContactName": "Jaime Yorres",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "LILA-Supermercado_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Barquisimeto",
+      "CompanyName": "LILA-Supermercado",
+      "ContactName": "Carlos González",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "LINO-Delicateses_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "I. de Margarita",
+      "CompanyName": "LINO-Delicateses",
+      "ContactName": "Felipe Izquierdo",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Lonesome Pine Restaurant_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Portland",
+      "CompanyName": "Lonesome Pine Restaurant",
+      "ContactName": "Fran Wilson",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Lyngbysild_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Lyngby",
+      "CompanyName": "Lyngbysild",
+      "ContactName": "Niels Petersen",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Ma Maison_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Montréal",
+      "CompanyName": "Ma Maison",
+      "ContactName": "Jean-Guy Lauzon",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Magazzini Alimentari Riuniti_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Bergamo",
+      "CompanyName": "Magazzini Alimentari Riuniti",
+      "ContactName": "Giovanni Rovelli",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Maison Dewey_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Bruxelles",
+      "CompanyName": "Maison Dewey",
+      "ContactName": "Catherine Dewey",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Mayumi's_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Osaka",
+      "CompanyName": "Mayumi's",
+      "ContactName": "Mayumi Ohno",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Mère Paillarde_Customers",
+    "transformed_at": "2025-09-22T10:27:12.180142+00:00",
+    "data": {
+      "City": "Montréal",
+      "CompanyName": "Mère Paillarde",
+      "ContactName": "Jean Fresnière",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Morgenstern Gesundkost_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Leipzig",
+      "CompanyName": "Morgenstern Gesundkost",
+      "ContactName": "Alexander Feuer",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "New England Seafood Cannery_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Boston",
+      "CompanyName": "New England Seafood Cannery",
+      "ContactName": "Robb Merchant",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "New Orleans Cajun Delights_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "New Orleans",
+      "CompanyName": "New Orleans Cajun Delights",
+      "ContactName": "Shelley Burke",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Nord-Ost-Fisch Handelsgesellschaft mbH_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Cuxhaven",
+      "CompanyName": "Nord-Ost-Fisch Handelsgesellschaft mbH",
+      "ContactName": "Sven Petersen",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Norske Meierier_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Sandvika",
+      "CompanyName": "Norske Meierier",
+      "ContactName": "Beate Vileid",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "North/South_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "London",
+      "CompanyName": "North/South",
+      "ContactName": "Simon Crowther",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Océano Atlántico Ltda._Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Buenos Aires",
+      "CompanyName": "Océano Atlántico Ltda.",
+      "ContactName": "Yvonne Moncada",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Old World Delicatessen_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Anchorage",
+      "CompanyName": "Old World Delicatessen",
+      "ContactName": "Rene Phillips",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Ottilies Käseladen_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Köln",
+      "CompanyName": "Ottilies Käseladen",
+      "ContactName": "Henriette Pfalzheim",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Paris spécialités_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Paris",
+      "CompanyName": "Paris spécialités",
+      "ContactName": "Marie Bertrand",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Pasta Buttini s.r.l._Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Salerno",
+      "CompanyName": "Pasta Buttini s.r.l.",
+      "ContactName": "Giovanni Giudici",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Pavlova, Ltd._Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Melbourne",
+      "CompanyName": "Pavlova, Ltd.",
+      "ContactName": "Ian Devling",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "PB Knäckebröd AB_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Göteborg",
+      "CompanyName": "PB Knäckebröd AB",
+      "ContactName": "Lars Peterson",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Pericles Comidas clásicas_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "México D.F.",
+      "CompanyName": "Pericles Comidas clásicas",
+      "ContactName": "Guillermo Fernández",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Piccolo und mehr_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Salzburg",
+      "CompanyName": "Piccolo und mehr",
+      "ContactName": "Georg Pipps",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Plutzer Lebensmittelgroßmärkte AG_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Frankfurt",
+      "CompanyName": "Plutzer Lebensmittelgroßmärkte AG",
+      "ContactName": "Martin Bein",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Princesa Isabel Vinhos_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Lisboa",
+      "CompanyName": "Princesa Isabel Vinhos",
+      "ContactName": "Isabel de Castro",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Que Delícia_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Rio de Janeiro",
+      "CompanyName": "Que Delícia",
+      "ContactName": "Bernardo Batista",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Queen Cozinha_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Sao Paulo",
+      "CompanyName": "Queen Cozinha",
+      "ContactName": "Lúcia Carvalho",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "QUICK-Stop_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Cunewalde",
+      "CompanyName": "QUICK-Stop",
+      "ContactName": "Horst Kloss",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Rancho grande_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Buenos Aires",
+      "CompanyName": "Rancho grande",
+      "ContactName": "Sergio Gutiérrez",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Rattlesnake Canyon Grocery_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Albuquerque",
+      "CompanyName": "Rattlesnake Canyon Grocery",
+      "ContactName": "Paula Wilson",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Refrescos Americanas LTDA_Suppliers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Sao Paulo",
+      "CompanyName": "Refrescos Americanas LTDA",
+      "ContactName": "Carlos Diaz",
+      "Relationship": "Suppliers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Reggiani Caseifici_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Reggio Emilia",
+      "CompanyName": "Reggiani Caseifici",
+      "ContactName": "Maurizio Moroni",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Ricardo Adocicados_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Rio de Janeiro",
+      "CompanyName": "Ricardo Adocicados",
+      "ContactName": "Janete Limeira",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Richter Supermarkt_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Genève",
+      "CompanyName": "Richter Supermarkt",
+      "ContactName": "Michael Holz",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Romero y tomillo_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Madrid",
+      "CompanyName": "Romero y tomillo",
+      "ContactName": "Alejandra Camino",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Santé Gourmet_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Stavern",
+      "CompanyName": "Santé Gourmet",
+      "ContactName": "Jonas Bergulfsen",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Save-a-lot Markets_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Boise",
+      "CompanyName": "Save-a-lot Markets",
+      "ContactName": "Jose Pavarotti",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Seven Seas Imports_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "London",
+      "CompanyName": "Seven Seas Imports",
+      "ContactName": "Hari Kumar",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Simons bistro_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Kobenhavn",
+      "CompanyName": "Simons bistro",
+      "ContactName": "Jytte Petersen",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Customer_and_Suppliers_by_Cities",
+    "record_id": "Spécialités du monde_Customers",
+    "transformed_at": "2025-09-22T10:27:12.184192+00:00",
+    "data": {
+      "City": "Paris",
+      "CompanyName": "Spécialités du monde",
+      "ContactName": "Dominique Perrier",
+      "Relationship": "Customers"
+    },
+    "metadata": {}
+  }
+]

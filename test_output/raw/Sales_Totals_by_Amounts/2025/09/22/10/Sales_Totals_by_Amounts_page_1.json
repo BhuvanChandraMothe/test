@@ -1,0 +1,407 @@
+{
+  "entity_name": "Sales_Totals_by_Amounts",
+  "command_id": "Sales_Totals_by_Amounts_page_1",
+  "timestamp": "2025-09-22T10:27:12.787944+00:00",
+  "metadata": {},
+  "raw_response": {
+    "@odata.context": "https://services.odata.org/V4/Northwind/Northwind.svc/$metadata#Sales_Totals_by_Amounts",
+    "value": [
+      {
+        "SaleAmount": 3192.65,
+        "OrderID": 10524,
+        "CompanyName": "Berglunds snabbköp",
+        "ShippedDate": "1997-05-07T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3815.25,
+        "OrderID": 10672,
+        "CompanyName": "Berglunds snabbköp",
+        "ShippedDate": "1997-09-26T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3026.85,
+        "OrderID": 10801,
+        "CompanyName": "Bólido Comidas preparadas",
+        "ShippedDate": "1997-12-31T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2550.0,
+        "OrderID": 10511,
+        "CompanyName": "Bon app'",
+        "ShippedDate": "1997-04-21T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3118.0,
+        "OrderID": 10742,
+        "CompanyName": "Bottom-Dollar Markets",
+        "ShippedDate": "1997-11-18T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3063.0,
+        "OrderID": 10400,
+        "CompanyName": "Eastern Connection",
+        "ShippedDate": "1997-01-16T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2713.5,
+        "OrderID": 10402,
+        "CompanyName": "Ernst Handel",
+        "ShippedDate": "1997-01-10T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4899.2,
+        "OrderID": 10430,
+        "CompanyName": "Ernst Handel",
+        "ShippedDate": "1997-02-03T00:00:00Z"
+      },
+      {
+        "SaleAmount": 8623.45,
+        "OrderID": 10514,
+        "CompanyName": "Ernst Handel",
+        "ShippedDate": "1997-05-16T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4725.0,
+        "OrderID": 10595,
+        "CompanyName": "Ernst Handel",
+        "ShippedDate": "1997-07-14T00:00:00Z"
+      },
+      {
+        "SaleAmount": 5510.59,
+        "OrderID": 10633,
+        "CompanyName": "Ernst Handel",
+        "ShippedDate": "1997-08-18T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3436.45,
+        "OrderID": 10698,
+        "CompanyName": "Ernst Handel",
+        "ShippedDate": "1997-10-17T00:00:00Z"
+      },
+      {
+        "SaleAmount": 6635.27,
+        "OrderID": 10776,
+        "CompanyName": "Ernst Handel",
+        "ShippedDate": "1997-12-18T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4985.5,
+        "OrderID": 10634,
+        "CompanyName": "Folies gourmandes",
+        "ShippedDate": "1997-08-21T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3687.0,
+        "OrderID": 10789,
+        "CompanyName": "Folies gourmandes",
+        "ShippedDate": "1997-12-31T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2844.5,
+        "OrderID": 10561,
+        "CompanyName": "Folk och fä HB",
+        "ShippedDate": "1997-06-09T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2545.0,
+        "OrderID": 10703,
+        "CompanyName": "Folk och fä HB",
+        "ShippedDate": "1997-10-20T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4337.0,
+        "OrderID": 10762,
+        "CompanyName": "Folk och fä HB",
+        "ShippedDate": "1997-12-09T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2775.05,
+        "OrderID": 10629,
+        "CompanyName": "Godos Cocina Típica",
+        "ShippedDate": "1997-08-20T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3424.0,
+        "OrderID": 10709,
+        "CompanyName": "Gourmet Lanchonetes",
+        "ShippedDate": "1997-11-20T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4807.01,
+        "OrderID": 10616,
+        "CompanyName": "Great Lakes Food Market",
+        "ShippedDate": "1997-08-05T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3163.2,
+        "OrderID": 10490,
+        "CompanyName": "HILARION-Abastos",
+        "ShippedDate": "1997-04-03T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2519.0,
+        "OrderID": 10567,
+        "CompanyName": "Hungry Owl All-Night Grocers",
+        "ShippedDate": "1997-06-17T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4960.9,
+        "OrderID": 10687,
+        "CompanyName": "Hungry Owl All-Night Grocers",
+        "ShippedDate": "1997-10-30T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2864.5,
+        "OrderID": 10701,
+        "CompanyName": "Hungry Owl All-Night Grocers",
+        "ShippedDate": "1997-10-15T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3463.0,
+        "OrderID": 10718,
+        "CompanyName": "Königlich Essen",
+        "ShippedDate": "1997-10-29T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2622.76,
+        "OrderID": 10787,
+        "CompanyName": "La maison d'Asie",
+        "ShippedDate": "1997-12-26T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3603.22,
+        "OrderID": 10772,
+        "CompanyName": "Lehmanns Marktstand",
+        "ShippedDate": "1997-12-19T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2720.05,
+        "OrderID": 10638,
+        "CompanyName": "LINO-Delicateses",
+        "ShippedDate": "1997-09-01T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2917.0,
+        "OrderID": 10760,
+        "CompanyName": "Maison Dewey",
+        "ShippedDate": "1997-12-10T00:00:00Z"
+      },
+      {
+        "SaleAmount": 9194.56,
+        "OrderID": 10424,
+        "CompanyName": "Mère Paillarde",
+        "ShippedDate": "1997-01-27T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4109.7,
+        "OrderID": 10605,
+        "CompanyName": "Mère Paillarde",
+        "ShippedDate": "1997-07-29T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2697.5,
+        "OrderID": 10618,
+        "CompanyName": "Mère Paillarde",
+        "ShippedDate": "1997-08-08T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4180.0,
+        "OrderID": 10530,
+        "CompanyName": "Piccolo und mehr",
+        "ShippedDate": "1997-05-12T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2761.94,
+        "OrderID": 10637,
+        "CompanyName": "Queen Cozinha",
+        "ShippedDate": "1997-08-26T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3849.66,
+        "OrderID": 10451,
+        "CompanyName": "QUICK-Stop",
+        "ShippedDate": "1997-03-12T00:00:00Z"
+      },
+      {
+        "SaleAmount": 9921.3,
+        "OrderID": 10515,
+        "CompanyName": "QUICK-Stop",
+        "ShippedDate": "1997-05-23T00:00:00Z"
+      },
+      {
+        "SaleAmount": 10191.7,
+        "OrderID": 10540,
+        "CompanyName": "QUICK-Stop",
+        "ShippedDate": "1997-06-13T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3554.28,
+        "OrderID": 10549,
+        "CompanyName": "QUICK-Stop",
+        "ShippedDate": "1997-05-30T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3120.0,
+        "OrderID": 10588,
+        "CompanyName": "QUICK-Stop",
+        "ShippedDate": "1997-07-10T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4464.6,
+        "OrderID": 10658,
+        "CompanyName": "QUICK-Stop",
+        "ShippedDate": "1997-09-08T00:00:00Z"
+      },
+      {
+        "SaleAmount": 10164.8,
+        "OrderID": 10691,
+        "CompanyName": "QUICK-Stop",
+        "ShippedDate": "1997-10-22T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4825.0,
+        "OrderID": 10694,
+        "CompanyName": "QUICK-Stop",
+        "ShippedDate": "1997-10-09T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4529.8,
+        "OrderID": 10745,
+        "CompanyName": "QUICK-Stop",
+        "ShippedDate": "1997-11-27T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3868.6,
+        "OrderID": 10401,
+        "CompanyName": "Rattlesnake Canyon Grocery",
+        "ShippedDate": "1997-01-10T00:00:00Z"
+      },
+      {
+        "SaleAmount": 10495.6,
+        "OrderID": 10479,
+        "CompanyName": "Rattlesnake Canyon Grocery",
+        "ShippedDate": "1997-03-21T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4666.94,
+        "OrderID": 10666,
+        "CompanyName": "Richter Supermarkt",
+        "ShippedDate": "1997-09-22T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2556.95,
+        "OrderID": 10393,
+        "CompanyName": "Save-a-lot Markets",
+        "ShippedDate": "1997-01-03T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2505.6,
+        "OrderID": 10398,
+        "CompanyName": "Save-a-lot Markets",
+        "ShippedDate": "1997-01-09T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4924.14,
+        "OrderID": 10440,
+        "CompanyName": "Save-a-lot Markets",
+        "ShippedDate": "1997-02-28T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4707.54,
+        "OrderID": 10510,
+        "CompanyName": "Save-a-lot Markets",
+        "ShippedDate": "1997-04-28T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2944.4,
+        "OrderID": 10555,
+        "CompanyName": "Save-a-lot Markets",
+        "ShippedDate": "1997-06-04T00:00:00Z"
+      },
+      {
+        "SaleAmount": 6475.4,
+        "OrderID": 10607,
+        "CompanyName": "Save-a-lot Markets",
+        "ShippedDate": "1997-07-25T00:00:00Z"
+      },
+      {
+        "SaleAmount": 6375.0,
+        "OrderID": 10612,
+        "CompanyName": "Save-a-lot Markets",
+        "ShippedDate": "1997-08-01T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4371.6,
+        "OrderID": 10657,
+        "CompanyName": "Save-a-lot Markets",
+        "ShippedDate": "1997-09-15T00:00:00Z"
+      },
+      {
+        "SaleAmount": 5256.5,
+        "OrderID": 10678,
+        "CompanyName": "Save-a-lot Markets",
+        "ShippedDate": "1997-10-16T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4451.7,
+        "OrderID": 10711,
+        "CompanyName": "Save-a-lot Markets",
+        "ShippedDate": "1997-10-29T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2827.9,
+        "OrderID": 10713,
+        "CompanyName": "Save-a-lot Markets",
+        "ShippedDate": "1997-10-24T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3082.0,
+        "OrderID": 10757,
+        "CompanyName": "Save-a-lot Markets",
+        "ShippedDate": "1997-12-15T00:00:00Z"
+      },
+      {
+        "SaleAmount": 11188.4,
+        "OrderID": 10417,
+        "CompanyName": "Simons bistro",
+        "ShippedDate": "1997-01-28T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3891.0,
+        "OrderID": 10458,
+        "CompanyName": "Suprêmes délices",
+        "ShippedDate": "1997-03-04T00:00:00Z"
+      },
+      {
+        "SaleAmount": 4150.05,
+        "OrderID": 10518,
+        "CompanyName": "Tortuga Restaurante",
+        "ShippedDate": "1997-05-05T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2518.0,
+        "OrderID": 10465,
+        "CompanyName": "Vaffeljernet",
+        "ShippedDate": "1997-03-14T00:00:00Z"
+      },
+      {
+        "SaleAmount": 3160.6,
+        "OrderID": 10688,
+        "CompanyName": "Vaffeljernet",
+        "ShippedDate": "1997-10-07T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2812.0,
+        "OrderID": 10546,
+        "CompanyName": "Victuailles en stock",
+        "ShippedDate": "1997-05-27T00:00:00Z"
+      },
+      {
+        "SaleAmount": 2684.0,
+        "OrderID": 10455,
+        "CompanyName": "Wartian Herkku",
+        "ShippedDate": "1997-03-03T00:00:00Z"
+      }
+    ]
+  }
+}

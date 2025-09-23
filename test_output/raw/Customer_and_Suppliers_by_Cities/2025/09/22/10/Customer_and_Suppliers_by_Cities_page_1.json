@@ -1,0 +1,612 @@
+{
+  "entity_name": "Customer_and_Suppliers_by_Cities",
+  "command_id": "Customer_and_Suppliers_by_Cities_page_1",
+  "timestamp": "2025-09-22T10:27:12.186673+00:00",
+  "metadata": {},
+  "raw_response": {
+    "@odata.context": "https://services.odata.org/V4/Northwind/Northwind.svc/$metadata#Customer_and_Suppliers_by_Cities",
+    "value": [
+      {
+        "City": "Berlin",
+        "CompanyName": "Alfreds Futterkiste",
+        "ContactName": "Maria Anders",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "México D.F.",
+        "CompanyName": "Ana Trujillo Emparedados y helados",
+        "ContactName": "Ana Trujillo",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "México D.F.",
+        "CompanyName": "Antonio Moreno Taquería",
+        "ContactName": "Antonio Moreno",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "London",
+        "CompanyName": "Around the Horn",
+        "ContactName": "Thomas Hardy",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Paris",
+        "CompanyName": "Aux joyeux ecclésiastiques",
+        "ContactName": "Guylène Nodier",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Luleå",
+        "CompanyName": "Berglunds snabbköp",
+        "ContactName": "Christina Berglund",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Bend",
+        "CompanyName": "Bigfoot Breweries",
+        "ContactName": "Cheryl Saylor",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Mannheim",
+        "CompanyName": "Blauer See Delikatessen",
+        "ContactName": "Hanna Moos",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Strasbourg",
+        "CompanyName": "Blondesddsl père et fils",
+        "ContactName": "Frédérique Citeaux",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Madrid",
+        "CompanyName": "Bólido Comidas preparadas",
+        "ContactName": "Martín Sommer",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Marseille",
+        "CompanyName": "Bon app'",
+        "ContactName": "Laurence Lebihan",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Tsawassen",
+        "CompanyName": "Bottom-Dollar Markets",
+        "ContactName": "Elizabeth Lincoln",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "London",
+        "CompanyName": "B's Beverages",
+        "ContactName": "Victoria Ashworth",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Buenos Aires",
+        "CompanyName": "Cactus Comidas para llevar",
+        "ContactName": "Patricio Simpson",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "México D.F.",
+        "CompanyName": "Centro comercial Moctezuma",
+        "ContactName": "Francisco Chang",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Bern",
+        "CompanyName": "Chop-suey Chinese",
+        "ContactName": "Yang Wang",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Sao Paulo",
+        "CompanyName": "Comércio Mineiro",
+        "ContactName": "Pedro Afonso",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "London",
+        "CompanyName": "Consolidated Holdings",
+        "ContactName": "Elizabeth Brown",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Oviedo",
+        "CompanyName": "Cooperativa de Quesos 'Las Cabras'",
+        "ContactName": "Antonio del Valle Saavedra",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Stuttgart",
+        "CompanyName": "Die Wandernde Kuh",
+        "ContactName": "Rita Müller",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Aachen",
+        "CompanyName": "Drachenblut Delikatessen",
+        "ContactName": "Sven Ottlieb",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Nantes",
+        "CompanyName": "Du monde entier",
+        "ContactName": "Janine Labrune",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "London",
+        "CompanyName": "Eastern Connection",
+        "ContactName": "Ann Devon",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Graz",
+        "CompanyName": "Ernst Handel",
+        "ContactName": "Roland Mendel",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Montceau",
+        "CompanyName": "Escargots Nouveaux",
+        "ContactName": "Marie Delamare",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "London",
+        "CompanyName": "Exotic Liquids",
+        "ContactName": "Charlotte Cooper",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Sao Paulo",
+        "CompanyName": "Familia Arquibaldo",
+        "ContactName": "Aria Cruz",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Madrid",
+        "CompanyName": "FISSA Fabrica Inter. Salchichas S.A.",
+        "ContactName": "Diego Roel",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Lille",
+        "CompanyName": "Folies gourmandes",
+        "ContactName": "Martine Rancé",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Bräcke",
+        "CompanyName": "Folk och fä HB",
+        "ContactName": "Maria Larsson",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Ste-Hyacinthe",
+        "CompanyName": "Forêts d'érables",
+        "ContactName": "Chantal Goulet",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Ravenna",
+        "CompanyName": "Formaggi Fortini s.r.l.",
+        "ContactName": "Elio Rossi",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Nantes",
+        "CompanyName": "France restauration",
+        "ContactName": "Carine Schmitt",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Torino",
+        "CompanyName": "Franchi S.p.A.",
+        "ContactName": "Paolo Accorti",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "München",
+        "CompanyName": "Frankenversand",
+        "ContactName": "Peter Franken",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Lisboa",
+        "CompanyName": "Furia Bacalhau e Frutos do Mar",
+        "ContactName": "Lino Rodriguez",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Annecy",
+        "CompanyName": "Gai pâturage",
+        "ContactName": "Eliane Noz",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Barcelona",
+        "CompanyName": "Galería del gastrónomo",
+        "ContactName": "Eduardo Saavedra",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Sydney",
+        "CompanyName": "G'day, Mate",
+        "ContactName": "Wendy Mackenzie",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Sevilla",
+        "CompanyName": "Godos Cocina Típica",
+        "ContactName": "José Pedro Freyre",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Campinas",
+        "CompanyName": "Gourmet Lanchonetes",
+        "ContactName": "André Fonseca",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Ann Arbor",
+        "CompanyName": "Grandma Kelly's Homestead",
+        "ContactName": "Regina Murphy",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Eugene",
+        "CompanyName": "Great Lakes Food Market",
+        "ContactName": "Howard Snyder",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Caracas",
+        "CompanyName": "GROSELLA-Restaurante",
+        "ContactName": "Manuel Pereira",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Rio de Janeiro",
+        "CompanyName": "Hanari Carnes",
+        "ContactName": "Mario Pontes",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Berlin",
+        "CompanyName": "Heli Süßwaren GmbH & Co. KG",
+        "ContactName": "Petra Winkler",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "San Cristóbal",
+        "CompanyName": "HILARION-Abastos",
+        "ContactName": "Carlos Hernández",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Elgin",
+        "CompanyName": "Hungry Coyote Import Store",
+        "ContactName": "Yoshi Latimer",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Cork",
+        "CompanyName": "Hungry Owl All-Night Grocers",
+        "ContactName": "Patricia McKenna",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Cowes",
+        "CompanyName": "Island Trading",
+        "ContactName": "Helen Bennett",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Lappeenranta",
+        "CompanyName": "Karkki Oy",
+        "ContactName": "Anne Heikkonen",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Brandenburg",
+        "CompanyName": "Königlich Essen",
+        "ContactName": "Philip Cramer",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Versailles",
+        "CompanyName": "La corne d'abondance",
+        "ContactName": "Daniel Tonini",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Toulouse",
+        "CompanyName": "La maison d'Asie",
+        "ContactName": "Annette Roulet",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Vancouver",
+        "CompanyName": "Laughing Bacchus Wine Cellars",
+        "ContactName": "Yoshi Tannamuri",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Walla Walla",
+        "CompanyName": "Lazy K Kountry Store",
+        "ContactName": "John Steel",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Frankfurt a.M.",
+        "CompanyName": "Lehmanns Marktstand",
+        "ContactName": "Renate Messner",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Singapore",
+        "CompanyName": "Leka Trading",
+        "ContactName": "Chandra Leka",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "San Francisco",
+        "CompanyName": "Let's Stop N Shop",
+        "ContactName": "Jaime Yorres",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Barquisimeto",
+        "CompanyName": "LILA-Supermercado",
+        "ContactName": "Carlos González",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "I. de Margarita",
+        "CompanyName": "LINO-Delicateses",
+        "ContactName": "Felipe Izquierdo",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Portland",
+        "CompanyName": "Lonesome Pine Restaurant",
+        "ContactName": "Fran Wilson",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Lyngby",
+        "CompanyName": "Lyngbysild",
+        "ContactName": "Niels Petersen",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Montréal",
+        "CompanyName": "Ma Maison",
+        "ContactName": "Jean-Guy Lauzon",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Bergamo",
+        "CompanyName": "Magazzini Alimentari Riuniti",
+        "ContactName": "Giovanni Rovelli",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Bruxelles",
+        "CompanyName": "Maison Dewey",
+        "ContactName": "Catherine Dewey",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Osaka",
+        "CompanyName": "Mayumi's",
+        "ContactName": "Mayumi Ohno",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Montréal",
+        "CompanyName": "Mère Paillarde",
+        "ContactName": "Jean Fresnière",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Leipzig",
+        "CompanyName": "Morgenstern Gesundkost",
+        "ContactName": "Alexander Feuer",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Boston",
+        "CompanyName": "New England Seafood Cannery",
+        "ContactName": "Robb Merchant",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "New Orleans",
+        "CompanyName": "New Orleans Cajun Delights",
+        "ContactName": "Shelley Burke",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Cuxhaven",
+        "CompanyName": "Nord-Ost-Fisch Handelsgesellschaft mbH",
+        "ContactName": "Sven Petersen",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Sandvika",
+        "CompanyName": "Norske Meierier",
+        "ContactName": "Beate Vileid",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "London",
+        "CompanyName": "North/South",
+        "ContactName": "Simon Crowther",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Buenos Aires",
+        "CompanyName": "Océano Atlántico Ltda.",
+        "ContactName": "Yvonne Moncada",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Anchorage",
+        "CompanyName": "Old World Delicatessen",
+        "ContactName": "Rene Phillips",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Köln",
+        "CompanyName": "Ottilies Käseladen",
+        "ContactName": "Henriette Pfalzheim",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Paris",
+        "CompanyName": "Paris spécialités",
+        "ContactName": "Marie Bertrand",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Salerno",
+        "CompanyName": "Pasta Buttini s.r.l.",
+        "ContactName": "Giovanni Giudici",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Melbourne",
+        "CompanyName": "Pavlova, Ltd.",
+        "ContactName": "Ian Devling",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Göteborg",
+        "CompanyName": "PB Knäckebröd AB",
+        "ContactName": "Lars Peterson",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "México D.F.",
+        "CompanyName": "Pericles Comidas clásicas",
+        "ContactName": "Guillermo Fernández",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Salzburg",
+        "CompanyName": "Piccolo und mehr",
+        "ContactName": "Georg Pipps",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Frankfurt",
+        "CompanyName": "Plutzer Lebensmittelgroßmärkte AG",
+        "ContactName": "Martin Bein",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Lisboa",
+        "CompanyName": "Princesa Isabel Vinhos",
+        "ContactName": "Isabel de Castro",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Rio de Janeiro",
+        "CompanyName": "Que Delícia",
+        "ContactName": "Bernardo Batista",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Sao Paulo",
+        "CompanyName": "Queen Cozinha",
+        "ContactName": "Lúcia Carvalho",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Cunewalde",
+        "CompanyName": "QUICK-Stop",
+        "ContactName": "Horst Kloss",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Buenos Aires",
+        "CompanyName": "Rancho grande",
+        "ContactName": "Sergio Gutiérrez",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Albuquerque",
+        "CompanyName": "Rattlesnake Canyon Grocery",
+        "ContactName": "Paula Wilson",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Sao Paulo",
+        "CompanyName": "Refrescos Americanas LTDA",
+        "ContactName": "Carlos Diaz",
+        "Relationship": "Suppliers"
+      },
+      {
+        "City": "Reggio Emilia",
+        "CompanyName": "Reggiani Caseifici",
+        "ContactName": "Maurizio Moroni",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Rio de Janeiro",
+        "CompanyName": "Ricardo Adocicados",
+        "ContactName": "Janete Limeira",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Genève",
+        "CompanyName": "Richter Supermarkt",
+        "ContactName": "Michael Holz",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Madrid",
+        "CompanyName": "Romero y tomillo",
+        "ContactName": "Alejandra Camino",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Stavern",
+        "CompanyName": "Santé Gourmet",
+        "ContactName": "Jonas Bergulfsen",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Boise",
+        "CompanyName": "Save-a-lot Markets",
+        "ContactName": "Jose Pavarotti",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "London",
+        "CompanyName": "Seven Seas Imports",
+        "ContactName": "Hari Kumar",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Kobenhavn",
+        "CompanyName": "Simons bistro",
+        "ContactName": "Jytte Petersen",
+        "Relationship": "Customers"
+      },
+      {
+        "City": "Paris",
+        "CompanyName": "Spécialités du monde",
+        "ContactName": "Dominique Perrier",
+        "Relationship": "Customers"
+      }
+    ],
+    "@odata.nextLink": "Customer_and_Suppliers_by_Cities?$top=1400&$skiptoken='Sp%C3%A9cialit%C3%A9s%20du%20monde','Customers'"
+  }
+}

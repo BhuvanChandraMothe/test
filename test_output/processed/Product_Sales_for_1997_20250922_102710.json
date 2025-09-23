@@ -1,0 +1,849 @@
+[
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Beverages_Chai",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Beverages",
+      "ProductName": "Chai",
+      "ProductSales": 4887.0
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Beverages_Chang",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Beverages",
+      "ProductName": "Chang",
+      "ProductSales": 7038.55
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Beverages_Chartreuse verte",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Beverages",
+      "ProductName": "Chartreuse verte",
+      "ProductSales": 4475.7
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Beverages_Côte de Blaye",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Beverages",
+      "ProductName": "Côte de Blaye",
+      "ProductSales": 46563.09
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Beverages_Guaraná Fantástica",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Beverages",
+      "ProductName": "Guaraná Fantástica",
+      "ProductSales": 1553.63
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Beverages_Ipoh Coffee",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Beverages",
+      "ProductName": "Ipoh Coffee",
+      "ProductSales": 11069.9
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Beverages_Lakkalikööri",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Beverages",
+      "ProductName": "Lakkalikööri",
+      "ProductSales": 7883.1
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Beverages_Laughing Lumberjack Lager",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Beverages",
+      "ProductName": "Laughing Lumberjack Lager",
+      "ProductSales": 910.0
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Beverages_Outback Lager",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Beverages",
+      "ProductName": "Outback Lager",
+      "ProductSales": 5828.4
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Beverages_Rhönbräu Klosterbier",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Beverages",
+      "ProductName": "Rhönbräu Klosterbier",
+      "ProductSales": 4191.04
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Beverages_Sasquatch Ale",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Beverages",
+      "ProductName": "Sasquatch Ale",
+      "ProductSales": 1967.0
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Beverages_Steeleye Stout",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Beverages",
+      "ProductName": "Steeleye Stout",
+      "ProductSales": 5706.9
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Condiments_Aniseed Syrup",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Condiments",
+      "ProductName": "Aniseed Syrup",
+      "ProductSales": 1724.0
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Condiments_Chef Anton's Cajun Seasoning",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Condiments",
+      "ProductName": "Chef Anton's Cajun Seasoning",
+      "ProductSales": 5214.88
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Condiments_Chef Anton's Gumbo Mix",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Condiments",
+      "ProductName": "Chef Anton's Gumbo Mix",
+      "ProductSales": 373.63
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Condiments_Genen Shouyu",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Condiments",
+      "ProductName": "Genen Shouyu",
+      "ProductSales": 1474.83
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Condiments_Grandma's Boysenberry Spread",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Condiments",
+      "ProductName": "Grandma's Boysenberry Spread",
+      "ProductSales": 2500.0
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Condiments_Gula Malacca",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Condiments",
+      "ProductName": "Gula Malacca",
+      "ProductSales": 6543.45
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Condiments_Louisiana Fiery Hot Pepper Sauce",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Condiments",
+      "ProductName": "Louisiana Fiery Hot Pepper Sauce",
+      "ProductSales": 9331.08
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Condiments_Louisiana Hot Spiced Okra",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Condiments",
+      "ProductName": "Louisiana Hot Spiced Okra",
+      "ProductSales": 2958.0
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Condiments_Northwoods Cranberry Sauce",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Condiments",
+      "ProductName": "Northwoods Cranberry Sauce",
+      "ProductSales": 4260.0
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Condiments_Original Frankfurter grüne Soße",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Condiments",
+      "ProductName": "Original Frankfurter grüne Soße",
+      "ProductSales": 4906.98
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Condiments_Sirop d'érable",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Condiments",
+      "ProductName": "Sirop d'érable",
+      "ProductSales": 9091.5
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Condiments_Vegie-spread",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Condiments",
+      "ProductName": "Vegie-spread",
+      "ProductSales": 6899.25
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Confections_Chocolade",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "ProductName": "Chocolade",
+      "ProductSales": 1282.01
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Confections_Gumbär Gummibärchen",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "ProductName": "Gumbär Gummibärchen",
+      "ProductSales": 11225.66
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Confections_Maxilaku",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "ProductName": "Maxilaku",
+      "ProductSales": 3060.6
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Confections_NuNuCa Nuß-Nougat-Creme",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "ProductName": "NuNuCa Nuß-Nougat-Creme",
+      "ProductSales": 1551.9
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Confections_Pavlova",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "ProductName": "Pavlova",
+      "ProductSales": 7180.17
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Confections_Schoggi Schokolade",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "ProductName": "Schoggi Schokolade",
+      "ProductSales": 10974.0
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Confections_Scottish Longbreads",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "ProductName": "Scottish Longbreads",
+      "ProductSales": 4757.5
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Confections_Sir Rodney's Marmalade",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "ProductName": "Sir Rodney's Marmalade",
+      "ProductSales": 7314.3
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Confections_Sir Rodney's Scones",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "ProductName": "Sir Rodney's Scones",
+      "ProductSales": 5341.0
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Confections_Tarte au sucre",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "ProductName": "Tarte au sucre",
+      "ProductSales": 20762.82
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Confections_Teatime Chocolate Biscuits",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "ProductName": "Teatime Chocolate Biscuits",
+      "ProductSales": 2339.99
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Confections_Valkoinen suklaa",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "ProductName": "Valkoinen suklaa",
+      "ProductSales": 2173.44
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Confections_Zaanse koeken",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "ProductName": "Zaanse koeken",
+      "ProductSales": 2930.75
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Dairy Products_Camembert Pierrot",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Dairy Products",
+      "ProductName": "Camembert Pierrot",
+      "ProductSales": 20652.28
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Dairy Products_Flotemysost",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Dairy Products",
+      "ProductName": "Flotemysost",
+      "ProductSales": 9642.76
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Dairy Products_Geitost",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Dairy Products",
+      "ProductName": "Geitost",
+      "ProductSales": 786.0
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Dairy Products_Gorgonzola Telino",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Dairy Products",
+      "ProductName": "Gorgonzola Telino",
+      "ProductSales": 7620.75
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Dairy Products_Gudbrandsdalsost",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Dairy Products",
+      "ProductName": "Gudbrandsdalsost",
+      "ProductSales": 14041.8
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Dairy Products_Mascarpone Fabioli",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Dairy Products",
+      "ProductName": "Mascarpone Fabioli",
+      "ProductSales": 2668.8
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Dairy Products_Mozzarella di Giovanni",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Dairy Products",
+      "ProductName": "Mozzarella di Giovanni",
+      "ProductSales": 11838.6
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Dairy Products_Queso Cabrales",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Dairy Products",
+      "ProductName": "Queso Cabrales",
+      "ProductSales": 5546.94
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Dairy Products_Queso Manchego La Pastora",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Dairy Products",
+      "ProductName": "Queso Manchego La Pastora",
+      "ProductSales": 8335.3
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Dairy Products_Raclette Courdavault",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Dairy Products",
+      "ProductName": "Raclette Courdavault",
+      "ProductSales": 33616.55
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Grains/Cereals_Filo Mix",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Grains/Cereals",
+      "ProductName": "Filo Mix",
+      "ProductSales": 2068.15
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Grains/Cereals_Gnocchi di nonna Alice",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Grains/Cereals",
+      "ProductName": "Gnocchi di nonna Alice",
+      "ProductSales": 32604.0
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Grains/Cereals_Gustaf's Knäckebröd",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Grains/Cereals",
+      "ProductName": "Gustaf's Knäckebröd",
+      "ProductSales": 4233.6
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Grains/Cereals_Ravioli Angelo",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Grains/Cereals",
+      "ProductName": "Ravioli Angelo",
+      "ProductSales": 2156.7
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Grains/Cereals_Singaporean Hokkien Fried Mee",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Grains/Cereals",
+      "ProductName": "Singaporean Hokkien Fried Mee",
+      "ProductSales": 5184.2
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Grains/Cereals_Tunnbröd",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Grains/Cereals",
+      "ProductName": "Tunnbröd",
+      "ProductSales": 2576.7
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Grains/Cereals_Wimmers gute Semmelknödel",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Grains/Cereals",
+      "ProductName": "Wimmers gute Semmelknödel",
+      "ProductSales": 7125.47
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Meat/Poultry_Alice Mutton",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Meat/Poultry",
+      "ProductName": "Alice Mutton",
+      "ProductSales": 16580.85
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Meat/Poultry_Mishi Kobe Niku",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Meat/Poultry",
+      "ProductName": "Mishi Kobe Niku",
+      "ProductSales": 6935.5
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Meat/Poultry_Pâté chinois",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Meat/Poultry",
+      "ProductName": "Pâté chinois",
+      "ProductSales": 8826.48
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Meat/Poultry_Perth Pasties",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Meat/Poultry",
+      "ProductName": "Perth Pasties",
+      "ProductSales": 12784.13
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Meat/Poultry_Thüringer Rostbratwurst",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Meat/Poultry",
+      "ProductName": "Thüringer Rostbratwurst",
+      "ProductSales": 33109.51
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Meat/Poultry_Tourtière",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Meat/Poultry",
+      "ProductName": "Tourtière",
+      "ProductSales": 3101.59
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Produce_Longlife Tofu",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Produce",
+      "ProductName": "Longlife Tofu",
+      "ProductSales": 888.0
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Produce_Manjimup Dried Apples",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Produce",
+      "ProductName": "Manjimup Dried Apples",
+      "ProductSales": 23550.02
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Produce_Rössle Sauerkraut",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Produce",
+      "ProductName": "Rössle Sauerkraut",
+      "ProductSales": 12854.28
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Produce_Tofu",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Produce",
+      "ProductName": "Tofu",
+      "ProductSales": 6541.38
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Produce_Uncle Bob's Organic Dried Pears",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Produce",
+      "ProductName": "Uncle Bob's Organic Dried Pears",
+      "ProductSales": 9186.3
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Seafood_Boston Crab Meat",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Seafood",
+      "ProductName": "Boston Crab Meat",
+      "ProductSales": 9796.33
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Seafood_Carnarvon Tigers",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Seafood",
+      "ProductName": "Carnarvon Tigers",
+      "ProductSales": 15950.0
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Seafood_Escargots de Bourgogne",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Seafood",
+      "ProductName": "Escargots de Bourgogne",
+      "ProductSales": 2076.28
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Seafood_Gravad lax",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Seafood",
+      "ProductName": "Gravad lax",
+      "ProductSales": 629.2
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Seafood_Ikura",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Seafood",
+      "ProductName": "Ikura",
+      "ProductSales": 8819.5
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Seafood_Inlagd Sill",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Seafood",
+      "ProductName": "Inlagd Sill",
+      "ProductSales": 6894.15
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Seafood_Jack's New England Clam Chowder",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Seafood",
+      "ProductName": "Jack's New England Clam Chowder",
+      "ProductSales": 4638.8
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Seafood_Konbu",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Seafood",
+      "ProductName": "Konbu",
+      "ProductSales": 758.94
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Seafood_Nord-Ost Matjeshering",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Seafood",
+      "ProductName": "Nord-Ost Matjeshering",
+      "ProductSales": 5884.29
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Seafood_Röd Kaviar",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Seafood",
+      "ProductName": "Röd Kaviar",
+      "ProductSales": 3517.5
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Seafood_Rogede sild",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Seafood",
+      "ProductName": "Rogede sild",
+      "ProductSales": 3355.87
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Product_Sales_for_1997",
+    "record_id": "Seafood_Spegesild",
+    "transformed_at": "2025-09-22T10:27:10.907973+00:00",
+    "data": {
+      "CategoryName": "Seafood",
+      "ProductName": "Spegesild",
+      "ProductSales": 3223.32
+    },
+    "metadata": {}
+  }
+]

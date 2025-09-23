@@ -1,0 +1,396 @@
+{
+  "entity_name": "Product_Sales_for_1997",
+  "command_id": "Product_Sales_for_1997_page_1",
+  "timestamp": "2025-09-22T10:27:10.916969+00:00",
+  "metadata": {},
+  "raw_response": {
+    "@odata.context": "https://services.odata.org/V4/Northwind/Northwind.svc/$metadata#Product_Sales_for_1997",
+    "value": [
+      {
+        "CategoryName": "Beverages",
+        "ProductName": "Chai",
+        "ProductSales": 4887.0
+      },
+      {
+        "CategoryName": "Beverages",
+        "ProductName": "Chang",
+        "ProductSales": 7038.55
+      },
+      {
+        "CategoryName": "Beverages",
+        "ProductName": "Chartreuse verte",
+        "ProductSales": 4475.7
+      },
+      {
+        "CategoryName": "Beverages",
+        "ProductName": "Côte de Blaye",
+        "ProductSales": 46563.09
+      },
+      {
+        "CategoryName": "Beverages",
+        "ProductName": "Guaraná Fantástica",
+        "ProductSales": 1553.63
+      },
+      {
+        "CategoryName": "Beverages",
+        "ProductName": "Ipoh Coffee",
+        "ProductSales": 11069.9
+      },
+      {
+        "CategoryName": "Beverages",
+        "ProductName": "Lakkalikööri",
+        "ProductSales": 7883.1
+      },
+      {
+        "CategoryName": "Beverages",
+        "ProductName": "Laughing Lumberjack Lager",
+        "ProductSales": 910.0
+      },
+      {
+        "CategoryName": "Beverages",
+        "ProductName": "Outback Lager",
+        "ProductSales": 5828.4
+      },
+      {
+        "CategoryName": "Beverages",
+        "ProductName": "Rhönbräu Klosterbier",
+        "ProductSales": 4191.04
+      },
+      {
+        "CategoryName": "Beverages",
+        "ProductName": "Sasquatch Ale",
+        "ProductSales": 1967.0
+      },
+      {
+        "CategoryName": "Beverages",
+        "ProductName": "Steeleye Stout",
+        "ProductSales": 5706.9
+      },
+      {
+        "CategoryName": "Condiments",
+        "ProductName": "Aniseed Syrup",
+        "ProductSales": 1724.0
+      },
+      {
+        "CategoryName": "Condiments",
+        "ProductName": "Chef Anton's Cajun Seasoning",
+        "ProductSales": 5214.88
+      },
+      {
+        "CategoryName": "Condiments",
+        "ProductName": "Chef Anton's Gumbo Mix",
+        "ProductSales": 373.63
+      },
+      {
+        "CategoryName": "Condiments",
+        "ProductName": "Genen Shouyu",
+        "ProductSales": 1474.83
+      },
+      {
+        "CategoryName": "Condiments",
+        "ProductName": "Grandma's Boysenberry Spread",
+        "ProductSales": 2500.0
+      },
+      {
+        "CategoryName": "Condiments",
+        "ProductName": "Gula Malacca",
+        "ProductSales": 6543.45
+      },
+      {
+        "CategoryName": "Condiments",
+        "ProductName": "Louisiana Fiery Hot Pepper Sauce",
+        "ProductSales": 9331.08
+      },
+      {
+        "CategoryName": "Condiments",
+        "ProductName": "Louisiana Hot Spiced Okra",
+        "ProductSales": 2958.0
+      },
+      {
+        "CategoryName": "Condiments",
+        "ProductName": "Northwoods Cranberry Sauce",
+        "ProductSales": 4260.0
+      },
+      {
+        "CategoryName": "Condiments",
+        "ProductName": "Original Frankfurter grüne Soße",
+        "ProductSales": 4906.98
+      },
+      {
+        "CategoryName": "Condiments",
+        "ProductName": "Sirop d'érable",
+        "ProductSales": 9091.5
+      },
+      {
+        "CategoryName": "Condiments",
+        "ProductName": "Vegie-spread",
+        "ProductSales": 6899.25
+      },
+      {
+        "CategoryName": "Confections",
+        "ProductName": "Chocolade",
+        "ProductSales": 1282.01
+      },
+      {
+        "CategoryName": "Confections",
+        "ProductName": "Gumbär Gummibärchen",
+        "ProductSales": 11225.66
+      },
+      {
+        "CategoryName": "Confections",
+        "ProductName": "Maxilaku",
+        "ProductSales": 3060.6
+      },
+      {
+        "CategoryName": "Confections",
+        "ProductName": "NuNuCa Nuß-Nougat-Creme",
+        "ProductSales": 1551.9
+      },
+      {
+        "CategoryName": "Confections",
+        "ProductName": "Pavlova",
+        "ProductSales": 7180.17
+      },
+      {
+        "CategoryName": "Confections",
+        "ProductName": "Schoggi Schokolade",
+        "ProductSales": 10974.0
+      },
+      {
+        "CategoryName": "Confections",
+        "ProductName": "Scottish Longbreads",
+        "ProductSales": 4757.5
+      },
+      {
+        "CategoryName": "Confections",
+        "ProductName": "Sir Rodney's Marmalade",
+        "ProductSales": 7314.3
+      },
+      {
+        "CategoryName": "Confections",
+        "ProductName": "Sir Rodney's Scones",
+        "ProductSales": 5341.0
+      },
+      {
+        "CategoryName": "Confections",
+        "ProductName": "Tarte au sucre",
+        "ProductSales": 20762.82
+      },
+      {
+        "CategoryName": "Confections",
+        "ProductName": "Teatime Chocolate Biscuits",
+        "ProductSales": 2339.99
+      },
+      {
+        "CategoryName": "Confections",
+        "ProductName": "Valkoinen suklaa",
+        "ProductSales": 2173.44
+      },
+      {
+        "CategoryName": "Confections",
+        "ProductName": "Zaanse koeken",
+        "ProductSales": 2930.75
+      },
+      {
+        "CategoryName": "Dairy Products",
+        "ProductName": "Camembert Pierrot",
+        "ProductSales": 20652.28
+      },
+      {
+        "CategoryName": "Dairy Products",
+        "ProductName": "Flotemysost",
+        "ProductSales": 9642.76
+      },
+      {
+        "CategoryName": "Dairy Products",
+        "ProductName": "Geitost",
+        "ProductSales": 786.0
+      },
+      {
+        "CategoryName": "Dairy Products",
+        "ProductName": "Gorgonzola Telino",
+        "ProductSales": 7620.75
+      },
+      {
+        "CategoryName": "Dairy Products",
+        "ProductName": "Gudbrandsdalsost",
+        "ProductSales": 14041.8
+      },
+      {
+        "CategoryName": "Dairy Products",
+        "ProductName": "Mascarpone Fabioli",
+        "ProductSales": 2668.8
+      },
+      {
+        "CategoryName": "Dairy Products",
+        "ProductName": "Mozzarella di Giovanni",
+        "ProductSales": 11838.6
+      },
+      {
+        "CategoryName": "Dairy Products",
+        "ProductName": "Queso Cabrales",
+        "ProductSales": 5546.94
+      },
+      {
+        "CategoryName": "Dairy Products",
+        "ProductName": "Queso Manchego La Pastora",
+        "ProductSales": 8335.3
+      },
+      {
+        "CategoryName": "Dairy Products",
+        "ProductName": "Raclette Courdavault",
+        "ProductSales": 33616.55
+      },
+      {
+        "CategoryName": "Grains/Cereals",
+        "ProductName": "Filo Mix",
+        "ProductSales": 2068.15
+      },
+      {
+        "CategoryName": "Grains/Cereals",
+        "ProductName": "Gnocchi di nonna Alice",
+        "ProductSales": 32604.0
+      },
+      {
+        "CategoryName": "Grains/Cereals",
+        "ProductName": "Gustaf's Knäckebröd",
+        "ProductSales": 4233.6
+      },
+      {
+        "CategoryName": "Grains/Cereals",
+        "ProductName": "Ravioli Angelo",
+        "ProductSales": 2156.7
+      },
+      {
+        "CategoryName": "Grains/Cereals",
+        "ProductName": "Singaporean Hokkien Fried Mee",
+        "ProductSales": 5184.2
+      },
+      {
+        "CategoryName": "Grains/Cereals",
+        "ProductName": "Tunnbröd",
+        "ProductSales": 2576.7
+      },
+      {
+        "CategoryName": "Grains/Cereals",
+        "ProductName": "Wimmers gute Semmelknödel",
+        "ProductSales": 7125.47
+      },
+      {
+        "CategoryName": "Meat/Poultry",
+        "ProductName": "Alice Mutton",
+        "ProductSales": 16580.85
+      },
+      {
+        "CategoryName": "Meat/Poultry",
+        "ProductName": "Mishi Kobe Niku",
+        "ProductSales": 6935.5
+      },
+      {
+        "CategoryName": "Meat/Poultry",
+        "ProductName": "Pâté chinois",
+        "ProductSales": 8826.48
+      },
+      {
+        "CategoryName": "Meat/Poultry",
+        "ProductName": "Perth Pasties",
+        "ProductSales": 12784.13
+      },
+      {
+        "CategoryName": "Meat/Poultry",
+        "ProductName": "Thüringer Rostbratwurst",
+        "ProductSales": 33109.51
+      },
+      {
+        "CategoryName": "Meat/Poultry",
+        "ProductName": "Tourtière",
+        "ProductSales": 3101.59
+      },
+      {
+        "CategoryName": "Produce",
+        "ProductName": "Longlife Tofu",
+        "ProductSales": 888.0
+      },
+      {
+        "CategoryName": "Produce",
+        "ProductName": "Manjimup Dried Apples",
+        "ProductSales": 23550.02
+      },
+      {
+        "CategoryName": "Produce",
+        "ProductName": "Rössle Sauerkraut",
+        "ProductSales": 12854.28
+      },
+      {
+        "CategoryName": "Produce",
+        "ProductName": "Tofu",
+        "ProductSales": 6541.38
+      },
+      {
+        "CategoryName": "Produce",
+        "ProductName": "Uncle Bob's Organic Dried Pears",
+        "ProductSales": 9186.3
+      },
+      {
+        "CategoryName": "Seafood",
+        "ProductName": "Boston Crab Meat",
+        "ProductSales": 9796.33
+      },
+      {
+        "CategoryName": "Seafood",
+        "ProductName": "Carnarvon Tigers",
+        "ProductSales": 15950.0
+      },
+      {
+        "CategoryName": "Seafood",
+        "ProductName": "Escargots de Bourgogne",
+        "ProductSales": 2076.28
+      },
+      {
+        "CategoryName": "Seafood",
+        "ProductName": "Gravad lax",
+        "ProductSales": 629.2
+      },
+      {
+        "CategoryName": "Seafood",
+        "ProductName": "Ikura",
+        "ProductSales": 8819.5
+      },
+      {
+        "CategoryName": "Seafood",
+        "ProductName": "Inlagd Sill",
+        "ProductSales": 6894.15
+      },
+      {
+        "CategoryName": "Seafood",
+        "ProductName": "Jack's New England Clam Chowder",
+        "ProductSales": 4638.8
+      },
+      {
+        "CategoryName": "Seafood",
+        "ProductName": "Konbu",
+        "ProductSales": 758.94
+      },
+      {
+        "CategoryName": "Seafood",
+        "ProductName": "Nord-Ost Matjeshering",
+        "ProductSales": 5884.29
+      },
+      {
+        "CategoryName": "Seafood",
+        "ProductName": "Röd Kaviar",
+        "ProductSales": 3517.5
+      },
+      {
+        "CategoryName": "Seafood",
+        "ProductName": "Rogede sild",
+        "ProductSales": 3355.87
+      },
+      {
+        "CategoryName": "Seafood",
+        "ProductName": "Spegesild",
+        "ProductSales": 3223.32
+      }
+    ]
+  }
+}

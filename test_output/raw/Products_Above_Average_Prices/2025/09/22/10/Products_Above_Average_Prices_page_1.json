@@ -1,0 +1,111 @@
+{
+  "entity_name": "Products_Above_Average_Prices",
+  "command_id": "Products_Above_Average_Prices_page_1",
+  "timestamp": "2025-09-22T10:27:08.485726+00:00",
+  "metadata": {},
+  "raw_response": {
+    "@odata.context": "https://services.odata.org/V4/Northwind/Northwind.svc/$metadata#Products_Above_Average_Prices",
+    "value": [
+      {
+        "ProductName": "Alice Mutton",
+        "UnitPrice": 39.0
+      },
+      {
+        "ProductName": "Camembert Pierrot",
+        "UnitPrice": 34.0
+      },
+      {
+        "ProductName": "Carnarvon Tigers",
+        "UnitPrice": 62.5
+      },
+      {
+        "ProductName": "Côte de Blaye",
+        "UnitPrice": 263.5
+      },
+      {
+        "ProductName": "Gnocchi di nonna Alice",
+        "UnitPrice": 38.0
+      },
+      {
+        "ProductName": "Gudbrandsdalsost",
+        "UnitPrice": 36.0
+      },
+      {
+        "ProductName": "Gumbär Gummibärchen",
+        "UnitPrice": 31.23
+      },
+      {
+        "ProductName": "Ikura",
+        "UnitPrice": 31.0
+      },
+      {
+        "ProductName": "Ipoh Coffee",
+        "UnitPrice": 46.0
+      },
+      {
+        "ProductName": "Manjimup Dried Apples",
+        "UnitPrice": 53.0
+      },
+      {
+        "ProductName": "Mascarpone Fabioli",
+        "UnitPrice": 32.0
+      },
+      {
+        "ProductName": "Mishi Kobe Niku",
+        "UnitPrice": 97.0
+      },
+      {
+        "ProductName": "Mozzarella di Giovanni",
+        "UnitPrice": 34.8
+      },
+      {
+        "ProductName": "Northwoods Cranberry Sauce",
+        "UnitPrice": 40.0
+      },
+      {
+        "ProductName": "Perth Pasties",
+        "UnitPrice": 32.8
+      },
+      {
+        "ProductName": "Queso Manchego La Pastora",
+        "UnitPrice": 38.0
+      },
+      {
+        "ProductName": "Raclette Courdavault",
+        "UnitPrice": 55.0
+      },
+      {
+        "ProductName": "Rössle Sauerkraut",
+        "UnitPrice": 45.6
+      },
+      {
+        "ProductName": "Schoggi Schokolade",
+        "UnitPrice": 43.9
+      },
+      {
+        "ProductName": "Sir Rodney's Marmalade",
+        "UnitPrice": 81.0
+      },
+      {
+        "ProductName": "Tarte au sucre",
+        "UnitPrice": 49.3
+      },
+      {
+        "ProductName": "Thüringer Rostbratwurst",
+        "UnitPrice": 123.79
+      },
+      {
+        "ProductName": "Uncle Bob's Organic Dried Pears",
+        "UnitPrice": 30.0
+      },
+      {
+        "ProductName": "Vegie-spread",
+        "UnitPrice": 43.9
+      },
+      {
+        "ProductName": "Wimmers gute Semmelknödel",
+        "UnitPrice": 33.25
+      }
+    ]
+  }
+}

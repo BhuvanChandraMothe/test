@@ -1,0 +1,82 @@
+[
+  {
+    "entity_name": "Category_Sales_for_1997",
+    "record_id": "Beverages",
+    "transformed_at": "2025-09-22T10:27:08.185937+00:00",
+    "data": {
+      "CategoryName": "Beverages",
+      "CategorySales": 102074.31
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Category_Sales_for_1997",
+    "record_id": "Condiments",
+    "transformed_at": "2025-09-22T10:27:08.185937+00:00",
+    "data": {
+      "CategoryName": "Condiments",
+      "CategorySales": 55277.6
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Category_Sales_for_1997",
+    "record_id": "Confections",
+    "transformed_at": "2025-09-22T10:27:08.185937+00:00",
+    "data": {
+      "CategoryName": "Confections",
+      "CategorySales": 80894.14
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Category_Sales_for_1997",
+    "record_id": "Dairy Products",
+    "transformed_at": "2025-09-22T10:27:08.185937+00:00",
+    "data": {
+      "CategoryName": "Dairy Products",
+      "CategorySales": 114749.78
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Category_Sales_for_1997",
+    "record_id": "Grains/Cereals",
+    "transformed_at": "2025-09-22T10:27:08.185937+00:00",
+    "data": {
+      "CategoryName": "Grains/Cereals",
+      "CategorySales": 55948.82
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Category_Sales_for_1997",
+    "record_id": "Meat/Poultry",
+    "transformed_at": "2025-09-22T10:27:08.185937+00:00",
+    "data": {
+      "CategoryName": "Meat/Poultry",
+      "CategorySales": 81338.06
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Category_Sales_for_1997",
+    "record_id": "Produce",
+    "transformed_at": "2025-09-22T10:27:08.185937+00:00",
+    "data": {
+      "CategoryName": "Produce",
+      "CategorySales": 53019.98
+    },
+    "metadata": {}
+  },
+  {
+    "entity_name": "Category_Sales_for_1997",
+    "record_id": "Seafood",
+    "transformed_at": "2025-09-22T10:27:08.185937+00:00",
+    "data": {
+      "CategoryName": "Seafood",
+      "CategorySales": 65544.18
+    },
+    "metadata": {}
+  }
+]
