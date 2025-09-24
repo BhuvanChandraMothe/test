@@ -6,7 +6,7 @@ import httpx
 import structlog
 from urllib.parse import urlencode
 
-from config.models import ODataConfig
+from ..config.models import ODataConfig
 
 logger = structlog.get_logger(__name__)
 

@@ -1,5 +1,3 @@
-"""Plan generator for SAP OData connector"""
-
 import asyncio
 from typing import Dict, List, Optional, Any, Iterator
 from dataclasses import dataclass, field
@@ -97,20 +95,25 @@ class EntityPlan:
         """Generate fetch commands for this entity"""
         commands = []
         
-        # Generate page fetch commands
-        for page_num in range(self.total_pages):
-            skip = page_num * self.page_size
-            command_id = f"{self.entity_name}_page_{page_num + 1}"
-            
-            command = FetchCommand(
-                command_id=command_id,
-                command_type=CommandType.FETCH_PAGE,
-                entity_set=self.entity_name,
-                skip=skip,
-                top=self.page_size,
-                priority=self.priority
-            )
-            commands.append(command)
+        # Calculate the number of pages needed
+        total_records = self.total_records
+        page_size = self.page_size
+        
+        if total_records > 0:
+            for i in range(0, total_records, page_size):
+                skip = i
+                top = min(page_size, total_records - i)
+                command_id = f"{self.entity_name}_page_{i // page_size + 1}"
+                
+                command = FetchCommand(
+                    command_id=command_id,
+                    command_type=CommandType.FETCH_PAGE,
+                    entity_set=self.entity_name,
+                    skip=skip,
+                    top=top,
+                    priority=self.priority
+                )
+                commands.append(command)
         
         self.commands = commands
         return commands
@@ -215,6 +218,18 @@ class PlanGenerator:
             return Priority.MEDIUM
         else:
             return Priority.LOW
+            
+    def get_all_commands(self) -> List[FetchCommand]:
+        """Get a combined list of all commands from all entity plans."""
+        all_commands = []
+        for plan in self.entity_plans.values():
+            all_commands.extend(plan.commands)
+        
+        # Sort by priority
+        all_commands.sort(key=lambda cmd: cmd.priority.value)
+        
+        logger.info("Generated a combined list of all commands", command_count=len(all_commands))
+        return all_commands
     
     def get_initial_commands(self) -> List[FetchCommand]:
         """Get initial batch of commands to start processing"""

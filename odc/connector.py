@@ -1,5 +1,3 @@
-"""Main SAP OData Connector orchestrator"""
-
 import asyncio
 from typing import Dict, List, Any, Optional, Callable
 from dataclasses import dataclass
@@ -7,19 +5,19 @@ import structlog
 from datetime import datetime, timezone
 
 # Setup logging before any other imports
-from utils.logging_config import setup_connector_logging
+from .utils.logging_config import setup_connector_logging
 setup_connector_logging()
 
-from config.models import ClientConfig, ODataConfig, ConnectorSettings
-from services.metadata import MetadataService
-from services.count import CountService
-from planning.graph_builder import RelationGraphBuilder
-from planning.plan_generator import PlanGenerator
-from workers.proxy_pool import ProxyPool, ProxyResult
-from storage.transformer import DataTransformer
-from storage.local_storage import LocalFileStorage, LocalStorageConfig
-from monitoring.metrics import MetricsCollector, PerformanceMonitor, AlertManager, setup_monitoring, get_metrics_collector
-from error_handling.dead_letter_queue import DeadLetterQueue, ErrorClassifier, FailureType
+from .config.models import ClientConfig, ODataConfig, ConnectorSettings
+from .services.metadata import MetadataService
+from .services.count import CountService
+from .planning.graph_builder import RelationGraphBuilder
+from .planning.plan_generator import PlanGenerator
+from .workers.proxy_pool import ProxyPool, ProxyResult
+from .storage.transformer import DataTransformer
+from .storage.local_storage import LocalFileStorage, LocalStorageConfig
+from .monitoring.metrics import MetricsCollector, PerformanceMonitor, AlertManager, setup_monitoring, get_metrics_collector
+from .error_handling.dead_letter_queue import DeadLetterQueue, ErrorClassifier, FailureType
 
 from prometheus_client import CollectorRegistry, push_to_gateway
 
@@ -96,7 +94,7 @@ class SAPODataConnector:
     
     async def initialize(self):
         """Initialize all connector components with connection testing"""
-        logger.info("🚀 Initializing SAP OData Connector")
+        logger.info("Initializing SAP OData Connector")
         
         try:
             # Setup monitoring
@@ -107,11 +105,11 @@ class SAPODataConnector:
             self.count_service = CountService(self.sap_config)
             
             # STEP 1: Test connection and validate credentials
-            logger.info("🔍 Step 1: Testing connection to OData service")
+            logger.info("Step 1: Testing connection to OData service")
             await self._test_connection()
             
             # STEP 2: Fetch metadata and save Entity Relationship file
-            logger.info("📋 Step 2: Fetching metadata and creating Entity Relationship file")
+            logger.info("Step 2: Fetching metadata and creating Entity Relationship file")
             await self._fetch_and_save_metadata()
             
             # Initialize proxy pool
@@ -121,7 +119,7 @@ class SAPODataConnector:
             )
             
             # STEP 3: Validate connection pool
-            logger.info("🔗 Step 3: Validating connection pool")
+            logger.info("Step 3: Validating connection pool")
             await self._validate_connection_pool()
             
             # Setup proxy pool callbacks
@@ -134,10 +132,10 @@ class SAPODataConnector:
             # Add health checks
             self._setup_health_checks()
             
-            logger.info("✅ Connector initialization completed successfully")
+            logger.info("Connector initialization completed successfully")
             
         except Exception as e:
-            logger.error("❌ Failed to initialize connector", error=str(e))
+            logger.error("Failed to initialize connector", error=str(e))
             raise
     
     async def _test_connection(self):
@@ -153,7 +151,7 @@ class SAPODataConnector:
                     "Please check your service URL and credentials."
                 )
             
-            logger.info("✅ Connection test successful")
+            logger.info("Connection test successful")
     
     async def _fetch_and_save_metadata(self):
         """Fetch metadata and save Entity Relationship file"""
@@ -168,7 +166,7 @@ class SAPODataConnector:
                 self.config.output_directory
             )
             
-            logger.info("✅ Metadata fetched and Entity Relationship file saved", 
+            logger.info("Metadata fetched and Entity Relationship file saved", 
                        entities_count=len(entity_schemas),
                        er_file=er_file_path)
     
@@ -183,7 +181,7 @@ class SAPODataConnector:
                     "Unable to establish reliable connections to OData service."
                 )
             
-            logger.info("✅ Connection pool validation successful")
+            logger.info("Connection pool validation successful")
     
     async def _initialize_storage(self):
         """Initialize storage components"""
@@ -214,10 +212,10 @@ class SAPODataConnector:
             self.stats = ConnectorStats(start_time=datetime.now(timezone.utc))
             
             # Reset the global record tracker for clean state
-            from planning.record_tracker import reset_global_tracker
+            from .planning.record_tracker import reset_global_tracker
             reset_global_tracker()
             # Update plan generator to use the new tracker
-            from planning.record_tracker import get_global_tracker
+            from .planning.record_tracker import get_global_tracker
             self.plan_generator.record_tracker = get_global_tracker()
             if self.config.total_records_limit:
                 self.plan_generator.record_tracker.set_total_records_limit(self.config.total_records_limit)
@@ -236,14 +234,14 @@ class SAPODataConnector:
             # Get final record tracker status for comparison
             if hasattr(self.plan_generator, 'record_tracker'):
                 global_status = await self.plan_generator.record_tracker.get_global_status()
-                logger.info("📊 Final execution summary:")
-                logger.info(f"  ✅ Duration: {self.stats.duration_seconds:.2f} seconds")
-                logger.info(f"  📈 Records processed: {self.stats.records_processed}")
-                logger.info(f"  📋 Commands executed: {self.stats.commands_executed}")
-                logger.info(f"  ❌ Commands failed: {self.stats.commands_failed}")
-                logger.info(f"  🎯 Global records fetched: {global_status.get('global_records_fetched', 0)}")
-                logger.info(f"  📊 Entities tracked: {global_status.get('entities_tracked', 0)}")
-                logger.info(f"  ✅ Entities complete: {global_status.get('entities_complete', 0)}")
+                logger.info("Final execution summary:")
+                logger.info(f"   - Duration: {self.stats.duration_seconds:.2f} seconds")
+                logger.info(f"   - Records processed: {self.stats.records_processed}")
+                logger.info(f"   - Commands executed: {self.stats.commands_executed}")
+                logger.info(f"   - Commands failed: {self.stats.commands_failed}")
+                logger.info(f"   - Global records fetched: {global_status.get('global_records_fetched', 0)}")
+                logger.info(f"   - Entities tracked: {global_status.get('entities_tracked', 0)}")
+                logger.info(f"   - Entities complete: {global_status.get('entities_complete', 0)}")
             
             logger.info("Connector execution completed successfully",
                        duration=self.stats.duration_seconds,
@@ -294,15 +292,15 @@ class SAPODataConnector:
             entity_counts = await self.count_service.get_entity_counts(entity_names)
         
         # Log endpoint information for each entity FIRST
-        logger.info("📋 Endpoints to be processed:")
+        logger.info("Endpoints to be processed:")
         total_expected_records = 0
         for entity_name in entity_names:
             endpoint_url = f"{self.sap_config.service_url}/{entity_name}"
             record_count = entity_counts.get(entity_name, 0)
             total_expected_records += record_count
-            logger.info(f"  🔗 {entity_name}: {endpoint_url} (Expected records: {record_count})")
+            logger.info(f"   - {entity_name}: {endpoint_url} (Expected records: {record_count})")
         
-        logger.info(f"📊 Total expected records across all entities: {total_expected_records}")
+        logger.info(f"Total expected records across all entities: {total_expected_records}")
         
         # Build dependency graph
         self.graph_builder.add_entities(entity_names)
@@ -321,13 +319,13 @@ class SAPODataConnector:
                    processing_levels=len(processing_order))
         
         # Log the execution plan summary
-        logger.info("📋 Execution plan summary:")
+        logger.info("Execution plan summary:")
         for level_idx, level_entities in enumerate(processing_order):
             level_total = sum(entity_counts.get(entity, 0) for entity in level_entities)
-            logger.info(f"  Level {level_idx + 1}: {len(level_entities)} entities, {level_total} records")
+            logger.info(f"   Level {level_idx + 1}: {len(level_entities)} entities, {level_total} records")
             for entity in level_entities:
                 if entity in entity_counts:
-                    logger.info(f"    - {entity}: {entity_counts[entity]} records")
+                    logger.info(f"     - {entity}: {entity_counts[entity]} records")
     
     async def _execution_phase(self):
         """Phase 2: Execute data fetching and processing"""
@@ -336,9 +334,9 @@ class SAPODataConnector:
         # Start proxy pool
         await self.proxy_pool.start()
         
-        # Get initial commands
-        initial_commands = self.plan_generator.get_initial_commands()
-        await self.proxy_pool.add_commands(initial_commands)
+        # Get all commands from the plan generator and add them to the queue
+        all_commands = self.plan_generator.get_all_commands()
+        await self.proxy_pool.add_commands(all_commands)
         
         # Monitor execution
         await self._monitor_execution()
@@ -347,51 +345,39 @@ class SAPODataConnector:
     
     async def _monitor_execution(self):
         """Monitor the execution progress"""
-        completed_entities = set()
         last_progress_log = 0
+        total_commands_planned = sum(len(plan.commands) for plan in self.plan_generator.entity_plans.values())
         
-        logger.info("🔍 Starting execution monitoring")
+        logger.info("Starting execution monitoring")
         
         while self.is_running:
-            # Update metrics
             if self.metrics and self.proxy_pool:
                 pool_stats = self.proxy_pool.get_pool_stats()
-                self.metrics.update_queue_size(pool_stats['queue_size'])
+                self.metrics.update_queue_size(self.proxy_pool.get_queue_size())
                 self.metrics.update_active_workers(pool_stats['active_workers'])
             
-            # Check if execution is complete
-            # We need both: empty queue AND no active workers
-            pool_stats = self.proxy_pool.get_pool_stats()
-            queue_empty = pool_stats['queue_size'] == 0
-            no_active_workers = pool_stats['active_workers'] == 0
+            if self.stats.commands_executed >= total_commands_planned and \
+               self.proxy_pool.get_queue_size() == 0 and \
+               self.proxy_pool.get_pool_stats()['active_workers'] == 0:
+                logger.info("Execution monitoring complete - all planned commands executed")
+                break
             
-            if queue_empty and no_active_workers:
-                logger.info("✅ Execution monitoring complete - all work finished", 
-                           queue_size=pool_stats['queue_size'],
-                           active_workers=pool_stats['active_workers'],
-                           records_processed=self.stats.records_processed,
-                           commands_executed=self.stats.commands_executed)
-                break  # Exit immediately when queue is empty and no workers are active
-            
-            # Progress update callback
             if self.on_progress_update:
                 progress_info = {
-                    'queue_size': pool_stats['queue_size'],
-                    'active_workers': pool_stats['active_workers'],
-                    'completed_entities': len(completed_entities),
+                    'queue_size': self.proxy_pool.get_queue_size(),
+                    'active_workers': self.proxy_pool.get_pool_stats()['active_workers'],
+                    'completed_entities': len(self.plan_generator.record_tracker.get_completed_entities()),
                     'records_processed': self.stats.records_processed,
                     'commands_executed': self.stats.commands_executed,
                     'commands_failed': self.stats.commands_failed
                 }
                 self.on_progress_update(progress_info)
             
-            # Log progress periodically (every 10 seconds when active)
             current_time = asyncio.get_event_loop().time()
-            if (pool_stats['queue_size'] > 0 or pool_stats['active_workers'] > 0) and \
-               (current_time - last_progress_log) >= 10:
-                logger.info("📊 Execution progress", 
-                           queue_size=pool_stats['queue_size'],
-                           active_workers=pool_stats['active_workers'],
+            if (current_time - last_progress_log) >= 10:
+                logger.info("Execution progress", 
+                           queue_size=self.proxy_pool.get_queue_size(),
+                           active_workers=self.proxy_pool.get_pool_stats()['active_workers'],
                            records_processed=self.stats.records_processed,
                            commands_executed=self.stats.commands_executed)
                 last_progress_log = current_time
@@ -402,30 +388,31 @@ class SAPODataConnector:
         """Phase 3: Complete execution and cleanup"""
         logger.info("Starting completion phase")
         
-        # Stop proxy pool
+        for entity_name in self.plan_generator.entity_plans.keys():
+            await self.local_storage.save_unified_processed_records(entity_name)
+        
         if self.proxy_pool:
             await self.proxy_pool.stop()
         
     async def _process_successful_result(self, result: ProxyResult):
         """Process successful result - transform and store"""
         try:
-            # Transform data
             transformed_records = await self.transformer.transform_odata_response(
                 result.command.entity_set,
                 result.data
             )
             
             if transformed_records:
-                # Store processed data locally
-                success = await self.local_storage.store_processed_records(
+                is_first_batch = (result.command.skip == 0)
+                is_last_batch = (result.command.skip + result.command.top >= self.plan_generator.record_tracker.get_entity_records_fetched(result.command.entity_set))
+                await self.local_storage.store_processed_records(
                     result.command.entity_set,
-                    transformed_records
+                    transformed_records,
+                    is_first_batch=is_first_batch,
+                    is_last_batch=is_last_batch
                 )
-                
-                if success:
-                    self.stats.records_stored += len(transformed_records)
-                
-                # Store raw data locally
+
+                # Store raw data for debugging purposes
                 await self.local_storage.store_raw_response(
                     result.command.entity_set,
                     result.command.command_id,
@@ -433,13 +420,7 @@ class SAPODataConnector:
                 )
             
             self.stats.records_processed += len(transformed_records)
-            
-            # Handle pagination
-            if result.next_link:
-                next_command = self.plan_generator.create_next_page_command(
-                    result.command, result.next_link
-                )
-                await self.proxy_pool.add_command(next_command)
+            self.stats.records_stored += len(transformed_records)
             
         except Exception as e:
             logger.error("Failed to process successful result", error=str(e))
@@ -466,7 +447,7 @@ class SAPODataConnector:
                 retry_command = result.command.create_retry_command()
                 await self.proxy_pool.add_command(retry_command)
                 logger.info("Command scheduled for retry", 
-                           command_id=result.command.command_id,
+                           command_id=retry_command.command_id,
                            retry_count=retry_command.retry_count)
             else:
                 # Add to dead letter queue
@@ -524,7 +505,6 @@ class SAPODataConnector:
         """Push metrics to the Prometheus Push Gateway."""
         if self.metrics and self.metrics.registry:
             try:
-                # Use local constants instead of importing from module
                 PUSH_GATEWAY_URL = 'http://localhost:9091'
                 PROMETHEUS_JOB_NAME = 'sap_odata_connector'
                 
@@ -545,10 +525,6 @@ class SAPODataConnector:
         
         if self.proxy_pool and self.proxy_pool.is_running:
             await self.proxy_pool.stop()
-            
-            
-        #edhi just prometheus push gateway kosam
-        await self._push_metrics_to_gateway()
     
     def get_execution_summary(self) -> Dict[str, Any]:
         """Get execution summary"""

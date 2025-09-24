@@ -80,27 +80,18 @@ Test script for SAP OData Connector with Northwind service
 #     success = asyncio.run(test_northwind())
 #     sys.exit(0 if success else 1)
 
-
-
-
-# Modified test_northwind.py
 import asyncio
-import sys
 import os
-from pathlib import Path
+import shutil
+import sys
 
-# Add current directory to path
-sys.path.insert(0, str(Path(__file__).parent))
+# Add the parent directory to the Python path to allow imports
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Setup file logging before other imports
-from utils.logging_config import setup_connector_logging
-log_file = setup_connector_logging()
-print(f"📝 All logs will be written to: {log_file}")
-
-from config.models import ClientConfig
-from connector import SAPODataConnector
-from monitoring.metrics import get_metrics_collector
-from prometheus_client import CollectorRegistry, push_to_gateway
+from odc.connector import SAPODataConnector
+from odc.config.models import ClientConfig
+from odc.monitoring.metrics import get_metrics_collector
+from prometheus_client import push_to_gateway
 
 # Define the Push Gateway URL
 PUSH_GATEWAY_URL = 'http://localhost:9091'
@@ -110,17 +101,16 @@ PROMETHEUS_JOB_NAME = 'northwind_connector'
 async def test_northwind():
     """Test the connector with Northwind service and push metrics"""
     
-    print("🧪 Testing SAP OData Connector with Northwind service")
+    print("Testing SAP OData Connector with Northwind service")
     print("=" * 60)
     
     # Get the global metrics collector instance
     metrics_collector = get_metrics_collector()
 
     # Clean up output directory from previous runs
-    import shutil
     output_dir = "./test_output"
     if os.path.exists(output_dir):
-        print(f"🧹 Cleaning up previous test output: {output_dir}")
+        print(f"Cleaning up previous test output: {output_dir}")
         shutil.rmtree(output_dir)
     
     # Create test configuration
@@ -128,7 +118,7 @@ async def test_northwind():
         odata_service_url="https://services.odata.org/V4/Northwind/Northwind.svc",
         username=None,
         password=None,
-        selected_modules=["Invoices"],
+        selected_modules=[],
         total_records_limit=None,
         batch_size=500,
         max_workers=3,
@@ -141,8 +131,6 @@ async def test_northwind():
     # Create connector
     connector = SAPODataConnector(config)
     
-    # ... (rest of your existing logic) ...
-    
     try:
         print("Initializing connector...")
         await connector.initialize()
@@ -152,9 +140,6 @@ async def test_northwind():
         
         print("\nTest completed successfully!")
         
-        
-        
-        
         print("\n✅ Test completed successfully!")
         print(f"Duration: {stats.duration_seconds:.2f}s")
         print(f"Entities: {stats.entities_processed}")
@@ -163,7 +148,6 @@ async def test_northwind():
         print(f"Commands: {stats.commands_executed}")
         print(f"Failures: {stats.commands_failed}")
         
-        # --- NEW CODE: Push metrics to Push Gateway ---
         print("\n📤 Pushing metrics to Prometheus Push Gateway...")
         try:
             push_to_gateway(
@@ -182,18 +166,8 @@ async def test_northwind():
         import traceback
         traceback.print_exc()
         return False
-        
-    finally:
-        if connector.proxy_pool:
-            await connector.proxy_pool.stop()
 
 
 if __name__ == "__main__":
-    import logging
-    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    
-    success = asyncio.run(test_northwind())
-    
-    print("=" * 60)
-    print(f"Complete log details saved to: {log_file}")
-    sys.exit(0 if success else 1)
+    # This is the correct way to start an async program and ensures a clean exit
+    asyncio.run(test_northwind())

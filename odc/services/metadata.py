@@ -1,5 +1,3 @@
-"""Metadata service for SAP OData connector"""
-
 import asyncio
 import xml.etree.ElementTree as ET
 from typing import Dict, List, Optional, Any
@@ -10,7 +8,7 @@ from pyodata.exceptions import PyODataException
 
 
 
-from config.models import ODataConfig
+from ..config.models import ODataConfig
 
 logger = structlog.get_logger(__name__)
 
@@ -160,7 +158,7 @@ class MetadataService:
             if set_name and type_name:
                 # Remove namespace prefix from type name
                 type_name = type_name.split('.')[-1]
-                entity_set_mapping[set_name] = type_name
+                entity_set_mapping[type_name] = set_name # Store mapping from EntityType to EntitySet
         
         # Find all entity types
         entity_types = root.findall('.//edm:EntityType', namespaces)
@@ -206,14 +204,7 @@ class MetadataService:
                     schema.add_navigation_property(nav_name, to_role or 'Unknown', relationship)
             
             # Store schema using EntitySet name if available, otherwise EntityType name
-            entity_set_name = None
-            for set_name, type_name in entity_set_mapping.items():
-                if type_name == entity_name:
-                    entity_set_name = set_name
-                    break
-            
-            # Use EntitySet name for querying, but keep EntityType info
-            schema_key = entity_set_name if entity_set_name else entity_name
+            schema_key = entity_set_mapping.get(entity_name, entity_name) # Use the mapped EntitySet name if it exists
             self.schemas[schema_key] = schema
         
         # Parse associations for foreign key relationships
@@ -255,11 +246,14 @@ class MetadataService:
                             dependent_entity = entity2
                             principal_entity = entity1
                         
-                        if dependent_entity in self.schemas:
+                        # Use the correct EntitySet names from the metadata service's schema dictionary
+                        dependent_entity_key = self.schemas.get(dependent_entity, None)
+                        if dependent_entity_key:
                             for dep_prop, prin_prop in zip(dependent_props, principal_props):
-                                self.schemas[dependent_entity].add_foreign_key(
-                                    dep_prop, principal_entity, prin_prop
+                                self.schemas[dependent_entity_key].add_foreign_key(
+                                    dep_prop, self.schemas[principal_entity].name, prin_prop
                                 )
+
     
     def get_entity_sets(self) -> List[str]:
         """Get list of all entity set names"""

@@ -12,7 +12,7 @@ import orjson
 import csv
 
 from .transformer import TransformedRecord
-from monitoring.metrics import get_metrics_collector
+from ..monitoring.metrics import get_metrics_collector
 
 logger = structlog.get_logger(__name__)
 
@@ -31,6 +31,7 @@ class LocalFileStorage:
     def __init__(self, config: LocalStorageConfig):
         self.config = config
         self._ensure_directories()
+        self._processed_data: Dict[str, List[Dict[str, Any]]] = {}
     
     def _ensure_directories(self):
         """Ensure all required directories exist"""
@@ -61,9 +62,9 @@ class LocalFileStorage:
         file_path = self._generate_raw_file_path(entity_name, command_id, timestamp)
         
         logger.debug("Storing raw data to local file", 
-                    entity_name=entity_name,
-                    command_id=command_id,
-                    file_path=file_path)
+                     entity_name=entity_name,
+                     command_id=command_id,
+                     file_path=file_path)
         
         try:
             # Prepare data for storage
@@ -87,10 +88,10 @@ class LocalFileStorage:
             metrics.record_storage_operation("local_file", "write", storage_time, True)
             
             logger.info("Successfully stored raw data", 
-                       entity_name=entity_name,
-                       file_path=file_path,
-                       size_bytes=os.path.getsize(file_path),
-                       storage_time_seconds=round(storage_time, 3))
+                        entity_name=entity_name,
+                        file_path=file_path,
+                        size_bytes=os.path.getsize(file_path),
+                        storage_time_seconds=round(storage_time, 3))
             
             return file_path
             
@@ -100,9 +101,9 @@ class LocalFileStorage:
             metrics.record_storage_operation("local_file", "write", storage_time, False)
             
             logger.error("Failed to store raw data", 
-                        entity_name=entity_name,
-                        command_id=command_id,
-                        error=str(e))
+                         entity_name=entity_name,
+                         command_id=command_id,
+                         error=str(e))
             raise
     
     def _generate_raw_file_path(
@@ -126,14 +127,16 @@ class LocalFileStorage:
             hour_path,
             f"{command_id}.json"
         )
-    
+
     async def store_processed_records(
-        self, 
-        entity_name: str, 
+        self,
+        entity_name: str,
         records: List[TransformedRecord],
-        format: str = "json"
+        format: str = "json",
+        is_first_batch: bool = False,
+        is_last_batch: bool = False
     ) -> str:
-        """Store processed records in specified format"""
+        """Store processed records in specified format in a single unified file."""
         
         start_time = asyncio.get_event_loop().time()
         metrics = get_metrics_collector()
@@ -142,67 +145,70 @@ class LocalFileStorage:
             logger.info("No records to store", entity_name=entity_name)
             return ""
         
-        logger.info("Storing processed records", 
-                   entity_name=entity_name,
-                   record_count=len(records),
-                   format=format)
+        logger.info("Storing processed records",
+                    entity_name=entity_name,
+                    record_count=len(records),
+                    format=format)
         
         try:
             if format.lower() == "csv":
                 file_path = await self._store_as_csv(entity_name, records)
             else:
-                file_path = await self._store_as_json(entity_name, records)
+                file_path = await self._store_as_json_stream(entity_name, records, is_first_batch, is_last_batch)
             
-            # Record successful storage operation
             storage_time = asyncio.get_event_loop().time() - start_time
             metrics.record_storage_operation("local_file", "write_processed", storage_time, True)
             
-            logger.info("Successfully stored processed records", 
-                       entity_name=entity_name,
-                       file_path=file_path,
-                       record_count=len(records),
-                       storage_time_seconds=round(storage_time, 3))
+            logger.info("Successfully stored processed records",
+                        entity_name=entity_name,
+                        file_path=file_path,
+                        record_count=len(records),
+                        storage_time_seconds=round(storage_time, 3))
             
             return file_path
             
         except Exception as e:
-            # Record failed storage operation
             storage_time = asyncio.get_event_loop().time() - start_time
             metrics.record_storage_operation("local_file", "write_processed", storage_time, False)
             
-            logger.error("Failed to store processed records", 
-                        entity_name=entity_name,
-                        error=str(e),
-                        storage_time_seconds=round(storage_time, 3))
+            logger.error("Failed to store processed records",
+                         entity_name=entity_name,
+                         error=str(e),
+                         storage_time_seconds=round(storage_time, 3))
             raise
-    
-    async def _store_as_json(self, entity_name: str, records: List[TransformedRecord]) -> str:
-        """Store records as JSON file"""
+
+    async def _store_as_json_stream(self, entity_name: str, records: List[TransformedRecord], is_first_batch: bool, is_last_batch: bool) -> str:
+        """Store records as JSON, appending to a single file for the entity."""
         
-        timestamp = datetime.now(timezone.utc)
-        sanitized_entity = entity_name.replace('/', '_').replace(' ', '_')
-        
-        file_path = os.path.join(
-            self.config.processed_data_directory,
-            f"{sanitized_entity}_{timestamp.strftime('%Y%m%d_%H%M%S')}.json"
-        )
-        
-        # Convert records to dictionaries
-        records_data = []
-        for record in records:
-            record_dict = {
+        dir_path = self._get_processed_data_dir_path(entity_name)
+        os.makedirs(dir_path, exist_ok=True)
+
+        file_path = os.path.join(dir_path, f"{entity_name}.json")
+
+        records_data = [
+            {
                 "entity_name": record.entity_name,
                 "record_id": record.record_id,
                 "transformed_at": record.transformed_at.isoformat(),
                 "data": record.data,
                 "metadata": record.metadata
             }
-            records_data.append(record_dict)
-        
-        # Write to file
-        with open(file_path, 'wb') as f:
-            f.write(orjson.dumps(records_data, option=orjson.OPT_INDENT_2))
-        
+            for record in records
+        ]
+
+        mode = 'w' if is_first_batch else 'a'
+        delimiter = '[\n' if is_first_batch else ',\n'
+        end_delimiter = '\n]' if is_last_batch else ''
+
+        with open(file_path, mode, encoding='utf-8') as f:
+            if is_first_batch:
+                f.write(json.dumps(records_data, indent=2)[1:-1])
+            else:
+                f.write(f'{delimiter}{json.dumps(records_data, indent=2)[1:-1]}')
+            
+            if is_last_batch:
+                f.write(end_delimiter)
+
         return file_path
     
     async def _store_as_csv(self, entity_name: str, records: List[TransformedRecord]) -> str:
@@ -267,8 +273,8 @@ class LocalFileStorage:
             
         except Exception as e:
             logger.error("Failed to retrieve raw data", 
-                        file_path=file_path,
-                        error=str(e))
+                         file_path=file_path,
+                         error=str(e))
             return None
     
     async def list_raw_files(
@@ -311,15 +317,15 @@ class LocalFileStorage:
                                 break
             
             logger.info("Listed raw files", 
-                       search_path=search_path,
-                       file_count=len(file_list))
+                        search_path=search_path,
+                        file_count=len(file_list))
             
             return file_list
             
         except Exception as e:
             logger.error("Failed to list raw files", 
-                        search_path=search_path,
-                        error=str(e))
+                         search_path=search_path,
+                         error=str(e))
             return []
     
     async def list_processed_files(
@@ -354,8 +360,8 @@ class LocalFileStorage:
                             break
             
             logger.info("Listed processed files", 
-                       entity_filter=entity_name,
-                       file_count=len(file_list))
+                        entity_filter=entity_name,
+                        file_count=len(file_list))
             
             return file_list
             
@@ -438,8 +444,8 @@ class LocalFileStorage:
                                     logger.info("Cleanup progress", deleted_count=deleted_count)
             
             logger.info("Completed file cleanup", 
-                       deleted_count=deleted_count,
-                       cutoff_date=cutoff_date.isoformat())
+                        deleted_count=deleted_count,
+                        cutoff_date=cutoff_date.isoformat())
             
             return deleted_count
             

@@ -8,8 +8,8 @@ import orjson
 from pydantic import BaseModel, Field, validator
 from datetime import datetime, timezone
 
-from services.metadata import EntitySchema
-from monitoring.metrics import get_metrics_collector
+from ..services.metadata import EntitySchema
+from ..monitoring.metrics import get_metrics_collector
 
 logger = structlog.get_logger(__name__)
 
