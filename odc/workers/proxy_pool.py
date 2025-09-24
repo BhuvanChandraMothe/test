@@ -1,23 +1,28 @@
 """Proxy pool implementation for SAP OData connector"""
 
 import asyncio
-from typing import Dict, List, Optional, Any, Callable
+from typing import Dict, List, Optional, Any, Callable, Awaitable
 from dataclasses import dataclass
 import structlog
 from urllib.parse import urlencode
 import httpx
 
 from config.models import ODataConfig
-from planning.plan_generator import FetchCommand, CommandType
 from workers.resilience import ResilienceComponents
 from monitoring.metrics import get_metrics_collector
 logger = structlog.get_logger(__name__)
+
+# Import these at runtime to avoid circular imports
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from ..planning.plan_generator import FetchCommand, CommandType
+    from ..planning.record_tracker import GlobalRecordTracker
 
 
 @dataclass
 class ProxyResult:
     """Result from a proxy worker execution"""
-    command: FetchCommand
+    command: 'FetchCommand'  # Forward reference to avoid circular import
     success: bool
     data: Optional[Dict[str, Any]] = None
     error: Optional[str] = None
@@ -38,13 +43,16 @@ class ProxyWorker:
         self.odata_config = odata_config
         self.resilience = resilience
         self.is_running = False
+        # Import at runtime to avoid circular imports
+        from planning.record_tracker import get_global_tracker
+        self.record_tracker = get_global_tracker()
         self._stats = {
             'requests_processed': 0,
             'requests_failed': 0,
             'requests_retried': 0
         }
     
-    async def execute(self, command: FetchCommand) -> ProxyResult:
+    async def execute(self, command: 'FetchCommand') -> ProxyResult:
         """Execute a fetch command"""
         start_time = asyncio.get_event_loop().time()
         
@@ -137,19 +145,54 @@ class ProxyWorker:
                 error=str(e)
             )
     
-    async def _execute_with_circuit_breaker(self, command: FetchCommand) -> ProxyResult:
+    async def _execute_with_circuit_breaker(self, command: 'FetchCommand') -> ProxyResult:
         """Execute command with circuit breaker protection"""
         # Temporarily bypass circuit breaker for debugging
         return await self._make_http_request(command)
     
-    async def _make_http_request(self, command: FetchCommand) -> ProxyResult:
+    async def _make_http_request(self, command: 'FetchCommand') -> ProxyResult:
         """Make the actual HTTP request to OData API"""
+        # Check if we should still fetch more records for this entity
+        should_fetch = await self.record_tracker.should_create_more_commands(command.entity_set)
+        if not should_fetch:
+            logger.info("🛑 Skipping request - record limit reached", 
+                       worker_id=self.worker_id,
+                       command_id=command.command_id,
+                       entity=command.entity_set)
+            return ProxyResult(
+                command=command,
+                success=True,
+                data={'value': []},  # Empty result
+                next_link=None
+            )
+        
+        # Calculate optimal batch size to avoid overfetching
+        optimal_top = await self.record_tracker.calculate_optimal_batch_size(
+            command.entity_set, 
+            command.top
+        )
+        
+        # Update command with optimal batch size if different
+        if optimal_top != command.top:
+            logger.info("📏 Adjusted batch size for optimal fetching",
+                       worker_id=self.worker_id,
+                       command_id=command.command_id,
+                       entity=command.entity_set,
+                       original_top=command.top,
+                       optimal_top=optimal_top)
+            
+            # Create new URL params with adjusted $top
+            adjusted_params = command.url_params.copy()
+            adjusted_params['$top'] = str(optimal_top)
+        else:
+            adjusted_params = command.url_params
+        
         client = await self.resilience.connection_pool.get_client()
         
         # Build URL
         url = self.odata_config.entity_set_url(command.entity_set)
-        if command.url_params:
-            url += f"?{urlencode(command.url_params)}"
+        if adjusted_params:
+            url += f"?{urlencode(adjusted_params)}"
         
         logger.debug("🌐 Worker making HTTP request", 
                     worker_id=self.worker_id,
@@ -186,11 +229,32 @@ class ProxyWorker:
                 elif 'd' in data and 'results' in data['d']:
                     record_count = len(data['d']['results'])
                 
+                # Record page completion with the tracker
+                page_num = (command.skip // command.top) + 1
+                tracking_result = await self.record_tracker.record_page_completion(
+                    command.entity_set, 
+                    page_num, 
+                    record_count
+                )
+                
+                # Check if we should suppress next_link due to limits
+                if tracking_result.get("global_limit_reached") or tracking_result.get("entity_complete"):
+                    next_link = None  # Stop pagination
+                    logger.info("🎯 Stopping pagination due to record limits", 
+                               worker_id=self.worker_id,
+                               command_id=command.command_id,
+                               entity=command.entity_set,
+                               global_limit_reached=tracking_result.get("global_limit_reached"),
+                               entity_complete=tracking_result.get("entity_complete"))
+                
                 logger.info("📊 Worker successfully fetched data", 
                            worker_id=self.worker_id,
                            command_id=command.command_id,
                            entity=command.entity_set,
                            records_in_response=record_count,
+                           actual_records_added=tracking_result.get("actual_records_added", record_count),
+                           entity_total_fetched=tracking_result.get("entity_records_fetched", 0),
+                           global_total_fetched=tracking_result.get("global_records_fetched", 0),
                            has_next_page=bool(next_link))
                 
                 return ProxyResult(
@@ -295,8 +359,8 @@ class ProxyPool:
         self.resilience = ResilienceComponents.create_default(odata_config)
         
         # Callbacks
-        self.on_result: Optional[Callable[[ProxyResult], None]] = None
-        self.on_error: Optional[Callable[[ProxyResult], None]] = None
+        self.on_result: Optional[Callable[[ProxyResult], Awaitable[None]]] = None
+        self.on_error: Optional[Callable[[ProxyResult], Awaitable[None]]] = None
     
     async def start(self):
         """Start the proxy pool"""
@@ -350,7 +414,7 @@ class ProxyPool:
         
         logger.info("Proxy pool stopped")
     
-    async def add_command(self, command: FetchCommand):
+    async def add_command(self, command: 'FetchCommand'):
         """Add a command to the processing queue"""
         try:
             await self.queue.put(command)
@@ -359,7 +423,7 @@ class ProxyPool:
             logger.warning("Queue is full, command rejected", command_id=command.command_id)
             raise
     
-    async def add_commands(self, commands: List[FetchCommand]):
+    async def add_commands(self, commands: List['FetchCommand']):
         """Add multiple commands to the processing queue"""
         for command in commands:
             await self.add_command(command)
@@ -388,6 +452,10 @@ class ProxyPool:
                                worker_status="WAITING",
                                queue_size=self.queue.qsize())
                     
+                    # Check if pool is still running before waiting
+                    if not self.is_running:
+                        break
+                        
                     # Wait for command with timeout
                     command = await asyncio.wait_for(
                         self.queue.get(), timeout=1.0
@@ -415,7 +483,12 @@ class ProxyPool:
                                    command_id=command.command_id)
                 
                 except asyncio.TimeoutError:
-                    # No commands available, continue loop
+                    # No commands available - check if pool is still running
+                    if not self.is_running:
+                        logger.info("🛑 Worker exiting - pool stopped", 
+                                   worker_id=worker.worker_id,
+                                   worker_status="STOPPED")
+                        break
                     logger.debug("⏰ Worker timeout waiting for commands", 
                                worker_id=worker.worker_id,
                                worker_status="IDLE")

@@ -93,13 +93,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 # Setup file logging before other imports
-from .utils.logging_config import setup_connector_logging
+from utils.logging_config import setup_connector_logging
 log_file = setup_connector_logging()
 print(f"📝 All logs will be written to: {log_file}")
 
-from .config.models import ClientConfig
-from .connector import SAPODataConnector
-from .monitoring.metrics import get_metrics_collector
+from config.models import ClientConfig
+from connector import SAPODataConnector
+from monitoring.metrics import get_metrics_collector
 from prometheus_client import CollectorRegistry, push_to_gateway
 
 # Define the Push Gateway URL
@@ -116,14 +116,21 @@ async def test_northwind():
     # Get the global metrics collector instance
     metrics_collector = get_metrics_collector()
 
+    # Clean up output directory from previous runs
+    import shutil
+    output_dir = "./test_output"
+    if os.path.exists(output_dir):
+        print(f"🧹 Cleaning up previous test output: {output_dir}")
+        shutil.rmtree(output_dir)
+    
     # Create test configuration
     config = ClientConfig(
         odata_service_url="https://services.odata.org/V4/Northwind/Northwind.svc",
         username=None,
         password=None,
-        selected_modules=[],
+        selected_modules=["Invoices"],
         total_records_limit=None,
-        batch_size=1500,
+        batch_size=500,
         max_workers=3,
         requests_per_second=10.0,
         output_directory="./test_output",
@@ -137,13 +144,13 @@ async def test_northwind():
     # ... (rest of your existing logic) ...
     
     try:
-        print("🚀 Initializing connector...")
+        print("Initializing connector...")
         await connector.initialize()
         
-        print("📋 Starting data extraction...")
+        print("Starting data extraction...")
         stats = await connector.run()
         
-        print("\n✅ Test completed successfully!")
+        print("\nTest completed successfully!")
         
         
         

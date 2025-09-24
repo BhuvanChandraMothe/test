@@ -7,6 +7,8 @@ from enum import Enum
 import structlog
 import math
 
+from .record_tracker import get_global_tracker
+
 logger = structlog.get_logger(__name__)
 
 
@@ -117,13 +119,19 @@ class EntityPlan:
 class PlanGenerator:
     """Generates execution plans for SAP OData data fetching"""
     
-    def __init__(self, batch_size: int = 1000, max_concurrent_entities: int = 5):
+    def __init__(self, batch_size: int = 1000, max_concurrent_entities: int = 5, total_records_limit: Optional[int] = None):
         self.batch_size = batch_size
         self.max_concurrent_entities = max_concurrent_entities
+        self.total_records_limit = total_records_limit
         self.entity_plans: Dict[str, EntityPlan] = {}
         self.processing_levels: List[List[str]] = []
+        self.record_tracker = get_global_tracker()
+        
+        # Set global limit in tracker
+        if total_records_limit:
+            self.record_tracker.set_total_records_limit(total_records_limit)
     
-    def create_execution_plan(
+    async def create_execution_plan(
         self,
         entity_counts: Dict[str, int],
         processing_order: List[List[str]],
@@ -151,6 +159,15 @@ class PlanGenerator:
                 if record_count == 0:
                     logger.info("Skipping empty entity", entity=entity)
                     continue
+                
+                # Apply total records limit if set
+                if self.total_records_limit:
+                    # Calculate how many records we can still fetch globally
+                    # This is a rough estimate - the record tracker will handle precise limits
+                    record_count = min(record_count, self.total_records_limit)
+                
+                # Register entity with record tracker
+                await self.record_tracker.register_entity(entity, record_count)
                 
                 # Calculate pagination
                 total_pages = math.ceil(record_count / self.batch_size)

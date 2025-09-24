@@ -234,34 +234,114 @@ class TokenManager:
 
 
 class ConnectionPool:
-    """Shared HTTP connection pool"""
+    """Shared HTTP connection pool with validation"""
     
     def __init__(self, odata_config, max_connections: int = 100):
         self.odata_config = odata_config
         self._client: Optional[httpx.AsyncClient] = None
         self.max_connections = max_connections
+        self._is_validated = False
+        self._validation_lock = asyncio.Lock()
+    
+    async def validate_connection(self) -> bool:
+        """Validate connection to OData service"""
+        logger.info("Validating connection pool connectivity")
+        
+        try:
+            client = await self.get_client()
+            
+            # Prepare authentication
+            auth = None
+            if self.odata_config.username and self.odata_config.password:
+                auth = (self.odata_config.username, self.odata_config.password)
+            
+            # Test with a simple request to service root
+            response = await client.get(
+                self.odata_config.service_url,
+                auth=auth,
+                timeout=10.0
+            )
+            
+            if response.status_code in [200, 307, 401]:  # 200=OK, 307=Redirect, 401=Auth needed
+                logger.info("✅ Connection pool validation successful", 
+                           status_code=response.status_code)
+                self._is_validated = True
+                return True
+            else:
+                logger.error("❌ Connection pool validation failed", 
+                           status_code=response.status_code)
+                return False
+                
+        except Exception as e:
+            logger.error("❌ Connection pool validation failed", error=str(e))
+            return False
     
     async def get_client(self) -> httpx.AsyncClient:
         """Get or create HTTP client with connection pooling"""
         if self._client is None:
-            limits = httpx.Limits(
-                max_keepalive_connections=self.max_connections,
-                max_connections=self.max_connections * 2
-            )
-            
-            self._client = httpx.AsyncClient(
-                timeout=self.odata_config.timeout,
-                verify=self.odata_config.verify_ssl,
-                limits=limits
-            )
+            async with self._validation_lock:
+                if self._client is None:
+                    limits = httpx.Limits(
+                        max_keepalive_connections=self.max_connections,
+                        max_connections=self.max_connections * 2,
+                        keepalive_expiry=30.0  # Keep connections alive for 30 seconds
+                    )
+                    
+                    # Try to enable HTTP/2 if available, fallback to HTTP/1.1
+                    try:
+                        self._client = httpx.AsyncClient(
+                            timeout=httpx.Timeout(
+                                connect=self.odata_config.timeout,
+                                read=self.odata_config.timeout * 2,
+                                write=self.odata_config.timeout,
+                                pool=5.0  # Pool acquisition timeout
+                            ),
+                            verify=self.odata_config.verify_ssl,
+                            limits=limits,
+                            http2=True  # Enable HTTP/2 for better performance
+                        )
+                        logger.info("✅ HTTP connection pool created with HTTP/2 support", 
+                                   max_connections=self.max_connections)
+                    except Exception as e:
+                        # Fallback to HTTP/1.1 if HTTP/2 is not available
+                        logger.warning("HTTP/2 not available, falling back to HTTP/1.1", 
+                                     error=str(e))
+                        self._client = httpx.AsyncClient(
+                            timeout=httpx.Timeout(
+                                connect=self.odata_config.timeout,
+                                read=self.odata_config.timeout * 2,
+                                write=self.odata_config.timeout,
+                                pool=5.0  # Pool acquisition timeout
+                            ),
+                            verify=self.odata_config.verify_ssl,
+                            limits=limits,
+                            http2=False  # Use HTTP/1.1
+                        )
+                        logger.info("✅ HTTP connection pool created with HTTP/1.1", 
+                                   max_connections=self.max_connections)
         
         return self._client
+    
+    async def get_pool_stats(self) -> Dict[str, Any]:
+        """Get connection pool statistics"""
+        if self._client is None:
+            return {"status": "not_initialized"}
+        
+        # Note: httpx doesn't expose detailed pool stats, but we can provide basic info
+        return {
+            "status": "active",
+            "is_validated": self._is_validated,
+            "max_connections": self.max_connections,
+            "client_closed": self._client.is_closed
+        }
     
     async def close(self):
         """Close the connection pool"""
         if self._client:
+            logger.info("Closing HTTP connection pool")
             await self._client.aclose()
             self._client = None
+            self._is_validated = False
 
 
 @dataclass

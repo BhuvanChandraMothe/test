@@ -1,1 +1,0 @@
-2025-09-22 14:51:59,518 - logging_config - INFO - setup_connector_logging:106 - [2m2025-09-22T09:21:59.518873Z[0m [[32m[1minfo     [0m] [1mSAP OData Connector logging configured[0m [[0m[1m[34mlogging_config[0m][0m [36mlog_file[0m=[35mlogs\sap_odata_connector_20250922_145159.log[0m [36mlog_level[0m=[35mINFO[0m [36mlog_to_file[0m=[35mTrue[0m

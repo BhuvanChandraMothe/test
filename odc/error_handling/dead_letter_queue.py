@@ -8,7 +8,10 @@ import structlog
 import orjson
 from datetime import datetime, timezone
 
-from planning.plan_generator import FetchCommand
+# Import at runtime to avoid circular imports
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from planning.plan_generator import FetchCommand
 
 logger = structlog.get_logger(__name__)
 
@@ -30,7 +33,7 @@ class FailureType(Enum):
 class FailedCommand:
     """Represents a failed command in the dead letter queue"""
     
-    command: FetchCommand
+    command: 'FetchCommand'  # Forward reference to avoid circular import
     failure_type: FailureType
     error_message: str
     error_details: Dict[str, Any] = field(default_factory=dict)
@@ -78,7 +81,7 @@ class DeadLetterQueue:
     
     async def add_failed_command(
         self,
-        command: FetchCommand,
+        command: 'FetchCommand',
         failure_type: FailureType,
         error_message: str,
         error_details: Optional[Dict[str, Any]] = None
@@ -154,7 +157,7 @@ class DeadLetterQueue:
             
             return filtered_commands
     
-    async def retry_failed_command(self, command_id: str) -> Optional[FetchCommand]:
+    async def retry_failed_command(self, command_id: str) -> Optional['FetchCommand']:
         """Remove a command from DLQ for retry"""
         
         async with self._lock:

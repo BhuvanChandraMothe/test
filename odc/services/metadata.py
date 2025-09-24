@@ -59,6 +59,58 @@ class MetadataService:
         if self._client:
             await self._client.aclose()
     
+    async def test_connection(self) -> bool:
+        """Test connection to OData service by fetching metadata"""
+        logger.info("Testing connection to OData service", url=self.odata_config.metadata_url)
+        
+        try:
+            # Prepare authentication
+            auth = None
+            if self.odata_config.username and self.odata_config.password:
+                auth = (self.odata_config.username, self.odata_config.password)
+            
+            # Test connection with metadata endpoint
+            response = await self._client.get(
+                self.odata_config.metadata_url,
+                auth=auth,
+                timeout=10.0  # Short timeout for connection test
+            )
+            
+            if response.status_code == 200:
+                logger.info("✅ Connection test successful", 
+                           status_code=response.status_code,
+                           content_type=response.headers.get('content-type', 'unknown'))
+                return True
+            elif response.status_code == 401:
+                logger.error("❌ Connection test failed: Authentication required or invalid credentials",
+                           status_code=response.status_code)
+                return False
+            elif response.status_code == 403:
+                logger.error("❌ Connection test failed: Access forbidden",
+                           status_code=response.status_code)
+                return False
+            elif response.status_code == 404:
+                logger.error("❌ Connection test failed: Service not found",
+                           status_code=response.status_code)
+                return False
+            else:
+                logger.error("❌ Connection test failed: Unexpected response",
+                           status_code=response.status_code)
+                return False
+                
+        except httpx.TimeoutException:
+            logger.error("❌ Connection test failed: Request timeout")
+            return False
+        except httpx.ConnectError:
+            logger.error("❌ Connection test failed: Cannot connect to server")
+            return False
+        except httpx.HTTPError as e:
+            logger.error("❌ Connection test failed: HTTP error", error=str(e))
+            return False
+        except Exception as e:
+            logger.error("❌ Connection test failed: Unexpected error", error=str(e))
+            return False
+
     async def fetch_metadata(self) -> Dict[str, EntitySchema]:
         """Fetch and parse metadata from SAP OData service"""
         logger.info("Fetching metadata from OData service", url=self.odata_config.metadata_url)
@@ -236,3 +288,63 @@ class MetadataService:
                 relationships[entity_name] = entity_relationships
         
         return relationships
+    
+    async def save_entity_relationship_file(self, output_directory: str) -> str:
+        """Save metadata as an Entity Relationship file in JSON format"""
+        import json
+        from pathlib import Path
+        from datetime import datetime
+        
+        logger.info("Saving Entity Relationship file", output_dir=output_directory)
+        
+        # Create output directory if it doesn't exist
+        output_path = Path(output_directory)
+        output_path.mkdir(parents=True, exist_ok=True)
+        
+        # Create ER data structure
+        er_data = {
+            "metadata": {
+                "generated_at": datetime.now().isoformat(),
+                "service_url": self.odata_config.service_url,
+                "total_entities": len(self.schemas)
+            },
+            "entities": {},
+            "relationships": self.get_foreign_key_relationships(),
+            "summary": {
+                "entity_count": len(self.schemas),
+                "relationship_count": sum(len(rels) for rels in self.get_foreign_key_relationships().values())
+            }
+        }
+        
+        # Add detailed entity information
+        for entity_name, schema in self.schemas.items():
+            er_data["entities"][entity_name] = {
+                "name": schema.name,
+                "properties": schema.properties,
+                "keys": schema.keys,
+                "navigation_properties": schema.navigation_properties,
+                "foreign_keys": schema.foreign_keys,
+                "property_count": len(schema.properties),
+                "key_count": len(schema.keys),
+                "navigation_count": len(schema.navigation_properties)
+            }
+        
+        # Save to file
+        er_file_path = output_path / "entity_relationships.json"
+        
+        try:
+            with open(er_file_path, 'w', encoding='utf-8') as f:
+                json.dump(er_data, f, indent=2, ensure_ascii=False)
+            
+            logger.info("✅ Entity Relationship file saved successfully", 
+                       file_path=str(er_file_path),
+                       entities=len(self.schemas),
+                       file_size_kb=round(er_file_path.stat().st_size / 1024, 2))
+            
+            return str(er_file_path)
+            
+        except Exception as e:
+            logger.error("❌ Failed to save Entity Relationship file", 
+                        error=str(e), 
+                        file_path=str(er_file_path))
+            raise
