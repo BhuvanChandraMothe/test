@@ -26,6 +26,7 @@ class ClientConfig(BaseModel):
     
     # Rate limiting
     requests_per_second: float = Field(default=5.0, description="Rate limit for API calls")
+    max_connections: int = Field(default=50, description="Maximum HTTP connections in pool")
     
     # Local storage settings
     output_directory: str = Field(default="./output", description="Local output directory")
@@ -50,6 +51,7 @@ class ODataConfig:
     timeout: int = attrs.field(default=30)
     verify_ssl: bool = attrs.field(default=True)
     max_retries: int = attrs.field(default=3)
+    max_connections: int = attrs.field(default=50)
     
     @property
     def metadata_url(self) -> str:

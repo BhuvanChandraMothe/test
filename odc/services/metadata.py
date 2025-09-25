@@ -151,6 +151,7 @@ class MetadataService:
         
         # First, build a mapping of EntitySet names to EntityType names
         entity_set_mapping = {}
+        entity_type_to_set_mapping = {}
         entity_sets = root.findall('.//edm:EntitySet', namespaces)
         for entity_set in entity_sets:
             set_name = entity_set.get('Name')
@@ -159,6 +160,7 @@ class MetadataService:
                 # Remove namespace prefix from type name
                 type_name = type_name.split('.')[-1]
                 entity_set_mapping[type_name] = set_name # Store mapping from EntityType to EntitySet
+                entity_type_to_set_mapping[set_name] = type_name
         
         # Find all entity types
         entity_types = root.findall('.//edm:EntityType', namespaces)
@@ -194,21 +196,114 @@ class MetadataService:
             # Create entity schema
             schema = EntitySchema(entity_name, properties, keys)
             
-            # Extract navigation properties
+            # Extract navigation properties (OData V4 style)
             for nav_prop in entity_type.findall('edm:NavigationProperty', namespaces):
                 nav_name = nav_prop.get('Name')
-                relationship = nav_prop.get('Relationship')
-                to_role = nav_prop.get('ToRole')
+                nav_type = nav_prop.get('Type')
+                partner = nav_prop.get('Partner')
                 
-                if nav_name and relationship:
-                    schema.add_navigation_property(nav_name, to_role or 'Unknown', relationship)
+                if nav_name and nav_type:
+                    # Extract target entity from type (remove Collection() wrapper and namespace)
+                    target_type = nav_type
+                    if target_type.startswith('Collection('):
+                        target_type = target_type[11:-1]  # Remove Collection( and )
+                    target_entity = target_type.split('.')[-1]  # Remove namespace
+                    
+                    # Map to EntitySet name if available
+                    target_set = entity_set_mapping.get(target_entity, target_entity)
+                    
+                    schema.add_navigation_property(nav_name, target_set, nav_type)
             
             # Store schema using EntitySet name if available, otherwise EntityType name
             schema_key = entity_set_mapping.get(entity_name, entity_name) # Use the mapped EntitySet name if it exists
             self.schemas[schema_key] = schema
         
-        # Parse associations for foreign key relationships
+        # Parse foreign key relationships (OData V4 style)
+        await self._parse_v4_relationships(root, namespaces, entity_set_mapping)
+        
+        # Also try legacy associations for backward compatibility
         await self._parse_associations(root, namespaces)
+    
+    async def _parse_v4_relationships(self, root: ET.Element, namespaces: Dict[str, str], entity_set_mapping: Dict[str, str]):
+        """Parse OData V4 style relationships using NavigationProperty and inferred foreign keys"""
+        logger.info("Parsing OData V4 relationships...")
+        
+        # Find all entity types to process their navigation properties
+        entity_types = root.findall('.//edm:EntityType', namespaces)
+        
+        for entity_type in entity_types:
+            entity_name = entity_type.get('Name')
+            if not entity_name:
+                continue
+                
+            entity_set_name = entity_set_mapping.get(entity_name, entity_name)
+            
+            # Get all properties for this entity
+            properties = {}
+            for prop in entity_type.findall('edm:Property', namespaces):
+                prop_name = prop.get('Name')
+                prop_type = prop.get('Type')
+                if prop_name:
+                    properties[prop_name] = prop_type
+            
+            # Process navigation properties
+            for nav_prop in entity_type.findall('edm:NavigationProperty', namespaces):
+                nav_name = nav_prop.get('Name')
+                nav_type = nav_prop.get('Type')
+                
+                if not nav_name or not nav_type:
+                    continue
+                
+                # Extract target entity from type
+                target_type = nav_type
+                is_collection = target_type.startswith('Collection(')
+                if is_collection:
+                    target_type = target_type[11:-1]  # Remove Collection( and )
+                target_entity = target_type.split('.')[-1]  # Remove namespace
+                target_set_name = entity_set_mapping.get(target_entity, target_entity)
+                
+                # Look for explicit referential constraint first
+                ref_constraint = nav_prop.find('edm:ReferentialConstraint', namespaces)
+                if ref_constraint is not None:
+                    property_elem = ref_constraint.get('Property')
+                    referenced_property_elem = ref_constraint.get('ReferencedProperty')
+                    
+                    if property_elem and referenced_property_elem:
+                        # Add foreign key relationship
+                        if entity_set_name in self.schemas:
+                            self.schemas[entity_set_name].add_foreign_key(
+                                property_elem, 
+                                target_set_name, 
+                                referenced_property_elem
+                            )
+                            logger.debug(f"Added FK (explicit): {entity_set_name}.{property_elem} -> {target_set_name}.{referenced_property_elem}")
+                else:
+                    # No explicit referential constraint, try to infer from naming conventions
+                    # For non-collection navigation properties (many-to-one relationships)
+                    if not is_collection:
+                        # Look for a property that matches the target entity + "ID"
+                        potential_fk_names = [
+                            f"{target_entity}ID",  # e.g., CategoryID
+                            f"{nav_name}ID",       # e.g., CategoryID if nav_name is Category
+                            f"{target_entity}Id",  # Alternative casing
+                            f"{nav_name}Id"        # Alternative casing
+                        ]
+                        
+                        for fk_name in potential_fk_names:
+                            if fk_name in properties:
+                                # Found a potential foreign key property
+                                if entity_set_name in self.schemas:
+                                    # Assume it references the primary key of the target entity
+                                    target_pk = f"{target_entity}ID"  # Common convention
+                                    self.schemas[entity_set_name].add_foreign_key(
+                                        fk_name, 
+                                        target_set_name, 
+                                        target_pk
+                                    )
+                                    logger.debug(f"Added FK (inferred): {entity_set_name}.{fk_name} -> {target_set_name}.{target_pk}")
+                                break
+        
+        logger.info(f"Completed V4 relationship parsing")
     
     async def _parse_associations(self, root: ET.Element, namespaces: Dict[str, str]):
         """Parse association elements to identify foreign key relationships"""
@@ -246,13 +341,24 @@ class MetadataService:
                             dependent_entity = entity2
                             principal_entity = entity1
                         
-                        # Use the correct EntitySet names from the metadata service's schema dictionary
-                        dependent_entity_key = self.schemas.get(dependent_entity, None)
-                        if dependent_entity_key:
+                        # Map entity type names to entity set names
+                        dependent_set_name = None
+                        principal_set_name = None
+                        
+                        # Find the correct entity set names
+                        for set_name, schema in self.schemas.items():
+                            if schema.name == dependent_entity:
+                                dependent_set_name = set_name
+                            if schema.name == principal_entity:
+                                principal_set_name = set_name
+                        
+                        # Add foreign key relationships if we found the entities
+                        if dependent_set_name and principal_set_name and dependent_set_name in self.schemas:
                             for dep_prop, prin_prop in zip(dependent_props, principal_props):
-                                self.schemas[dependent_entity_key].add_foreign_key(
-                                    dep_prop, self.schemas[principal_entity].name, prin_prop
+                                self.schemas[dependent_set_name].add_foreign_key(
+                                    dep_prop, principal_set_name, prin_prop
                                 )
+                                logger.debug(f"Added FK (legacy): {dependent_set_name}.{dep_prop} -> {principal_set_name}.{prin_prop}")
 
     
     def get_entity_sets(self) -> List[str]:

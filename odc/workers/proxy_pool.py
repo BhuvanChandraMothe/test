@@ -429,6 +429,10 @@ class ProxyPool:
             await self.add_command(command)
         
         logger.info("Commands added to queue", count=len(commands))
+        
+    async def join(self):
+        """Wait for all items in the queue to be processed."""
+        await self.queue.join()
     
     async def _worker_loop(self, worker: ProxyWorker):
         """Main loop for a proxy worker"""

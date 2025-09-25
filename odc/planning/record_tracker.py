@@ -152,6 +152,13 @@ class GlobalRecordTracker:
             
             return True
     
+    async def get_entity_records_fetched(self, entity_name: str) -> int:
+        """Get the number of records fetched for a specific entity."""
+        async with self._lock:
+            if entity_name in self._entity_trackers:
+                return self._entity_trackers[entity_name].records_fetched
+            return 0
+    
     async def get_entity_status(self, entity_name: str) -> Optional[Dict[str, any]]:
         """Get status for a specific entity"""
         async with self._lock:

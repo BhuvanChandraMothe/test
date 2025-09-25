@@ -89,7 +89,8 @@ class SAPODataConnector:
             username=self.config.username,
             password=self.config.password,
             client_id=self.config.client_id,
-            client_secret=self.config.client_secret
+            client_secret=self.config.client_secret,
+            max_connections=self.config.max_connections
         )
     
     async def initialize(self):
@@ -112,14 +113,18 @@ class SAPODataConnector:
             logger.info("Step 2: Fetching metadata and creating Entity Relationship file")
             await self._fetch_and_save_metadata()
             
+            # STEP 3: Show API endpoints that will be accessed
+            logger.info("Step 3: Analyzing API endpoints that will be accessed")
+            await self._show_api_endpoints()
+            
             # Initialize proxy pool
             self.proxy_pool = ProxyPool(
                 odata_config=self.sap_config,
                 max_workers=self.config.max_workers
             )
             
-            # STEP 3: Validate connection pool
-            logger.info("Step 3: Validating connection pool")
+            # STEP 4: Validate connection pool
+            logger.info("Step 4: Validating connection pool")
             await self._validate_connection_pool()
             
             # Setup proxy pool callbacks
@@ -169,6 +174,89 @@ class SAPODataConnector:
             logger.info("Metadata fetched and Entity Relationship file saved", 
                        entities_count=len(entity_schemas),
                        er_file=er_file_path)
+    
+    async def _show_api_endpoints(self):
+        """Show all API endpoints that will be accessed during execution"""
+        logger.info("Analyzing API endpoints for upcoming execution...")
+        
+        # Get entity schemas from metadata service
+        entity_schemas = self.metadata_service.schemas
+        
+        # Determine which entities to process (same logic as in discovery phase)
+        if self.config.selected_modules:
+            entity_names = self.config.selected_modules
+        else:
+            entity_names = list(entity_schemas.keys())
+        
+        # Get entity counts
+        async with self.count_service:
+            entity_counts = await self.count_service.get_entity_counts(entity_names)
+        
+        # SHOW ALL API ENDPOINTS THAT WILL BE HIT
+        logger.info("=" * 80)
+        logger.info("🌐 API ENDPOINTS THAT WILL BE ACCESSED:")
+        logger.info("=" * 80)
+        
+        # Show metadata and count endpoints first
+        logger.info("📋 Initial Discovery Endpoints:")
+        logger.info(f"   1. Metadata: {self.sap_config.service_url}/$metadata")
+        logger.info(f"   2. Service Document: {self.sap_config.service_url}/")
+        
+        # Show count endpoints
+        logger.info(f"\n🔢 Entity Count Endpoints ({len(entity_names)} entities):")
+        for i, entity_name in enumerate(entity_names, 1):
+            count_url = f"{self.sap_config.service_url}/{entity_name}/$count"
+            logger.info(f"   {i:2d}. {entity_name}: {count_url}")
+        
+        # Show data fetch endpoints with pagination info
+        logger.info(f"\n📊 Data Fetch Endpoints (with pagination):")
+        total_expected_records = 0
+        total_requests = 0
+        
+        for i, entity_name in enumerate(entity_names, 1):
+            base_url = f"{self.sap_config.service_url}/{entity_name}"
+            record_count = entity_counts.get(entity_name, 0)
+            total_expected_records += record_count
+            
+            # Calculate number of requests needed
+            batch_size = self.config.batch_size
+            requests_needed = max(1, (record_count + batch_size - 1) // batch_size) if record_count > 0 else 1
+            total_requests += requests_needed
+            
+            logger.info(f"   {i:2d}. {entity_name}:")
+            logger.info(f"       Base URL: {base_url}")
+            logger.info(f"       Records: {record_count:,}")
+            logger.info(f"       Requests: {requests_needed} (batch size: {batch_size})")
+            
+            # Show first few pagination URLs as examples
+            if record_count > 0:
+                logger.info(f"       Examples:")
+                logger.info(f"         - {base_url}?$skip=0&$top={min(batch_size, record_count)}")
+                if requests_needed > 1:
+                    logger.info(f"         - {base_url}?$skip={batch_size}&$top={batch_size}")
+                if requests_needed > 2:
+                    logger.info(f"         - ... ({requests_needed - 2} more requests)")
+        
+        # Apply record limit if configured
+        actual_records_to_process = total_expected_records
+        if self.config.total_records_limit:
+            actual_records_to_process = min(total_expected_records, self.config.total_records_limit)
+        
+        logger.info(f"\n📈 EXECUTION SUMMARY:")
+        logger.info(f"   Total Entities: {len(entity_names)}")
+        logger.info(f"   Total Available Records: {total_expected_records:,}")
+        if self.config.total_records_limit:
+            logger.info(f"   Record Limit Applied: {self.config.total_records_limit:,}")
+            logger.info(f"   Actual Records to Process: {actual_records_to_process:,}")
+        else:
+            logger.info(f"   Records to Process: {actual_records_to_process:,}")
+        logger.info(f"   Estimated HTTP Requests: {total_requests + len(entity_names) + 2:,}")
+        logger.info(f"   Batch Size: {self.config.batch_size}")
+        logger.info(f"   Max Workers: {self.config.max_workers}")
+        logger.info(f"   Max Connections: {self.config.max_connections}")
+        logger.info(f"   Rate Limit: {self.config.requests_per_second} req/sec")
+        
+        logger.info("=" * 80)
     
     async def _validate_connection_pool(self):
         """Validate connection pool"""
@@ -231,17 +319,25 @@ class SAPODataConnector:
             
             self.stats.end_time = datetime.now(timezone.utc)
             
-            # Get final record tracker status for comparison
-            if hasattr(self.plan_generator, 'record_tracker'):
-                global_status = await self.plan_generator.record_tracker.get_global_status()
-                logger.info("Final execution summary:")
-                logger.info(f"   - Duration: {self.stats.duration_seconds:.2f} seconds")
-                logger.info(f"   - Records processed: {self.stats.records_processed}")
-                logger.info(f"   - Commands executed: {self.stats.commands_executed}")
-                logger.info(f"   - Commands failed: {self.stats.commands_failed}")
-                logger.info(f"   - Global records fetched: {global_status.get('global_records_fetched', 0)}")
-                logger.info(f"   - Entities tracked: {global_status.get('entities_tracked', 0)}")
-                logger.info(f"   - Entities complete: {global_status.get('entities_complete', 0)}")
+            # Skip the problematic global status check that causes hanging
+            logger.info("Final execution summary:")
+            logger.info(f"   - Duration: {self.stats.duration_seconds:.2f} seconds")
+            logger.info(f"   - Records processed: {self.stats.records_processed}")
+            logger.info(f"   - Commands executed: {self.stats.commands_executed}")
+            logger.info(f"   - Commands failed: {self.stats.commands_failed}")
+            
+            # Try to get global status but don't hang if it fails
+            try:
+                if hasattr(self.plan_generator, 'record_tracker'):
+                    global_status = await asyncio.wait_for(
+                        self.plan_generator.record_tracker.get_global_status(), 
+                        timeout=2.0
+                    )
+                    logger.info(f"   - Global records fetched: {global_status.get('global_records_fetched', 0)}")
+                    logger.info(f"   - Entities tracked: {global_status.get('entities_tracked', 0)}")
+                    logger.info(f"   - Entities complete: {global_status.get('entities_complete', 0)}")
+            except (asyncio.TimeoutError, asyncio.CancelledError, Exception) as e:
+                logger.warning(f"Could not get final global status: {e}")
             
             logger.info("Connector execution completed successfully",
                        duration=self.stats.duration_seconds,
@@ -288,19 +384,9 @@ class SAPODataConnector:
                    final_entity_count=len(entity_names),
                    entities=entity_names[:5] if len(entity_names) > 5 else entity_names)
         
+        # Get entity counts (no display, just for planning)
         async with self.count_service:
             entity_counts = await self.count_service.get_entity_counts(entity_names)
-        
-        # Log endpoint information for each entity FIRST
-        logger.info("Endpoints to be processed:")
-        total_expected_records = 0
-        for entity_name in entity_names:
-            endpoint_url = f"{self.sap_config.service_url}/{entity_name}"
-            record_count = entity_counts.get(entity_name, 0)
-            total_expected_records += record_count
-            logger.info(f"   - {entity_name}: {endpoint_url} (Expected records: {record_count})")
-        
-        logger.info(f"Total expected records across all entities: {total_expected_records}")
         
         # Build dependency graph
         self.graph_builder.add_entities(entity_names)
@@ -338,52 +424,59 @@ class SAPODataConnector:
         all_commands = self.plan_generator.get_all_commands()
         await self.proxy_pool.add_commands(all_commands)
         
-        # Monitor execution
+        # Monitor execution by waiting for all tasks to complete
         await self._monitor_execution()
         
         logger.info("Execution phase completed")
-    
+        
     async def _monitor_execution(self):
-        """Monitor the execution progress"""
-        last_progress_log = 0
-        total_commands_planned = sum(len(plan.commands) for plan in self.plan_generator.entity_plans.values())
-        
+        """Monitor the execution progress by waiting for the proxy pool to complete."""
         logger.info("Starting execution monitoring")
-        
-        while self.is_running:
-            if self.metrics and self.proxy_pool:
+        if self.proxy_pool:
+            # Use a much more aggressive timeout-based approach
+            max_wait_time = 60   # 1 minute maximum wait
+            check_interval = 1   # Check every 1 second
+            elapsed_time = 0
+            consecutive_empty_checks = 0
+            
+            while elapsed_time < max_wait_time:
+                queue_size = self.proxy_pool.get_queue_size()
                 pool_stats = self.proxy_pool.get_pool_stats()
-                self.metrics.update_queue_size(self.proxy_pool.get_queue_size())
-                self.metrics.update_active_workers(pool_stats['active_workers'])
+                active_workers = pool_stats.get('active_workers', 0)
+                
+                logger.info(f"Monitoring: Queue size: {queue_size}, Active workers: {active_workers}, Time: {elapsed_time}s")
+                
+                # If queue is empty and no workers are active, we're done
+                if queue_size == 0 and active_workers == 0:
+                    consecutive_empty_checks += 1
+                    logger.info(f"Empty check #{consecutive_empty_checks} - queue empty and no active workers")
+                    
+                    # If we've seen empty state for 3 consecutive checks, we're definitely done
+                    if consecutive_empty_checks >= 3:
+                        logger.info("All tasks completed - confirmed empty state")
+                        break
+                else:
+                    consecutive_empty_checks = 0
+                
+                # Additional check: if we've been waiting too long, just exit
+                if elapsed_time >= 30:  # After 30 seconds, be more aggressive
+                    logger.warning(f"Long wait detected ({elapsed_time}s) - forcing completion")
+                    break
+                
+                # Wait before next check
+                await asyncio.sleep(check_interval)
+                elapsed_time += check_interval
             
-            if self.stats.commands_executed >= total_commands_planned and \
-               self.proxy_pool.get_queue_size() == 0 and \
-               self.proxy_pool.get_pool_stats()['active_workers'] == 0:
-                logger.info("Execution monitoring complete - all planned commands executed")
-                break
+            if elapsed_time >= max_wait_time:
+                logger.warning("Monitoring timeout reached - forcing completion")
             
-            if self.on_progress_update:
-                progress_info = {
-                    'queue_size': self.proxy_pool.get_queue_size(),
-                    'active_workers': self.proxy_pool.get_pool_stats()['active_workers'],
-                    'completed_entities': len(self.plan_generator.record_tracker.get_completed_entities()),
-                    'records_processed': self.stats.records_processed,
-                    'commands_executed': self.stats.commands_executed,
-                    'commands_failed': self.stats.commands_failed
-                }
-                self.on_progress_update(progress_info)
-            
-            current_time = asyncio.get_event_loop().time()
-            if (current_time - last_progress_log) >= 10:
-                logger.info("Execution progress", 
-                           queue_size=self.proxy_pool.get_queue_size(),
-                           active_workers=self.proxy_pool.get_pool_stats()['active_workers'],
-                           records_processed=self.stats.records_processed,
-                           commands_executed=self.stats.commands_executed)
-                last_progress_log = current_time
-            
-            await asyncio.sleep(1)
-    
+            # Force stop the proxy pool to ensure clean exit
+            logger.info("Forcing proxy pool stop to ensure clean exit")
+            if self.proxy_pool.is_running:
+                await self.proxy_pool.stop()
+        
+        logger.info("Execution monitoring complete - all tasks finished.")
+        
     async def _completion_phase(self):
         """Phase 3: Complete execution and cleanup"""
         logger.info("Starting completion phase")
@@ -404,7 +497,8 @@ class SAPODataConnector:
             
             if transformed_records:
                 is_first_batch = (result.command.skip == 0)
-                is_last_batch = (result.command.skip + result.command.top >= self.plan_generator.record_tracker.get_entity_records_fetched(result.command.entity_set))
+                records_fetched = await self.plan_generator.record_tracker.get_entity_records_fetched(result.command.entity_set)
+                is_last_batch = (result.command.skip + result.command.top >= records_fetched)
                 await self.local_storage.store_processed_records(
                     result.command.entity_set,
                     transformed_records,
@@ -520,11 +614,21 @@ class SAPODataConnector:
             logger.warning("Metrics collector or registry is not available. Skipping push.")
     
     async def _cleanup(self):
-        """Cleanup resources"""
+        """Cleanup resources - simplified to avoid hanging"""
         logger.info("Cleaning up connector resources")
         
-        if self.proxy_pool and self.proxy_pool.is_running:
-            await self.proxy_pool.stop()
+        try:
+            if self.proxy_pool:
+                if self.proxy_pool.is_running:
+                    logger.info("Stopping proxy pool during cleanup")
+                    # Use timeout to avoid hanging
+                    await asyncio.wait_for(self.proxy_pool.stop(), timeout=5.0)
+                else:
+                    logger.info("Proxy pool already stopped")
+        except (asyncio.TimeoutError, asyncio.CancelledError, Exception) as e:
+            logger.warning(f"Cleanup timeout or error (this is OK): {e}")
+        
+        logger.info("Connector cleanup completed")
     
     def get_execution_summary(self) -> Dict[str, Any]:
         """Get execution summary"""

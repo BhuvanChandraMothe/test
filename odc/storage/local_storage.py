@@ -1,5 +1,3 @@
-"""Local file storage implementation for OData connector"""
-
 import asyncio
 import os
 import json
@@ -44,6 +42,31 @@ class LocalFileStorage:
         for directory in directories:
             Path(directory).mkdir(parents=True, exist_ok=True)
             logger.debug("Ensured directory exists", directory=directory)
+
+    def _get_processed_data_dir_path(self, entity_name: str) -> str:
+        """Get the directory path for processed data of a given entity."""
+        sanitized_entity = entity_name.replace('/', '_').replace(' ', '_')
+        return os.path.join(self.config.processed_data_directory, sanitized_entity)
+
+    async def save_unified_processed_records(self, entity_name: str, format: str = "json"):
+        """Save all processed records for an entity into a single unified file."""
+        if entity_name not in self._processed_data or not self._processed_data[entity_name]:
+            logger.info("No processed data to save for entity", entity_name=entity_name)
+            return
+
+        records_to_save = self._processed_data[entity_name]
+        
+        # This will now write all records at once, ensuring a valid JSON/CSV file
+        await self.store_processed_records(
+            entity_name=entity_name,
+            records=records_to_save,
+            format=format,
+            is_first_batch=True,  # Treat as the first and only batch
+            is_last_batch=True   # Treat as the last and only batch
+        )
+        
+        # Clear memory after saving
+        self._processed_data[entity_name] = []
     
     async def store_raw_response(
         self,
@@ -62,9 +85,9 @@ class LocalFileStorage:
         file_path = self._generate_raw_file_path(entity_name, command_id, timestamp)
         
         logger.debug("Storing raw data to local file", 
-                     entity_name=entity_name,
-                     command_id=command_id,
-                     file_path=file_path)
+                      entity_name=entity_name,
+                      command_id=command_id,
+                      file_path=file_path)
         
         try:
             # Prepare data for storage
@@ -101,9 +124,9 @@ class LocalFileStorage:
             metrics.record_storage_operation("local_file", "write", storage_time, False)
             
             logger.error("Failed to store raw data", 
-                         entity_name=entity_name,
-                         command_id=command_id,
-                         error=str(e))
+                          entity_name=entity_name,
+                          command_id=command_id,
+                          error=str(e))
             raise
     
     def _generate_raw_file_path(
@@ -146,9 +169,9 @@ class LocalFileStorage:
             return ""
         
         logger.info("Storing processed records",
-                    entity_name=entity_name,
-                    record_count=len(records),
-                    format=format)
+                     entity_name=entity_name,
+                     record_count=len(records),
+                     format=format)
         
         try:
             if format.lower() == "csv":
@@ -172,9 +195,9 @@ class LocalFileStorage:
             metrics.record_storage_operation("local_file", "write_processed", storage_time, False)
             
             logger.error("Failed to store processed records",
-                         entity_name=entity_name,
-                         error=str(e),
-                         storage_time_seconds=round(storage_time, 3))
+                          entity_name=entity_name,
+                          error=str(e),
+                          storage_time_seconds=round(storage_time, 3))
             raise
 
     async def _store_as_json_stream(self, entity_name: str, records: List[TransformedRecord], is_first_batch: bool, is_last_batch: bool) -> str:
@@ -197,17 +220,21 @@ class LocalFileStorage:
         ]
 
         mode = 'w' if is_first_batch else 'a'
-        delimiter = '[\n' if is_first_batch else ',\n'
-        end_delimiter = '\n]' if is_last_batch else ''
 
         with open(file_path, mode, encoding='utf-8') as f:
             if is_first_batch:
-                f.write(json.dumps(records_data, indent=2)[1:-1])
+                f.write('[')
             else:
-                f.write(f'{delimiter}{json.dumps(records_data, indent=2)[1:-1]}')
+                f.write(',')
+
+            # Write each record as a JSON object, separated by commas
+            for i, record in enumerate(records_data):
+                if i > 0:
+                    f.write(',')
+                f.write(json.dumps(record, indent=2))
             
             if is_last_batch:
-                f.write(end_delimiter)
+                f.write(']')
 
         return file_path
     
@@ -273,8 +300,8 @@ class LocalFileStorage:
             
         except Exception as e:
             logger.error("Failed to retrieve raw data", 
-                         file_path=file_path,
-                         error=str(e))
+                          file_path=file_path,
+                          error=str(e))
             return None
     
     async def list_raw_files(
@@ -324,8 +351,8 @@ class LocalFileStorage:
             
         except Exception as e:
             logger.error("Failed to list raw files", 
-                         search_path=search_path,
-                         error=str(e))
+                          search_path=search_path,
+                          error=str(e))
             return []
     
     async def list_processed_files(

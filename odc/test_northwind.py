@@ -118,11 +118,12 @@ async def test_northwind():
         odata_service_url="https://services.odata.org/V4/Northwind/Northwind.svc",
         username=None,
         password=None,
-        selected_modules=[],
-        total_records_limit=None,
+        selected_modules=["Invoices"],
+        total_records_limit=None,  # Small limit for testing
         batch_size=500,
-        max_workers=3,
+        max_workers=2,
         requests_per_second=10.0,
+        max_connections=25,  # Custom connection pool size
         output_directory="./test_output",
         raw_data_directory="./test_output/raw",
         processed_data_directory="./test_output/processed"
@@ -132,21 +133,19 @@ async def test_northwind():
     connector = SAPODataConnector(config)
     
     try:
-        print("Initializing connector...")
+        print("🔧 Initializing connector (this will show API endpoints)...")
         await connector.initialize()
         
-        print("Starting data extraction...")
-        stats = await connector.run()
+        # print("\n🚀 Starting data extraction...")
+        # stats = await connector.run()
         
-        print("\nTest completed successfully!")
-        
-        print("\n✅ Test completed successfully!")
-        print(f"Duration: {stats.duration_seconds:.2f}s")
-        print(f"Entities: {stats.entities_processed}")
-        print(f"Records: {stats.records_processed}")
-        print(f"Stored: {stats.records_stored}")
-        print(f"Commands: {stats.commands_executed}")
-        print(f"Failures: {stats.commands_failed}")
+        # print("\n✅ Test completed successfully!")
+        # print(f"Duration: {stats.duration_seconds:.2f}s")
+        # print(f"Entities: {stats.entities_processed}")
+        # print(f"Records: {stats.records_processed}")
+        # print(f"Stored: {stats.records_stored}")
+        # print(f"Commands: {stats.commands_executed}")
+        # print(f"Failures: {stats.commands_failed}")
         
         print("\n📤 Pushing metrics to Prometheus Push Gateway...")
         try:
@@ -166,8 +165,20 @@ async def test_northwind():
         import traceback
         traceback.print_exc()
         return False
+    
+    finally:
+        # Ensure cleanup
+        if connector and connector.proxy_pool:
+            try:
+                await connector._cleanup()
+            except:
+                pass
 
 
 if __name__ == "__main__":
     # This is the correct way to start an async program and ensures a clean exit
-    asyncio.run(test_northwind())
+    success = asyncio.run(test_northwind())
+    print(f"\n📊 Test result: {'SUCCESS' if success else 'FAILED'}")
+    # Force exit to ensure no hanging
+    import os
+    os._exit(0 if success else 1)

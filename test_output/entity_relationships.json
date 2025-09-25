@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2025-09-24T16:31:20.195824",
+    "generated_at": "2025-09-25T10:25:10.725994",
     "service_url": "https://services.odata.org/V4/Northwind/Northwind.svc",
     "total_entities": 26
   },
@@ -32,11 +32,16 @@
       "keys": [
         "CategoryID"
       ],
-      "navigation_properties": {},
+      "navigation_properties": {
+        "Products": {
+          "target_entity": "Products",
+          "relationship_type": "Collection(NorthwindModel.Product)"
+        }
+      },
       "foreign_keys": {},
       "property_count": 4,
       "key_count": 1,
-      "navigation_count": 0
+      "navigation_count": 1
     },
     "CustomerDemographics": {
       "name": "CustomerDemographic",
@@ -55,11 +60,16 @@
       "keys": [
         "CustomerTypeID"
       ],
-      "navigation_properties": {},
+      "navigation_properties": {
+        "Customers": {
+          "target_entity": "Customers",
+          "relationship_type": "Collection(NorthwindModel.Customer)"
+        }
+      },
       "foreign_keys": {},
       "property_count": 2,
       "key_count": 1,
-      "navigation_count": 0
+      "navigation_count": 1
     },
     "Customers": {
       "name": "Customer",
@@ -123,11 +133,20 @@
       "keys": [
         "CustomerID"
       ],
-      "navigation_properties": {},
+      "navigation_properties": {
+        "Orders": {
+          "target_entity": "Orders",
+          "relationship_type": "Collection(NorthwindModel.Order)"
+        },
+        "CustomerDemographics": {
+          "target_entity": "CustomerDemographics",
+          "relationship_type": "Collection(NorthwindModel.CustomerDemographic)"
+        }
+      },
       "foreign_keys": {},
       "property_count": 11,
       "key_count": 1,
-      "navigation_count": 0
+      "navigation_count": 2
     },
     "Employees": {
       "name": "Employee",
@@ -226,11 +245,33 @@
       "keys": [
         "EmployeeID"
       ],
-      "navigation_properties": {},
-      "foreign_keys": {},
+      "navigation_properties": {
+        "Employees1": {
+          "target_entity": "Employees",
+          "relationship_type": "Collection(NorthwindModel.Employee)"
+        },
+        "Employee1": {
+          "target_entity": "Employees",
+          "relationship_type": "NorthwindModel.Employee"
+        },
+        "Orders": {
+          "target_entity": "Orders",
+          "relationship_type": "Collection(NorthwindModel.Order)"
+        },
+        "Territories": {
+          "target_entity": "Territories",
+          "relationship_type": "Collection(NorthwindModel.Territory)"
+        }
+      },
+      "foreign_keys": {
+        "EmployeeID": {
+          "referenced_entity": "Employees",
+          "referenced_property": "EmployeeID"
+        }
+      },
       "property_count": 18,
       "key_count": 1,
-      "navigation_count": 0
+      "navigation_count": 4
     },
     "Order_Details": {
       "name": "Order_Detail",
@@ -265,11 +306,29 @@
         "OrderID",
         "ProductID"
       ],
-      "navigation_properties": {},
-      "foreign_keys": {},
+      "navigation_properties": {
+        "Order": {
+          "target_entity": "Orders",
+          "relationship_type": "NorthwindModel.Order"
+        },
+        "Product": {
+          "target_entity": "Products",
+          "relationship_type": "NorthwindModel.Product"
+        }
+      },
+      "foreign_keys": {
+        "OrderID": {
+          "referenced_entity": "Orders",
+          "referenced_property": "OrderID"
+        },
+        "ProductID": {
+          "referenced_entity": "Products",
+          "referenced_property": "ProductID"
+        }
+      },
       "property_count": 5,
       "key_count": 2,
-      "navigation_count": 0
+      "navigation_count": 2
     },
     "Orders": {
       "name": "Order",
@@ -348,11 +407,37 @@
       "keys": [
         "OrderID"
       ],
-      "navigation_properties": {},
-      "foreign_keys": {},
+      "navigation_properties": {
+        "Customer": {
+          "target_entity": "Customers",
+          "relationship_type": "NorthwindModel.Customer"
+        },
+        "Employee": {
+          "target_entity": "Employees",
+          "relationship_type": "NorthwindModel.Employee"
+        },
+        "Order_Details": {
+          "target_entity": "Order_Details",
+          "relationship_type": "Collection(NorthwindModel.Order_Detail)"
+        },
+        "Shipper": {
+          "target_entity": "Shippers",
+          "relationship_type": "NorthwindModel.Shipper"
+        }
+      },
+      "foreign_keys": {
+        "CustomerID": {
+          "referenced_entity": "Customers",
+          "referenced_property": "CustomerID"
+        },
+        "EmployeeID": {
+          "referenced_entity": "Employees",
+          "referenced_property": "EmployeeID"
+        }
+      },
       "property_count": 14,
       "key_count": 1,
-      "navigation_count": 0
+      "navigation_count": 4
     },
     "Products": {
       "name": "Product",
@@ -411,11 +496,33 @@
       "keys": [
         "ProductID"
       ],
-      "navigation_properties": {},
-      "foreign_keys": {},
+      "navigation_properties": {
+        "Category": {
+          "target_entity": "Categories",
+          "relationship_type": "NorthwindModel.Category"
+        },
+        "Order_Details": {
+          "target_entity": "Order_Details",
+          "relationship_type": "Collection(NorthwindModel.Order_Detail)"
+        },
+        "Supplier": {
+          "target_entity": "Suppliers",
+          "relationship_type": "NorthwindModel.Supplier"
+        }
+      },
+      "foreign_keys": {
+        "CategoryID": {
+          "referenced_entity": "Categories",
+          "referenced_property": "CategoryID"
+        },
+        "SupplierID": {
+          "referenced_entity": "Suppliers",
+          "referenced_property": "SupplierID"
+        }
+      },
       "property_count": 10,
       "key_count": 1,
-      "navigation_count": 0
+      "navigation_count": 3
     },
     "Regions": {
       "name": "Region",
@@ -434,11 +541,16 @@
       "keys": [
         "RegionID"
       ],
-      "navigation_properties": {},
+      "navigation_properties": {
+        "Territories": {
+          "target_entity": "Territories",
+          "relationship_type": "Collection(NorthwindModel.Territory)"
+        }
+      },
       "foreign_keys": {},
       "property_count": 2,
       "key_count": 1,
-      "navigation_count": 0
+      "navigation_count": 1
     },
     "Shippers": {
       "name": "Shipper",
@@ -462,11 +574,16 @@
       "keys": [
         "ShipperID"
       ],
-      "navigation_properties": {},
+      "navigation_properties": {
+        "Orders": {
+          "target_entity": "Orders",
+          "relationship_type": "Collection(NorthwindModel.Order)"
+        }
+      },
       "foreign_keys": {},
       "property_count": 3,
       "key_count": 1,
-      "navigation_count": 0
+      "navigation_count": 1
     },
     "Suppliers": {
       "name": "Supplier",
@@ -535,11 +652,16 @@
       "keys": [
         "SupplierID"
       ],
-      "navigation_properties": {},
+      "navigation_properties": {
+        "Products": {
+          "target_entity": "Products",
+          "relationship_type": "Collection(NorthwindModel.Product)"
+        }
+      },
       "foreign_keys": {},
       "property_count": 12,
       "key_count": 1,
-      "navigation_count": 0
+      "navigation_count": 1
     },
     "Territories": {
       "name": "Territory",
@@ -563,11 +685,25 @@
       "keys": [
         "TerritoryID"
       ],
-      "navigation_properties": {},
-      "foreign_keys": {},
+      "navigation_properties": {
+        "Region": {
+          "target_entity": "Regions",
+          "relationship_type": "NorthwindModel.Region"
+        },
+        "Employees": {
+          "target_entity": "Employees",
+          "relationship_type": "Collection(NorthwindModel.Employee)"
+        }
+      },
+      "foreign_keys": {
+        "RegionID": {
+          "referenced_entity": "Regions",
+          "referenced_property": "RegionID"
+        }
+      },
       "property_count": 3,
       "key_count": 1,
-      "navigation_count": 0
+      "navigation_count": 2
     },
     "Alphabetical_list_of_products": {
       "name": "Alphabetical_list_of_product",
@@ -1280,9 +1416,68 @@
       "navigation_count": 0
     }
   },
-  "relationships": {},
+  "relationships": {
+    "Employees": [
+      {
+        "from_entity": "Employees",
+        "to_entity": "Employees",
+        "from_property": "EmployeeID",
+        "to_property": "EmployeeID"
+      }
+    ],
+    "Order_Details": [
+      {
+        "from_entity": "Order_Details",
+        "to_entity": "Orders",
+        "from_property": "OrderID",
+        "to_property": "OrderID"
+      },
+      {
+        "from_entity": "Order_Details",
+        "to_entity": "Products",
+        "from_property": "ProductID",
+        "to_property": "ProductID"
+      }
+    ],
+    "Orders": [
+      {
+        "from_entity": "Orders",
+        "to_entity": "Customers",
+        "from_property": "CustomerID",
+        "to_property": "CustomerID"
+      },
+      {
+        "from_entity": "Orders",
+        "to_entity": "Employees",
+        "from_property": "EmployeeID",
+        "to_property": "EmployeeID"
+      }
+    ],
+    "Products": [
+      {
+        "from_entity": "Products",
+        "to_entity": "Categories",
+        "from_property": "CategoryID",
+        "to_property": "CategoryID"
+      },
+      {
+        "from_entity": "Products",
+        "to_entity": "Suppliers",
+        "from_property": "SupplierID",
+        "to_property": "SupplierID"
+      }
+    ],
+    "Territories": [
+      {
+        "from_entity": "Territories",
+        "to_entity": "Regions",
+        "from_property": "RegionID",
+        "to_property": "RegionID"
+      }
+    ]
+  },
   "summary": {
     "entity_count": 26,
-    "relationship_count": 0
+    "relationship_count": 8
   }
 }

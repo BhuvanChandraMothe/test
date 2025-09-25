@@ -361,7 +361,7 @@ class ResilienceComponents:
             circuit_breaker=AsyncCircuitBreaker(CircuitBreakerConfig()),
             retry_handler=RetryHandler(RetryConfig()),
             token_manager=TokenManager(sap_config),
-            connection_pool=ConnectionPool(sap_config)
+            connection_pool=ConnectionPool(sap_config, max_connections=sap_config.max_connections)
         )
     
     async def cleanup(self):
