@@ -1,9 +1,10 @@
 """
 Centralized logging configuration for SAP OData Connector
-Automatically logs to both console and files for all operations
+Provides clean, structured logging with proper filtering and formatting
 """
 
 import logging
+import logging.handlers
 import structlog
 import sys
 from pathlib import Path
@@ -12,6 +13,61 @@ from typing import Optional
 
 # Global flag to ensure logging is configured only once
 _logging_configured = False
+
+# Define which loggers should be at which levels to reduce noise
+LOGGER_LEVELS = {
+    # Our application loggers - keep detailed
+    'odc': logging.INFO,
+    'odc.connector': logging.INFO,
+    'odc.services': logging.INFO,
+    'odc.workers': logging.INFO,
+    'odc.planning': logging.INFO,
+    'odc.storage': logging.INFO,
+    
+    # Third-party loggers - reduce noise
+    'httpx': logging.WARNING,
+    'httpcore': logging.WARNING,
+    'urllib3': logging.WARNING,
+    'requests': logging.WARNING,
+    'asyncio': logging.WARNING,
+    'pyodata': logging.WARNING,
+    
+    # Root logger
+    '': logging.INFO
+}
+
+def _clean_key_value_processor(logger, method_name, event_dict):
+    """
+    Custom structlog processor to format key-value pairs in a clean, readable way
+    
+    This is the magic of structlog - it allows us to add structured data to logs
+    and format it consistently across the application.
+    """
+    # Extract the main message
+    message = event_dict.pop('event', '')
+    
+    # Format key-value pairs cleanly
+    kv_pairs = []
+    for key, value in event_dict.items():
+        if key not in ['timestamp', 'level', 'logger']:
+            # Format different types appropriately
+            if isinstance(value, (int, float)):
+                kv_pairs.append(f"{key}={value}")
+            elif isinstance(value, bool):
+                kv_pairs.append(f"{key}={str(value).lower()}")
+            elif isinstance(value, str) and ' ' in value:
+                kv_pairs.append(f'{key}="{value}"')
+            else:
+                kv_pairs.append(f"{key}={value}")
+    
+    # Combine message with key-value pairs
+    if kv_pairs:
+        formatted_message = f"{message} [{', '.join(kv_pairs)}]"
+    else:
+        formatted_message = message
+    
+    # Return the cleaned event dict
+    return {'event': formatted_message}
 
 def setup_connector_logging(log_level: str = "INFO", log_to_file: bool = True) -> Optional[str]:
     """
@@ -43,21 +99,28 @@ def setup_connector_logging(log_level: str = "INFO", log_to_file: bool = True) -
     # Configure handlers
     handlers = []
     
-    # Console handler - always present
+    # Console handler - clean format for terminal
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setLevel(getattr(logging, log_level.upper()))
     console_formatter = logging.Formatter(
-        '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        '%(asctime)s - %(name)-20s - %(levelname)-8s - %(message)s',
+        datefmt='%H:%M:%S'
     )
     console_handler.setFormatter(console_formatter)
     handlers.append(console_handler)
     
-    # File handler - if enabled
+    # File handler - if enabled, with rotation
     if log_to_file and log_file_path:
-        file_handler = logging.FileHandler(log_file_path, encoding='utf-8')
-        file_handler.setLevel(logging.DEBUG)  # Always capture DEBUG level in files
+        # Use rotating file handler to prevent huge files
+        file_handler = logging.handlers.RotatingFileHandler(
+            log_file_path, 
+            maxBytes=10*1024*1024,  # 10MB max file size
+            backupCount=5,          # Keep 5 backup files
+            encoding='utf-8'
+        )
+        file_handler.setLevel(logging.INFO)  # Only INFO and above in files
         file_formatter = logging.Formatter(
-            '%(asctime)s - %(name)s - %(levelname)s - %(funcName)s:%(lineno)d - %(message)s'
+            '%(asctime)s - %(name)-25s - %(levelname)-8s - %(funcName)-20s:%(lineno)-4d - %(message)s'
         )
         file_handler.setFormatter(file_formatter)
         handlers.append(file_handler)
@@ -74,21 +137,23 @@ def setup_connector_logging(log_level: str = "INFO", log_to_file: bool = True) -
     for handler in handlers:
         root_logger.addHandler(handler)
     
-    # Configure structlog
+    # Set specific logger levels to reduce noise
+    for logger_name, level in LOGGER_LEVELS.items():
+        logging.getLogger(logger_name).setLevel(level)
+    
+    # Configure structlog with clean, readable output
     processors = [
         structlog.stdlib.filter_by_level,
         structlog.stdlib.add_log_level,
         structlog.stdlib.add_logger_name,
-        structlog.processors.TimeStamper(fmt="iso"),
+        structlog.processors.TimeStamper(fmt="%H:%M:%S", utc=False),
         structlog.processors.StackInfoRenderer(),
         structlog.processors.format_exc_info,
+        # Custom processor to format key-value pairs cleanly
+        _clean_key_value_processor,
+        # Use stdlib renderer to integrate with standard logging
+        structlog.stdlib.ProcessorFormatter.wrap_for_formatter,
     ]
-    
-    # Add console renderer for terminal output
-    if sys.stdout.isatty():
-        processors.append(structlog.dev.ConsoleRenderer(colors=True))
-    else:
-        processors.append(structlog.dev.ConsoleRenderer(colors=False))
     
     structlog.configure(
         processors=processors,
