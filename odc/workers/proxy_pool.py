@@ -56,7 +56,7 @@ class ProxyWorker:
         """Execute a fetch command"""
         start_time = asyncio.get_event_loop().time()
         
-        logger.info("🚀 Worker starting command execution", 
+        logger.info(" Worker starting command execution", 
                    worker_id=self.worker_id,
                    command_id=command.command_id,
                    entity=command.entity_set,
@@ -74,12 +74,12 @@ class ProxyWorker:
             
             await self.resilience.token_bucket.acquire()
             
-            logger.debug("✅ Worker acquired rate limit token", 
+            logger.debug(" Worker acquired rate limit token", 
                          worker_id=self.worker_id,
                          command_id=command.command_id)
             
             # Execute with circuit breaker and retry
-            logger.info("🔄 Worker executing request with resilience patterns", 
+            logger.info("Worker executing request with resilience patterns", 
                        worker_id=self.worker_id,
                        command_id=command.command_id,
                        circuit_breaker_state=self.resilience.circuit_breaker.state)
@@ -98,6 +98,12 @@ class ProxyWorker:
                 success=True
             )
             
+            # Update circuit breaker state metrics
+            metrics.update_circuit_breaker_state(
+                worker_id=self.worker_id,
+                state=self.resilience.circuit_breaker.state
+            )
+            
             # Record processed records count
             if result.data and 'value' in result.data:
                 record_count = len(result.data['value'])
@@ -107,7 +113,7 @@ class ProxyWorker:
                     success=True
                 )
             
-            logger.info("✅ Worker completed command successfully", 
+            logger.info(" Worker completed command successfully", 
                        worker_id=self.worker_id,
                        command_id=command.command_id,
                        entity=command.entity_set,
@@ -128,6 +134,19 @@ class ProxyWorker:
                 worker_id=self.worker_id,
                 duration=execution_time,
                 success=False,
+                error_type=type(e).__name__
+            )
+            
+            # Update circuit breaker state metrics (may have changed due to error)
+            metrics.update_circuit_breaker_state(
+                worker_id=self.worker_id,
+                state=self.resilience.circuit_breaker.state
+            )
+            
+            # Record error metrics
+            metrics.record_error(
+                entity=command.entity_set,
+                worker_id=self.worker_id,
                 error_type=type(e).__name__
             )
             
@@ -155,7 +174,7 @@ class ProxyWorker:
         # Check if we should still fetch more records for this entity
         should_fetch = await self.record_tracker.should_create_more_commands(command.entity_set)
         if not should_fetch:
-            logger.info("🛑 Skipping request - record limit reached", 
+            logger.info(" Skipping request - record limit reached", 
                         worker_id=self.worker_id,
                         command_id=command.command_id,
                         entity=command.entity_set)
@@ -174,7 +193,7 @@ class ProxyWorker:
         
         # Update command with optimal batch size if different
         if optimal_top != command.top:
-            logger.info("📏 Adjusted batch size for optimal fetching",
+            logger.info(" Adjusted batch size for optimal fetching",
                         worker_id=self.worker_id,
                         command_id=command.command_id,
                         entity=command.entity_set,
@@ -194,7 +213,7 @@ class ProxyWorker:
         if adjusted_params:
             url += f"?{urlencode(adjusted_params)}"
         
-        logger.debug("🌐 Worker making HTTP request", 
+        logger.debug(" Worker making HTTP request", 
                      worker_id=self.worker_id,
                      command_id=command.command_id,
                      url=url,
@@ -247,7 +266,7 @@ class ProxyWorker:
                                 global_limit_reached=tracking_result.get("global_limit_reached"),
                                 entity_complete=tracking_result.get("entity_complete"))
                 
-                logger.info("📊 Worker successfully fetched data", 
+                logger.info(" Worker successfully fetched data", 
                             worker_id=self.worker_id,
                             command_id=command.command_id,
                             entity=command.entity_set,
@@ -303,7 +322,7 @@ class ProxyWorker:
                 response.raise_for_status()
                 
         except httpx.HTTPError as e:
-            logger.warning("🌐 Worker HTTP error occurred",
+            logger.warning(" Worker HTTP error occurred",
                            worker_id=self.worker_id,
                            command_id=command.command_id,
                            error=str(e),
@@ -438,7 +457,7 @@ class ProxyPool:
         """Main loop for a proxy worker"""
         worker.is_running = True
         
-        logger.info("🟢 Worker started and ready for commands", 
+        logger.info(" Worker started and ready for commands", 
                     worker_id=worker.worker_id,
                     worker_status="ACTIVE")
         
@@ -447,7 +466,7 @@ class ProxyPool:
                 try:
                     command = await asyncio.wait_for(self.queue.get(), timeout=1.0)
                     
-                    logger.info("📋 Worker picked up command from queue", 
+                    logger.info(" Worker picked up command from queue", 
                                 worker_id=worker.worker_id,
                                 worker_status="PROCESSING",
                                 command_id=command.command_id,
@@ -465,13 +484,13 @@ class ProxyPool:
                     continue
                 
                 except asyncio.CancelledError:
-                    logger.info("🛑 Worker cancelled", 
+                    logger.info(" Worker cancelled", 
                                 worker_id=worker.worker_id,
                                 worker_status="CANCELLED")
                     break
                 
                 except Exception as e:
-                    logger.error("💥 Unexpected error in worker loop",
+                    logger.error(" Unexpected error in worker loop",
                                  worker_id=worker.worker_id,
                                  worker_status="ERROR",
                                  error=str(e),
@@ -479,7 +498,7 @@ class ProxyPool:
         
         finally:
             worker.is_running = False
-            logger.info("🔴 Worker stopped", 
+            logger.info(" Worker stopped", 
                         worker_id=worker.worker_id,
                         worker_status="STOPPED",
                         final_stats=worker.get_stats())

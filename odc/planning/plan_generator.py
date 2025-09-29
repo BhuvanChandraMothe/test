@@ -90,6 +90,7 @@ class EntityPlan:
     priority: Priority
     dependencies: List[str] = field(default_factory=list)
     commands: List[FetchCommand] = field(default_factory=list)
+    filter_clause: Optional[str] = field(default=None)
     
     def generate_commands(self) -> List[FetchCommand]:
         """Generate fetch commands for this entity"""
@@ -111,6 +112,35 @@ class EntityPlan:
                     entity_set=self.entity_name,
                     skip=skip,
                     top=top,
+                    filter_clause=self.filter_clause,
+                    priority=self.priority
+                )
+                commands.append(command)
+        
+        self.commands = commands
+        return commands
+    
+    def generate_commands_with_filter(self, filter_condition: Optional[str] = None) -> List[FetchCommand]:
+        """Generate fetch commands for this entity with optional filtering"""
+        commands = []
+        
+        # Calculate the number of pages needed
+        total_records = self.total_records
+        page_size = self.page_size
+        
+        if total_records > 0:
+            for i in range(0, total_records, page_size):
+                skip = i
+                top = min(page_size, total_records - i)
+                command_id = f"{self.entity_name}_filtered_page_{i // page_size + 1}"
+                
+                command = FetchCommand(
+                    command_id=command_id,
+                    command_type=CommandType.FETCH_PAGE,
+                    entity_set=self.entity_name,
+                    skip=skip,
+                    top=top,
+                    filter_clause=filter_condition,
                     priority=self.priority
                 )
                 commands.append(command)
@@ -206,6 +236,75 @@ class PlanGenerator:
         logger.info("Execution plan created",
                    planned_entities=len(self.entity_plans),
                    total_commands=sum(len(plan.commands) for plan in self.entity_plans.values()))
+        
+        return self.entity_plans
+    
+    async def create_execution_plan_filtered(
+        self,
+        entity_counts: Dict[str, int],
+        processing_order: List[List[str]],
+        selected_entities: List[str],
+        filter_condition: Optional[str] = None
+    ) -> Dict[str, EntityPlan]:
+        """Create execution plan with filtering support"""
+        
+        logger.info("Creating filtered execution plan", 
+                   total_entities=len(selected_entities),
+                   filter_condition=filter_condition)
+        
+        self.processing_levels = processing_order
+        
+        # Filter entity counts to only selected entities
+        filtered_counts = {k: v for k, v in entity_counts.items() if k in selected_entities}
+        
+        # Create plans for each selected entity
+        for level_idx, level_entities in enumerate(processing_order):
+            for entity in level_entities:
+                if entity not in selected_entities or entity not in filtered_counts:
+                    continue
+                
+                record_count = filtered_counts[entity]
+                
+                # Register entity with record tracker
+                await self.record_tracker.register_entity(entity, record_count)
+                
+                # Calculate pagination
+                total_pages = math.ceil(record_count / self.batch_size) if record_count > 0 else 1
+                
+                # Determine priority based on level and size
+                priority = self._calculate_priority(level_idx, record_count)
+                
+                # Get dependencies from previous levels (only selected ones)
+                dependencies = []
+                for prev_level in processing_order[:level_idx]:
+                    dependencies.extend([e for e in prev_level if e in selected_entities])
+                
+                # Create entity plan with filter
+                plan = EntityPlan(
+                    entity_name=entity,
+                    total_records=record_count,
+                    page_size=self.batch_size,
+                    total_pages=total_pages,
+                    priority=priority,
+                    dependencies=dependencies,
+                    filter_clause=filter_condition  # Add filter to the plan
+                )
+                
+                # Generate commands (filter is already set in the plan)
+                plan.generate_commands()
+                self.entity_plans[entity] = plan
+                
+                logger.debug("Created filtered plan for entity",
+                           entity=entity,
+                           records=record_count,
+                           pages=total_pages,
+                           priority=priority.name,
+                           filter=filter_condition)
+        
+        logger.info("Filtered execution plan created",
+                   planned_entities=len(self.entity_plans),
+                   total_commands=sum(len(plan.commands) for plan in self.entity_plans.values()),
+                   filter_applied=bool(filter_condition))
         
         return self.entity_plans
     

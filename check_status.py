@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-"""
-Check the status of the last run and display available metrics/output files
-"""
 
 import os
 import sys
@@ -57,7 +53,7 @@ def check_output_files():
                 entities_processed[entity_name] = []
             entities_processed[entity_name].append(file_path)
         
-        print(f"\n📊 Entities Processed: {len(entities_processed)}")
+        print(f"\n Entities Processed: {len(entities_processed)}")
         for entity_name, files in entities_processed.items():
             total_size = sum(f.stat().st_size for f in files)
             print(f"   - {entity_name}: {len(files)} files, {total_size:,} bytes")
@@ -78,7 +74,7 @@ def check_output_files():
     # Check for metadata files
     metadata_files = list(output_dir.glob("*.xml")) + list(output_dir.glob("*.json"))
     if metadata_files:
-        print(f"\n📋 Metadata Files: {len(metadata_files)}")
+        print(f"\n Metadata Files: {len(metadata_files)}")
         for file_path in metadata_files:
             size = file_path.stat().st_size
             mod_time = datetime.fromtimestamp(file_path.stat().st_mtime)
@@ -91,7 +87,7 @@ def check_metrics():
     try:
         from odc.monitoring.metrics import get_metrics_collector
         
-        print("\n📈 Current Metrics:")
+        print("\n Current Metrics:")
         print("=" * 50)
         
         metrics = get_metrics_collector()
@@ -126,7 +122,7 @@ def main():
     check_metrics()
     
     if has_output:
-        print("\n✅ Previous run detected with output files")
+        print("\n Previous run detected with output files")
         print("   Use the improved test script to run again with better stats display")
     else:
         print("\n❌ No previous run detected")

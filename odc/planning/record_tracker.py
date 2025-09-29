@@ -35,7 +35,7 @@ class EntityRecordTracker:
         # Check if we've reached the target
         if self.records_fetched >= self.target_records:
             self.is_complete = True
-            logger.info("✅ Entity record fetching complete", 
+            logger.info(" Entity record fetching complete", 
                        entity=self.entity_name,
                        fetched=self.records_fetched,
                        target=self.target_records)

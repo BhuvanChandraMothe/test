@@ -75,7 +75,7 @@ class MetadataService:
             )
             
             if response.status_code == 200:
-                logger.info("✅ Connection test successful", 
+                logger.info(" Connection test successful", 
                            status_code=response.status_code,
                            content_type=response.headers.get('content-type', 'unknown'))
                 return True
@@ -226,7 +226,7 @@ class MetadataService:
     
     async def _parse_v4_relationships(self, root: ET.Element, namespaces: Dict[str, str], entity_set_mapping: Dict[str, str]):
         """Parse OData V4 style relationships using NavigationProperty and inferred foreign keys"""
-        logger.info("Parsing OData V4 relationships...")
+        #logger.info("Parsing OData V4 relationships...")
         
         # Find all entity types to process their navigation properties
         entity_types = root.findall('.//edm:EntityType', namespaces)
@@ -303,7 +303,7 @@ class MetadataService:
                                     logger.debug(f"Added FK (inferred): {entity_set_name}.{fk_name} -> {target_set_name}.{target_pk}")
                                 break
         
-        logger.info(f"Completed V4 relationship parsing")
+        #logger.info(f"Completed V4 relationship parsing")
     
     async def _parse_associations(self, root: ET.Element, namespaces: Dict[str, str]):
         """Parse association elements to identify foreign key relationships"""
@@ -436,7 +436,7 @@ class MetadataService:
             with open(er_file_path, 'w', encoding='utf-8') as f:
                 json.dump(er_data, f, indent=2, ensure_ascii=False)
             
-            logger.info("✅ Entity Relationship file saved successfully", 
+            logger.info(" Entity Relationship file saved successfully", 
                        file_path=str(er_file_path),
                        entities=len(self.schemas),
                        file_size_kb=round(er_file_path.stat().st_size / 1024, 2))

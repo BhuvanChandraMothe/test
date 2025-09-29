@@ -1,85 +1,3 @@
-#!/usr/bin/env python3
-"""
-Test script for SAP OData Connector with Northwind service
-"""
-
-#     print("=" * 60)
-    
-#     # Create test configuration
-#     config = ClientConfig(
-#         odata_service_url="https://services.odata.org/V4/Northwind/Northwind.svc",
-#         # public kabatte no auth
-#         username=None,
-#         password=None,
-#         # test settings
-#         selected_modules=[],  # All entities
-#         total_records_limit=10,  # speed and effecienty kosam
-#         batch_size=10,
-#         max_workers=2,
-#         requests_per_second=1.0,  #edhi set cheyyale malle (duplication kakunda)
-#         # Local storage
-#         output_directory="./test_output",
-#         raw_data_directory="./test_output/raw",
-#         processed_data_directory="./test_output/processed"
-#     )
-    
-#     # Create connector
-#     connector = SAPODataConnector(config)
-    
-#     # Progress tracking
-#     def progress_callback(progress):
-#         print(f"📊 Progress: {progress['completed_entities']} entities, "
-#               f"{progress['records_processed']} records, "
-#               f"Queue: {progress['queue_size']}")
-    
-#     connector.on_progress_update = progress_callback
-    
-#     try:
-#         print("🚀 Initializing connector...")
-#         await connector.initialize()
-        
-#         print("📋 Starting data extraction...")
-#         stats = await connector.run()
-        
-#         print("\n✅ Test completed successfully!")
-#         print(f"Duration: {stats.duration_seconds:.2f}s")
-#         print(f"Entities: {stats.entities_processed}")
-#         print(f"Records: {stats.records_processed}")
-#         print(f"Stored: {stats.records_stored}")
-#         print(f"Commands: {stats.commands_executed}")
-#         print(f"Failures: {stats.commands_failed}")
-        
-#         # Show output files
-#         output_dir = Path("./test_output")
-#         if output_dir.exists():
-#             print(f"\n📁 Output files in {output_dir}:")
-#             for file_path in output_dir.rglob("*"):
-#                 if file_path.is_file():
-#                     size = file_path.stat().st_size
-#                     print(f"  {file_path.relative_to(output_dir)} ({size} bytes)")
-        
-#         return True
-        
-#     except Exception as e:
-#         print(f"\n❌ Test failed: {e}")
-#         import traceback
-#         traceback.print_exc()
-#         return False
-    
-#     finally:
-#         if connector.proxy_pool:
-#             await connector.proxy_pool.stop()
-
-
-# if __name__ == "__main__":
-#     # Set up basic logging
-#     import logging
-#     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    
-#     # Run test
-#     success = asyncio.run(test_northwind())
-#     sys.exit(0 if success else 1)
-
 import asyncio
 import os
 import shutil
@@ -93,18 +11,19 @@ from odc.config.models import ClientConfig
 from odc.monitoring.metrics import get_metrics_collector
 from prometheus_client import push_to_gateway
 
-# Define the Push Gateway URL
+
+
 PUSH_GATEWAY_URL = 'http://localhost:9091'
-# Define a job name to identify this specific job in Prometheus
-PROMETHEUS_JOB_NAME = 'northwind_connector'
+
+PROMETHEUS_JOB_NAME = 'sap_odata_connector'
 
 async def test_northwind():
-    """Test the connector with Northwind service and push metrics"""
+    """Test the connector with new API structure"""
     
-    print("Testing SAP OData Connector with Northwind service")
-    print("=" * 60)
     
-    # Get the global metrics collector instance
+    print("=" * 50)
+    
+    
     metrics_collector = get_metrics_collector()
 
     # Clean up output directory from previous runs
@@ -113,55 +32,68 @@ async def test_northwind():
         print(f"Cleaning up previous test output: {output_dir}")
         shutil.rmtree(output_dir)
     
-    # Create test configuration
+    # Create configuration for SAP OData service
     config = ClientConfig(
-        odata_service_url="https://services.odata.org/V4/Northwind/Northwind.svc",
-        username=None,
+        service_type="odata",  # Specify service type
+        service_url="https://services.odata.org/V4/Northwind/Northwind.svc",
+        username=None,  # No auth needed for public service
         password=None,
-        selected_modules=["Invoices"],
-        total_records_limit=None,  # Small limit for testing
-        batch_size=500,
-        max_workers=2,
-        requests_per_second=10.0,
-        max_connections=25,  # Custom connection pool size
-        output_directory="./test_output",
-        raw_data_directory="./test_output/raw",
-        processed_data_directory="./test_output/processed"
+        # service_url="https://your-sap-server:port/sap/opu/odata/sap/SERVICE_NAME/",
+        # username="your_sap_username",
+        # password="your_sap_password", 
+        # sap_client="100",  # SAP client number
+        # system_id="PRD",   # SAP system ID
+        selected_modules=[],  # Specific entities to process
+        output_directory="./test_output"
     )
     
     # Create connector
     connector = SAPODataConnector(config)
     
     try:
-        print("🔧 Initializing connector (this will show API endpoints)...")
+        #init
+        print("\n STEP 1: Initializing connector and discovering entities...")
         await connector.initialize()
+    
         
-        # print("\n🚀 Starting data extraction...")
-        # stats = await connector.run()
+        # Get data with execution parameters (no longer in config)
+        # await connector.get_data(
+        #     record_limit=100,
+        #     batch_size=50,
+        #     max_workers=5,
+        #     requests_per_second=5.0
+        # )
+       
         
-        # print("\n✅ Test completed successfully!")
-        # print(f"Duration: {stats.duration_seconds:.2f}s")
-        # print(f"Entities: {stats.entities_processed}")
-        # print(f"Records: {stats.records_processed}")
-        # print(f"Stored: {stats.records_stored}")
-        # print(f"Commands: {stats.commands_executed}")
-        # print(f"Failures: {stats.commands_failed}")
+        # #specific dhanlo thevadaniki
+        await connector.get_data(entity_name="Invoices", record_limit=20)
         
-        print("\n📤 Pushing metrics to Prometheus Push Gateway...")
+        
+        # #filter cheydaniki
+        # await connector.get_data(
+        #         entity_name="Invoices", 
+        #         filter_condition="UnitPrice gt 100",
+        #         record_limit=10
+        #     )
+        
+        
+        #edhi grafana kosam
         try:
             push_to_gateway(
                 PUSH_GATEWAY_URL,
                 job=PROMETHEUS_JOB_NAME,
                 registry=metrics_collector.registry
             )
-            print("✅ Metrics pushed successfully!")
+            print("    Metrics pushed successfully!")
         except Exception as e:
-            print(f"❌ Failed to push metrics: {e}")
-            
+            print(f"   Failed to push metrics: {e}")
+        
+        
+        
         return True
         
     except Exception as e:
-        print(f"\n❌ Test failed: {e}")
+        print(f"\nTest failed: {e}")
         import traceback
         traceback.print_exc()
         return False
@@ -175,10 +107,14 @@ async def test_northwind():
                 pass
 
 
+
+
 if __name__ == "__main__":
-    # This is the correct way to start an async program and ensures a clean exit
+    print("\nRunning SAP OData Connector Test...")
     success = asyncio.run(test_northwind())
-    print(f"\n📊 Test result: {'SUCCESS' if success else 'FAILED'}")
+    
+    print(f"\nTest result: {'SUCCESS' if success else 'FAILED'}")
+    
     # Force exit to ensure no hanging
     import os
     os._exit(0 if success else 1)

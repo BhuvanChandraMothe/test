@@ -263,7 +263,7 @@ class ConnectionPool:
             )
             
             if response.status_code in [200, 307, 401]:  # 200=OK, 307=Redirect, 401=Auth needed
-                logger.info("✅ Connection pool validation successful", 
+                logger.info(" Connection pool validation successful", 
                            status_code=response.status_code)
                 self._is_validated = True
                 return True
@@ -300,7 +300,7 @@ class ConnectionPool:
                             limits=limits,
                             http2=True  # Enable HTTP/2 for better performance
                         )
-                        logger.info("✅ HTTP connection pool created with HTTP/2 support", 
+                        logger.info(" HTTP connection pool created with HTTP/2 support", 
                                    max_connections=self.max_connections)
                     except Exception as e:
                         # Fallback to HTTP/1.1 if HTTP/2 is not available
@@ -317,7 +317,7 @@ class ConnectionPool:
                             limits=limits,
                             http2=False  # Use HTTP/1.1
                         )
-                        logger.info("✅ HTTP connection pool created with HTTP/1.1", 
+                        logger.info(" HTTP connection pool created with HTTP/1.1", 
                                    max_connections=self.max_connections)
         
         return self._client

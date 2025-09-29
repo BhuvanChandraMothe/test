@@ -479,3 +479,48 @@ class LocalFileStorage:
         except Exception as e:
             logger.error("Failed to cleanup old files", error=str(e))
             return 0
+    
+    async def load_processed_records(self, entity_name: str) -> List[Dict[str, Any]]:
+        """Load processed records for an entity from storage"""
+        try:
+            # First check in-memory cache
+            if entity_name in self._processed_data:
+                logger.info(f"Loading {len(self._processed_data[entity_name])} records from memory for {entity_name}")
+                return self._processed_data[entity_name]
+            
+            # Load from unified file
+            entity_dir = self._get_processed_data_dir_path(entity_name)
+            unified_file = os.path.join(entity_dir, f"{entity_name}.json")
+            
+            if os.path.exists(unified_file):
+                with open(unified_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    records = data.get('records', []) if isinstance(data, dict) else data
+                    logger.info(f"Loaded {len(records)} records from unified file for {entity_name}")
+                    return records
+            
+            # Fallback: Load from individual batch files
+            records = []
+            if os.path.exists(entity_dir):
+                batch_files = [f for f in os.listdir(entity_dir) if f.startswith('batch_') and f.endswith('.json')]
+                batch_files.sort()  # Ensure consistent order
+                
+                for batch_file in batch_files:
+                    batch_path = os.path.join(entity_dir, batch_file)
+                    try:
+                        with open(batch_path, 'r', encoding='utf-8') as f:
+                            batch_data = json.load(f)
+                            if isinstance(batch_data, list):
+                                records.extend(batch_data)
+                            elif isinstance(batch_data, dict) and 'records' in batch_data:
+                                records.extend(batch_data['records'])
+                    except Exception as e:
+                        logger.warning(f"Could not load batch file {batch_file}: {e}")
+                
+                logger.info(f"Loaded {len(records)} records from {len(batch_files)} batch files for {entity_name}")
+            
+            return records
+            
+        except Exception as e:
+            logger.error(f"Failed to load processed records for {entity_name}: {e}")
+            return []
