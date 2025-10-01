@@ -26,7 +26,7 @@ class Priority(Enum):
 
 @dataclass
 class FetchCommand:
-    """Command to fetch data from SAP OData API"""
+    """Command to fetch data from SAP OData API with full OData query support"""
     command_id: str
     command_type: CommandType
     entity_set: str
@@ -35,6 +35,12 @@ class FetchCommand:
     filter_clause: Optional[str] = None
     select_clause: Optional[str] = None
     orderby_clause: Optional[str] = None
+    expand_clause: Optional[str] = None
+    groupby_clause: Optional[str] = None
+    aggregate_clause: Optional[str] = None
+    count_option: bool = False
+    search_clause: Optional[str] = None
+    custom_params: Optional[Dict[str, str]] = None
     priority: Priority = Priority.MEDIUM
     retry_count: int = 0
     max_retries: int = 3
@@ -42,12 +48,13 @@ class FetchCommand:
     
     @property
     def url_params(self) -> Dict[str, str]:
-        """Generate OData URL parameters"""
+        """Generate comprehensive OData URL parameters"""
         params = {
             '$skip': str(self.skip),
             '$top': str(self.top)
         }
         
+        # Standard OData query options
         if self.filter_clause:
             params['$filter'] = self.filter_clause
         
@@ -56,6 +63,30 @@ class FetchCommand:
         
         if self.orderby_clause:
             params['$orderby'] = self.orderby_clause
+        
+        if self.expand_clause:
+            params['$expand'] = self.expand_clause
+        
+        if self.search_clause:
+            params['$search'] = self.search_clause
+        
+        if self.count_option:
+            params['$count'] = 'true'
+        
+        # Advanced aggregation support (OData v4)
+        if self.groupby_clause:
+            params['$apply'] = f"groupby(({self.groupby_clause}))"
+            
+        if self.aggregate_clause:
+            if '$apply' in params:
+                # Combine with existing groupby
+                params['$apply'] += f",aggregate({self.aggregate_clause})"
+            else:
+                params['$apply'] = f"aggregate({self.aggregate_clause})"
+        
+        # Custom parameters (for SAP-specific extensions)
+        if self.custom_params:
+            params.update(self.custom_params)
         
         return params
     
@@ -70,6 +101,12 @@ class FetchCommand:
             filter_clause=self.filter_clause,
             select_clause=self.select_clause,
             orderby_clause=self.orderby_clause,
+            expand_clause=self.expand_clause,
+            groupby_clause=self.groupby_clause,
+            aggregate_clause=self.aggregate_clause,
+            count_option=self.count_option,
+            search_clause=self.search_clause,
+            custom_params=self.custom_params.copy() if self.custom_params else None,
             priority=self.priority,
             retry_count=self.retry_count + 1,
             max_retries=self.max_retries
@@ -305,6 +342,102 @@ class PlanGenerator:
                    planned_entities=len(self.entity_plans),
                    total_commands=sum(len(plan.commands) for plan in self.entity_plans.values()),
                    filter_applied=bool(filter_condition))
+        
+        return self.entity_plans
+    
+    async def create_execution_plan_with_query_options(
+        self,
+        entity_counts: Dict[str, int],
+        processing_order: List[List[str]],
+        selected_entities: List[str],
+        query_options: Dict[str, Any]
+    ) -> Dict[str, EntityPlan]:
+        """Create execution plan with comprehensive query options support"""
+        
+        logger.info("Creating execution plan with query options", 
+                   total_entities=len(selected_entities),
+                   query_options=query_options)
+        
+        self.processing_levels = processing_order
+        
+        # Extract query options
+        filter_condition = query_options.get('filter_condition')
+        select_fields = query_options.get('select_fields')
+        expand_relations = query_options.get('expand_relations')
+        order_by = query_options.get('order_by')
+        group_by = query_options.get('group_by')
+        aggregate_functions = query_options.get('aggregate_functions')
+        search_query = query_options.get('search_query')
+        include_count = query_options.get('include_count', False)
+        custom_params = query_options.get('custom_query_params', {})
+        
+        for level_idx, level_entities in enumerate(processing_order):
+            for entity_name in level_entities:
+                if entity_name not in selected_entities:
+                    continue
+                
+                record_count = entity_counts.get(entity_name, 0)
+                
+                # Calculate pages and priority
+                total_pages = max(1, math.ceil(record_count / self.batch_size))
+                priority = self._calculate_priority(record_count, level_idx)
+                
+                # Determine dependencies
+                dependencies = []
+                if level_idx > 0:
+                    for prev_level in processing_order[:level_idx]:
+                        dependencies.extend([e for e in prev_level if e in selected_entities])
+                
+                # Create entity plan with query options
+                plan = EntityPlan(
+                    entity_name=entity_name,
+                    total_records=record_count,
+                    page_size=self.batch_size,
+                    total_pages=total_pages,
+                    priority=priority,
+                    dependencies=dependencies,
+                    filter_clause=filter_condition
+                )
+                
+                # Generate commands with enhanced query options
+                commands = []
+                for i in range(0, record_count, self.batch_size):
+                    skip = i
+                    top = min(self.batch_size, record_count - i)
+                    command_id = f"{entity_name}_enhanced_page_{i // self.batch_size + 1}"
+                    
+                    command = FetchCommand(
+                        command_id=command_id,
+                        command_type=CommandType.FETCH_PAGE,
+                        entity_set=entity_name,
+                        skip=skip,
+                        top=top,
+                        filter_clause=filter_condition,
+                        select_clause=select_fields,
+                        orderby_clause=order_by,
+                        expand_clause=expand_relations,
+                        groupby_clause=group_by,
+                        aggregate_clause=aggregate_functions,
+                        count_option=include_count,
+                        search_clause=search_query,
+                        custom_params=custom_params.copy() if custom_params else None,
+                        priority=priority
+                    )
+                    commands.append(command)
+                
+                plan.commands = commands
+                self.entity_plans[entity_name] = plan
+                
+                logger.info(f"Created enhanced plan for {entity_name}",
+                           records=record_count,
+                           pages=total_pages,
+                           priority=priority.name,
+                           query_options_applied=len([opt for opt in query_options.values() if opt]))
+        
+        logger.info("Enhanced execution plan created",
+                   planned_entities=len(self.entity_plans),
+                   total_commands=sum(len(plan.commands) for plan in self.entity_plans.values()),
+                   query_options_count=len([opt for opt in query_options.values() if opt]))
         
         return self.entity_plans
     

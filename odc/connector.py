@@ -13,11 +13,9 @@ from .services.count import CountService
 from .planning.graph_builder import RelationGraphBuilder
 from .planning.plan_generator import PlanGenerator
 from .workers.proxy_pool import ProxyPool, ProxyResult
-from .workers.adaptive_pool import AdaptiveConnectionPool
 from .storage.local_storage import LocalFileStorage, LocalStorageConfig
 from .storage.transformer import DataTransformer
 from .monitoring.metrics import MetricsCollector, get_metrics_collector
-from .query.odata_builder import ODataQueryBuilder, ExpandClause, AggregateClause, GroupByClause, AggregateFunction
 # Note: Some monitoring components may not exist yet
 from datetime import datetime, timezone
 
@@ -74,15 +72,8 @@ class SAPODataConnector:
         self.on_progress_update: Optional[Callable[[Dict[str, Any]], None]] = None
     
     def _create_sap_config(self) -> ODataConfig:
-        """Create ODataConfig from ClientConfig"""
-        return ODataConfig(
-            service_url=self.config.odata_service_url,
-            username=self.config.username,
-            password=self.config.password,
-            client_id=self.config.client_id,
-            client_secret=self.config.client_secret,
-            max_connections=50  # Will be updated dynamically during initialization
-        )
+        """Create ODataConfig from ClientConfig with automatic URL construction"""
+        return ODataConfig.from_client_config(self.config)
     
     async def initialize(self) -> Dict[str, Any]:
         """Initialize connector and return available entities and metadata"""
@@ -388,6 +379,14 @@ class SAPODataConnector:
         self, 
         entity_name: Optional[str] = None,
         filter_condition: Optional[str] = None,
+        select_fields: Optional[str] = None,
+        expand_relations: Optional[str] = None,
+        order_by: Optional[str] = None,
+        group_by: Optional[str] = None,
+        aggregate_functions: Optional[str] = None,
+        search_query: Optional[str] = None,
+        include_count: bool = False,
+        custom_query_params: Optional[Dict[str, str]] = None,
         selected_entities: Optional[List[str]] = None,
         record_limit: Optional[int] = None,
         batch_size: int = 1000,
@@ -395,11 +394,19 @@ class SAPODataConnector:
         requests_per_second: float = 5.0,
         enable_parallel_processing: bool = True
     ) -> Dict[str, Any]:
-        """Get data from OData service with optional filtering
+        """Get data from OData service with comprehensive query options
         
         Args:
             entity_name: Specific entity to fetch (if None, fetches all or selected_entities)
-            filter_condition: OData filter condition (e.g., "Name eq 'John'")
+            filter_condition: OData $filter condition (e.g., "Name eq 'John'")
+            select_fields: OData $select fields (e.g., "Name,Age,City")
+            expand_relations: OData $expand relations (e.g., "Orders,Orders/OrderDetails")
+            order_by: OData $orderby clause (e.g., "Name asc,Age desc")
+            group_by: Fields to group by for aggregation (e.g., "Category,Status")
+            aggregate_functions: Aggregation functions (e.g., "sum(Amount),count()")
+            search_query: OData $search query for full-text search
+            include_count: Include total count in response ($count=true)
+            custom_query_params: Additional custom query parameters
             selected_entities: List of entities to process (legacy parameter)
             record_limit: Override the configured record limit
             batch_size: Records per batch (default: 1000)
@@ -420,12 +427,39 @@ class SAPODataConnector:
             enable_parallel_processing=enable_parallel_processing
         )
         
+        # Create query options structure
+        query_options = {
+            'filter_condition': filter_condition,
+            'select_fields': select_fields,
+            'expand_relations': expand_relations,
+            'order_by': order_by,
+            'group_by': group_by,
+            'aggregate_functions': aggregate_functions,
+            'search_query': search_query,
+            'include_count': include_count,
+            'custom_query_params': custom_query_params or {}
+        }
+        
         logger.info("Starting SAP OData connector execution",
                    entity_name=entity_name,
-                   filter_condition=filter_condition,
+                   query_options=query_options,
                    execution_config=self.exec_config.to_dict())
         
         try:
+            # Check if this is a simple single-entity query that can be optimized
+            if (entity_name and not selected_entities and 
+                not any([group_by, aggregate_functions]) and
+                hasattr(self, 'metadata_service') and self.metadata_service):
+                
+                # Use lightweight query for simple requests
+                return await self._lightweight_get_data(
+                    entity_name, filter_condition, select_fields, 
+                    expand_relations, order_by, search_query, 
+                    include_count, custom_query_params, 
+                    record_limit or batch_size
+                )
+            
+            # Fall back to full pipeline for complex queries
             self.is_running = True
             self.stats = ConnectorStats(start_time=datetime.now(timezone.utc))
             
@@ -447,8 +481,8 @@ class SAPODataConnector:
             )
             
             # Phase 1: Discovery and Planning
-            await self._discovery_phase_filtered(
-                entities_to_process, filter_condition
+            await self._discovery_phase_with_query_options(
+                entities_to_process, query_options
             )
             
             # Phase 2: Execution
@@ -507,205 +541,198 @@ class SAPODataConnector:
             self.is_running = False
             await self._cleanup()
     
-    async def get_data_with_expand(
-        self,
+    async def _lightweight_get_data(
+        self, 
         entity_name: str,
-        expand_properties: List[str],
-        select_fields: Optional[List[str]] = None,
         filter_condition: Optional[str] = None,
-        orderby: Optional[str] = None,
-        top: Optional[int] = None
+        select_fields: Optional[str] = None,
+        expand_relations: Optional[str] = None,
+        order_by: Optional[str] = None,
+        search_query: Optional[str] = None,
+        include_count: bool = False,
+        custom_query_params: Optional[Dict[str, str]] = None,
+        limit: int = 1000
     ) -> Dict[str, Any]:
-        """
-        Get data with expanded navigation properties
+        """Lightweight data fetching for simple queries - no full pipeline overhead"""
         
-        Args:
-            entity_name: Main entity to query
-            expand_properties: List of navigation properties to expand
-            select_fields: Fields to select from main entity
-            filter_condition: OData filter condition
-            orderby: OData orderby clause
-            top: Maximum records to return
-            
-        Returns:
-            Dictionary containing expanded data
-        """
-        logger.info("Starting expand query",
-                   entity=entity_name,
-                   expand_properties=expand_properties,
-                   select_fields=select_fields)
+        from datetime import datetime, timezone
+        start_time = datetime.now(timezone.utc)
+        
+        logger.info(f" Lightweight query for {entity_name}")
         
         try:
-            await self._ensure_initialized()
+            # Build query parameters
+            params = {}
+            if filter_condition:
+                params['$filter'] = filter_condition
+            if select_fields:
+                params['$select'] = select_fields
+            if expand_relations:
+                params['$expand'] = expand_relations
+            if order_by:
+                params['$orderby'] = order_by
+            if search_query:
+                params['$search'] = search_query
+            if include_count:
+                params['$count'] = 'true'
+            if limit:
+                params['$top'] = str(limit)
             
-            # Build OData query with expand
-            query_builder = ODataQueryBuilder(entity_name)
+            # Add custom parameters
+            if custom_query_params:
+                params.update(custom_query_params)
+            
+            # Get HTTP client - use aiohttp directly for lightweight queries
+            import aiohttp
+            if not hasattr(self, '_lightweight_session'):
+                self._lightweight_session = aiohttp.ClientSession()
+            client = self._lightweight_session
+            
+            # Build URL
+            url = self.sap_config.entity_set_url(entity_name)
+            if params:
+                from urllib.parse import urlencode
+                url += f"?{urlencode(params)}"
+            
+            logger.info(f" Making request to: {url}")
+            
+            # Make request
+            async with client.get(url) as response:
+                if response.status == 200:
+                    data = await response.json()
+                    records = data.get('value', [])
+                    
+                    # Transform records to match expected format
+                    from .storage.transformer import TransformedRecord
+                    transformed_records = []
+                    for i, record in enumerate(records):
+                        # Generate a simple record ID
+                        record_id = f"{entity_name}_{i+1}"
+                        transformed_record = TransformedRecord(
+                            entity_name=entity_name,
+                            record_id=record_id,
+                            data=record,
+                            transformed_at=datetime.now(timezone.utc)
+                        )
+                        transformed_records.append(transformed_record)
+                    
+                    duration = (datetime.now(timezone.utc) - start_time).total_seconds()
+                    
+                    logger.info(f" Query completed: {len(records)} records in {duration:.2f}s")
+                    
+                    # Save results to file automatically
+                    await self._save_query_results(entity_name, records, filter_condition, select_fields, order_by)
+                    
+                    # Return in expected format
+                    return {
+                        'execution_stats': {
+                            'duration_seconds': duration,
+                            'records_processed': len(records),
+                            'entities_processed': 1,
+                            'requests_made': 1,
+                            'requests_failed': 0
+                        },
+                        'data': {
+                            entity_name: {
+                                'records': transformed_records,
+                                'metadata': {
+                                    'entity_name': entity_name,
+                                    'record_count': len(records),
+                                    'query_params': params
+                                }
+                            }
+                        }
+                    }
+                else:
+                    error_text = await response.text()
+                    raise Exception(f"HTTP {response.status}: {error_text}")
+                    
+        except Exception as e:
+            duration = (datetime.now(timezone.utc) - start_time).total_seconds()
+            logger.error(f"❌ Query failed: {e}")
+            
+            # Return error in expected format
+            return {
+                'execution_stats': {
+                    'duration_seconds': duration,
+                    'records_processed': 0,
+                    'entities_processed': 0,
+                    'requests_made': 1,
+                    'requests_failed': 1
+                },
+                'data': {},
+                'error': str(e)
+            }
+    
+    async def _save_query_results(
+        self, 
+        entity_name: str, 
+        records: list, 
+        filter_condition: str = None,
+        select_fields: str = None,
+        order_by: str = None
+    ):
+        """Save query results to individual files automatically"""
+        
+        try:
+            import os
+            import json
+            from datetime import datetime
+            
+            # Create output directory
+            output_dir = os.path.join(self.config.output_directory, "query_results")
+            os.makedirs(output_dir, exist_ok=True)
+            
+            # Generate filename based on query parameters
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            filename_parts = [timestamp, entity_name.lower()]
+            
+            if filter_condition:
+                # Clean filter condition for filename
+                filter_clean = filter_condition.replace(" ", "_").replace("'", "").replace("(", "").replace(")", "")
+                filter_clean = filter_clean.replace("eq", "equals").replace("gt", "greater").replace("lt", "less")
+                filename_parts.append(f"filter_{filter_clean[:30]}")
             
             if select_fields:
-                query_builder.select(*select_fields)
+                filename_parts.append(f"select_{len(select_fields.split(','))}fields")
             
-            for prop in expand_properties:
-                query_builder.expand(prop)
+            if order_by:
+                order_clean = order_by.replace(" ", "_").replace("desc", "descending").replace("asc", "ascending")
+                filename_parts.append(f"order_{order_clean}")
             
-            if filter_condition:
-                query_builder.filter(filter_condition)
+            filename = "_".join(filename_parts) + ".json"
+            filepath = os.path.join(output_dir, filename)
             
-            if orderby:
-                query_builder.orderby(orderby.split()[0], 
-                                    orderby.endswith('desc') if ' ' in orderby else False)
+            # Extract clean data
+            clean_data = []
+            for record in records:
+                clean_record = {}
+                for key, value in record.items():
+                    if not key.startswith('@odata'):
+                        clean_record[key] = value
+                clean_data.append(clean_record)
             
-            if top:
-                query_builder.top(top)
-            
-            # Execute query
-            query_url = query_builder.build_url(self.sap_config.service_url)
-            return await self._execute_single_query(query_url, entity_name)
-            
-        except Exception as e:
-            logger.error("Expand query failed", entity=entity_name, error=str(e))
-            raise
-    
-    async def get_aggregated_data(
-        self,
-        entity_name: str,
-        group_by_fields: List[str],
-        aggregations: List[AggregateClause],
-        filter_condition: Optional[str] = None,
-        having_condition: Optional[str] = None
-    ) -> Dict[str, Any]:
-        """
-        Get aggregated data using OData $apply transformations
-        
-        Args:
-            entity_name: Entity to aggregate
-            group_by_fields: Fields to group by
-            aggregations: List of aggregation operations
-            filter_condition: Filter before aggregation
-            having_condition: Filter after aggregation (having clause)
-            
-        Returns:
-            Dictionary containing aggregated results
-        """
-        logger.info("Starting aggregation query",
-                   entity=entity_name,
-                   group_by_fields=group_by_fields,
-                   aggregations=[f"{agg.field}:{agg.function.value}" for agg in aggregations])
-        
-        try:
-            await self._ensure_initialized()
-            
-            # Build aggregation query
-            query_builder = ODataQueryBuilder(entity_name)
-            
-            if filter_condition:
-                query_builder.filter(filter_condition)
-            
-            # Add groupby with aggregations
-            query_builder.groupby(*group_by_fields)
-            for agg in aggregations:
-                query_builder.aggregate(agg.field, agg.function, agg.alias)
-            
-            # Add having condition as additional filter
-            if having_condition:
-                query_builder.apply_transformation(f"filter({having_condition})")
-            
-            # Execute query
-            query_url = query_builder.build_url(self.sap_config.service_url)
-            return await self._execute_single_query(query_url, entity_name)
-            
-        except Exception as e:
-            logger.error("Aggregation query failed", entity=entity_name, error=str(e))
-            raise
-    
-    def create_query_builder(self, entity_name: str) -> ODataQueryBuilder:
-        """
-        Create a new OData query builder for the specified entity
-        
-        Args:
-            entity_name: Name of the entity to query
-            
-        Returns:
-            New ODataQueryBuilder instance
-        """
-        return ODataQueryBuilder(entity_name)
-    
-    async def get_data_with_custom_query(
-        self,
-        query_builder: ODataQueryBuilder
-    ) -> Dict[str, Any]:
-        """
-        Execute a custom OData query using the query builder
-        
-        Args:
-            query_builder: Pre-configured OData query builder
-            
-        Returns:
-            Dictionary containing query results
-        """
-        entity_name = query_builder.entity_name
-        logger.info("Starting custom query",
-                   entity=entity_name,
-                   query_string=query_builder.build_query_string())
-        
-        try:
-            await self._ensure_initialized()
-            
-            # Execute custom query
-            query_url = query_builder.build_url(self.sap_config.service_url)
-            return await self._execute_single_query(query_url, entity_name)
-            
-        except Exception as e:
-            logger.error("Custom query failed", entity=entity_name, error=str(e))
-            raise
-    
-    async def _execute_single_query(self, query_url: str, entity_name: str) -> Dict[str, Any]:
-        """
-        Execute a single OData query and return results
-        
-        Args:
-            query_url: Complete OData query URL
-            entity_name: Entity name for logging/metrics
-            
-        Returns:
-            Dictionary containing query results
-        """
-        try:
-            # Use proxy pool resilience layer
-            async with self.proxy_pool.resilience_layer.http_client as client:
-                response = await client.get(query_url)
-            
-            response.raise_for_status()
-            data = response.json()
-            
-            records = data.get('value', [])
-            
-            # Transform data if transformer is available
-            if self.transformer:
-                transformed_records = await self.transformer.transform_data(entity_name, records)
-            else:
-                transformed_records = records
-            
-            return {
-                'status': 'success',
-                'entity': entity_name,
-                'record_count': len(transformed_records),
-                'records': transformed_records,
-                'odata_context': data.get('@odata.context'),
-                'odata_count': data.get('@odata.count'),
-                'query_url': query_url
+            # Save to file
+            query_result = {
+                'query_info': {
+                    'entity_name': entity_name,
+                    'filter_condition': filter_condition,
+                    'select_fields': select_fields,
+                    'order_by': order_by,
+                    'total_records': len(clean_data),
+                    'timestamp': datetime.now().isoformat(),
+                    'filename': filename
+                },
+                'data': clean_data
             }
             
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(query_result, f, indent=2, default=str)
+            
+            logger.info(f" Query results saved to: {filepath}")
+            
         except Exception as e:
-            logger.error("Single query execution failed",
-                        entity=entity_name,
-                        query_url=query_url,
-                        error=str(e))
-            raise
-    
-    async def _ensure_initialized(self):
-        """Ensure connector is properly initialized"""
-        if not self.metadata_service:
-            await self.initialize()
+            logger.warning(f"Failed to save query results: {e}")
     
     def _determine_entities_to_process(
         self, 
@@ -726,16 +753,18 @@ class SAPODataConnector:
             # Process all entities
             return list(self.metadata_service.schemas.keys())
     
-    async def _discovery_phase_filtered(
+    async def _discovery_phase_with_query_options(
         self, 
         entities_to_process: List[str], 
-        filter_condition: Optional[str]
+        query_options: Dict[str, Any]
     ):
-        """Phase 1: Discover metadata and plan execution with filtering"""
-        logger.info("Starting filtered discovery phase",
+        """Phase 1: Discover metadata and plan execution with comprehensive query options"""
+        filter_condition = query_options.get('filter_condition')
+        
+        logger.info("Starting discovery phase with query options",
                    entities_count=len(entities_to_process),
                    entities=entities_to_process,
-                   filter_condition=filter_condition)
+                   query_options=query_options)
         
         # Fetch metadata (already done in initialize, but ensure transformer is ready)
         entity_schemas = self.metadata_service.schemas
@@ -749,11 +778,18 @@ class SAPODataConnector:
         if invalid_entities:
             raise ValueError(f"Invalid entities requested: {invalid_entities}. Available: {list(available_entities)}")
         
-        # Get entity counts (with potential filter impact)
+        # Get entity counts (with potential query impact)
         async with self.count_service:
-            if filter_condition:
-                # For filtered queries, we can't easily predict count, so use conservative estimates
-                logger.info("Filter condition detected - using conservative count estimates")
+            has_complex_query = any([
+                query_options.get('filter_condition'),
+                query_options.get('group_by'),
+                query_options.get('aggregate_functions'),
+                query_options.get('search_query')
+            ])
+            
+            if has_complex_query:
+                # For complex queries, we can't easily predict count, so use conservative estimates
+                logger.info("Complex query detected - using conservative count estimates")
                 entity_counts = {entity: 1000 for entity in entities_to_process}  # Conservative estimate
             else:
                 entity_counts = await self.count_service.get_entity_counts(entities_to_process)
@@ -763,20 +799,20 @@ class SAPODataConnector:
         relationships = self.metadata_service.get_foreign_key_relationships()
         self.graph_builder.add_relationships(relationships)
         
-        # Generate execution plan with filter consideration
+        # Generate execution plan with query options consideration
         processing_order = self.graph_builder.get_processing_order()
-        await self.plan_generator.create_execution_plan_filtered(
-            entity_counts, processing_order, entities_to_process, filter_condition
+        await self.plan_generator.create_execution_plan_with_query_options(
+            entity_counts, processing_order, entities_to_process, query_options
         )
         
-        logger.info("Filtered discovery phase completed",
+        logger.info("Discovery phase with query options completed",
                    entities=len(entities_to_process),
                    total_estimated_records=sum(entity_counts.values()),
                    processing_levels=len(processing_order),
-                   filter_applied=bool(filter_condition))
+                   has_complex_query=has_complex_query)
         
         # Log the execution plan summary
-        logger.info("Filtered execution plan summary:")
+        logger.info("Execution plan summary with query options:")
         for level_idx, level_entities in enumerate(processing_order):
             level_entities_filtered = [e for e in level_entities if e in entities_to_process]
             if level_entities_filtered:
@@ -1046,6 +1082,25 @@ class SAPODataConnector:
             logger.warning(f"Cleanup timeout or error (this is OK): {e}")
         
         logger.info("Connector cleanup completed")
+    
+    async def cleanup(self):
+        """Public cleanup method for external use"""
+        # Cleanup lightweight session if it exists
+        if hasattr(self, '_lightweight_session'):
+            await self._lightweight_session.close()
+            delattr(self, '_lightweight_session')
+        
+        await self._cleanup()
+    
+    async def __aenter__(self):
+        """Async context manager entry"""
+        await self.initialize()
+        return self
+    
+    async def __aexit__(self, exc_type, exc_val, exc_tb):
+        """Async context manager exit"""
+        await self._cleanup()
+        return False
     
     def get_execution_summary(self) -> Dict[str, Any]:
         """Get execution summary"""

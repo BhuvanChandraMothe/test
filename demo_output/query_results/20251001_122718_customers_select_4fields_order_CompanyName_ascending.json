@@ -1,0 +1,133 @@
+{
+  "query_info": {
+    "entity_name": "Customers",
+    "filter_condition": null,
+    "select_fields": "CustomerID,CompanyName,City,Country",
+    "order_by": "CompanyName asc",
+    "total_records": 20,
+    "timestamp": "2025-10-01T12:27:18.038684",
+    "filename": "20251001_122718_customers_select_4fields_order_CompanyName_ascending.json"
+  },
+  "data": [
+    {
+      "CustomerID": "ALFKI",
+      "CompanyName": "Alfreds Futterkiste",
+      "City": "Berlin",
+      "Country": "Germany"
+    },
+    {
+      "CustomerID": "ANATR",
+      "CompanyName": "Ana Trujillo Emparedados y helados",
+      "City": "M\u00e9xico D.F.",
+      "Country": "Mexico"
+    },
+    {
+      "CustomerID": "ANTON",
+      "CompanyName": "Antonio Moreno Taquer\u00eda",
+      "City": "M\u00e9xico D.F.",
+      "Country": "Mexico"
+    },
+    {
+      "CustomerID": "AROUT",
+      "CompanyName": "Around the Horn",
+      "City": "London",
+      "Country": "UK"
+    },
+    {
+      "CustomerID": "BERGS",
+      "CompanyName": "Berglunds snabbk\u00f6p",
+      "City": "Lule\u00e5",
+      "Country": "Sweden"
+    },
+    {
+      "CustomerID": "BLAUS",
+      "CompanyName": "Blauer See Delikatessen",
+      "City": "Mannheim",
+      "Country": "Germany"
+    },
+    {
+      "CustomerID": "BLONP",
+      "CompanyName": "Blondesddsl p\u00e8re et fils",
+      "City": "Strasbourg",
+      "Country": "France"
+    },
+    {
+      "CustomerID": "BOLID",
+      "CompanyName": "B\u00f3lido Comidas preparadas",
+      "City": "Madrid",
+      "Country": "Spain"
+    },
+    {
+      "CustomerID": "BONAP",
+      "CompanyName": "Bon app'",
+      "City": "Marseille",
+      "Country": "France"
+    },
+    {
+      "CustomerID": "BOTTM",
+      "CompanyName": "Bottom-Dollar Markets",
+      "City": "Tsawassen",
+      "Country": "Canada"
+    },
+    {
+      "CustomerID": "BSBEV",
+      "CompanyName": "B's Beverages",
+      "City": "London",
+      "Country": "UK"
+    },
+    {
+      "CustomerID": "CACTU",
+      "CompanyName": "Cactus Comidas para llevar",
+      "City": "Buenos Aires",
+      "Country": "Argentina"
+    },
+    {
+      "CustomerID": "CENTC",
+      "CompanyName": "Centro comercial Moctezuma",
+      "City": "M\u00e9xico D.F.",
+      "Country": "Mexico"
+    },
+    {
+      "CustomerID": "CHOPS",
+      "CompanyName": "Chop-suey Chinese",
+      "City": "Bern",
+      "Country": "Switzerland"
+    },
+    {
+      "CustomerID": "COMMI",
+      "CompanyName": "Com\u00e9rcio Mineiro",
+      "City": "Sao Paulo",
+      "Country": "Brazil"
+    },
+    {
+      "CustomerID": "CONSH",
+      "CompanyName": "Consolidated Holdings",
+      "City": "London",
+      "Country": "UK"
+    },
+    {
+      "CustomerID": "WANDK",
+      "CompanyName": "Die Wandernde Kuh",
+      "City": "Stuttgart",
+      "Country": "Germany"
+    },
+    {
+      "CustomerID": "DRACD",
+      "CompanyName": "Drachenblut Delikatessen",
+      "City": "Aachen",
+      "Country": "Germany"
+    },
+    {
+      "CustomerID": "DUMON",
+      "CompanyName": "Du monde entier",
+      "City": "Nantes",
+      "Country": "France"
+    },
+    {
+      "CustomerID": "EASTC",
+      "CompanyName": "Eastern Connection",
+      "City": "London",
+      "Country": "UK"
+    }
+  ]
+}

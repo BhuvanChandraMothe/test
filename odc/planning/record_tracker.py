@@ -68,10 +68,20 @@ class GlobalRecordTracker:
     async def register_entity(self, entity_name: str, target_records: int):
         """Register an entity for tracking"""
         async with self._lock:
-            # Apply global limit if set
-            if self._total_records_limit:
+            # If no global limit is set, use the original target_records
+            if self._total_records_limit is None:
+                # No global limit - use original target or a reasonable default
+                if target_records <= 0:
+                    target_records = 1000  # Default batch size
+            else:
+                # Apply global limit if set, but ensure we don't set target to 0
                 remaining_global = self._total_records_limit - self._global_records_fetched
                 target_records = min(target_records, remaining_global)
+                # Ensure we have at least 1 record to fetch if global limit allows
+                if target_records <= 0 and remaining_global > 0:
+                    target_records = min(1, remaining_global)
+                elif target_records <= 0:
+                    target_records = 1
             
             self._entity_trackers[entity_name] = EntityRecordTracker(
                 entity_name=entity_name,
@@ -141,12 +151,16 @@ class GlobalRecordTracker:
             
             tracker = self._entity_trackers[entity_name]
             
-            # Check entity-specific limit
+            # Check entity-specific limit first
             if not tracker.should_fetch_more():
                 return False
             
-            # Check global limit
+            # Check global limit - allow at least one fetch attempt
             if self._total_records_limit:
+                # If we haven't fetched anything yet, allow the first fetch
+                if self._global_records_fetched == 0:
+                    return True
+                # If we have fetched records, check the limit
                 if self._global_records_fetched >= self._total_records_limit:
                     return False
             
@@ -199,15 +213,16 @@ class GlobalRecordTracker:
             tracker = self._entity_trackers[entity_name]
             remaining_entity = tracker.get_remaining_records()
             
-            # Consider global limit
-            if self._total_records_limit:
-                remaining_global = self._total_records_limit - self._global_records_fetched
-                remaining = min(remaining_entity, remaining_global)
-            else:
-                remaining = remaining_entity
+            # If no global limit is set, use default batch size
+            if self._total_records_limit is None:
+                return default_batch_size
             
-            # Return smaller of default batch size or remaining records
-            optimal_size = min(default_batch_size, remaining)
+            # Consider global limit
+            remaining_global = self._total_records_limit - self._global_records_fetched
+            remaining = min(remaining_entity, remaining_global)
+            
+            # Return smaller of default batch size or remaining records, but at least 1
+            optimal_size = max(1, min(default_batch_size, remaining))
             
             if optimal_size != default_batch_size:
                 logger.info("Adjusted batch size to prevent overfetching",

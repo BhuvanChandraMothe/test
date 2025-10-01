@@ -166,31 +166,12 @@ class ProxyWorker:
     
     async def _execute_with_circuit_breaker(self, command: 'FetchCommand') -> ProxyResult:
         """Execute command with circuit breaker protection"""
-        # Temporarily bypass circuit breaker for debugging
-        return await self._make_http_request(command)
-    
-    async def _make_http_request(self, command: 'FetchCommand') -> ProxyResult:
-        """Make the actual HTTP request to OData API"""
-        # Check if we should still fetch more records for this entity
-        should_fetch = await self.record_tracker.should_create_more_commands(command.entity_set)
-        if not should_fetch:
-            logger.info(" Skipping request - record limit reached", 
-                        worker_id=self.worker_id,
-                        command_id=command.command_id,
-                        entity=command.entity_set)
-            return ProxyResult(
-                command=command,
-                success=True,
-                data={'value': []},  # Empty result
-                next_link=None
-            )
         
         # Calculate optimal batch size to avoid overfetching
         optimal_top = await self.record_tracker.calculate_optimal_batch_size(
             command.entity_set, 
             command.top
         )
-        
         # Update command with optimal batch size if different
         if optimal_top != command.top:
             logger.info(" Adjusted batch size for optimal fetching",
@@ -231,7 +212,7 @@ class ProxyWorker:
         try:
             response = await client.get(url, headers=headers)
             
-            logger.debug("📡 Worker received HTTP response", 
+            logger.debug(" Worker received HTTP response", 
                          worker_id=self.worker_id,
                          command_id=command.command_id,
                          status_code=response.status_code,

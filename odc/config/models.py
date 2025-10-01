@@ -21,8 +21,13 @@ class ClientConfig(BaseModel):
     # Service type selection
     service_type: ServiceType = Field(default=ServiceType.ODATA, description="Type of SAP service to connect to")
     
-    # Connection settings
-    service_url: str = Field(..., description="SAP service URL (OData, REST, etc.)")
+    # SAP Connection Parameters (replaces direct service_url)
+    sap_server: Optional[str] = Field(None, description="SAP server hostname or IP address")
+    sap_port: int = Field(default=8000, description="SAP server port (default: 8000)")
+    service_name: Optional[str] = Field(None, description="SAP OData service name (e.g., 'ZMY_SERVICE_SRV')")
+    use_https: bool = Field(default=True, description="Use HTTPS protocol (default: True)")
+    
+    # Authentication
     username: Optional[str] = Field(None, description="SAP username")
     password: Optional[str] = Field(None, description="SAP password")
     client_id: Optional[str] = Field(None, description="OAuth client ID")
@@ -32,11 +37,17 @@ class ClientConfig(BaseModel):
     sap_client: Optional[str] = Field(None, description="SAP client number (e.g., '100')")
     system_id: Optional[str] = Field(None, description="SAP system ID")
     
+    # Legacy support (optional - for backward compatibility)
+    service_url: Optional[str] = Field(None, description="Direct SAP service URL (legacy - will be auto-constructed if not provided)")
+    
     # Module/Entity selection (restored)
     selected_modules: List[str] = Field(default_factory=list, description="Specific modules/entities to process")
     
     # Storage settings (minimal)
     output_directory: str = Field(default="./output", description="Local output directory")
+    
+    # Processing limits
+    total_records_limit: Optional[int] = Field(None, description="Global limit for total records to fetch across all entities")
     
     class Config:
         env_prefix = "SAP_CONNECTOR_"
@@ -53,17 +64,41 @@ class ClientConfig(BaseModel):
     
     @property
     def odata_service_url(self) -> str:
-        """Backward compatibility property"""
-        return self.service_url
+        """Construct or return the SAP OData service URL"""
+        if self.service_url:
+            # Legacy mode - use provided URL directly
+            return self.service_url
+        else:
+            # Auto-construct SAP OData URL
+            protocol = "https" if self.use_https else "http"
+            return f"{protocol}://{self.sap_server}:{self.sap_port}/sap/opu/odata/sap/{self.service_name}"
+    
+    def get_entity_set_url(self, entity_set: str) -> str:
+        """Get full URL for a specific entity set"""
+        base_url = self.odata_service_url
+        return f"{base_url}/{entity_set}"
     
     def validate(self) -> None:
         """Validate configuration parameters"""
-        if not self.service_url.startswith(('http://', 'https://')):
-            raise ValueError("service_url must start with http:// or https://")
-        
-        # Remove trailing slash if present
-        if self.service_url.endswith('/'):
-            self.service_url = self.service_url.rstrip('/')
+        if self.service_url:
+            # Legacy mode validation
+            if not self.service_url.startswith(('http://', 'https://')):
+                raise ValueError("service_url must start with http:// or https://")
+            # Remove trailing slash if present
+            if self.service_url.endswith('/'):
+                self.service_url = self.service_url.rstrip('/')
+        else:
+            # New mode validation
+            if not self.sap_server:
+                raise ValueError("sap_server is required when service_url is not provided")
+            if not self.service_name:
+                raise ValueError("service_name is required when service_url is not provided")
+            if not isinstance(self.sap_port, int) or self.sap_port <= 0:
+                raise ValueError("sap_port must be a positive integer")
+            
+            # Validate service name format (should not contain spaces or special chars)
+            if not self.service_name.replace('_', '').replace('-', '').isalnum():
+                raise ValueError("service_name should only contain alphanumeric characters, underscores, and hyphens")
 
 
 @attrs.define
@@ -89,6 +124,18 @@ class ODataConfig:
     def entity_set_url(self, entity_set: str) -> str:
         """Get URL for a specific entity set"""
         return f"{self.service_url}/{entity_set}"
+    
+    @classmethod
+    def from_client_config(cls, client_config: 'ClientConfig') -> 'ODataConfig':
+        """Create ODataConfig from ClientConfig with automatic URL construction"""
+        return cls(
+            service_url=client_config.odata_service_url,
+            username=client_config.username,
+            password=client_config.password,
+            client_id=client_config.client_id,
+            client_secret=client_config.client_secret,
+            max_connections=50  # Default value, will be updated dynamically
+        )
 
 
 @attrs.define

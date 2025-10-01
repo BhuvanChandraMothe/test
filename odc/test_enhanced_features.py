@@ -1,361 +1,258 @@
 """
-Enhanced SAP OData Connector Test - Demonstrating Advanced Query Capabilities
+Test file for enhanced SAP OData Connector features.
+Tests the new SAP connection parameters and advanced OData query options.
 """
 
 import asyncio
-import os
-import shutil
 import sys
+import os
 
-# Add the parent directory to the Python path to allow imports
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# Add the parent directory to the path so we can import odc
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from odc.connector import SAPODataConnector
 from odc.config.models import ClientConfig
-from odc.query.odata_builder import (
-    ODataQueryBuilder, ExpandClause, AggregateClause, 
-    AggregateFunction, FilterOperator
-)
-from odc.monitoring.metrics import get_metrics_collector
-from prometheus_client import push_to_gateway
+from odc.connector import SAPODataConnector
 
 
-async def test_enhanced_features():
-    """Test all enhanced OData query features"""
+async def test_sap_url_construction():
+    """Test 1: SAP URL auto-construction"""
+    print("🧪 Test 1: SAP URL Auto-construction")
     
-    print("=" * 70)
-    print("🚀 ENHANCED SAP ODATA CONNECTOR - ADVANCED FEATURES TEST")
-    print("=" * 70)
-    
-    # Clean up output directory
-    output_dir = "./enhanced_test_output"
-    if os.path.exists(output_dir):
-        print(f"Cleaning up previous test output: {output_dir}")
-        shutil.rmtree(output_dir)
-    
-    # Create configuration
+    # Test new parameter approach
     config = ClientConfig(
-        service_type="odata",
-        service_url="https://services.odata.org/V4/Northwind/Northwind.svc",
-        username=None,
-        password=None,
-        selected_modules=["Products", "Categories", "Orders", "Customers", "Order_Details"],
-        output_directory=output_dir
+        sap_server="demo-server.sap.com",
+        sap_port=8000,
+        service_name="NORTHWIND_SRV",
+        use_https=True,
+        username="demo",
+        password="demo",
+        sap_client="100",
+        selected_modules=["Products"]
     )
     
-    # Create connector
+    expected_url = "https://demo-server.sap.com:8000/sap/opu/odata/sap/NORTHWIND_SRV"
+    actual_url = config.odata_service_url
+    
+    assert actual_url == expected_url, f"Expected {expected_url}, got {actual_url}"
+    print(f" URL construction works: {actual_url}")
+    
+    # Test entity set URL
+    entity_url = config.get_entity_set_url("Products")
+    expected_entity_url = f"{expected_url}/Products"
+    assert entity_url == expected_entity_url, f"Expected {expected_entity_url}, got {entity_url}"
+    print(f" Entity URL construction works: {entity_url}")
+
+
+async def test_legacy_url_compatibility():
+    """Test 2: Legacy URL compatibility"""
+    print("\n🧪 Test 2: Legacy URL Compatibility")
+    
+    # Test legacy approach
+    legacy_config = ClientConfig(
+        service_url="https://services.odata.org/V2/Northwind/Northwind.svc",
+        username="demo",
+        password="demo",
+        selected_modules=["Products"]
+    )
+    
+    expected_url = "https://services.odata.org/V2/Northwind/Northwind.svc"
+    actual_url = legacy_config.odata_service_url
+    
+    assert actual_url == expected_url, f"Expected {expected_url}, got {actual_url}"
+    print(f" Legacy URL compatibility works: {actual_url}")
+
+
+async def test_query_options_structure():
+    """Test 3: Query options structure"""
+    print("\n🧪 Test 3: Query Options Structure")
+    
+    from odc.planning.plan_generator import FetchCommand, CommandType, Priority
+    
+    # Test enhanced FetchCommand
+    command = FetchCommand(
+        command_id="test_cmd",
+        command_type=CommandType.FETCH_PAGE,
+        entity_set="Products",
+        skip=0,
+        top=10,
+        filter_clause="UnitPrice gt 20",
+        select_clause="ProductID,ProductName,UnitPrice",
+        orderby_clause="UnitPrice desc",
+        expand_clause="Category,Supplier",
+        groupby_clause="CategoryID",
+        aggregate_clause="sum(UnitPrice) as TotalPrice",
+        count_option=True,
+        search_clause="chocolate",
+        custom_params={"sap-client": "100"}
+    )
+    
+    params = command.url_params
+    
+    # Verify all parameters are included
+    expected_params = {
+        '$skip': '0',
+        '$top': '10',
+        '$filter': 'UnitPrice gt 20',
+        '$select': 'ProductID,ProductName,UnitPrice',
+        '$orderby': 'UnitPrice desc',
+        '$expand': 'Category,Supplier',
+        '$search': 'chocolate',
+        '$count': 'true',
+        '$apply': 'groupby((CategoryID)),aggregate(sum(UnitPrice) as TotalPrice)',
+        'sap-client': '100'
+    }
+    
+    for key, value in expected_params.items():
+        assert key in params, f"Missing parameter: {key}"
+        assert params[key] == value, f"Parameter {key}: expected {value}, got {params[key]}"
+    
+    print(f" Query options structure works: {len(params)} parameters generated")
+    print(f"   Parameters: {list(params.keys())}")
+
+
+async def test_config_validation():
+    """Test 4: Configuration validation"""
+    print("\n🧪 Test 4: Configuration Validation")
+    
+    # Test valid new config
+    try:
+        valid_config = ClientConfig(
+            sap_server="test-server.com",
+            sap_port=8000,
+            service_name="TEST_SRV",
+            use_https=True,
+            username="test",
+            password="test"
+        )
+        valid_config.validate()
+        print(" Valid new config passes validation")
+    except Exception as e:
+        print(f"❌ Valid config failed validation: {e}")
+        raise
+    
+    # Test valid legacy config
+    try:
+        legacy_config = ClientConfig(
+            service_url="https://test.com/service",
+            username="test",
+            password="test"
+        )
+        legacy_config.validate()
+        print(" Valid legacy config passes validation")
+    except Exception as e:
+        print(f"❌ Valid legacy config failed validation: {e}")
+        raise
+    
+    # Test invalid configs
+    try:
+        invalid_config = ClientConfig(
+            sap_server="",  # Empty server
+            service_name="TEST_SRV",
+            username="test",
+            password="test"
+        )
+        invalid_config.validate()
+        print("❌ Invalid config should have failed validation")
+        assert False, "Invalid config should have failed"
+    except ValueError:
+        print(" Invalid config correctly rejected")
+
+
+async def test_northwind_connection():
+    """Test 5: Real connection to Northwind service"""
+    print("\n🧪 Test 5: Real Northwind Connection")
+    
+    # Use public Northwind service for testing
+    config = ClientConfig(
+        service_url="https://services.odata.org/V2/Northwind/Northwind.svc",
+        output_directory="./test_output"
+    )
+    
     connector = SAPODataConnector(config)
     
     try:
-        print("\n🔧 STEP 1: Initializing connector...")
-        await connector.initialize()
-        print("✅ Connector initialized successfully!")
+        # Test initialization
+        print("   Initializing connector...")
+        entity_info = await connector.initialize()
+        print(f" Initialization successful: {entity_info['total_entities']} entities found")
         
-        # Test 1: Basic Expand Query
-        print("\n📊 TEST 1: Products with Category Information (Expand)")
-        print("-" * 50)
+        # Get the first available entity for testing
+        available_entities = list(entity_info['entities'])
+        if not available_entities:
+            print("❌ No entities available for testing")
+            return
         
-        result1 = await connector.get_data_with_expand(
-            entity_name="Products",
-            expand_properties=["Category"],
-            select_fields=["ProductID", "ProductName", "UnitPrice", "UnitsInStock"],
-            filter_condition="UnitPrice gt 20",
-            orderby="ProductName asc",
-            top=5
+        test_entity = available_entities[0]['name']
+        print(f"   Testing with entity: {test_entity}")
+        
+        # Test basic query with new options
+        print("   Testing enhanced query options...")
+        result = await connector.get_data(
+            entity_name=test_entity,
+            record_limit=5,
+            batch_size=3,
+            max_workers=2
         )
         
-        print(f"✅ Retrieved {result1['record_count']} products with category info")
-        if result1['records']:
-            sample = result1['records'][0]
-            print(f"   Sample: {sample.get('ProductName')} - ${sample.get('UnitPrice')}")
-            if 'Category' in sample:
-                print(f"   Category: {sample['Category'].get('CategoryName')}")
+        records_processed = result['execution_stats']['records_processed']
+        duration = result['execution_stats']['duration_seconds']
         
-        # Test 2: Complex Nested Expand
-        print("\n📊 TEST 2: Orders with Customer and Order Details (Complex Expand)")
-        print("-" * 60)
+        print(f" Enhanced query successful: {records_processed} records in {duration:.2f}s")
         
-        # Create complex expand clauses
-        order_details_expand = ExpandClause(
-            property_name="Order_Details",
-            select_fields=["ProductID", "Quantity", "UnitPrice"],
-            top=3  # Limit order details per order
-        )
-        
-        customer_expand = ExpandClause(
-            property_name="Customer",
-            select_fields=["CustomerID", "CompanyName", "ContactName", "Country"]
-        )
-        
-        result2 = await connector.get_data_with_expand(
-            entity_name="Orders",
-            expand_properties=["Customer", "Order_Details"],
-            select_fields=["OrderID", "OrderDate", "Freight"],
-            filter_condition="Freight gt 50",
-            top=3
-        )
-        
-        print(f"✅ Retrieved {result2['record_count']} orders with customer and details")
-        if result2['records']:
-            sample = result2['records'][0]
-            print(f"   Order: {sample.get('OrderID')} - Freight: ${sample.get('Freight')}")
-            if 'Customer' in sample:
-                print(f"   Customer: {sample['Customer'].get('CompanyName')}")
-            if 'Order_Details' in sample:
-                print(f"   Order Details: {len(sample['Order_Details'])} items")
-        
-        # Test 3: Aggregation Query
-        print("\n📊 TEST 3: Sales Summary by Category (Aggregation)")
-        print("-" * 50)
-        
-        # Create aggregation clauses
-        aggregations = [
-            AggregateClause("UnitPrice", AggregateFunction.AVERAGE, "AvgPrice"),
-            AggregateClause("UnitsInStock", AggregateFunction.SUM, "TotalStock"),
-            AggregateClause("ProductID", AggregateFunction.COUNT, "ProductCount")
-        ]
-        
-        result3 = await connector.get_aggregated_data(
-            entity_name="Products",
-            group_by_fields=["CategoryID"],
-            aggregations=aggregations,
-            filter_condition="UnitPrice gt 0"
-        )
-        
-        print(f"✅ Retrieved {result3['record_count']} category summaries")
-        if result3['records']:
-            for record in result3['records'][:3]:  # Show first 3
-                print(f"   Category {record.get('CategoryID')}: "
-                      f"Avg Price: ${record.get('AvgPrice', 0):.2f}, "
-                      f"Products: {record.get('ProductCount', 0)}")
-        
-        # Test 4: Custom Query Builder
-        print("\n📊 TEST 4: Custom Query with Query Builder")
-        print("-" * 45)
-        
-        # Build a complex custom query
-        query_builder = (connector.create_query_builder("Customers")
-                        .select("CustomerID", "CompanyName", "ContactName", "Country")
-                        .filter_equals("Country", "USA")
-                        .filter_contains("CompanyName", "Market")
-                        .orderby("CompanyName")
-                        .top(10))
-        
-        result4 = await connector.get_data_with_custom_query(query_builder)
-        
-        print(f"✅ Retrieved {result4['record_count']} US customers with 'Market' in name")
-        if result4['records']:
-            for customer in result4['records']:
-                print(f"   {customer.get('CompanyName')} - {customer.get('ContactName')}")
-        
-        # Test 5: Advanced Filtering with Functions
-        print("\n📊 TEST 5: Advanced Filtering with OData Functions")
-        print("-" * 55)
-        
-        # Create query with multiple function-based filters
-        advanced_query = (connector.create_query_builder("Products")
-                         .select("ProductID", "ProductName", "UnitPrice", "CategoryID")
-                         .filter("contains(ProductName, 'Cheese')")
-                         .filter("UnitPrice ge 10")
-                         .orderby("UnitPrice", descending=True)
-                         .top(5))
-        
-        result5 = await connector.get_data_with_custom_query(advanced_query)
-        
-        print(f"✅ Retrieved {result5['record_count']} cheese products >= $10")
-        if result5['records']:
-            for product in result5['records']:
-                print(f"   {product.get('ProductName')} - ${product.get('UnitPrice')}")
-        
-        # Test 6: Date Range and Complex Filtering
-        print("\n📊 TEST 6: Orders with Date Range and Complex Filters")
-        print("-" * 55)
-        
-        date_query = (connector.create_query_builder("Orders")
-                     .select("OrderID", "CustomerID", "OrderDate", "Freight")
-                     .filter("OrderDate ge 1996-01-01T00:00:00Z")
-                     .filter("OrderDate le 1996-12-31T23:59:59Z")
-                     .filter("Freight gt 100")
-                     .orderby("Freight", descending=True)
-                     .top(10))
-        
-        result6 = await connector.get_data_with_custom_query(date_query)
-        
-        print(f"✅ Retrieved {result6['record_count']} high-freight orders from 1996")
-        if result6['records']:
-            for order in result6['records']:
-                print(f"   Order {order.get('OrderID')}: "
-                      f"${order.get('Freight')} on {order.get('OrderDate')[:10]}")
-        
-        # Test 7: Count and Pagination
-        print("\n📊 TEST 7: Paginated Results with Count")
-        print("-" * 40)
-        
-        paginated_query = (connector.create_query_builder("Products")
-                          .select("ProductID", "ProductName", "UnitPrice")
-                          .filter("UnitPrice gt 15")
-                          .orderby("UnitPrice", descending=True)
-                          .count(True)
-                          .skip(5)
-                          .top(10))
-        
-        result7 = await connector.get_data_with_custom_query(paginated_query)
-        
-        print(f"✅ Retrieved {result7['record_count']} products (page 2)")
-        print(f"   Total count: {result7.get('odata_count', 'N/A')}")
-        if result7['records']:
-            for product in result7['records'][:3]:  # Show first 3
-                print(f"   {product.get('ProductName')} - ${product.get('UnitPrice')}")
-        
-        # Test 8: Multiple Entity Types with Different Queries
-        print("\n📊 TEST 8: Multiple Queries in Sequence")
-        print("-" * 40)
-        
-        # Query 1: Top categories by product count
-        cat_query = (connector.create_query_builder("Categories")
-                    .select("CategoryID", "CategoryName", "Description")
-                    .orderby("CategoryName")
-                    .top(5))
-        
-        categories_result = await connector.get_data_with_custom_query(cat_query)
-        print(f"✅ Retrieved {categories_result['record_count']} categories")
-        
-        # Query 2: Suppliers from specific countries
-        supplier_query = (connector.create_query_builder("Suppliers")
-                         .select("SupplierID", "CompanyName", "Country", "City")
-                         .filter_in("Country", ["USA", "UK", "Germany"])
-                         .orderby("Country")
-                         .orderby("CompanyName")
-                         .top(10))
-        
-        suppliers_result = await connector.get_data_with_custom_query(supplier_query)
-        print(f"✅ Retrieved {suppliers_result['record_count']} suppliers from USA/UK/Germany")
-        
-        # Summary
-        print("\n" + "=" * 70)
-        print("🎉 ALL ENHANCED FEATURES TESTED SUCCESSFULLY!")
-        print("=" * 70)
-        
-        total_records = (result1['record_count'] + result2['record_count'] + 
-                        result3['record_count'] + result4['record_count'] + 
-                        result5['record_count'] + result6['record_count'] + 
-                        result7['record_count'] + categories_result['record_count'] + 
-                        suppliers_result['record_count'])
-        
-        print(f"📈 Total Records Retrieved: {total_records}")
-        print(f"🔍 Query Types Tested: 9")
-        print(f"✨ Features Demonstrated:")
-        print(f"   • $expand with navigation properties")
-        print(f"   • Complex nested $expand operations")
-        print(f"   • $apply with groupby and aggregations")
-        print(f"   • Advanced $filter with functions")
-        print(f"   • $select field projection")
-        print(f"   • $orderby sorting")
-        print(f"   • $top and $skip pagination")
-        print(f"   • $count for total record counts")
-        print(f"   • Custom query builder patterns")
-        print(f"   • Multiple filter combinations")
-        
-        return True
+        # Verify data structure
+        if test_entity in result['data']:
+            entity_data = result['data'][test_entity]['records']
+            if entity_data:
+                sample_record = entity_data[0]
+                print(f" Data structure correct: {len(entity_data)} {test_entity} records")
+                print(f"   Sample record keys: {list(sample_record.keys())[:5]}...")  # First 5 fields
+            else:
+                print(f"⚠️ No data returned for {test_entity}")
+        else:
+            print(f"⚠️ Entity {test_entity} not found in result data")
         
     except Exception as e:
-        print(f"\n❌ Test failed: {e}")
-        import traceback
-        traceback.print_exc()
-        return False
+        print(f"❌ Northwind connection test failed: {e}")
+        raise
     
     finally:
-        # Cleanup
-        if connector and connector.proxy_pool:
-            try:
-                await connector._cleanup()
-            except:
-                pass
+        await connector.cleanup()
 
 
-async def demonstrate_query_builder_patterns():
-    """Demonstrate various query builder patterns"""
+async def run_all_tests():
+    """Run all tests"""
+    print(" Enhanced SAP OData Connector - Test Suite")
+    print("=" * 50)
     
-    print("\n" + "=" * 70)
-    print("🔧 QUERY BUILDER PATTERNS DEMONSTRATION")
-    print("=" * 70)
+    tests = [
+        test_sap_url_construction,
+        test_legacy_url_compatibility,
+        test_query_options_structure,
+        test_config_validation,
+        test_northwind_connection
+    ]
     
-    # Pattern 1: Simple selection and filtering
-    print("\n1️⃣ Simple Selection and Filtering:")
-    query1 = (ODataQueryBuilder("Products")
-             .select("ProductName", "UnitPrice", "UnitsInStock")
-             .filter_equals("CategoryID", 1)
-             .filter("UnitPrice gt 20")
-             .orderby("ProductName"))
+    passed = 0
+    failed = 0
     
-    print(f"   Query: {query1}")
+    for test in tests:
+        try:
+            await test()
+            passed += 1
+        except Exception as e:
+            print(f"❌ Test {test.__name__} failed: {e}")
+            failed += 1
     
-    # Pattern 2: Complex expand with nested operations
-    print("\n2️⃣ Complex Expand with Nested Operations:")
-    nested_expand = ExpandClause(
-        property_name="Order_Details",
-        select_fields=["Quantity", "UnitPrice"],
-        filter_condition="Quantity gt 10",
-        orderby="Quantity desc",
-        top=5
-    )
+    print(f"\n📊 Test Results: {passed} passed, {failed} failed")
     
-    query2 = (ODataQueryBuilder("Orders")
-             .select("OrderID", "OrderDate", "Freight")
-             .expand(nested_expand)
-             .filter_date_range("OrderDate", "1996-01-01T00:00:00Z", "1996-12-31T23:59:59Z")
-             .orderby("OrderDate", descending=True))
+    if failed == 0:
+        print("🎉 All tests passed! Enhanced features are working correctly.")
+    else:
+        print("⚠️ Some tests failed. Please check the implementation.")
     
-    print(f"   Query: {query2}")
-    
-    # Pattern 3: Aggregation with grouping
-    print("\n3️⃣ Aggregation with Grouping:")
-    query3 = (ODataQueryBuilder("Order_Details")
-             .groupby("ProductID")
-             .sum("Quantity", "TotalQuantity")
-             .average("UnitPrice", "AvgPrice")
-             .count_distinct("OrderID", "OrderCount")
-             .apply_transformation("filter(TotalQuantity gt 100)"))
-    
-    print(f"   Query: {query3}")
-    
-    # Pattern 4: Advanced filtering with functions
-    print("\n4️⃣ Advanced Filtering with Functions:")
-    query4 = (ODataQueryBuilder("Customers")
-             .select("CustomerID", "CompanyName", "ContactName")
-             .filter("contains(CompanyName, 'Market')")
-             .filter("startswith(ContactName, 'A')")
-             .filter_in("Country", ["USA", "Canada", "Mexico"])
-             .orderby_multiple([("Country", False), ("CompanyName", False)]))
-    
-    print(f"   Query: {query4}")
-    
-    # Pattern 5: Pagination with count
-    print("\n5️⃣ Pagination with Count:")
-    query5 = (ODataQueryBuilder("Products")
-             .select("ProductName", "UnitPrice")
-             .filter("UnitPrice gt 0")
-             .orderby("UnitPrice", descending=True)
-             .count(True)
-             .skip(20)
-             .top(10))
-    
-    print(f"   Query: {query5}")
-    
-    print(f"\n✨ All query patterns demonstrated!")
+    return failed == 0
 
 
 if __name__ == "__main__":
-    print("🚀 Starting Enhanced SAP OData Connector Tests...")
-    
-    # Run query builder pattern demonstration first
-    asyncio.run(demonstrate_query_builder_patterns())
-    
-    # Run main enhanced features test
-    success = asyncio.run(test_enhanced_features())
-    
-    print(f"\n🏁 Test result: {'SUCCESS' if success else 'FAILED'}")
-    
-    # Force exit to ensure no hanging
-    import os
-    os._exit(0 if success else 1)
+    success = asyncio.run(run_all_tests())
+    sys.exit(0 if success else 1)

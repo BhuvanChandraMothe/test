@@ -91,24 +91,24 @@ Entities: 20
 Result: 6 workers, 24 connections (4 connections per worker)
 ```
 
-## 🚀 Benefits of Dynamic Scaling
+##  Benefits of Dynamic Scaling
 
-### ✅ **Automatic Optimization**
+###  **Automatic Optimization**
 - No manual tuning required
 - Adapts to your specific workload
 - Prevents under-utilization and over-provisioning
 
-### ✅ **Resource Efficiency**
+###  **Resource Efficiency**
 - Small datasets don't waste resources
 - Large datasets get appropriate parallelism
 - Connection pools sized for actual needs
 
-### ✅ **Performance**
+###  **Performance**
 - Optimal worker-to-entity ratio
 - Sufficient connections for concurrent requests
 - Prevents connection starvation
 
-### ✅ **Reliability**
+###  **Reliability**
 - Bounded limits prevent resource exhaustion
 - User caps provide safety controls
 - Graceful scaling for any dataset size
@@ -175,4 +175,4 @@ The connector logs detailed information about the scaling decisions:
 - **Batch processing**: Multiple concurrent requests per worker
 - **Pool efficiency**: Prevents connection starvation
 
-The dynamic scaling ensures your connector runs optimally regardless of dataset size! 🚀
+The dynamic scaling ensures your connector runs optimally regardless of dataset size! 

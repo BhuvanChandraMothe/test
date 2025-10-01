@@ -16,7 +16,7 @@ def check_output_files():
         print("❌ No output directory found. The connector may not have run yet.")
         return False
     
-    print("📁 Output Directory Analysis:")
+    print(" Output Directory Analysis:")
     print("=" * 50)
     
     # Check raw data
