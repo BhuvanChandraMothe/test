@@ -268,12 +268,12 @@ class ConnectionPool:
                 self._is_validated = True
                 return True
             else:
-                logger.error("❌ Connection pool validation failed", 
+                logger.error("FAILED: Connection pool validation failed", 
                            status_code=response.status_code)
                 return False
                 
         except Exception as e:
-            logger.error("❌ Connection pool validation failed", error=str(e))
+            logger.error("FAILED: Connection pool validation failed", error=str(e))
             return False
     
     async def get_client(self) -> httpx.AsyncClient:

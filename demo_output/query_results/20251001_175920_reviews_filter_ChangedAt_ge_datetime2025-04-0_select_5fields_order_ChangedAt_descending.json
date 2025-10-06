@@ -1,0 +1,373 @@
+{
+  "query_info": {
+    "entity_name": "Reviews",
+    "filter_condition": "ChangedAt ge datetime'2025-04-04T17:59:18'",
+    "select_fields": "Id,Rating,Comment,ChangedAt,ProductId",
+    "order_by": "ChangedAt desc",
+    "total_records": 30,
+    "timestamp": "2025-10-01T17:59:20.085758",
+    "filename": "20251001_175920_reviews_filter_ChangedAt_ge_datetime2025-04-0_select_5fields_order_ChangedAt_descending.json"
+  },
+  "data": [
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b85046b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b85046b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1759183200000)/",
+      "Comment": " Overall I am extremely pleased with it.  I was surprised how nice this product really looks.  I've only had it a couple of days. So far I love it.  Not expensive for the quality.  I looked around quite a bit before deciding to try this and it fulfills all that I wanted.   It looks beautiful and modern.  I do really love this product and think it's a good buy.  After using that product my business skyrocketed!  Does what it should, so definitely deserves a good rating.  I would buy this product again, if I ever need too, big smile.  Great quality and exactly what was described.  Perfect for my needs.  This is great!  A great purchase, thank you!  It's convienent for me.  The good things are still available, this is the proof!",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b85046b27",
+      "ProductId": "HT-9991",
+      "Rating": 5
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84ecab27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84ecab27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1759096800000)/",
+      "Comment": " Adorable, but expensive.  Pretty looking product.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84ecab27",
+      "ProductId": "HT-2025",
+      "Rating": 4
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84fc0b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84fc0b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1759096800000)/",
+      "Comment": " It does it's job.  Not good, not bad.  Adorable, but expensive.  I cannot say as that it's perfect!  I would recommend this item to anyone who wants it.  Lower quality than expected.  Does not look the same as the picture provided...which was disappointing, but ok.  Everything's working like it should.  Packaging is not the same as getting it from the website.  Haven't seen good alternatives, so I picked this one.  Nothing special to mention on this one.  I didn't bother to return it but will not be purchasing this again.  Go for it, not really bad at all.  Pretty looking product.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84fc0b27",
+      "ProductId": "HT-9998",
+      "Rating": 2
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84968b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84968b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1759010400000)/",
+      "Comment": " Product functions as advertised.  Good product for the money.  I didn't bother to return it but will not be purchasing this again.  I cannot say as that it's perfect!  Material seems a bit cheaper than I had expected. It's okay.  I received this as a gift, otherwise I would return it.  Haven't seen good alternatives, so I picked this one.  Not expensive for the quality.  I would recommend this item to anyone who wants it.  It does it's job.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84968b27",
+      "ProductId": "HT-1002",
+      "Rating": 3
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84e6cb27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84e6cb27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1759010400000)/",
+      "Comment": " It does it's job.  I actually bought this for my dad when the old one was broken. He likes it.  Good product for the money.  If you're looking for something durable and heavy-duty I would not recommend this one.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84e6cb27",
+      "ProductId": "HT-6111",
+      "Rating": 4
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b85000b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b85000b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1759010400000)/",
+      "Comment": " I didn't bother to return it but will not be purchasing this again.  Everything's working like it should.  It does it's job.  Not bad for the price I suppose.  Packaging is not the same as getting it from the website.  Quite ok -- nothing extraordinary, though.  Adorable, but expensive.  I cannot say as that it's perfect!  As expected, no surprises ;-)",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b85000b27",
+      "ProductId": "HT-9995",
+      "Rating": 4
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84a74b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84a74b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758924000000)/",
+      "Comment": " Product functions as advertised.  Not good, not bad.  I didn't bother to return it but will not be purchasing this again.  Would buy a better quality next time.  I actually bought this for my dad when the old one was broken. He likes it.  Good product for the money.  Works as advertised.  Material seems a bit cheaper than I had expected. It's okay.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84a74b27",
+      "ProductId": "HT-1041",
+      "Rating": 4
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84abcb27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84abcb27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758924000000)/",
+      "Comment": " For a straight up purchase not a bad choice.  I would recommend this item to anyone who wants it.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84abcb27",
+      "ProductId": "HT-1055",
+      "Rating": 4
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84c84b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84c84b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758924000000)/",
+      "Comment": " Lower quality than expected.  Haven't seen good alternatives, so I picked this one.  Everything's working like it should.  It serves the intended purpose.  Not good, not bad.  I'am hoping that the product will continue to improve.  Pretty looking product.  If you're looking for something durable and heavy-duty I would not recommend this one.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84c84b27",
+      "ProductId": "HT-1102",
+      "Rating": 3
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84cb4b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84cb4b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758924000000)/",
+      "Comment": " Simple and easy to use. Top Design.  Not expensive for the quality.  I do really love this product and think it's a good buy.  Great quality and exactly what was described.  Everyone in my big family has one now - both adults, four teen and one middle schooler.  Overall I am extremely pleased with it.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84cb4b27",
+      "ProductId": "HT-1105",
+      "Rating": 5
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84da4b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84da4b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758924000000)/",
+      "Comment": " Material seems a bit cheaper than I had expected. It's okay.  Good product for the money.  I'am hoping that the product will continue to improve.  Go for it, not really bad at all.  I would recommend this item to anyone who wants it.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84da4b27",
+      "ProductId": "HT-1501",
+      "Rating": 2
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84ef4b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84ef4b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758924000000)/",
+      "Comment": " Everything's working like it should.  Does not look the same as the picture provided...which was disappointing, but ok.  I didn't bother to return it but will not be purchasing this again.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84ef4b27",
+      "ProductId": "HT-2000",
+      "Rating": 3
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84f5cb27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84f5cb27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758924000000)/",
+      "Comment": " Too expensive for what I received.  Not sure if I should even post one star....  Honestly I have no clue what you had in mind when choosing to offer this product.  It is so horrible that I can't even believe it!  Why is this even available here?",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84f5cb27",
+      "ProductId": "HT-8000",
+      "Rating": 1
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84f9ab27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84f9ab27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758924000000)/",
+      "Comment": " Nothing special to mention on this one.  I actually bought this for my dad when the old one was broken. He likes it.  I received this as a gift, otherwise I would return it.  Product functions as advertised.  Go for it, not really bad at all.  It does it's job.  I didn't bother to return it but will not be purchasing this again.  Adorable, but expensive.  Would buy a better quality next time.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84f9ab27",
+      "ProductId": "HT-8003",
+      "Rating": 2
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84abab27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84abab27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758837600000)/",
+      "Comment": " Design Fail! Not a happy customer.  Just don't spend your time on considering it.  Didn't receive what the picture looked like.  Not sure if I should even post one star....  Looks better than it works.  Horrible! Unsatisfied in every way!  I'm actually really surprised by the positive reviews, which I relied on when ordering.  We were able to return it for a full refund.  It is fatally flawed and should be avoided.  No instructions included for use or installation.  I'd expect a little more durability.  Why is this even available here?  Lower quality than expected.  The description is wrong. I sent it back.  It broke after 1 day. Poor Quality.  I don't recommend and will not purchase this brand again.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84abab27",
+      "ProductId": "HT-1052",
+      "Rating": 1
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84b02b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84b02b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758837600000)/",
+      "Comment": " I actually bought this for my dad when the old one was broken. He likes it.  Would buy a better quality next time.  If you're looking for something durable and heavy-duty I would not recommend this one.  It does it's job.  I didn't bother to return it but will not be purchasing this again.  Good product for the money.  Material seems a bit cheaper than I had expected. It's okay.  Not bad for the price I suppose.  Does not look the same as the picture provided...which was disappointing, but ok.  Works fine, but it is fragile...  Adorable, but expensive.  Pretty looking product.  I received this as a gift, otherwise I would return it.  I cannot say as that it's perfect!",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84b02b27",
+      "ProductId": "HT-1062",
+      "Rating": 3
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84b20b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84b20b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758837600000)/",
+      "Comment": " As expected, no surprises ;-)  Go for it, not really bad at all.  Product functions as advertised.  Lower quality than expected.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84b20b27",
+      "ProductId": "HT-1063",
+      "Rating": 3
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84be6b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84be6b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758837600000)/",
+      "Comment": " Not good, not bad.  I cannot say as that it's perfect!  Pretty looking product.  Everything's working like it should.  Lower quality than expected.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84be6b27",
+      "ProductId": "HT-1080",
+      "Rating": 4
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84c30b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84c30b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758837600000)/",
+      "Comment": " Why is this even available here?  I'd expect a little more durability.  I don't recommend and will not purchase this brand again.  Just don't spend your time on considering it.  Didn't receive what the picture looked like.  Too expensive for what I received.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84c30b27",
+      "ProductId": "HT-1090",
+      "Rating": 1
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84cd6b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84cd6b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758837600000)/",
+      "Comment": " It does it's job.  Everything's working like it should.  I didn't bother to return it but will not be purchasing this again.  Pretty looking product.  Lower quality than expected.  I actually bought this for my dad when the old one was broken. He likes it.  Works as advertised.  Would buy a better quality next time.  For a straight up purchase not a bad choice.  As expected, no surprises ;-)  I'am hoping that the product will continue to improve.  Material seems a bit cheaper than I had expected. It's okay.  Not expensive for the quality.  Not good, not bad.  Works fine, but it is fragile...  Product functions as advertised.  Adorable, but expensive.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84cd6b27",
+      "ProductId": "HT-1107",
+      "Rating": 3
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84e18b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84e18b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758837600000)/",
+      "Comment": " As expected, no surprises ;-)  For a straight up purchase not a bad choice.  I actually bought this for my dad when the old one was broken. He likes it.  Good product for the money.  I would recommend this item to anyone who wants it.  Adorable, but expensive.  Not expensive for the quality.  I'am hoping that the product will continue to improve.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84e18b27",
+      "ProductId": "HT-1095",
+      "Rating": 2
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84a12b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84a12b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758751200000)/",
+      "Comment": " Overall I am extremely pleased with it.  It looks beautiful and modern.  Great idea, I can use this for more than I expected.  I would buy this product again, if I ever need too, big smile.  I love it so much.  I've only had it a couple of days. So far I love it.  Great quality and exactly what was described.  A great purchase, thank you!  Sleek product!",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84a12b27",
+      "ProductId": "HT-1031",
+      "Rating": 5
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84bc0b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84bc0b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758751200000)/",
+      "Comment": " Product functions as advertised.  Works as advertised.  Lower quality than expected.  Quite ok -- nothing extraordinary, though.  Pretty looking product.  I didn't bother to return it but will not be purchasing this again.  I received this as a gift, otherwise I would return it.  Good product for the money.  Material seems a bit cheaper than I had expected. It's okay.  It serves the intended purpose.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84bc0b27",
+      "ProductId": "HT-1071",
+      "Rating": 2
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84d6eb27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84d6eb27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758751200000)/",
+      "Comment": " It looks beautiful and modern.  Great quality and exactly what was described.  Overall I am extremely pleased with it.  Sleek product!  Wow, wow, wow. Speachless!  Unique and beautiful. Excellent quality. Great service.  Definitely worth the investment.  Never saw a quality like that before.  I do really love this product and think it's a good buy.  I love it so much.  Does what it should, so definitely deserves a good rating.  Why didn't I buy these sooner? Such a cool Design!  Everyone in my big family has one now - both adults, four teen and one middle schooler.  I would buy this product again, if I ever need too, big smile.  Excellent engineering and the feeling of a very high quality product.  I looked around quite a bit before deciding to try this and it fulfills all that I wanted.   This is great!",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84d6eb27",
+      "ProductId": "HT-1120",
+      "Rating": 5
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84dc6b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84dc6b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758751200000)/",
+      "Comment": " Pretty looking product.  Material seems a bit cheaper than I had expected. It's okay.  Good product for the money.  Lower quality than expected.  Go for it, not really bad at all.  If you're looking for something durable and heavy-duty I would not recommend this one.  Not expensive for the quality.  Does not look the same as the picture provided...which was disappointing, but ok.  Adorable, but expensive.  It serves the intended purpose.  Product functions as advertised.  As expected, no surprises ;-)  I'am hoping that the product will continue to improve.  I received this as a gift, otherwise I would return it.  I didn't bother to return it but will not be purchasing this again.  Haven't seen good alternatives, so I picked this one.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84dc6b27",
+      "ProductId": "HT-6130",
+      "Rating": 4
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84e9ab27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84e9ab27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758751200000)/",
+      "Comment": " Product functions as advertised.  It serves the intended purpose.  I'am hoping that the product will continue to improve.  For a straight up purchase not a bad choice.  As expected, no surprises ;-)",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84e9ab27",
+      "ProductId": "HT-6101",
+      "Rating": 4
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84fe0b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84fe0b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758751200000)/",
+      "Comment": " Works as advertised.  Would buy a better quality next time.  For a straight up purchase not a bad choice.  Haven't seen good alternatives, so I picked this one.  I would recommend this item to anyone who wants it.  Not good, not bad.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84fe0b27",
+      "ProductId": "HT-9996",
+      "Rating": 4
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84a38b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84a38b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758664800000)/",
+      "Comment": " I would recommend this item to anyone who wants it.  Haven't seen good alternatives, so I picked this one.  As expected, no surprises ;-)  Not good, not bad.  I received this as a gift, otherwise I would return it.  Nothing special to mention on this one.  For a straight up purchase not a bad choice.  I'am hoping that the product will continue to improve.  Lower quality than expected.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84a38b27",
+      "ProductId": "HT-1037",
+      "Rating": 2
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84a58b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84a58b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758664800000)/",
+      "Comment": " I want my money back!  I have to say that I'm quite disappointed.  The description is wrong. I sent it back.  I'd expect a little more durability.  I'm a dummy for not throwing all in the trash.  I should have read the reviews that warned about how short, or small, this product is.  Not sure if I should even post one star....  It broke after 1 day. Poor Quality.  Didn't work, that is why I cannot recommend this product.  No instructions included for use or installation.  Looks better than it works.  We were able to return it for a full refund.  Reading these reviews, I really had to wonder if I had bought the same product.  So expensive. ...you can buy the same product for less money :(  The Worst I have ever seen!  Too expensive for what I received.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84a58b27",
+      "ProductId": "HT-1040",
+      "Rating": 1
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84b66b27')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Reviews(guid'42010a00-03d8-1fe0-a7cc-432b84b66b27')",
+        "type": "EPM_REF_APPS_SHOP.Review"
+      },
+      "ChangedAt": "/Date(1758664800000)/",
+      "Comment": " A great purchase, thank you!  Does what it should, so definitely deserves a good rating.  I was surprised how nice this product really looks.  Why didn't I buy these sooner? Such a cool Design!  Everyone in my big family has one now - both adults, four teen and one middle schooler.  Simple and easy to use. Top Design.  Sleek product!  Excellent engineering and the feeling of a very high quality product.  Never saw a quality like that before.  The good things are still available, this is the proof!  Great quality and exactly what was described.",
+      "Id": "42010a00-03d8-1fe0-a7cc-432b84b66b27",
+      "ProductId": "HT-1067",
+      "Rating": 5
+    }
+  ]
+}

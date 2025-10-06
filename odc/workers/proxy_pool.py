@@ -68,7 +68,7 @@ class ProxyWorker:
         
         try:
             # Apply rate limiting
-            logger.debug("⏳ Worker waiting for rate limit token", 
+            logger.debug(" Worker waiting for rate limit token", 
                          worker_id=self.worker_id,
                          command_id=command.command_id)
             
@@ -150,7 +150,7 @@ class ProxyWorker:
                 error_type=type(e).__name__
             )
             
-            logger.error("❌ Worker command execution failed",
+            logger.error("FAILED: Worker command execution failed",
                          worker_id=self.worker_id,
                          command_id=command.command_id,
                          entity=command.entity_set,
@@ -240,7 +240,7 @@ class ProxyWorker:
                 # Check if we should suppress next_link due to limits
                 if tracking_result.get("global_limit_reached") or tracking_result.get("entity_complete"):
                     next_link = None  # Stop pagination
-                    logger.info("🎯 Stopping pagination due to record limits", 
+                    logger.info("TARGET: Stopping pagination due to record limits", 
                                 worker_id=self.worker_id,
                                 command_id=command.command_id,
                                 entity=command.entity_set,
@@ -267,7 +267,7 @@ class ProxyWorker:
             elif response.status_code == 429:
                 # Rate limited
                 retry_after = int(response.headers.get('Retry-After', 60))
-                logger.warning("⚠️ Worker rate limited by server",
+                logger.warning("WARNING: Worker rate limited by server",
                                worker_id=self.worker_id,
                                command_id=command.command_id,
                                retry_after=retry_after)
@@ -282,7 +282,7 @@ class ProxyWorker:
             elif 400 <= response.status_code < 500:
                 # Client error - don't retry
                 error_msg = f"Client error {response.status_code}: {response.text}"
-                logger.error("🚫 Worker encountered client error", 
+                logger.error(" Worker encountered client error", 
                              worker_id=self.worker_id,
                              command_id=command.command_id,
                              status_code=response.status_code,
@@ -296,7 +296,7 @@ class ProxyWorker:
             
             else:
                 # Server error - will be retried
-                logger.warning("🔄 Worker encountered server error, will retry", 
+                logger.warning("Using full pipelineWorker encountered server error, will retry", 
                                worker_id=self.worker_id,
                                command_id=command.command_id,
                                status_code=response.status_code)

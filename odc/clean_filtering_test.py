@@ -55,7 +55,7 @@ def save_clean_data(data, filename):
 async def test_connector_filtering():
     """Test SAP OData Connector with clean data output"""
     
-    print("🎯 SAP ODATA CONNECTOR - CLEAN FILTERING TEST")
+    print("TARGET: SAP ODATA CONNECTOR - CLEAN FILTERING TEST")
     print("=" * 60)
     
     # Configuration
@@ -67,12 +67,12 @@ async def test_connector_filtering():
     connector = SAPODataConnector(config)
     
     try:
-        print("🔧 Initializing connector...")
+        print("SETUP: Initializing connector...")
         await connector.initialize()
         print(" Connector initialized successfully!")
         
         # TEST 1: Basic Products (no filter)
-        print("\n🧪 TEST 1: Get basic products (no filter)")
+        print("\nTEST: TEST 1: Get basic products (no filter)")
         result1 = await connector.get_data(
             entity_name="Products",
             select_fields="ProductID,ProductName,UnitPrice,CategoryID,UnitsInStock",
@@ -92,7 +92,7 @@ async def test_connector_filtering():
             print(f" Saved to: {filepath1}")
             
             # Display results
-            print("📊 BASIC PRODUCTS:")
+            print("RESULTS: BASIC PRODUCTS:")
             for i, product in enumerate(clean_products, 1):
                 name = product.get('ProductName', 'N/A')
                 price = product.get('UnitPrice', 'N/A')
@@ -100,10 +100,10 @@ async def test_connector_filtering():
                 stock = product.get('UnitsInStock', 'N/A')
                 print(f"   {i}. {name} - ${price} (Cat: {category}, Stock: {stock})")
         else:
-            print("❌ No products data found")
+            print("FAILED: No products data found")
         
         # TEST 2: Price Filtering
-        print("\n🧪 TEST 2: Filter expensive products (Price > $20)")
+        print("\nTEST: TEST 2: Filter expensive products (Price > $20)")
         result2 = await connector.get_data(
             entity_name="Products",
             filter_condition="UnitPrice gt 20",
@@ -124,16 +124,16 @@ async def test_connector_filtering():
             print(f" Saved to: {filepath2}")
             
             # Display results
-            print("💰 EXPENSIVE PRODUCTS (>$20):")
+            print("ధర: EXPENSIVE PRODUCTS (>$20):")
             for i, product in enumerate(clean_expensive, 1):
                 name = product.get('ProductName', 'N/A')
                 price = product.get('UnitPrice', 'N/A')
                 print(f"   {i}. {name} - ${price}")
         else:
-            print("❌ No expensive products data found")
+            print("FAILED: No expensive products data found")
         
         # TEST 3: Category Filtering
-        print("\n🧪 TEST 3: Filter products in Category 1 (Beverages)")
+        print("\nTEST: TEST 3: Filter products in Category 1 (Beverages)")
         result3 = await connector.get_data(
             entity_name="Products",
             filter_condition="CategoryID eq 1",
@@ -154,16 +154,16 @@ async def test_connector_filtering():
             print(f" Saved to: {filepath3}")
             
             # Display results
-            print("🥤 BEVERAGES (Category 1):")
+            print("పానీయాలు: BEVERAGES (Category 1):")
             for i, product in enumerate(clean_beverages, 1):
                 name = product.get('ProductName', 'N/A')
                 price = product.get('UnitPrice', 'N/A')
                 print(f"   {i}. {name} - ${price}")
         else:
-            print("❌ No beverages data found")
+            print("FAILED: No beverages data found")
         
         # TEST 4: Sorting
-        print("\n🧪 TEST 4: Get most expensive products (sorted)")
+        print("\nTEST: TEST 4: Get most expensive products (sorted)")
         result4 = await connector.get_data(
             entity_name="Products",
             select_fields="ProductID,ProductName,UnitPrice",
@@ -184,16 +184,16 @@ async def test_connector_filtering():
             print(f" Saved to: {filepath4}")
             
             # Display results
-            print("📈 MOST EXPENSIVE PRODUCTS:")
+            print("మొత్తం: MOST EXPENSIVE PRODUCTS:")
             for i, product in enumerate(clean_sorted, 1):
                 name = product.get('ProductName', 'N/A')
                 price = product.get('UnitPrice', 'N/A')
                 print(f"   {i}. {name} - ${price}")
         else:
-            print("❌ No sorted products data found")
+            print("FAILED: No sorted products data found")
         
         # TEST 5: Customer Filtering
-        print("\n🧪 TEST 5: Filter customers from Germany")
+        print("\nTEST: TEST 5: Filter customers from Germany")
         result5 = await connector.get_data(
             entity_name="Customers",
             filter_condition="Country eq 'Germany'",
@@ -214,14 +214,14 @@ async def test_connector_filtering():
             print(f" Saved to: {filepath5}")
             
             # Display results
-            print("🇩🇪 GERMAN CUSTOMERS:")
+            print("జర్మనీ: GERMAN CUSTOMERS:")
             for i, customer in enumerate(clean_customers, 1):
                 company = customer.get('CompanyName', 'N/A')
                 city = customer.get('City', 'N/A')
                 contact = customer.get('ContactName', 'N/A')
                 print(f"   {i}. {company} - {city} (Contact: {contact})")
         else:
-            print("❌ No German customers data found")
+            print("FAILED: No German customers data found")
         
         # Create summary
         summary = {
@@ -245,9 +245,9 @@ async def test_connector_filtering():
         }
         
         summary_path = save_clean_data(summary, "test_summary.json")
-        print(f"\n📄 Summary saved to: {summary_path}")
+        print(f"\nపేజీ: Summary saved to: {summary_path}")
         
-        print("\n🎉 ALL CONNECTOR FILTERING TESTS COMPLETED!")
+        print("\nGREAT: ALL CONNECTOR FILTERING TESTS COMPLETED!")
         print(" All data saved as clean JSON files (no metadata)")
         print(" Real data from SAP OData Connector (not hardcoded)")
         print(" Multiple filtering methods demonstrated")
@@ -255,7 +255,7 @@ async def test_connector_filtering():
         return True
         
     except Exception as e:
-        print(f"❌ Test failed: {e}")
+        print(f"FAILED: Test failed: {e}")
         import traceback
         traceback.print_exc()
         return False
@@ -263,7 +263,7 @@ async def test_connector_filtering():
     finally:
         try:
             await connector.cleanup()
-            print("🧹 Connector cleanup completed")
+            print("Cleanup: Connector cleanup completed")
         except:
             pass
 
@@ -273,8 +273,8 @@ if __name__ == "__main__":
     success = asyncio.run(test_connector_filtering())
     
     if success:
-        print("\n🎉 SUCCESS! Check './clean_test_output/' for all clean data files")
+        print("\nGREAT: SUCCESS! Check './clean_test_output/' for all clean data files")
     else:
-        print("\n❌ TEST FAILED!")
+        print("\nFAILED: TEST FAILED!")
     
     input("Press Enter to exit...")

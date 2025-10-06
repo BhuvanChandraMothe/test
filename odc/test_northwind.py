@@ -69,7 +69,7 @@ def save_test_data(data, filename):
 async def test_northwind():
     """Complete filtering tests with clean data output and file saving"""
     
-    print("🎯 SAP ODATA CONNECTOR - NORTHWIND FILTERING TESTS")
+    print("TARGET: SAP ODATA CONNECTOR - NORTHWIND FILTERING TESTS")
     print("=" * 60)
     print("Testing all filtering methods with clean data output")
     print("=" * 60)
@@ -77,7 +77,7 @@ async def test_northwind():
     # Clean up previous test output
     output_dir = "./northwind_test_output"
     if os.path.exists(output_dir):
-        print(f"🧹 Cleaning up previous test output: {output_dir}")
+        print(f"Cleanup: Cleaning up previous test output: {output_dir}")
         shutil.rmtree(output_dir)
     
     # Create configuration for SAP OData service
@@ -96,7 +96,7 @@ async def test_northwind():
         }
         
         # TEST 1: Basic Products (no filter)
-        print("\n🧪 TEST 1: Basic Products (No Filter)")
+        print("\nTEST: TEST 1: Basic Products (No Filter)")
         print("-" * 40)
         
         try:
@@ -126,22 +126,22 @@ async def test_northwind():
                 print(f" Saved to: {filepath}")
                 
                 # Display sample results
-                print("📊 BASIC PRODUCTS:")
+                print("RESULTS: BASIC PRODUCTS:")
                 for i, product in enumerate(clean_products[:3], 1):
                     name = product.get('ProductName', 'N/A')
                     price = product.get('UnitPrice', 'N/A')
                     category = product.get('CategoryID', 'N/A')
                     print(f"   {i}. {name} - ${price} (Category: {category})")
             else:
-                print("❌ No products data found")
+                print("FAILED: No products data found")
                 test_results['tests']['basic_products'] = {'error': 'No data found'}
                 
         except Exception as e:
-            print(f"❌ Test 1 failed: {e}")
+            print(f"FAILED: Test 1 failed: {e}")
             test_results['tests']['basic_products'] = {'error': str(e)}
         
         # TEST 2: Price Filtering
-        print("\n🧪 TEST 2: Expensive Products (Price > $20)")
+        print("\nTEST: TEST 2: Expensive Products (Price > $20)")
         print("-" * 40)
         
         try:
@@ -173,21 +173,21 @@ async def test_northwind():
                 print(f" Saved to: {filepath}")
                 
                 # Display sample results
-                print("💰 EXPENSIVE PRODUCTS:")
+                print("ధర: EXPENSIVE PRODUCTS:")
                 for i, product in enumerate(clean_products[:3], 1):
                     name = product.get('ProductName', 'N/A')
                     price = product.get('UnitPrice', 'N/A')
                     print(f"   {i}. {name} - ${price}")
             else:
-                print("❌ No expensive products found")
+                print("FAILED: No expensive products found")
                 test_results['tests']['expensive_products'] = {'error': 'No data found'}
                 
         except Exception as e:
-            print(f"❌ Test 2 failed: {e}")
+            print(f"FAILED: Test 2 failed: {e}")
             test_results['tests']['expensive_products'] = {'error': str(e)}
         
         # TEST 3: Category Filtering
-        print("\n🧪 TEST 3: Beverages (Category 1)")
+        print("\nTEST: TEST 3: Beverages (Category 1)")
         print("-" * 40)
         
         try:
@@ -219,21 +219,21 @@ async def test_northwind():
                 print(f" Saved to: {filepath}")
                 
                 # Display sample results
-                print("🥤 BEVERAGES:")
+                print("పానీయాలు: BEVERAGES:")
                 for i, product in enumerate(clean_products[:3], 1):
                     name = product.get('ProductName', 'N/A')
                     price = product.get('UnitPrice', 'N/A')
                     print(f"   {i}. {name} - ${price}")
             else:
-                print("❌ No beverages found")
+                print("FAILED: No beverages found")
                 test_results['tests']['beverages'] = {'error': 'No data found'}
                 
         except Exception as e:
-            print(f"❌ Test 3 failed: {e}")
+            print(f"FAILED: Test 3 failed: {e}")
             test_results['tests']['beverages'] = {'error': str(e)}
         
         # TEST 4: Sorting
-        print("\n🧪 TEST 4: Most Expensive Products (Sorted)")
+        print("\nTEST: TEST 4: Most Expensive Products (Sorted)")
         print("-" * 40)
         
         try:
@@ -265,21 +265,21 @@ async def test_northwind():
                 print(f" Saved to: {filepath}")
                 
                 # Display sample results
-                print("📈 MOST EXPENSIVE:")
+                print("మొత్తం: MOST EXPENSIVE:")
                 for i, product in enumerate(clean_products[:3], 1):
                     name = product.get('ProductName', 'N/A')
                     price = product.get('UnitPrice', 'N/A')
                     print(f"   {i}. {name} - ${price}")
             else:
-                print("❌ No sorted products found")
+                print("FAILED: No sorted products found")
                 test_results['tests']['sorted_products'] = {'error': 'No data found'}
                 
         except Exception as e:
-            print(f"❌ Test 4 failed: {e}")
+            print(f"FAILED: Test 4 failed: {e}")
             test_results['tests']['sorted_products'] = {'error': str(e)}
         
         # TEST 5: Customer Filtering
-        print("\n🧪 TEST 5: German Customers")
+        print("\nTEST: TEST 5: German Customers")
         print("-" * 40)
         
         try:
@@ -311,17 +311,17 @@ async def test_northwind():
                 print(f" Saved to: {filepath}")
                 
                 # Display sample results
-                print("🇩🇪 GERMAN CUSTOMERS:")
+                print("జర్మనీ: GERMAN CUSTOMERS:")
                 for i, customer in enumerate(clean_customers[:3], 1):
                     company = customer.get('CompanyName', 'N/A')
                     city = customer.get('City', 'N/A')
                     print(f"   {i}. {company} - {city}")
             else:
-                print("❌ No German customers found")
+                print("FAILED: No German customers found")
                 test_results['tests']['german_customers'] = {'error': 'No data found'}
                 
         except Exception as e:
-            print(f"❌ Test 5 failed: {e}")
+            print(f"FAILED: Test 5 failed: {e}")
             test_results['tests']['german_customers'] = {'error': str(e)}
         
         # Save complete test results
@@ -335,34 +335,34 @@ async def test_northwind():
                 job=PROMETHEUS_JOB_NAME,
                 registry=metrics_collector.registry
             )
-            print("\n📊 Metrics pushed to Grafana successfully!")
+            print("\nRESULTS: Metrics pushed to Grafana successfully!")
         except Exception as e:
-            print(f"\n⚠️ Failed to push metrics: {e}")
+            print(f"\nWARNING: Failed to push metrics: {e}")
         
         # Summary
         successful_tests = [name for name, test in test_results['tests'].items() if 'error' not in test]
         failed_tests = [name for name, test in test_results['tests'].items() if 'error' in test]
         
         print("\n" + "=" * 60)
-        print("🎉 NORTHWIND FILTERING TESTS COMPLETED!")
+        print("GREAT: NORTHWIND FILTERING TESTS COMPLETED!")
         print("=" * 60)
         print(f" Successful tests: {len(successful_tests)}")
-        print(f"❌ Failed tests: {len(failed_tests)}")
+        print(f"FAILED: Failed tests: {len(failed_tests)}")
         print(f" Results saved in: ./northwind_test_output/")
-        print(f"📄 Complete results: {complete_filepath}")
+        print(f"పేజీ: Complete results: {complete_filepath}")
         
         if successful_tests:
-            print("\n📊 SUCCESSFUL TESTS:")
+            print("\nRESULTS: SUCCESSFUL TESTS:")
             for test_name in successful_tests:
                 test_data = test_results['tests'][test_name]
                 print(f"   • {test_name}: {test_data.get('records_count', 0)} records")
         
         if failed_tests:
-            print("\n❌ FAILED TESTS:")
+            print("\nFAILED: FAILED TESTS:")
             for test_name in failed_tests:
                 print(f"   • {test_name}")
         
-        print("\n🔧 FILTERING METHODS TESTED:")
+        print("\nSETUP: FILTERING METHODS TESTED:")
         print("   • Basic data retrieval")
         print("   • Price filtering (UnitPrice gt 20)")
         print("   • Category filtering (CategoryID eq 1)")

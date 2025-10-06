@@ -80,33 +80,33 @@ class MetadataService:
                            content_type=response.headers.get('content-type', 'unknown'))
                 return True
             elif response.status_code == 401:
-                logger.error("❌ Connection test failed: Authentication required or invalid credentials",
+                logger.error("FAILED: Connection test failed: Authentication required or invalid credentials",
                            status_code=response.status_code)
                 return False
             elif response.status_code == 403:
-                logger.error("❌ Connection test failed: Access forbidden",
+                logger.error("FAILED: Connection test failed: Access forbidden",
                            status_code=response.status_code)
                 return False
             elif response.status_code == 404:
-                logger.error("❌ Connection test failed: Service not found",
+                logger.error("FAILED: Connection test failed: Service not found",
                            status_code=response.status_code)
                 return False
             else:
-                logger.error("❌ Connection test failed: Unexpected response",
+                logger.error("FAILED: Connection test failed: Unexpected response",
                            status_code=response.status_code)
                 return False
                 
         except httpx.TimeoutException:
-            logger.error("❌ Connection test failed: Request timeout")
+            logger.error("FAILED: Connection test failed: Request timeout")
             return False
         except httpx.ConnectError:
-            logger.error("❌ Connection test failed: Cannot connect to server")
+            logger.error("FAILED: Connection test failed: Cannot connect to server")
             return False
         except httpx.HTTPError as e:
-            logger.error("❌ Connection test failed: HTTP error", error=str(e))
+            logger.error("FAILED: Connection test failed: HTTP error", error=str(e))
             return False
         except Exception as e:
-            logger.error("❌ Connection test failed: Unexpected error", error=str(e))
+            logger.error("FAILED: Connection test failed: Unexpected error", error=str(e))
             return False
 
     async def fetch_metadata(self) -> Dict[str, EntitySchema]:
@@ -143,11 +143,24 @@ class MetadataService:
         """Parse EDMX XML content and extract entity schemas"""
         root = ET.fromstring(edmx_content)
         
-        # Define namespaces (OData V4 uses newer OASIS namespaces)
-        namespaces = {
+        # Try different namespace versions (V2 and V4)
+        namespaces_v4 = {
             'edmx': 'http://docs.oasis-open.org/odata/ns/edmx',
             'edm': 'http://docs.oasis-open.org/odata/ns/edm'
         }
+        
+        namespaces_v2 = {
+            'edmx': 'http://schemas.microsoft.com/ado/2007/06/edmx',
+            'edm': 'http://schemas.microsoft.com/ado/2008/09/edm'
+        }
+        
+        # Detect which namespace version to use
+        namespaces = namespaces_v4
+        if root.findall('.//edm:EntitySet', namespaces_v2):
+            namespaces = namespaces_v2
+            logger.info("Using OData V2 namespaces for metadata parsing")
+        else:
+            logger.info("Using OData V4 namespaces for metadata parsing")
         
         # First, build a mapping of EntitySet names to EntityType names
         entity_set_mapping = {}
@@ -444,7 +457,7 @@ class MetadataService:
             return str(er_file_path)
             
         except Exception as e:
-            logger.error("❌ Failed to save Entity Relationship file", 
+            logger.error("FAILED: Failed to save Entity Relationship file", 
                         error=str(e), 
                         file_path=str(er_file_path))
             raise

@@ -1,1483 +1,582 @@
 {
   "metadata": {
-    "generated_at": "2025-10-01T12:26:25.620897",
-    "service_url": "https://services.odata.org/V4/Northwind/Northwind.svc",
-    "total_entities": 26
+    "generated_at": "2025-10-01T17:59:15.589427",
+    "service_url": "https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/",
+    "total_entities": 9
   },
   "entities": {
-    "Categories": {
-      "name": "Category",
+    "Suppliers": {
+      "name": "Supplier",
       "properties": {
-        "CategoryID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "CategoryName": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Description": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Picture": {
-          "type": "Edm.Binary",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "CategoryID"
-      ],
-      "navigation_properties": {
-        "Products": {
-          "target_entity": "Products",
-          "relationship_type": "Collection(NorthwindModel.Product)"
-        }
-      },
-      "foreign_keys": {},
-      "property_count": 4,
-      "key_count": 1,
-      "navigation_count": 1
-    },
-    "CustomerDemographics": {
-      "name": "CustomerDemographic",
-      "properties": {
-        "CustomerTypeID": {
+        "ContactEmail": {
           "type": "Edm.String",
           "nullable": false,
-          "max_length": null
+          "max_length": "255"
         },
-        "CustomerDesc": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "CustomerTypeID"
-      ],
-      "navigation_properties": {
-        "Customers": {
-          "target_entity": "Customers",
-          "relationship_type": "Collection(NorthwindModel.Customer)"
-        }
-      },
-      "foreign_keys": {},
-      "property_count": 2,
-      "key_count": 1,
-      "navigation_count": 1
-    },
-    "Customers": {
-      "name": "Customer",
-      "properties": {
-        "CustomerID": {
+        "Id": {
           "type": "Edm.String",
           "nullable": false,
-          "max_length": null
+          "max_length": "10"
         },
-        "CompanyName": {
+        "Name": {
           "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ContactName": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ContactTitle": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Address": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "City": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Region": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "PostalCode": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Country": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
+          "nullable": false,
+          "max_length": "80"
         },
         "Phone": {
           "type": "Edm.String",
-          "nullable": true,
+          "nullable": false,
+          "max_length": "30"
+        },
+        "Email": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "255"
+        },
+        "WebAddress": {
+          "type": "Edm.String",
+          "nullable": false,
           "max_length": null
         },
-        "Fax": {
+        "FormattedAddress": {
           "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
+          "nullable": false,
+          "max_length": "129"
+        },
+        "FormattedContactName": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "81"
+        },
+        "ContactPhone1": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "30"
+        },
+        "ContactPhone2": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "30"
         }
       },
       "keys": [
-        "CustomerID"
+        "Id"
       ],
-      "navigation_properties": {
-        "Orders": {
-          "target_entity": "Orders",
-          "relationship_type": "Collection(NorthwindModel.Order)"
-        },
-        "CustomerDemographics": {
-          "target_entity": "CustomerDemographics",
-          "relationship_type": "Collection(NorthwindModel.CustomerDemographic)"
-        }
-      },
+      "navigation_properties": {},
       "foreign_keys": {},
-      "property_count": 11,
+      "property_count": 10,
       "key_count": 1,
-      "navigation_count": 2
+      "navigation_count": 0
     },
-    "Employees": {
-      "name": "Employee",
+    "MainCategories": {
+      "name": "MainCategory",
       "properties": {
-        "EmployeeID": {
-          "type": "Edm.Int32",
+        "Id": {
+          "type": "Edm.String",
           "nullable": false,
-          "max_length": null
+          "max_length": "40"
         },
-        "LastName": {
+        "Name": {
           "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "FirstName": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Title": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "TitleOfCourtesy": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "BirthDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
-        },
-        "HireDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
-        },
-        "Address": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "City": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Region": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "PostalCode": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Country": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "HomePhone": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Extension": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Photo": {
-          "type": "Edm.Binary",
-          "nullable": true,
-          "max_length": null
-        },
-        "Notes": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ReportsTo": {
-          "type": "Edm.Int32",
-          "nullable": true,
-          "max_length": null
-        },
-        "PhotoPath": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
+          "nullable": false,
+          "max_length": "40"
         }
       },
       "keys": [
-        "EmployeeID"
+        "Id"
       ],
-      "navigation_properties": {
-        "Employees1": {
-          "target_entity": "Employees",
-          "relationship_type": "Collection(NorthwindModel.Employee)"
-        },
-        "Employee1": {
-          "target_entity": "Employees",
-          "relationship_type": "NorthwindModel.Employee"
-        },
-        "Orders": {
-          "target_entity": "Orders",
-          "relationship_type": "Collection(NorthwindModel.Order)"
-        },
-        "Territories": {
-          "target_entity": "Territories",
-          "relationship_type": "Collection(NorthwindModel.Territory)"
-        }
-      },
-      "foreign_keys": {
-        "EmployeeID": {
-          "referenced_entity": "Employees",
-          "referenced_property": "EmployeeID"
-        }
-      },
-      "property_count": 18,
+      "navigation_properties": {},
+      "foreign_keys": {},
+      "property_count": 2,
       "key_count": 1,
-      "navigation_count": 4
+      "navigation_count": 0
     },
-    "Order_Details": {
-      "name": "Order_Detail",
+    "SubCategories": {
+      "name": "SubCategory",
       "properties": {
-        "OrderID": {
-          "type": "Edm.Int32",
+        "Id": {
+          "type": "Edm.String",
           "nullable": false,
-          "max_length": null
+          "max_length": "40"
         },
-        "ProductID": {
-          "type": "Edm.Int32",
+        "Name": {
+          "type": "Edm.String",
           "nullable": false,
-          "max_length": null
+          "max_length": "40"
         },
-        "UnitPrice": {
-          "type": "Edm.Decimal",
+        "MainCategoryId": {
+          "type": "Edm.String",
           "nullable": false,
-          "max_length": null
+          "max_length": "40"
         },
-        "Quantity": {
-          "type": "Edm.Int16",
+        "MainCategoryName": {
+          "type": "Edm.String",
           "nullable": false,
-          "max_length": null
-        },
-        "Discount": {
-          "type": "Edm.Single",
-          "nullable": false,
-          "max_length": null
+          "max_length": "40"
         }
       },
       "keys": [
-        "OrderID",
-        "ProductID"
+        "Id"
       ],
-      "navigation_properties": {
-        "Order": {
-          "target_entity": "Orders",
-          "relationship_type": "NorthwindModel.Order"
-        },
-        "Product": {
-          "target_entity": "Products",
-          "relationship_type": "NorthwindModel.Product"
+      "navigation_properties": {},
+      "foreign_keys": {
+        "MainCategoryId": {
+          "referenced_entity": "MainCategories",
+          "referenced_property": "Id"
         }
       },
-      "foreign_keys": {
-        "OrderID": {
-          "referenced_entity": "Orders",
-          "referenced_property": "OrderID"
+      "property_count": 4,
+      "key_count": 1,
+      "navigation_count": 0
+    },
+    "Reviews": {
+      "name": "Review",
+      "properties": {
+        "ChangedAt": {
+          "type": "Edm.DateTime",
+          "nullable": false,
+          "max_length": null
         },
-        "ProductID": {
+        "Comment": {
+          "type": "Edm.String",
+          "nullable": true,
+          "max_length": null
+        },
+        "HelpfulCount": {
+          "type": "Edm.Int32",
+          "nullable": false,
+          "max_length": null
+        },
+        "HelpfulForCurrentUser": {
+          "type": "Edm.Boolean",
+          "nullable": false,
+          "max_length": null
+        },
+        "Id": {
+          "type": "Edm.Guid",
+          "nullable": false,
+          "max_length": null
+        },
+        "IsReviewOfCurrentUser": {
+          "type": "Edm.Boolean",
+          "nullable": false,
+          "max_length": null
+        },
+        "ProductId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "Rating": {
+          "type": "Edm.Byte",
+          "nullable": false,
+          "max_length": null
+        },
+        "UserDisplayName": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "81"
+        }
+      },
+      "keys": [
+        "Id"
+      ],
+      "navigation_properties": {},
+      "foreign_keys": {
+        "ProductId": {
           "referenced_entity": "Products",
-          "referenced_property": "ProductID"
+          "referenced_property": "Id"
         }
       },
-      "property_count": 5,
-      "key_count": 2,
-      "navigation_count": 2
-    },
-    "Orders": {
-      "name": "Order",
-      "properties": {
-        "OrderID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "CustomerID": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "EmployeeID": {
-          "type": "Edm.Int32",
-          "nullable": true,
-          "max_length": null
-        },
-        "OrderDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
-        },
-        "RequiredDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShippedDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipVia": {
-          "type": "Edm.Int32",
-          "nullable": true,
-          "max_length": null
-        },
-        "Freight": {
-          "type": "Edm.Decimal",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipName": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipAddress": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipCity": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipRegion": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipPostalCode": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipCountry": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "OrderID"
-      ],
-      "navigation_properties": {
-        "Customer": {
-          "target_entity": "Customers",
-          "relationship_type": "NorthwindModel.Customer"
-        },
-        "Employee": {
-          "target_entity": "Employees",
-          "relationship_type": "NorthwindModel.Employee"
-        },
-        "Order_Details": {
-          "target_entity": "Order_Details",
-          "relationship_type": "Collection(NorthwindModel.Order_Detail)"
-        },
-        "Shipper": {
-          "target_entity": "Shippers",
-          "relationship_type": "NorthwindModel.Shipper"
-        }
-      },
-      "foreign_keys": {
-        "CustomerID": {
-          "referenced_entity": "Customers",
-          "referenced_property": "CustomerID"
-        },
-        "EmployeeID": {
-          "referenced_entity": "Employees",
-          "referenced_property": "EmployeeID"
-        }
-      },
-      "property_count": 14,
+      "property_count": 9,
       "key_count": 1,
-      "navigation_count": 4
+      "navigation_count": 0
     },
     "Products": {
       "name": "Product",
       "properties": {
-        "ProductID": {
+        "AverageRating": {
+          "type": "Edm.Decimal",
+          "nullable": false,
+          "max_length": null
+        },
+        "Name": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "255"
+        },
+        "Description": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "255"
+        },
+        "StockQuantity": {
           "type": "Edm.Int32",
           "nullable": false,
           "max_length": null
         },
-        "ProductName": {
+        "CurrencyCode": {
           "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
+          "nullable": false,
+          "max_length": "5"
         },
-        "SupplierID": {
-          "type": "Edm.Int32",
-          "nullable": true,
-          "max_length": null
-        },
-        "CategoryID": {
-          "type": "Edm.Int32",
-          "nullable": true,
-          "max_length": null
-        },
-        "QuantityPerUnit": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "UnitPrice": {
+        "DimensionDepth": {
           "type": "Edm.Decimal",
-          "nullable": true,
+          "nullable": false,
           "max_length": null
         },
-        "UnitsInStock": {
-          "type": "Edm.Int16",
-          "nullable": true,
+        "DimensionHeight": {
+          "type": "Edm.Decimal",
+          "nullable": false,
           "max_length": null
         },
-        "UnitsOnOrder": {
-          "type": "Edm.Int16",
-          "nullable": true,
+        "DimensionUnit": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "DimensionWidth": {
+          "type": "Edm.Decimal",
+          "nullable": false,
           "max_length": null
         },
-        "ReorderLevel": {
-          "type": "Edm.Int16",
-          "nullable": true,
-          "max_length": null
-        },
-        "Discontinued": {
+        "HasReviewOfCurrentUser": {
           "type": "Edm.Boolean",
           "nullable": false,
           "max_length": null
+        },
+        "Id": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "ImageUrl": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "255"
+        },
+        "IsFavoriteOfCurrentUser": {
+          "type": "Edm.Boolean",
+          "nullable": false,
+          "max_length": null
+        },
+        "LastModified": {
+          "type": "Edm.DateTime",
+          "nullable": false,
+          "max_length": null
+        },
+        "MainCategoryId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        },
+        "MainCategoryName": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        },
+        "MeasureUnit": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "Price": {
+          "type": "Edm.Decimal",
+          "nullable": false,
+          "max_length": null
+        },
+        "QuantityUnit": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "3"
+        },
+        "RatingCount": {
+          "type": "Edm.Int32",
+          "nullable": false,
+          "max_length": null
+        },
+        "SubCategoryId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        },
+        "SubCategoryName": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        },
+        "SupplierId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "SupplierName": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "80"
+        },
+        "WeightMeasure": {
+          "type": "Edm.Decimal",
+          "nullable": false,
+          "max_length": null
+        },
+        "WeightUnit": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
         }
       },
       "keys": [
-        "ProductID"
+        "Id"
       ],
-      "navigation_properties": {
-        "Category": {
-          "target_entity": "Categories",
-          "relationship_type": "NorthwindModel.Category"
-        },
-        "Order_Details": {
-          "target_entity": "Order_Details",
-          "relationship_type": "Collection(NorthwindModel.Order_Detail)"
-        },
-        "Supplier": {
-          "target_entity": "Suppliers",
-          "relationship_type": "NorthwindModel.Supplier"
-        }
-      },
+      "navigation_properties": {},
       "foreign_keys": {
-        "CategoryID": {
-          "referenced_entity": "Categories",
-          "referenced_property": "CategoryID"
+        "SubCategoryId": {
+          "referenced_entity": "SubCategories",
+          "referenced_property": "Id"
         },
-        "SupplierID": {
+        "SupplierId": {
           "referenced_entity": "Suppliers",
-          "referenced_property": "SupplierID"
+          "referenced_property": "Id"
         }
       },
-      "property_count": 10,
-      "key_count": 1,
-      "navigation_count": 3
-    },
-    "Regions": {
-      "name": "Region",
-      "properties": {
-        "RegionID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "RegionDescription": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "RegionID"
-      ],
-      "navigation_properties": {
-        "Territories": {
-          "target_entity": "Territories",
-          "relationship_type": "Collection(NorthwindModel.Territory)"
-        }
-      },
-      "foreign_keys": {},
-      "property_count": 2,
-      "key_count": 1,
-      "navigation_count": 1
-    },
-    "Shippers": {
-      "name": "Shipper",
-      "properties": {
-        "ShipperID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "CompanyName": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Phone": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "ShipperID"
-      ],
-      "navigation_properties": {
-        "Orders": {
-          "target_entity": "Orders",
-          "relationship_type": "Collection(NorthwindModel.Order)"
-        }
-      },
-      "foreign_keys": {},
-      "property_count": 3,
-      "key_count": 1,
-      "navigation_count": 1
-    },
-    "Suppliers": {
-      "name": "Supplier",
-      "properties": {
-        "SupplierID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "CompanyName": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ContactName": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ContactTitle": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Address": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "City": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Region": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "PostalCode": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Country": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Phone": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Fax": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "HomePage": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "SupplierID"
-      ],
-      "navigation_properties": {
-        "Products": {
-          "target_entity": "Products",
-          "relationship_type": "Collection(NorthwindModel.Product)"
-        }
-      },
-      "foreign_keys": {},
-      "property_count": 12,
-      "key_count": 1,
-      "navigation_count": 1
-    },
-    "Territories": {
-      "name": "Territory",
-      "properties": {
-        "TerritoryID": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "TerritoryDescription": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "RegionID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "TerritoryID"
-      ],
-      "navigation_properties": {
-        "Region": {
-          "target_entity": "Regions",
-          "relationship_type": "NorthwindModel.Region"
-        },
-        "Employees": {
-          "target_entity": "Employees",
-          "relationship_type": "Collection(NorthwindModel.Employee)"
-        }
-      },
-      "foreign_keys": {
-        "RegionID": {
-          "referenced_entity": "Regions",
-          "referenced_property": "RegionID"
-        }
-      },
-      "property_count": 3,
-      "key_count": 1,
-      "navigation_count": 2
-    },
-    "Alphabetical_list_of_products": {
-      "name": "Alphabetical_list_of_product",
-      "properties": {
-        "ProductID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "ProductName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "SupplierID": {
-          "type": "Edm.Int32",
-          "nullable": true,
-          "max_length": null
-        },
-        "CategoryID": {
-          "type": "Edm.Int32",
-          "nullable": true,
-          "max_length": null
-        },
-        "QuantityPerUnit": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "UnitPrice": {
-          "type": "Edm.Decimal",
-          "nullable": true,
-          "max_length": null
-        },
-        "UnitsInStock": {
-          "type": "Edm.Int16",
-          "nullable": true,
-          "max_length": null
-        },
-        "UnitsOnOrder": {
-          "type": "Edm.Int16",
-          "nullable": true,
-          "max_length": null
-        },
-        "ReorderLevel": {
-          "type": "Edm.Int16",
-          "nullable": true,
-          "max_length": null
-        },
-        "Discontinued": {
-          "type": "Edm.Boolean",
-          "nullable": false,
-          "max_length": null
-        },
-        "CategoryName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "CategoryName",
-        "Discontinued",
-        "ProductID",
-        "ProductName"
-      ],
-      "navigation_properties": {},
-      "foreign_keys": {},
-      "property_count": 11,
-      "key_count": 4,
-      "navigation_count": 0
-    },
-    "Category_Sales_for_1997": {
-      "name": "Category_Sales_for_1997",
-      "properties": {
-        "CategoryName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "CategorySales": {
-          "type": "Edm.Decimal",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "CategoryName"
-      ],
-      "navigation_properties": {},
-      "foreign_keys": {},
-      "property_count": 2,
-      "key_count": 1,
-      "navigation_count": 0
-    },
-    "Current_Product_Lists": {
-      "name": "Current_Product_List",
-      "properties": {
-        "ProductID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "ProductName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "ProductID",
-        "ProductName"
-      ],
-      "navigation_properties": {},
-      "foreign_keys": {},
-      "property_count": 2,
-      "key_count": 2,
-      "navigation_count": 0
-    },
-    "Customer_and_Suppliers_by_Cities": {
-      "name": "Customer_and_Suppliers_by_City",
-      "properties": {
-        "City": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "CompanyName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "ContactName": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Relationship": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "CompanyName",
-        "Relationship"
-      ],
-      "navigation_properties": {},
-      "foreign_keys": {},
-      "property_count": 4,
-      "key_count": 2,
-      "navigation_count": 0
-    },
-    "Invoices": {
-      "name": "Invoice",
-      "properties": {
-        "ShipName": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipAddress": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipCity": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipRegion": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipPostalCode": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipCountry": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "CustomerID": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "CustomerName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "Address": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "City": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Region": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "PostalCode": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Country": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Salesperson": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "OrderID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "OrderDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
-        },
-        "RequiredDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShippedDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipperName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "ProductID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "ProductName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "UnitPrice": {
-          "type": "Edm.Decimal",
-          "nullable": false,
-          "max_length": null
-        },
-        "Quantity": {
-          "type": "Edm.Int16",
-          "nullable": false,
-          "max_length": null
-        },
-        "Discount": {
-          "type": "Edm.Single",
-          "nullable": false,
-          "max_length": null
-        },
-        "ExtendedPrice": {
-          "type": "Edm.Decimal",
-          "nullable": true,
-          "max_length": null
-        },
-        "Freight": {
-          "type": "Edm.Decimal",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "CustomerName",
-        "Discount",
-        "OrderID",
-        "ProductID",
-        "ProductName",
-        "Quantity",
-        "Salesperson",
-        "ShipperName",
-        "UnitPrice"
-      ],
-      "navigation_properties": {},
-      "foreign_keys": {},
       "property_count": 26,
-      "key_count": 9,
+      "key_count": 1,
       "navigation_count": 0
     },
-    "Order_Details_Extendeds": {
-      "name": "Order_Details_Extended",
+    "ReviewAggregates": {
+      "name": "ReviewAggregate",
       "properties": {
-        "OrderID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "ProductID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "ProductName": {
+        "ProductId": {
           "type": "Edm.String",
           "nullable": false,
-          "max_length": null
+          "max_length": "10"
         },
-        "UnitPrice": {
-          "type": "Edm.Decimal",
+        "Rating": {
+          "type": "Edm.Byte",
           "nullable": false,
           "max_length": null
+        },
+        "RatingCount": {
+          "type": "Edm.Int32",
+          "nullable": false,
+          "max_length": null
+        }
+      },
+      "keys": [
+        "ProductId",
+        "Rating"
+      ],
+      "navigation_properties": {},
+      "foreign_keys": {
+        "ProductId": {
+          "referenced_entity": "Products",
+          "referenced_property": "Id"
+        }
+      },
+      "property_count": 3,
+      "key_count": 2,
+      "navigation_count": 0
+    },
+    "ShoppingCartItems": {
+      "name": "ShoppingCartItem",
+      "properties": {
+        "ShoppingCartId": {
+          "type": "Edm.Int16",
+          "nullable": false,
+          "max_length": null
+        },
+        "Id": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "ProductId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
         },
         "Quantity": {
-          "type": "Edm.Int16",
+          "type": "Edm.Int32",
           "nullable": false,
           "max_length": null
         },
-        "Discount": {
-          "type": "Edm.Single",
+        "Unit": {
+          "type": "Edm.String",
           "nullable": false,
-          "max_length": null
+          "max_length": "3"
         },
-        "ExtendedPrice": {
+        "SubTotal": {
           "type": "Edm.Decimal",
-          "nullable": true,
+          "nullable": false,
           "max_length": null
+        },
+        "CurrencyCode": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "5"
         }
       },
       "keys": [
-        "Discount",
-        "OrderID",
-        "ProductID",
-        "ProductName",
-        "Quantity",
-        "UnitPrice"
+        "Id"
       ],
       "navigation_properties": {},
-      "foreign_keys": {},
+      "foreign_keys": {
+        "ProductId": {
+          "referenced_entity": "Products",
+          "referenced_property": "Id"
+        },
+        "ShoppingCartId": {
+          "referenced_entity": "ShoppingCarts",
+          "referenced_property": "Id"
+        }
+      },
       "property_count": 7,
-      "key_count": 6,
-      "navigation_count": 0
-    },
-    "Order_Subtotals": {
-      "name": "Order_Subtotal",
-      "properties": {
-        "OrderID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "Subtotal": {
-          "type": "Edm.Decimal",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "OrderID"
-      ],
-      "navigation_properties": {},
-      "foreign_keys": {},
-      "property_count": 2,
       "key_count": 1,
       "navigation_count": 0
     },
-    "Orders_Qries": {
-      "name": "Orders_Qry",
+    "ShoppingCarts": {
+      "name": "ShoppingCart",
       "properties": {
-        "OrderID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "CustomerID": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "EmployeeID": {
-          "type": "Edm.Int32",
-          "nullable": true,
-          "max_length": null
-        },
-        "OrderDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
-        },
-        "RequiredDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShippedDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipVia": {
-          "type": "Edm.Int32",
-          "nullable": true,
-          "max_length": null
-        },
-        "Freight": {
-          "type": "Edm.Decimal",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipName": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipAddress": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipCity": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipRegion": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipPostalCode": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "ShipCountry": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "CompanyName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "Address": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "City": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Region": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "PostalCode": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "Country": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "CompanyName",
-        "OrderID"
-      ],
-      "navigation_properties": {},
-      "foreign_keys": {},
-      "property_count": 20,
-      "key_count": 2,
-      "navigation_count": 0
-    },
-    "Product_Sales_for_1997": {
-      "name": "Product_Sales_for_1997",
-      "properties": {
-        "CategoryName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "ProductName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "ProductSales": {
-          "type": "Edm.Decimal",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "CategoryName",
-        "ProductName"
-      ],
-      "navigation_properties": {},
-      "foreign_keys": {},
-      "property_count": 3,
-      "key_count": 2,
-      "navigation_count": 0
-    },
-    "Products_Above_Average_Prices": {
-      "name": "Products_Above_Average_Price",
-      "properties": {
-        "ProductName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "UnitPrice": {
-          "type": "Edm.Decimal",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "ProductName"
-      ],
-      "navigation_properties": {},
-      "foreign_keys": {},
-      "property_count": 2,
-      "key_count": 1,
-      "navigation_count": 0
-    },
-    "Products_by_Categories": {
-      "name": "Products_by_Category",
-      "properties": {
-        "CategoryName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "ProductName": {
-          "type": "Edm.String",
-          "nullable": false,
-          "max_length": null
-        },
-        "QuantityPerUnit": {
-          "type": "Edm.String",
-          "nullable": true,
-          "max_length": null
-        },
-        "UnitsInStock": {
+        "Id": {
           "type": "Edm.Int16",
-          "nullable": true,
-          "max_length": null
-        },
-        "Discontinued": {
-          "type": "Edm.Boolean",
           "nullable": false,
           "max_length": null
-        }
-      },
-      "keys": [
-        "CategoryName",
-        "Discontinued",
-        "ProductName"
-      ],
-      "navigation_properties": {},
-      "foreign_keys": {},
-      "property_count": 5,
-      "key_count": 3,
-      "navigation_count": 0
-    },
-    "Sales_by_Categories": {
-      "name": "Sales_by_Category",
-      "properties": {
-        "CategoryID": {
+        },
+        "Total": {
+          "type": "Edm.Decimal",
+          "nullable": false,
+          "max_length": null
+        },
+        "CurrencyCode": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "5"
+        },
+        "TotalQuantity": {
           "type": "Edm.Int32",
           "nullable": false,
           "max_length": null
         },
-        "CategoryName": {
+        "FormattedCustomerName": {
           "type": "Edm.String",
           "nullable": false,
-          "max_length": null
+          "max_length": "81"
         },
-        "ProductName": {
+        "FormattedAddress": {
           "type": "Edm.String",
           "nullable": false,
-          "max_length": null
-        },
-        "ProductSales": {
-          "type": "Edm.Decimal",
-          "nullable": true,
-          "max_length": null
+          "max_length": "129"
         }
       },
       "keys": [
-        "CategoryID",
-        "CategoryName",
-        "ProductName"
+        "Id"
       ],
       "navigation_properties": {},
       "foreign_keys": {},
-      "property_count": 4,
-      "key_count": 3,
+      "property_count": 6,
+      "key_count": 1,
       "navigation_count": 0
     },
-    "Sales_Totals_by_Amounts": {
-      "name": "Sales_Totals_by_Amount",
+    "Images": {
+      "name": "Image",
       "properties": {
-        "SaleAmount": {
-          "type": "Edm.Decimal",
-          "nullable": true,
-          "max_length": null
-        },
-        "OrderID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "CompanyName": {
+        "MimeType": {
           "type": "Edm.String",
           "nullable": false,
-          "max_length": null
+          "max_length": "100"
         },
-        "ShippedDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
+        "ProductId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "Id": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "70"
         }
       },
       "keys": [
-        "CompanyName",
-        "OrderID"
+        "ProductId",
+        "Id"
       ],
       "navigation_properties": {},
-      "foreign_keys": {},
-      "property_count": 4,
+      "foreign_keys": {
+        "ProductId": {
+          "referenced_entity": "Products",
+          "referenced_property": "Id"
+        }
+      },
+      "property_count": 3,
       "key_count": 2,
-      "navigation_count": 0
-    },
-    "Summary_of_Sales_by_Quarters": {
-      "name": "Summary_of_Sales_by_Quarter",
-      "properties": {
-        "ShippedDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
-        },
-        "OrderID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "Subtotal": {
-          "type": "Edm.Decimal",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "OrderID"
-      ],
-      "navigation_properties": {},
-      "foreign_keys": {},
-      "property_count": 3,
-      "key_count": 1,
-      "navigation_count": 0
-    },
-    "Summary_of_Sales_by_Years": {
-      "name": "Summary_of_Sales_by_Year",
-      "properties": {
-        "ShippedDate": {
-          "type": "Edm.DateTimeOffset",
-          "nullable": true,
-          "max_length": null
-        },
-        "OrderID": {
-          "type": "Edm.Int32",
-          "nullable": false,
-          "max_length": null
-        },
-        "Subtotal": {
-          "type": "Edm.Decimal",
-          "nullable": true,
-          "max_length": null
-        }
-      },
-      "keys": [
-        "OrderID"
-      ],
-      "navigation_properties": {},
-      "foreign_keys": {},
-      "property_count": 3,
-      "key_count": 1,
       "navigation_count": 0
     }
   },
   "relationships": {
-    "Employees": [
+    "SubCategories": [
       {
-        "from_entity": "Employees",
-        "to_entity": "Employees",
-        "from_property": "EmployeeID",
-        "to_property": "EmployeeID"
+        "from_entity": "SubCategories",
+        "to_entity": "MainCategories",
+        "from_property": "MainCategoryId",
+        "to_property": "Id"
       }
     ],
-    "Order_Details": [
+    "Reviews": [
       {
-        "from_entity": "Order_Details",
-        "to_entity": "Orders",
-        "from_property": "OrderID",
-        "to_property": "OrderID"
-      },
-      {
-        "from_entity": "Order_Details",
+        "from_entity": "Reviews",
         "to_entity": "Products",
-        "from_property": "ProductID",
-        "to_property": "ProductID"
-      }
-    ],
-    "Orders": [
-      {
-        "from_entity": "Orders",
-        "to_entity": "Customers",
-        "from_property": "CustomerID",
-        "to_property": "CustomerID"
-      },
-      {
-        "from_entity": "Orders",
-        "to_entity": "Employees",
-        "from_property": "EmployeeID",
-        "to_property": "EmployeeID"
+        "from_property": "ProductId",
+        "to_property": "Id"
       }
     ],
     "Products": [
       {
         "from_entity": "Products",
-        "to_entity": "Categories",
-        "from_property": "CategoryID",
-        "to_property": "CategoryID"
+        "to_entity": "SubCategories",
+        "from_property": "SubCategoryId",
+        "to_property": "Id"
       },
       {
         "from_entity": "Products",
         "to_entity": "Suppliers",
-        "from_property": "SupplierID",
-        "to_property": "SupplierID"
+        "from_property": "SupplierId",
+        "to_property": "Id"
       }
     ],
-    "Territories": [
+    "ReviewAggregates": [
       {
-        "from_entity": "Territories",
-        "to_entity": "Regions",
-        "from_property": "RegionID",
-        "to_property": "RegionID"
+        "from_entity": "ReviewAggregates",
+        "to_entity": "Products",
+        "from_property": "ProductId",
+        "to_property": "Id"
+      }
+    ],
+    "ShoppingCartItems": [
+      {
+        "from_entity": "ShoppingCartItems",
+        "to_entity": "Products",
+        "from_property": "ProductId",
+        "to_property": "Id"
+      },
+      {
+        "from_entity": "ShoppingCartItems",
+        "to_entity": "ShoppingCarts",
+        "from_property": "ShoppingCartId",
+        "to_property": "Id"
+      }
+    ],
+    "Images": [
+      {
+        "from_entity": "Images",
+        "to_entity": "Products",
+        "from_property": "ProductId",
+        "to_property": "Id"
       }
     ]
   },
   "summary": {
-    "entity_count": 26,
+    "entity_count": 9,
     "relationship_count": 8
   }
 }

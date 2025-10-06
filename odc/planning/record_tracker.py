@@ -35,7 +35,7 @@ class EntityRecordTracker:
         # Check if we've reached the target
         if self.records_fetched >= self.target_records:
             self.is_complete = True
-            logger.info(" Entity record fetching complete", 
+            logger.info("Entity record fetching complete: Entity record fetching complete", 
                        entity=self.entity_name,
                        fetched=self.records_fetched,
                        target=self.target_records)
@@ -128,7 +128,7 @@ class GlobalRecordTracker:
             )
             
             if global_limit_reached:
-                logger.info("🎯 Global record limit reached", 
+                logger.info("Global record limit reached: Global record limit reached", 
                            limit=self._total_records_limit,
                            fetched=self._global_records_fetched)
                 # Mark all entities as complete

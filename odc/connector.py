@@ -447,17 +447,28 @@ class SAPODataConnector:
         
         try:
             # Check if this is a simple single-entity query that can be optimized
-            if (entity_name and not selected_entities and 
+            lightweight_check = (entity_name and not selected_entities and 
                 not any([group_by, aggregate_functions]) and
-                hasattr(self, 'metadata_service') and self.metadata_service):
-                
+                hasattr(self, 'metadata_service') and self.metadata_service)
+            
+            print(f"DEBUG DEBUG: Lightweight check - entity_name={entity_name}, selected_entities={selected_entities}")
+            print(f"DEBUG DEBUG: group_by={group_by}, aggregate_functions={aggregate_functions}")
+            print(f"DEBUG DEBUG: has_metadata_service={hasattr(self, 'metadata_service')}")
+            print(f"DEBUG DEBUG: metadata_service_exists={getattr(self, 'metadata_service', None) is not None}")
+            print(f"DEBUG DEBUG: lightweight_check={lightweight_check}")
+            
+            if lightweight_check:
+                print("DEBUG START: Using lightweight method")
                 # Use lightweight query for simple requests
+                # If no record_limit is specified, fetch all records (unlimited)
                 return await self._lightweight_get_data(
                     entity_name, filter_condition, select_fields, 
                     expand_relations, order_by, search_query, 
                     include_count, custom_query_params, 
-                    record_limit or batch_size
+                    record_limit  # Pass None to fetch all records if not specified
                 )
+            else:
+                print("DEBUG Using full pipelineUsing full pipeline")
             
             # Fall back to full pipeline for complex queries
             self.is_running = True
@@ -551,105 +562,197 @@ class SAPODataConnector:
         search_query: Optional[str] = None,
         include_count: bool = False,
         custom_query_params: Optional[Dict[str, str]] = None,
-        limit: int = 1000
+        limit: Optional[int] = None
     ) -> Dict[str, Any]:
-        """Lightweight data fetching for simple queries - no full pipeline overhead"""
+        """Lightweight data fetching with automatic pagination to handle server-side limits"""
         
         from datetime import datetime, timezone
         start_time = datetime.now(timezone.utc)
         
-        logger.info(f" Lightweight query for {entity_name}")
+        logger.info(f"START: Lightweight query for {entity_name} with automatic pagination")
+        print(f"DEBUG START: Starting lightweight query for {entity_name}")
         
         try:
-            # Build query parameters
-            params = {}
+            # Build base query parameters
+            base_params = {}
             if filter_condition:
-                params['$filter'] = filter_condition
+                base_params['$filter'] = filter_condition
             if select_fields:
-                params['$select'] = select_fields
+                base_params['$select'] = select_fields
             if expand_relations:
-                params['$expand'] = expand_relations
+                base_params['$expand'] = expand_relations
             if order_by:
-                params['$orderby'] = order_by
+                base_params['$orderby'] = order_by
             if search_query:
-                params['$search'] = search_query
+                base_params['$search'] = search_query
             if include_count:
-                params['$count'] = 'true'
-            if limit:
-                params['$top'] = str(limit)
+                base_params['$count'] = 'true'
             
             # Add custom parameters
             if custom_query_params:
-                params.update(custom_query_params)
+                base_params.update(custom_query_params)
             
-            # Get HTTP client - use aiohttp directly for lightweight queries
+            # Get HTTP client - use aiohttp directly for lightweight queries with authentication
             import aiohttp
+            import base64
+            
             if not hasattr(self, '_lightweight_session'):
-                self._lightweight_session = aiohttp.ClientSession()
+                # Create session with authentication headers
+                headers = {}
+                
+                # Add authentication if available
+                if self.sap_config.username and self.sap_config.password:
+                    credentials = f"{self.sap_config.username}:{self.sap_config.password}"
+                    encoded_credentials = base64.b64encode(credentials.encode()).decode()
+                    headers['Authorization'] = f'Basic {encoded_credentials}'
+                
+                headers['Accept'] = 'application/json'
+                headers['Content-Type'] = 'application/json'
+                
+                self._lightweight_session = aiohttp.ClientSession(headers=headers)
+            
             client = self._lightweight_session
             
-            # Build URL
-            url = self.sap_config.entity_set_url(entity_name)
-            if params:
+            # Pagination settings
+            page_size = 500  # Use server's typical limit as page size
+            all_records = []
+            skip = 0
+            requests_made = 0
+            requests_failed = 0
+            total_count = None
+            
+            logger.info(f"Starting paginated fetch: Starting paginated fetch (page_size={page_size}, limit={limit or 'unlimited'})")
+            
+            while True:
+                # Build URL with pagination
+                params = base_params.copy()
+                params['$top'] = str(page_size)
+                params['$skip'] = str(skip)
+                
+                url = self.sap_config.entity_set_url(entity_name)
                 from urllib.parse import urlencode
                 url += f"?{urlencode(params)}"
+                
+                logger.info(f"Fetching page: Fetching page: skip={skip}, top={page_size}")
+                
+                # Make request
+                requests_made += 1
+                async with client.get(url) as response:
+                    if response.status == 200:
+                        data = await response.json()
+                        
+                        # Handle both OData V2 (with 'd' wrapper) and V4 (direct 'value') formats
+                        if 'd' in data:
+                            # OData V2 format
+                            page_records = data['d'].get('results', [])
+                            # V2 uses __count instead of @odata.count
+                            if total_count is None and '__count' in data['d']:
+                                total_count = data['d']['__count']
+                                logger.info(f"Total records available (V2): Total records available: {total_count}")
+                        else:
+                            # OData V4 format
+                            page_records = data.get('value', [])
+                            # V4 uses @odata.count
+                            if total_count is None and '@odata.count' in data:
+                                total_count = data['@odata.count']
+                                logger.info(f"Total records available (V4): Total records available: {total_count}")
+                        
+                        # Add records to collection
+                        all_records.extend(page_records)
+                        
+                        logger.info(f"Page fetched: Page fetched: {len(page_records)} records (total so far: {len(all_records)})")
+                        
+                        # Check stopping conditions
+                        if len(page_records) < page_size:
+                            # Last page - fewer records than requested
+                            logger.info("Reached last page: Reached last page (fewer records than page size)")
+                            break
+                        
+                        if limit and len(all_records) >= limit:
+                            # User-specified limit reached
+                            all_records = all_records[:limit]
+                            logger.info(f"User limit reached: User limit reached: {limit} records")
+                            break
+                        
+                        if total_count and len(all_records) >= total_count:
+                            # All available records fetched
+                            logger.info(f"All available records fetched: All available records fetched: {total_count}")
+                            break
+                        
+                        # Prepare for next page
+                        skip += page_size
+                        
+                        # Safety check to prevent infinite loops
+                        if requests_made > 1000:  # Max 500,000 records (1000 * 500)
+                            logger.warning("Safety limit reached: Safety limit reached: 1000 requests made")
+                            break
+                            
+                    else:
+                        error_text = await response.text()
+                        requests_failed += 1
+                        logger.error(f"అభ్యర్థన FAILED: Request failed: HTTP {response.status}: {error_text}")
+                        
+                        # If it's the first request, fail completely
+                        if requests_made == 1:
+                            raise Exception(f"HTTP {response.status}: {error_text}")
+                        else:
+                            # If we have some data, return what we have
+                            logger.warning(f"Partial data returned: Partial data returned due to error on page {requests_made}")
+                            break
             
-            logger.info(f" Making request to: {url}")
+            # Transform records to match expected format
+            from .storage.transformer import TransformedRecord
+            transformed_records = []
+            for i, record in enumerate(all_records):
+                # Generate a simple record ID
+                record_id = f"{entity_name}_{i+1}"
+                transformed_record = TransformedRecord(
+                    entity_name=entity_name,
+                    record_id=record_id,
+                    data=record,
+                    transformed_at=datetime.now(timezone.utc)
+                )
+                transformed_records.append(transformed_record)
             
-            # Make request
-            async with client.get(url) as response:
-                if response.status == 200:
-                    data = await response.json()
-                    records = data.get('value', [])
-                    
-                    # Transform records to match expected format
-                    from .storage.transformer import TransformedRecord
-                    transformed_records = []
-                    for i, record in enumerate(records):
-                        # Generate a simple record ID
-                        record_id = f"{entity_name}_{i+1}"
-                        transformed_record = TransformedRecord(
-                            entity_name=entity_name,
-                            record_id=record_id,
-                            data=record,
-                            transformed_at=datetime.now(timezone.utc)
-                        )
-                        transformed_records.append(transformed_record)
-                    
-                    duration = (datetime.now(timezone.utc) - start_time).total_seconds()
-                    
-                    logger.info(f" Query completed: {len(records)} records in {duration:.2f}s")
-                    
-                    # Save results to file automatically
-                    await self._save_query_results(entity_name, records, filter_condition, select_fields, order_by)
-                    
-                    # Return in expected format
-                    return {
-                        'execution_stats': {
-                            'duration_seconds': duration,
-                            'records_processed': len(records),
-                            'entities_processed': 1,
-                            'requests_made': 1,
-                            'requests_failed': 0
-                        },
-                        'data': {
-                            entity_name: {
-                                'records': transformed_records,
-                                'metadata': {
-                                    'entity_name': entity_name,
-                                    'record_count': len(records),
-                                    'query_params': params
-                                }
+            duration = (datetime.now(timezone.utc) - start_time).total_seconds()
+            
+            logger.info(f"Paginated query completed: Paginated query completed: {len(all_records)} records in {duration:.2f}s ({requests_made} requests)")
+            
+            # Save results to file automatically
+            await self._save_query_results(entity_name, all_records, filter_condition, select_fields, order_by)
+            
+            # Return in expected format
+            return {
+                'execution_stats': {
+                    'duration_seconds': duration,
+                    'records_processed': len(all_records),
+                    'entities_processed': 1,
+                    'requests_made': requests_made,
+                    'requests_failed': requests_failed,
+                    'pages_fetched': requests_made - requests_failed,
+                    'total_count_from_server': total_count
+                },
+                'data': {
+                    entity_name: {
+                        'records': transformed_records,
+                        'metadata': {
+                            'entity_name': entity_name,
+                            'record_count': len(all_records),
+                            'query_params': base_params,
+                            'pagination_info': {
+                                'page_size': page_size,
+                                'pages_fetched': requests_made - requests_failed,
+                                'total_requests': requests_made,
+                                'server_total_count': total_count
                             }
                         }
                     }
-                else:
-                    error_text = await response.text()
-                    raise Exception(f"HTTP {response.status}: {error_text}")
+                }
+            }
                     
         except Exception as e:
             duration = (datetime.now(timezone.utc) - start_time).total_seconds()
-            logger.error(f"❌ Query failed: {e}")
+            logger.error(f"ప్రశ్న FAILED: Paginated query failed: {e}")
             
             # Return error in expected format
             return {
@@ -657,8 +760,8 @@ class SAPODataConnector:
                     'duration_seconds': duration,
                     'records_processed': 0,
                     'entities_processed': 0,
-                    'requests_made': 1,
-                    'requests_failed': 1
+                    'requests_made': requests_made,
+                    'requests_failed': requests_failed + 1
                 },
                 'data': {},
                 'error': str(e)
@@ -729,7 +832,7 @@ class SAPODataConnector:
             with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(query_result, f, indent=2, default=str)
             
-            logger.info(f" Query results saved to: {filepath}")
+            logger.info(f"Query results saved to: Query results saved to: {filepath}")
             
         except Exception as e:
             logger.warning(f"Failed to save query results: {e}")
