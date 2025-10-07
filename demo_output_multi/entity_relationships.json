@@ -1,0 +1,582 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-07T11:02:45.471918",
+    "service_url": "https://sapes5.sapdevcenter.com:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV",
+    "total_entities": 9
+  },
+  "entities": {
+    "Suppliers": {
+      "name": "Supplier",
+      "properties": {
+        "ContactEmail": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "255"
+        },
+        "Id": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "Name": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "80"
+        },
+        "Phone": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "30"
+        },
+        "Email": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "255"
+        },
+        "WebAddress": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": null
+        },
+        "FormattedAddress": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "129"
+        },
+        "FormattedContactName": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "81"
+        },
+        "ContactPhone1": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "30"
+        },
+        "ContactPhone2": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "30"
+        }
+      },
+      "keys": [
+        "Id"
+      ],
+      "navigation_properties": {},
+      "foreign_keys": {},
+      "property_count": 10,
+      "key_count": 1,
+      "navigation_count": 0
+    },
+    "MainCategories": {
+      "name": "MainCategory",
+      "properties": {
+        "Id": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        },
+        "Name": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        }
+      },
+      "keys": [
+        "Id"
+      ],
+      "navigation_properties": {},
+      "foreign_keys": {},
+      "property_count": 2,
+      "key_count": 1,
+      "navigation_count": 0
+    },
+    "SubCategories": {
+      "name": "SubCategory",
+      "properties": {
+        "Id": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        },
+        "Name": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        },
+        "MainCategoryId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        },
+        "MainCategoryName": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        }
+      },
+      "keys": [
+        "Id"
+      ],
+      "navigation_properties": {},
+      "foreign_keys": {
+        "MainCategoryId": {
+          "referenced_entity": "MainCategories",
+          "referenced_property": "Id"
+        }
+      },
+      "property_count": 4,
+      "key_count": 1,
+      "navigation_count": 0
+    },
+    "Reviews": {
+      "name": "Review",
+      "properties": {
+        "ChangedAt": {
+          "type": "Edm.DateTime",
+          "nullable": false,
+          "max_length": null
+        },
+        "Comment": {
+          "type": "Edm.String",
+          "nullable": true,
+          "max_length": null
+        },
+        "HelpfulCount": {
+          "type": "Edm.Int32",
+          "nullable": false,
+          "max_length": null
+        },
+        "HelpfulForCurrentUser": {
+          "type": "Edm.Boolean",
+          "nullable": false,
+          "max_length": null
+        },
+        "Id": {
+          "type": "Edm.Guid",
+          "nullable": false,
+          "max_length": null
+        },
+        "IsReviewOfCurrentUser": {
+          "type": "Edm.Boolean",
+          "nullable": false,
+          "max_length": null
+        },
+        "ProductId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "Rating": {
+          "type": "Edm.Byte",
+          "nullable": false,
+          "max_length": null
+        },
+        "UserDisplayName": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "81"
+        }
+      },
+      "keys": [
+        "Id"
+      ],
+      "navigation_properties": {},
+      "foreign_keys": {
+        "ProductId": {
+          "referenced_entity": "Products",
+          "referenced_property": "Id"
+        }
+      },
+      "property_count": 9,
+      "key_count": 1,
+      "navigation_count": 0
+    },
+    "Products": {
+      "name": "Product",
+      "properties": {
+        "AverageRating": {
+          "type": "Edm.Decimal",
+          "nullable": false,
+          "max_length": null
+        },
+        "Name": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "255"
+        },
+        "Description": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "255"
+        },
+        "StockQuantity": {
+          "type": "Edm.Int32",
+          "nullable": false,
+          "max_length": null
+        },
+        "CurrencyCode": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "5"
+        },
+        "DimensionDepth": {
+          "type": "Edm.Decimal",
+          "nullable": false,
+          "max_length": null
+        },
+        "DimensionHeight": {
+          "type": "Edm.Decimal",
+          "nullable": false,
+          "max_length": null
+        },
+        "DimensionUnit": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "DimensionWidth": {
+          "type": "Edm.Decimal",
+          "nullable": false,
+          "max_length": null
+        },
+        "HasReviewOfCurrentUser": {
+          "type": "Edm.Boolean",
+          "nullable": false,
+          "max_length": null
+        },
+        "Id": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "ImageUrl": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "255"
+        },
+        "IsFavoriteOfCurrentUser": {
+          "type": "Edm.Boolean",
+          "nullable": false,
+          "max_length": null
+        },
+        "LastModified": {
+          "type": "Edm.DateTime",
+          "nullable": false,
+          "max_length": null
+        },
+        "MainCategoryId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        },
+        "MainCategoryName": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        },
+        "MeasureUnit": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "Price": {
+          "type": "Edm.Decimal",
+          "nullable": false,
+          "max_length": null
+        },
+        "QuantityUnit": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "3"
+        },
+        "RatingCount": {
+          "type": "Edm.Int32",
+          "nullable": false,
+          "max_length": null
+        },
+        "SubCategoryId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        },
+        "SubCategoryName": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "40"
+        },
+        "SupplierId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "SupplierName": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "80"
+        },
+        "WeightMeasure": {
+          "type": "Edm.Decimal",
+          "nullable": false,
+          "max_length": null
+        },
+        "WeightUnit": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        }
+      },
+      "keys": [
+        "Id"
+      ],
+      "navigation_properties": {},
+      "foreign_keys": {
+        "SubCategoryId": {
+          "referenced_entity": "SubCategories",
+          "referenced_property": "Id"
+        },
+        "SupplierId": {
+          "referenced_entity": "Suppliers",
+          "referenced_property": "Id"
+        }
+      },
+      "property_count": 26,
+      "key_count": 1,
+      "navigation_count": 0
+    },
+    "ReviewAggregates": {
+      "name": "ReviewAggregate",
+      "properties": {
+        "ProductId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "Rating": {
+          "type": "Edm.Byte",
+          "nullable": false,
+          "max_length": null
+        },
+        "RatingCount": {
+          "type": "Edm.Int32",
+          "nullable": false,
+          "max_length": null
+        }
+      },
+      "keys": [
+        "ProductId",
+        "Rating"
+      ],
+      "navigation_properties": {},
+      "foreign_keys": {
+        "ProductId": {
+          "referenced_entity": "Products",
+          "referenced_property": "Id"
+        }
+      },
+      "property_count": 3,
+      "key_count": 2,
+      "navigation_count": 0
+    },
+    "ShoppingCartItems": {
+      "name": "ShoppingCartItem",
+      "properties": {
+        "ShoppingCartId": {
+          "type": "Edm.Int16",
+          "nullable": false,
+          "max_length": null
+        },
+        "Id": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "ProductId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "Quantity": {
+          "type": "Edm.Int32",
+          "nullable": false,
+          "max_length": null
+        },
+        "Unit": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "3"
+        },
+        "SubTotal": {
+          "type": "Edm.Decimal",
+          "nullable": false,
+          "max_length": null
+        },
+        "CurrencyCode": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "5"
+        }
+      },
+      "keys": [
+        "Id"
+      ],
+      "navigation_properties": {},
+      "foreign_keys": {
+        "ProductId": {
+          "referenced_entity": "Products",
+          "referenced_property": "Id"
+        },
+        "ShoppingCartId": {
+          "referenced_entity": "ShoppingCarts",
+          "referenced_property": "Id"
+        }
+      },
+      "property_count": 7,
+      "key_count": 1,
+      "navigation_count": 0
+    },
+    "ShoppingCarts": {
+      "name": "ShoppingCart",
+      "properties": {
+        "Id": {
+          "type": "Edm.Int16",
+          "nullable": false,
+          "max_length": null
+        },
+        "Total": {
+          "type": "Edm.Decimal",
+          "nullable": false,
+          "max_length": null
+        },
+        "CurrencyCode": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "5"
+        },
+        "TotalQuantity": {
+          "type": "Edm.Int32",
+          "nullable": false,
+          "max_length": null
+        },
+        "FormattedCustomerName": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "81"
+        },
+        "FormattedAddress": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "129"
+        }
+      },
+      "keys": [
+        "Id"
+      ],
+      "navigation_properties": {},
+      "foreign_keys": {},
+      "property_count": 6,
+      "key_count": 1,
+      "navigation_count": 0
+    },
+    "Images": {
+      "name": "Image",
+      "properties": {
+        "MimeType": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "100"
+        },
+        "ProductId": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "10"
+        },
+        "Id": {
+          "type": "Edm.String",
+          "nullable": false,
+          "max_length": "70"
+        }
+      },
+      "keys": [
+        "ProductId",
+        "Id"
+      ],
+      "navigation_properties": {},
+      "foreign_keys": {
+        "ProductId": {
+          "referenced_entity": "Products",
+          "referenced_property": "Id"
+        }
+      },
+      "property_count": 3,
+      "key_count": 2,
+      "navigation_count": 0
+    }
+  },
+  "relationships": {
+    "SubCategories": [
+      {
+        "from_entity": "SubCategories",
+        "to_entity": "MainCategories",
+        "from_property": "MainCategoryId",
+        "to_property": "Id"
+      }
+    ],
+    "Reviews": [
+      {
+        "from_entity": "Reviews",
+        "to_entity": "Products",
+        "from_property": "ProductId",
+        "to_property": "Id"
+      }
+    ],
+    "Products": [
+      {
+        "from_entity": "Products",
+        "to_entity": "SubCategories",
+        "from_property": "SubCategoryId",
+        "to_property": "Id"
+      },
+      {
+        "from_entity": "Products",
+        "to_entity": "Suppliers",
+        "from_property": "SupplierId",
+        "to_property": "Id"
+      }
+    ],
+    "ReviewAggregates": [
+      {
+        "from_entity": "ReviewAggregates",
+        "to_entity": "Products",
+        "from_property": "ProductId",
+        "to_property": "Id"
+      }
+    ],
+    "ShoppingCartItems": [
+      {
+        "from_entity": "ShoppingCartItems",
+        "to_entity": "Products",
+        "from_property": "ProductId",
+        "to_property": "Id"
+      },
+      {
+        "from_entity": "ShoppingCartItems",
+        "to_entity": "ShoppingCarts",
+        "from_property": "ShoppingCartId",
+        "to_property": "Id"
+      }
+    ],
+    "Images": [
+      {
+        "from_entity": "Images",
+        "to_entity": "Products",
+        "from_property": "ProductId",
+        "to_property": "Id"
+      }
+    ]
+  },
+  "summary": {
+    "entity_count": 9,
+    "relationship_count": 8
+  }
+}

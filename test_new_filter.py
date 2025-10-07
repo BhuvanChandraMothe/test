@@ -17,7 +17,7 @@ async def simple_demo():
         sap_module="ES5",  # Automatically mapped to EPM_REF_APPS_SHOP_SRV
         username="P2010682507",
         password="Bhuvan@2001",
-        output_directory="./demo_output_joins"  #log this to the user so that he can see where the files are being saved.
+        output_directory="./demo_output_multi"  #log this to the user so that he can see where the files are being saved.
     )
     
     # Step 2: Create connector instance
@@ -33,7 +33,7 @@ async def simple_demo():
         
         # Test 1: Get all Products - logs are automatic!
         # print("\nFetching Products...")
-        products = await connector.get_data(entity_name="Produts")
+        products = await connector.get_data(selected_entities=["Products","Reviews"])
         # print(f"Done! Retrieved {products['execution_stats']['records_processed']} products")
         
         # Test 2: Get all Reviews - logs are automatic!
@@ -67,10 +67,10 @@ async def simple_demo():
         
         
         #joning data
-        supXprod = await connector.get_data(
-            entity_name="Products",
-            expand_relations="Supplier",
-        )
+        # supXprod = await connector.get_data(
+        #     entity_name="Products",
+        #     expand_relations="Supplier",
+        # )
             
         
         # datetime'YYYY-MM-DDTHH:MM:SS'

@@ -301,11 +301,46 @@ class DataTransformer:
         
         return value
     
+    # def _clean_string_value(
+    #     self, 
+    #     value: str, 
+    #     field_schema: Optional[Dict[str, Any]]
+    # ) -> str:
+    #     """Clean string values"""
+        
+    #     # Trim whitespace
+    #     cleaned = value.strip()
+        
+    #     # Handle empty strings
+    #     if not cleaned:
+    #         return None if field_schema and field_schema.get('nullable', True) else ''
+        
+    #     # Truncate if max length is specified
+    #     # if field_schema and 'max_length' in field_schema:
+    #     #     max_length = field_schema['max_length']
+    #     #     if max_length and len(cleaned) > max_length:
+    #     #         cleaned = cleaned[:max_length]
+    #     # Truncate if max length is specified
+    #     if field_schema and 'max_length' in field_schema:
+    #         try:
+    #             max_length = int(field_schema['max_length'])
+    #             if max_length and len(cleaned) > max_length:
+    #                 cleaned = cleaned[:max_length]
+    #         except (ValueError, TypeError):
+    #             # Log a warning if max_length is not a valid integer
+    #             logger.warning("Invalid max_length value in schema", 
+    #                         value=field_schema['max_length'])
+    #             logger.warning("String truncated to max length",
+    #                          original_length=len(value),
+    #                          max_length=max_length)
+        
+    #     return cleaned
+    
     def _clean_string_value(
         self, 
         value: str, 
         field_schema: Optional[Dict[str, Any]]
-    ) -> str:
+        ) -> str:
         """Clean string values"""
         
         # Trim whitespace
@@ -315,15 +350,24 @@ class DataTransformer:
         if not cleaned:
             return None if field_schema and field_schema.get('nullable', True) else ''
         
-        # Truncate if max length is specified
+        # Truncate if max length is specified in the schema
         if field_schema and 'max_length' in field_schema:
-            max_length = field_schema['max_length']
-            if max_length and len(cleaned) > max_length:
-                cleaned = cleaned[:max_length]
-                logger.warning("String truncated to max length",
-                             original_length=len(value),
-                             max_length=max_length)
-        
+            max_length_value = field_schema.get('max_length')
+
+            # Ensure the max_length value is a valid number before using it
+            if max_length_value is not None:
+                try:
+                    max_length = int(max_length_value)
+                    if max_length > 0 and len(cleaned) > max_length:
+                        cleaned = cleaned[:max_length]
+                        logger.warning("String truncated to max length",
+                                        original_length=len(value),
+                                        max_length=max_length)
+                except (ValueError, TypeError):
+                    # Log a warning if the schema value is not a valid integer
+                    logger.warning("Invalid max_length value in schema",
+                                    value=max_length_value)
+
         return cleaned
     
     def _extract_metadata(self, record: Dict[str, Any]) -> Dict[str, Any]:

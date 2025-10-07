@@ -855,18 +855,86 @@ class SAPODataConnector:
             # Process all entities
             return list(self.metadata_service.schemas.keys())
     
+    # async def _discovery_phase_with_query_options(
+    #     self, 
+    #     entities_to_process: List[str], 
+    #     query_options: Dict[str, Any]
+    # ):
+    #     """Phase 1: Discover metadata and plan execution with comprehensive query options"""
+    #     filter_condition = query_options.get('filter_condition')
+        
+    #     logger.info("Starting discovery phase with query options",
+    #                entities_count=len(entities_to_process),
+    #                entities=entities_to_process,
+    #                query_options=query_options)
+        
+    #     # Fetch metadata (already done in initialize, but ensure transformer is ready)
+    #     entity_schemas = self.metadata_service.schemas
+        
+    #     # Initialize transformer with schemas
+    #     self.transformer = DataTransformer(entity_schemas)
+        
+    #     # Validate requested entities exist
+    #     available_entities = set(entity_schemas.keys())
+    #     invalid_entities = [e for e in entities_to_process if e not in available_entities]
+    #     if invalid_entities:
+    #         raise ValueError(f"Invalid entities requested: {invalid_entities}. Available: {list(available_entities)}")
+        
+    #     # Get entity counts (with potential query impact)
+    #     async with self.count_service:
+    #         has_complex_query = any([
+    #             query_options.get('filter_condition'),
+    #             query_options.get('group_by'),
+    #             query_options.get('aggregate_functions'),
+    #             query_options.get('search_query')
+    #         ])
+            
+    #         if has_complex_query:
+    #             # For complex queries, we can't easily predict count, so use conservative estimates
+    #             logger.info("Complex query detected - using conservative count estimates")
+    #             entity_counts = {entity: 1000 for entity in entities_to_process}  # Conservative estimate
+    #         else:
+    #             entity_counts = await self.count_service.get_entity_counts(entities_to_process)
+        
+    #     # Build dependency graph
+    #     self.graph_builder.add_entities(entities_to_process)
+    #     relationships = self.metadata_service.get_foreign_key_relationships()
+    #     self.graph_builder.add_relationships(relationships)
+        
+    #     # Generate execution plan with query options consideration
+    #     processing_order = self.graph_builder.get_processing_order()
+    #     await self.plan_generator.create_execution_plan_with_query_options(
+    #         entity_counts, processing_order, entities_to_process, query_options
+    #     )
+        
+    #     logger.info("Discovery phase with query options completed",
+    #                entities=len(entities_to_process),
+    #                total_estimated_records=sum(entity_counts.values()),
+    #                processing_levels=len(processing_order),
+    #                has_complex_query=has_complex_query)
+        
+    #     # Log the execution plan summary
+    #     logger.info("Execution plan summary with query options:")
+    #     for level_idx, level_entities in enumerate(processing_order):
+    #         level_entities_filtered = [e for e in level_entities if e in entities_to_process]
+    #         if level_entities_filtered:
+    #             level_total = sum(entity_counts.get(entity, 0) for entity in level_entities_filtered)
+    #             logger.info(f"   Level {level_idx + 1}: {len(level_entities_filtered)} entities, ~{level_total} records")
+    #             for entity in level_entities_filtered:
+    #                 logger.info(f"     - {entity}: ~{entity_counts.get(entity, 0)} records")
+    
     async def _discovery_phase_with_query_options(
         self, 
         entities_to_process: List[str], 
         query_options: Dict[str, Any]
-    ):
+        ):
         """Phase 1: Discover metadata and plan execution with comprehensive query options"""
         filter_condition = query_options.get('filter_condition')
         
         logger.info("Starting discovery phase with query options",
-                   entities_count=len(entities_to_process),
-                   entities=entities_to_process,
-                   query_options=query_options)
+                    entities_count=len(entities_to_process),
+                    entities=entities_to_process,
+                    query_options=query_options)
         
         # Fetch metadata (already done in initialize, but ensure transformer is ready)
         entity_schemas = self.metadata_service.schemas
@@ -895,7 +963,15 @@ class SAPODataConnector:
                 entity_counts = {entity: 1000 for entity in entities_to_process}  # Conservative estimate
             else:
                 entity_counts = await self.count_service.get_entity_counts(entities_to_process)
-        
+
+        # *** FIX STARTS HERE: Register entities with the tracker ***
+        from .planning.record_tracker import get_global_tracker
+        tracker = get_global_tracker()
+        for entity_name, count in entity_counts.items():
+            await tracker.register_entity(entity_name, count)
+        logger.info("Entities registered with global tracker", count=len(entity_counts))
+        # *** FIX ENDS HERE ***
+
         # Build dependency graph
         self.graph_builder.add_entities(entities_to_process)
         relationships = self.metadata_service.get_foreign_key_relationships()
@@ -908,10 +984,10 @@ class SAPODataConnector:
         )
         
         logger.info("Discovery phase with query options completed",
-                   entities=len(entities_to_process),
-                   total_estimated_records=sum(entity_counts.values()),
-                   processing_levels=len(processing_order),
-                   has_complex_query=has_complex_query)
+                    entities=len(entities_to_process),
+                    total_estimated_records=sum(entity_counts.values()),
+                    processing_levels=len(processing_order),
+                    has_complex_query=has_complex_query)
         
         # Log the execution plan summary
         logger.info("Execution plan summary with query options:")
