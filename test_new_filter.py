@@ -1,6 +1,6 @@
 import asyncio
-from odc.config.models import ClientConfig
 from odc.connector import SAPODataConnector
+from odc.config.models import ClientConfig
 
 async def simple_demo():
     
@@ -9,10 +9,15 @@ async def simple_demo():
     
     # Step 1: Configure the connector
     config = ClientConfig(
-        service_url="https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/",
+        # service_url="https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/",
+        # username="P2010682507",
+        # password="Bhuvan@2001",
+        sap_server="sapes5.sapdevcenter.com",
+        sap_port=443,
+        sap_module="ES5",  # Automatically mapped to EPM_REF_APPS_SHOP_SRV
         username="P2010682507",
         password="Bhuvan@2001",
-        output_directory="./demo_output"  #log this to the user so that he can see where the files are being saved.
+        output_directory="./demo_output_joins"  #log this to the user so that he can see where the files are being saved.
     )
     
     # Step 2: Create connector instance
@@ -21,14 +26,20 @@ async def simple_demo():
     try:
         # Step 3: Initialize
         await connector.initialize()
-        print("Connector initialized!")
+        print("Connector initialized successfully!")
+        print("-" * 50)
         
         # SAP EPM SHOP SERVICE TESTING
         
-        # Test 1: Get all Products
-        # print("Getting all products...")
-        # products = await connector.get_data(entity_name="Products")
-        # print(f"Retrieved {products['execution_stats']['records_processed']} products")
+        # Test 1: Get all Products - logs are automatic!
+        # print("\nFetching Products...")
+        products = await connector.get_data(entity_name="Produts")
+        # print(f"Done! Retrieved {products['execution_stats']['records_processed']} products")
+        
+        # Test 2: Get all Reviews - logs are automatic!
+        # print("\nFetching Reviews...")
+        # reviews = await connector.get_data(entity_name="Reviews")
+        # print(f"Done! Retrieved {reviews['execution_stats']['records_processed']} reviews")
         
         # # Test 2: Get all Reviews (largest dataset)
         # print("Getting all reviews...")
@@ -41,17 +52,26 @@ async def simple_demo():
         # print(f"Retrieved {suppliers['execution_stats']['records_processed']} suppliers")
         
         
-        from datetime import datetime, timedelta
-        six_months_ago = datetime.now() - timedelta(days=180)
-        six_months_ago_str = six_months_ago.strftime('%Y-%m-%dT%H:%M:%S')
+        # from datetime import datetime, timedelta
+        # six_months_ago = datetime.now() - timedelta(days=180)
+        # six_months_ago_str = six_months_ago.strftime('%Y-%m-%dT%H:%M:%S')
         
-        last6m_data = await connector.get_data(
-            entity_name="Reviews",
-            filter_condition=f"ChangedAt ge datetime'{six_months_ago_str}'",
-            select_fields="Id,Rating,Comment,ChangedAt,ProductId",
-            order_by="ChangedAt desc",
-            record_limit=30
+        # last6m_data = await connector.get_data(
+        #     entity_name="Reviews",
+        #     filter_condition=f"ChangedAt ge datetime'{six_months_ago_str}'",
+        #     select_fields="Id,Rating,Comment,ChangedAt,ProductId",
+        #     order_by="ChangedAt desc",
+        #     record_limit=30
+        # )
+        
+        
+        
+        #joning data
+        supXprod = await connector.get_data(
+            entity_name="Products",
+            expand_relations="Supplier",
         )
+            
         
         # datetime'YYYY-MM-DDTHH:MM:SS'
         # oct_data = await connector.get_data(

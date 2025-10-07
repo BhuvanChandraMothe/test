@@ -374,8 +374,9 @@ from typing import Dict, List, Any, Optional, Callable
 from dataclasses import dataclass
 from enum import Enum
 import structlog
-from prometheus_client import Counter, Histogram, Gauge, CollectorRegistry, generate_latest
+from prometheus_client import Counter, Histogram, Gauge, CollectorRegistry, generate_latest, push_to_gateway
 from datetime import datetime, timezone
+import socket
 
 logger = structlog.get_logger(__name__)
 
@@ -408,12 +409,27 @@ class ConnectorMetrics:
 class MetricsCollector:
     """Collects and manages metrics for the SAP OData connector"""
     
-    def __init__(self, registry: Optional[CollectorRegistry] = None):
+    def __init__(
+        self, 
+        registry: Optional[CollectorRegistry] = None,
+        pushgateway_url: Optional[str] = None,
+        job_name: str = "sap_odata_connector",
+        instance_name: Optional[str] = None,
+        auto_push: bool = False
+    ):
         # Each collector instance gets its own registry to avoid global conflicts.
         self.registry = registry or CollectorRegistry()
         self.metrics = self._create_all_metrics()
         self._start_time = time.time()
         self._custom_metrics: Dict[str, Any] = {}
+        
+        # Prometheus Pushgateway configuration
+        self.pushgateway_url = pushgateway_url
+        self.job_name = job_name
+        self.instance_name = instance_name or self._get_default_instance_name()
+        self.auto_push = auto_push
+        self._last_push_time = 0
+        self._push_interval = 10  # seconds
 
     def _create_all_metrics(self) -> ConnectorMetrics:
         """Creates all metric objects, assigning them to our specific registry."""
@@ -506,6 +522,9 @@ class MetricsCollector:
                 error_type=error_type,
                 worker_id=worker_id
             ).inc()
+        
+        # Auto-push metrics if enabled
+        self._auto_push_if_enabled()
     
     def record_records_processed(
         self,
@@ -520,6 +539,9 @@ class MetricsCollector:
             entity=entity,
             status=status
         ).inc(count)
+        
+        # Auto-push metrics if enabled
+        self._auto_push_if_enabled()
     
     def record_transformation(
         self,
@@ -596,6 +618,59 @@ class MetricsCollector:
         hours, remainder = divmod(int(seconds), 3600)
         minutes, seconds = divmod(remainder, 60)
         return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+    
+    def _get_default_instance_name(self) -> str:
+        """Generate a default instance name based on hostname"""
+        try:
+            return socket.gethostname()
+        except:
+            return "unknown"
+    
+    def push_metrics(self, force: bool = False):
+        """
+        Push metrics to Prometheus Pushgateway.
+        
+        Args:
+            force: Force push even if interval hasn't elapsed
+        """
+        if not self.pushgateway_url:
+            logger.debug("Pushgateway URL not configured, skipping metrics push")
+            return
+        
+        current_time = time.time()
+        
+        # Check if we should push based on interval (unless forced)
+        if not force and (current_time - self._last_push_time) < self._push_interval:
+            return
+        
+        try:
+            # Push metrics to Pushgateway
+            push_to_gateway(
+                gateway=self.pushgateway_url,
+                job=self.job_name,
+                registry=self.registry,
+                grouping_key={'instance': self.instance_name}
+            )
+            
+            self._last_push_time = current_time
+            logger.debug(
+                "Metrics pushed to Prometheus Pushgateway",
+                pushgateway_url=self.pushgateway_url,
+                job=self.job_name,
+                instance=self.instance_name
+            )
+            
+        except Exception as e:
+            logger.warning(
+                "Failed to push metrics to Prometheus Pushgateway",
+                error=str(e),
+                pushgateway_url=self.pushgateway_url
+            )
+    
+    def _auto_push_if_enabled(self):
+        """Automatically push metrics if auto_push is enabled"""
+        if self.auto_push:
+            self.push_metrics()
 
 
 class PerformanceMonitor:

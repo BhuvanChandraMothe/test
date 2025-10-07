@@ -1,6 +1,7 @@
 """
 Centralized logging configuration for SAP OData Connector
 Provides clean, structured logging with proper filtering and formatting
+Includes colored output for better visibility and debugging
 """
 
 import logging
@@ -10,6 +11,10 @@ import sys
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
+from colorama import init, Fore, Back, Style
+
+# Initialize colorama for cross-platform colored output
+init(autoreset=True)
 
 # Global flag to ensure logging is configured only once
 _logging_configured = False
@@ -35,6 +40,59 @@ LOGGER_LEVELS = {
     # Root logger
     '': logging.INFO
 }
+
+class ColoredFormatter(logging.Formatter):
+    """
+    Custom formatter with colors for different log levels
+    """
+    
+    # Color scheme for different log levels
+    COLORS = {
+        'DEBUG': Fore.CYAN,
+        'INFO': Fore.GREEN,
+        'WARNING': Fore.YELLOW,
+        'ERROR': Fore.RED,
+        'CRITICAL': Fore.RED + Back.WHITE + Style.BRIGHT,
+    }
+    
+    # Special colors for specific message types
+    SPECIAL_COLORS = {
+        'PHASE': Fore.BLUE + Style.BRIGHT,
+        'SUCCESS': Fore.GREEN + Style.BRIGHT,
+        'STATS': Fore.CYAN + Style.BRIGHT,
+        'FAILURE': Fore.RED + Style.BRIGHT,
+        'CONFIG': Fore.MAGENTA,
+    }
+    
+    def format(self, record):
+        # Get the base formatted message
+        log_message = super().format(record)
+        
+        # Apply color based on log level
+        level_color = self.COLORS.get(record.levelname, '')
+        
+        # Check for special message types
+        message = record.getMessage()
+        
+        if any(keyword in message for keyword in ['Phase ', 'Step ']):
+            # Phase/Step messages in bright blue
+            return f"{self.SPECIAL_COLORS['PHASE']}{log_message}{Style.RESET_ALL}"
+        elif any(keyword in message for keyword in ['✓', 'SUCCESS', 'Complete', 'successful']):
+            # Success messages in bright green
+            return f"{self.SPECIAL_COLORS['SUCCESS']}{log_message}{Style.RESET_ALL}"
+        elif any(keyword in message for keyword in ['Statistics:', 'Duration:', 'records:', 'Rate:']):
+            # Statistics in bright cyan
+            return f"{self.SPECIAL_COLORS['STATS']}{log_message}{Style.RESET_ALL}"
+        elif any(keyword in message for keyword in ['FAILED', 'ERROR', 'Invalid', 'Authentication failed']):
+            # Failures in bright red
+            return f"{self.SPECIAL_COLORS['FAILURE']}{log_message}{Style.RESET_ALL}"
+        elif any(keyword in message for keyword in ['Configuration', 'Config']):
+            # Configuration in magenta
+            return f"{self.SPECIAL_COLORS['CONFIG']}{log_message}{Style.RESET_ALL}"
+        else:
+            # Regular level-based coloring
+            return f"{level_color}{log_message}{Style.RESET_ALL}"
+
 
 def _clean_key_value_processor(logger, method_name, event_dict):
     """
@@ -99,10 +157,10 @@ def setup_connector_logging(log_level: str = "INFO", log_to_file: bool = True) -
     # Configure handlers
     handlers = []
     
-    # Console handler - clean format for terminal
+    # Console handler - colored format for terminal
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setLevel(getattr(logging, log_level.upper()))
-    console_formatter = logging.Formatter(
+    console_formatter = ColoredFormatter(
         '%(asctime)s - %(name)-20s - %(levelname)-8s - %(message)s',
         datefmt='%H:%M:%S'
     )

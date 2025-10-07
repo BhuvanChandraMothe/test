@@ -32,16 +32,11 @@ class LocalFileStorage:
         self._processed_data: Dict[str, List[Dict[str, Any]]] = {}
     
     def _ensure_directories(self):
-        """Ensure all required directories exist"""
-        directories = [
-            self.config.output_directory,
-            self.config.raw_data_directory,
-            self.config.processed_data_directory
-        ]
-        
-        for directory in directories:
-            Path(directory).mkdir(parents=True, exist_ok=True)
-            logger.debug("Ensured directory exists", directory=directory)
+        """Ensure base output directory exists (raw/processed created on-demand)"""
+        # Only create the base output directory
+        # Raw and processed directories will be created only when actually used
+        Path(self.config.output_directory).mkdir(parents=True, exist_ok=True)
+        logger.debug("Ensured base output directory exists", directory=self.config.output_directory)
 
     def _get_processed_data_dir_path(self, entity_name: str) -> str:
         """Get the directory path for processed data of a given entity."""

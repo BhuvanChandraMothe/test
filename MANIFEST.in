@@ -1,0 +1,17 @@
+include README.md
+include LICENSE
+include requirements.txt
+include pyproject.toml
+recursive-include odc/config *.yaml *.json
+recursive-include docs *.md
+exclude test_*.py
+exclude a.py
+exclude date_filtering_examples.py
+prune demo_output*
+prune logs
+prune venv
+prune __pycache__
+prune .git
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude __pycache__

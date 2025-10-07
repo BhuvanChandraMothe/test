@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "generated_at": "2025-10-01T17:59:15.589427",
-    "service_url": "https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/",
+    "generated_at": "2025-10-07T10:37:48.160330",
+    "service_url": "https://sapes5.sapdevcenter.com:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV",
     "total_entities": 9
   },
   "entities": {

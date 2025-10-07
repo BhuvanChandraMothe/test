@@ -20,6 +20,9 @@ class EntityRecordTracker:
     def __post_init__(self):
         if self.pages_completed is None:
             self.pages_completed = set()
+        # Ensure all numeric fields are integers (fix for type comparison bug)
+        self.target_records = int(self.target_records) if self.target_records is not None else 0
+        self.records_fetched = int(self.records_fetched) if self.records_fetched is not None else 0
     
     def add_page_records(self, page_num: int, record_count: int) -> bool:
         """Add records from a completed page. Returns True if entity is now complete."""
@@ -30,6 +33,8 @@ class EntityRecordTracker:
             return self.is_complete
         
         self.pages_completed.add(page_num)
+        # Ensure record_count is an integer (fix for type comparison bug)
+        record_count = int(record_count) if record_count is not None else 0
         self.records_fetched += record_count
         
         # Check if we've reached the target

@@ -451,14 +451,13 @@ class SAPODataConnector:
                 not any([group_by, aggregate_functions]) and
                 hasattr(self, 'metadata_service') and self.metadata_service)
             
-            print(f"DEBUG DEBUG: Lightweight check - entity_name={entity_name}, selected_entities={selected_entities}")
+            print(f"DEBUG DEBUG: Entity check - entity_name={entity_name}, selected_entities={selected_entities}")
             print(f"DEBUG DEBUG: group_by={group_by}, aggregate_functions={aggregate_functions}")
             print(f"DEBUG DEBUG: has_metadata_service={hasattr(self, 'metadata_service')}")
             print(f"DEBUG DEBUG: metadata_service_exists={getattr(self, 'metadata_service', None) is not None}")
-            print(f"DEBUG DEBUG: lightweight_check={lightweight_check}")
+            #print(f"DEBUG DEBUG: lightweight_check={lightweight_check}")
             
             if lightweight_check:
-                print("DEBUG START: Using lightweight method")
                 # Use lightweight query for simple requests
                 # If no record_limit is specified, fetch all records (unlimited)
                 return await self._lightweight_get_data(
@@ -569,8 +568,8 @@ class SAPODataConnector:
         from datetime import datetime, timezone
         start_time = datetime.now(timezone.utc)
         
-        logger.info(f"START: Lightweight query for {entity_name} with automatic pagination")
-        print(f"DEBUG START: Starting lightweight query for {entity_name}")
+        logger.info(f"START: Query for {entity_name} with automatic pagination")
+        logger.info(f"DEBUG START: Starting entity based query for {entity_name}")
         
         try:
             # Build base query parameters
@@ -690,7 +689,7 @@ class SAPODataConnector:
                     else:
                         error_text = await response.text()
                         requests_failed += 1
-                        logger.error(f"అభ్యర్థన FAILED: Request failed: HTTP {response.status}: {error_text}")
+                        logger.error(f"FAILED: Request failed: HTTP {response.status}: {error_text}")
                         
                         # If it's the first request, fail completely
                         if requests_made == 1:
@@ -752,7 +751,7 @@ class SAPODataConnector:
                     
         except Exception as e:
             duration = (datetime.now(timezone.utc) - start_time).total_seconds()
-            logger.error(f"ప్రశ్న FAILED: Paginated query failed: {e}")
+            logger.error(f"FAILED: Paginated query failed: {e}")
             
             # Return error in expected format
             return {

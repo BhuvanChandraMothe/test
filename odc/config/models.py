@@ -1,10 +1,13 @@
 """Configuration models for SAP OData Connector"""
 
 from typing import Dict, List, Optional, Any
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, validator
 from typing import Optional, List, Literal
 import attrs
 from enum import Enum
+import structlog
+
+logger = structlog.get_logger(__name__)
 
 
 class ServiceType(str, Enum):
@@ -13,6 +16,7 @@ class ServiceType(str, Enum):
     REST = "rest"
     STREAMING = "streaming"
 from dynaconf import Dynaconf
+from .sap_module_mapping import SAPModuleMapping, build_sap_odata_url
 
 
 class ClientConfig(BaseModel):
@@ -24,8 +28,11 @@ class ClientConfig(BaseModel):
     # SAP Connection Parameters (replaces direct service_url)
     sap_server: Optional[str] = Field(None, description="SAP server hostname or IP address")
     sap_port: int = Field(default=8000, description="SAP server port (default: 8000)")
-    service_name: Optional[str] = Field(None, description="SAP OData service name (e.g., 'ZMY_SERVICE_SRV')")
+    service_name: Optional[str] = Field(None, description="SAP OData service name (e.g., 'ZMY_SERVICE_SRV') or SAP module name (e.g., 'FI', 'MM', 'ES5', 'ARIBA')")
     use_https: bool = Field(default=True, description="Use HTTPS protocol (default: True)")
+    
+    # Module-based configuration (alternative to service_name)
+    sap_module: Optional[str] = Field(None, description="SAP module name (e.g., 'FI', 'MM', 'SD', 'ARIBA', 'CONCUR', 'ES5') - will be mapped to service_name automatically")
     
     # Authentication
     username: Optional[str] = Field(None, description="SAP username")
@@ -69,9 +76,59 @@ class ClientConfig(BaseModel):
             # Legacy mode - use provided URL directly
             return self.service_url
         else:
+            # Determine the actual service name to use
+            actual_service_name = self._resolve_service_name()
+            
             # Auto-construct SAP OData URL
-            protocol = "https" if self.use_https else "http"
-            return f"{protocol}://{self.sap_server}:{self.sap_port}/sap/opu/odata/sap/{self.service_name}"
+            url = build_sap_odata_url(
+                server=self.sap_server,
+                port=self.sap_port,
+                service_name=actual_service_name,
+                use_https=self.use_https,
+                sap_client=self.sap_client
+            )
+            
+            logger.info("Constructed SAP OData URL",
+                       server=self.sap_server,
+                       port=self.sap_port,
+                       service_name=actual_service_name,
+                       module_provided=self.sap_module,
+                       url=url)
+            
+            return url
+    
+    def _resolve_service_name(self) -> str:
+        """Resolve the actual OData service name from module name or direct service name"""
+        # Priority 1: If sap_module is provided, map it to service name
+        if self.sap_module:
+            mapped_service = SAPModuleMapping.get_service_name(self.sap_module)
+            if mapped_service:
+                logger.info("Mapped SAP module to service name",
+                           module=self.sap_module,
+                           service_name=mapped_service)
+                return mapped_service
+            else:
+                # Module not found in mapping, try to use it as-is
+                logger.warning("SAP module not found in mapping, using as service name",
+                             module=self.sap_module,
+                             available_modules=SAPModuleMapping.get_all_modules()[:10])
+                return self.sap_module
+        
+        # Priority 2: If service_name is provided, check if it's a module name first
+        if self.service_name:
+            # Check if service_name is actually a module name
+            mapped_service = SAPModuleMapping.get_service_name(self.service_name)
+            if mapped_service:
+                logger.info("Detected module name in service_name field, mapping to service",
+                           module=self.service_name,
+                           service_name=mapped_service)
+                return mapped_service
+            else:
+                # Not a module name, use as-is (direct service name)
+                return self.service_name
+        
+        # No service name or module provided
+        raise ValueError("Either service_name or sap_module must be provided")
     
     def get_entity_set_url(self, entity_set: str) -> str:
         """Get full URL for a specific entity set"""
@@ -91,14 +148,31 @@ class ClientConfig(BaseModel):
             # New mode validation
             if not self.sap_server:
                 raise ValueError("sap_server is required when service_url is not provided")
-            if not self.service_name:
-                raise ValueError("service_name is required when service_url is not provided")
+            
+            # Either service_name or sap_module must be provided
+            if not self.service_name and not self.sap_module:
+                raise ValueError(
+                    "Either service_name or sap_module must be provided when service_url is not provided. "
+                    f"Supported modules: {', '.join(SAPModuleMapping.get_all_modules()[:20])}..."
+                )
+            
             if not isinstance(self.sap_port, int) or self.sap_port <= 0:
                 raise ValueError("sap_port must be a positive integer")
             
-            # Validate service name format (should not contain spaces or special chars)
-            if not self.service_name.replace('_', '').replace('-', '').isalnum():
-                raise ValueError("service_name should only contain alphanumeric characters, underscores, and hyphens")
+            # Validate service name format if provided directly (not via module mapping)
+            if self.service_name and not self.sap_module:
+                # Check if it's a module name first
+                if not SAPModuleMapping.is_valid_module(self.service_name):
+                    # Not a module, validate as service name
+                    if not self.service_name.replace('_', '').replace('-', '').isalnum():
+                        raise ValueError("service_name should only contain alphanumeric characters, underscores, and hyphens")
+    
+    def get_module_info(self) -> Optional[Dict[str, Any]]:
+        """Get information about the configured SAP module"""
+        module_name = self.sap_module or self.service_name
+        if module_name:
+            return SAPModuleMapping.get_module_info(module_name)
+        return None
 
 
 @attrs.define
