@@ -5,7 +5,13 @@ import asyncio
 
 async def main():
     config = ClientConfig(
-        service_url="https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/",
+        # service_url="https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/",
+        # username="P2010682507",
+        # password="Bhuvan@2001",
+        sap_server="sapes5.sapdevcenter.com",
+        sap_port=443,
+        sap_module="ES5",  
+        use_https=True,
         username="P2010682507",
         password="Bhuvan@2001",
         output_directory="./demo_output_batch"

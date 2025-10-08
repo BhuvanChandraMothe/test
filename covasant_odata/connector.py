@@ -628,7 +628,6 @@ class SAPODataConnector:
                 
                 headers['Accept'] = 'application/json'
                 headers['Content-Type'] = 'application/json'
-                
                 self._lightweight_session = aiohttp.ClientSession(headers=headers)
             
             client = self._lightweight_session
@@ -640,20 +639,42 @@ class SAPODataConnector:
             requests_made = 0
             requests_failed = 0
             total_count = None
+            next_link_url = None  # Track nextLink for V4 pagination
             
             logger.info(f"Starting paginated fetch with page_size={page_size}, record_limit={limit or 'unlimited'}")
             
             while True:
                 # Build URL with pagination
-                params = base_params.copy()
-                params['$top'] = str(page_size)
-                params['$skip'] = str(skip)
-                
-                url = self.sap_config.entity_set_url(entity_name)
-                from urllib.parse import urlencode
-                url += f"?{urlencode(params)}"
-                
-                logger.info(f"Fetching page: Fetching page: skip={skip}, top={page_size}")
+                if next_link_url:
+                    # Use the nextLink from previous response (V4 server-driven paging)
+                    # Handle both absolute and relative URLs
+                    if next_link_url.startswith('http://') or next_link_url.startswith('https://'):
+                        # Absolute URL - use as is
+                        url = next_link_url
+                    else:
+                        # Relative URL - prepend base URL
+                        base_url = self.sap_config.service_url.rstrip('/')
+                        if next_link_url.startswith('/'):
+                            url = base_url + next_link_url
+                        else:
+                            url = base_url + '/' + next_link_url
+                    logger.info(f"Fetching page: Following nextLink (skip={skip}, records so far: {len(all_records)})")
+                else:
+                    # Build URL with skip/top parameters (V2 client-driven paging or first V4 request)
+                    params = base_params.copy()
+                    params['$top'] = str(page_size)
+                    params['$skip'] = str(skip)
+                    # Add $count=true for V4 only (V2 SAP services don't support it)
+                    # Check if we know the OData version from metadata
+                    if hasattr(self, 'metadata_service') and hasattr(self.metadata_service, 'odata_version'):
+                        if self.metadata_service.odata_version == 'V4' and '$count' not in params:
+                            params['$count'] = 'true'
+                    
+                    url = self.sap_config.entity_set_url(entity_name)
+                    from urllib.parse import urlencode
+                    url += f"?{urlencode(params)}"
+                    
+                    logger.info(f"Fetching page: Fetching page: skip={skip}, top={page_size}")
                 
                 # Make request
                 requests_made += 1
@@ -669,6 +690,11 @@ class SAPODataConnector:
                             if total_count is None and '__count' in data['d']:
                                 total_count = data['d']['__count']
                                 logger.info(f"Total records available (V2): Total records available: {total_count}")
+                            # Check for V2 nextLink
+                            if '__next' in data['d']:
+                                next_link_url = data['d']['__next']
+                            else:
+                                next_link_url = None
                         else:
                             # OData V4 format
                             page_records = data.get('value', [])
@@ -676,6 +702,11 @@ class SAPODataConnector:
                             if total_count is None and '@odata.count' in data:
                                 total_count = data['@odata.count']
                                 logger.info(f"Total records available (V4): Total records available: {total_count}")
+                            # Check for V4 nextLink
+                            if '@odata.nextLink' in data:
+                                next_link_url = data['@odata.nextLink']
+                            else:
+                                next_link_url = None
                         
                         # Add records to collection
                         all_records.extend(page_records)
@@ -683,11 +714,6 @@ class SAPODataConnector:
                         logger.info(f"Page fetched: Page fetched: {len(page_records)} records (total so far: {len(all_records)})")
                         
                         # Check stopping conditions
-                        if len(page_records) < page_size:
-                            # Last page - fewer records than requested
-                            logger.info("Reached last page: Reached last page (fewer records than page size)")
-                            break
-                        
                         if limit and len(all_records) >= limit:
                             # User-specified limit reached
                             all_records = all_records[:limit]
@@ -699,8 +725,19 @@ class SAPODataConnector:
                             logger.info(f"All available records fetched: All available records fetched: {total_count}")
                             break
                         
-                        # Prepare for next page
-                        skip += page_size
+                        # Check if there's a next page
+                        if next_link_url:
+                            # There's more data - continue with nextLink
+                            skip += len(page_records)  # Update skip for logging purposes
+                        elif total_count and len(all_records) < total_count:
+                            # No nextLink but we haven't reached total_count yet
+                            # Continue with skip/top (fallback for buggy V4 services)
+                            skip += len(page_records)
+                            logger.info(f"No nextLink but continuing: {len(all_records)}/{total_count} records fetched, using skip/top")
+                        else:
+                            # No nextLink and no total_count, or we've reached the end
+                            logger.info("Reached last page: No nextLink in response")
+                            break
                         
                         # Safety check to prevent infinite loops
                         if requests_made > 1000:  # Max 500,000 records (1000 * 500)

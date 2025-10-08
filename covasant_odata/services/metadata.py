@@ -45,6 +45,7 @@ class MetadataService:
         self.odata_config = odata_config
         self.schemas: Dict[str, EntitySchema] = {}
         self._client: Optional[httpx.AsyncClient] = None
+        self.odata_version: Optional[str] = None  # Track OData version (V2 or V4)
     
     async def __aenter__(self):
         self._client = httpx.AsyncClient(
@@ -148,7 +149,6 @@ class MetadataService:
             'edmx': 'http://docs.oasis-open.org/odata/ns/edmx',
             'edm': 'http://docs.oasis-open.org/odata/ns/edm'
         }
-        
         namespaces_v2 = {
             'edmx': 'http://schemas.microsoft.com/ado/2007/06/edmx',
             'edm': 'http://schemas.microsoft.com/ado/2008/09/edm'
@@ -158,8 +158,10 @@ class MetadataService:
         namespaces = namespaces_v4
         if root.findall('.//edm:EntitySet', namespaces_v2):
             namespaces = namespaces_v2
+            self.odata_version = 'V2'
             logger.info("Using OData V2 namespaces for metadata parsing")
         else:
+            self.odata_version = 'V4'
             logger.info("Using OData V4 namespaces for metadata parsing")
         
         # First, build a mapping of EntitySet names to EntityType names

@@ -10,6 +10,7 @@ A powerful, production-ready Python library for connecting to SAP OData services
 - 🎯 **Query Builder**: Support for $filter, $select, $expand, $orderby, and more
 - 💾 **Multiple Storage**: Local files, Google BigQuery, and Cloud Storage
 - 🔍 **Metadata Discovery**: Automatic schema detection and relationship mapping
+- ✅ **OData V2 & V4 Support**: Full support for both OData V2 (SAP) and V4 (modern services)
 
 ## Installation
 
@@ -713,4 +714,4 @@ filter_condition="Status eq 'Active'"
 
 ---
 
-**Package**: `covasant_sap_odata_connector` | **Version**: 1.0.1
+**Package**: `covasant_sap_odata_connector` | **Version**: 1.0.2 | **OData**: V2 & V4 Support

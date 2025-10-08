@@ -23,10 +23,10 @@ def read_requirements():
 
 setup(
     name='covasant_sap_odata_connector',
-    version='1.0.1',
+    version='1.0.2',
     author='Covasant Technologies',
     author_email='info@covasant.com',  
-    description='A powerful Python library for connecting to SAP OData services with advanced features',
+    description='A powerful Python library for connecting to SAP OData services with OData V2 and V4 support',
     long_description=read_long_description(),
     long_description_content_type='text/markdown',
     packages=find_packages(exclude=['tests', 'examples', 'docs', 'demo_output*', 'logs', 'venv', 'test_*']),
