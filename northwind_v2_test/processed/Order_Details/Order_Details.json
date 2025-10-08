@@ -1,0 +1,8517 @@
+[
+{
+  "entity_name": "Order_Details",
+  "record_id": "10248_11",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10248,
+    "ProductID": 11,
+    "UnitPrice": 14.0,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10248_42",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10248,
+    "ProductID": 42,
+    "UnitPrice": 9.8,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10248_72",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10248,
+    "ProductID": 72,
+    "UnitPrice": 34.8,
+    "Quantity": 5,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10249_14",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10249,
+    "ProductID": 14,
+    "UnitPrice": 18.6,
+    "Quantity": 9,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10249_51",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10249,
+    "ProductID": 51,
+    "UnitPrice": 42.4,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10250_41",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10250,
+    "ProductID": 41,
+    "UnitPrice": 7.7,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10250_51",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10250,
+    "ProductID": 51,
+    "UnitPrice": 42.4,
+    "Quantity": 35,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10250_65",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10250,
+    "ProductID": 65,
+    "UnitPrice": 16.8,
+    "Quantity": 15,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10251_22",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10251,
+    "ProductID": 22,
+    "UnitPrice": 16.8,
+    "Quantity": 6,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10251_57",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10251,
+    "ProductID": 57,
+    "UnitPrice": 15.6,
+    "Quantity": 15,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10251_65",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10251,
+    "ProductID": 65,
+    "UnitPrice": 16.8,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10252_20",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10252,
+    "ProductID": 20,
+    "UnitPrice": 64.8,
+    "Quantity": 40,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10252_33",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10252,
+    "ProductID": 33,
+    "UnitPrice": 2.0,
+    "Quantity": 25,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10252_60",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10252,
+    "ProductID": 60,
+    "UnitPrice": 27.2,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10253_31",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10253,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10253_39",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10253,
+    "ProductID": 39,
+    "UnitPrice": 14.4,
+    "Quantity": 42,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10253_49",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10253,
+    "ProductID": 49,
+    "UnitPrice": 16.0,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10254_24",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10254,
+    "ProductID": 24,
+    "UnitPrice": 3.6,
+    "Quantity": 15,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10254_55",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10254,
+    "ProductID": 55,
+    "UnitPrice": 19.2,
+    "Quantity": 21,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10254_74",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10254,
+    "ProductID": 74,
+    "UnitPrice": 8.0,
+    "Quantity": 21,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10255_2",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10255,
+    "ProductID": 2,
+    "UnitPrice": 15.2,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10255_16",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10255,
+    "ProductID": 16,
+    "UnitPrice": 13.9,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10255_36",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10255,
+    "ProductID": 36,
+    "UnitPrice": 15.2,
+    "Quantity": 25,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10255_59",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10255,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10256_53",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10256,
+    "ProductID": 53,
+    "UnitPrice": 26.2,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10256_77",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10256,
+    "ProductID": 77,
+    "UnitPrice": 10.4,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10257_27",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10257,
+    "ProductID": 27,
+    "UnitPrice": 35.1,
+    "Quantity": 25,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10257_39",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10257,
+    "ProductID": 39,
+    "UnitPrice": 14.4,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10257_77",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10257,
+    "ProductID": 77,
+    "UnitPrice": 10.4,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10258_2",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10258,
+    "ProductID": 2,
+    "UnitPrice": 15.2,
+    "Quantity": 50,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10258_5",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10258,
+    "ProductID": 5,
+    "UnitPrice": 17.0,
+    "Quantity": 65,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10258_32",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10258,
+    "ProductID": 32,
+    "UnitPrice": 25.6,
+    "Quantity": 6,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10259_21",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10259,
+    "ProductID": 21,
+    "UnitPrice": 8.0,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10259_37",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10259,
+    "ProductID": 37,
+    "UnitPrice": 20.8,
+    "Quantity": 1,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10260_41",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10260,
+    "ProductID": 41,
+    "UnitPrice": 7.7,
+    "Quantity": 16,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10260_57",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10260,
+    "ProductID": 57,
+    "UnitPrice": 15.6,
+    "Quantity": 50,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10260_62",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10260,
+    "ProductID": 62,
+    "UnitPrice": 39.4,
+    "Quantity": 15,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10260_70",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10260,
+    "ProductID": 70,
+    "UnitPrice": 12.0,
+    "Quantity": 21,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10261_21",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10261,
+    "ProductID": 21,
+    "UnitPrice": 8.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10261_35",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10261,
+    "ProductID": 35,
+    "UnitPrice": 14.4,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10262_5",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10262,
+    "ProductID": 5,
+    "UnitPrice": 17.0,
+    "Quantity": 12,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10262_7",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10262,
+    "ProductID": 7,
+    "UnitPrice": 24.0,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10262_56",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10262,
+    "ProductID": 56,
+    "UnitPrice": 30.4,
+    "Quantity": 2,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10263_16",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10263,
+    "ProductID": 16,
+    "UnitPrice": 13.9,
+    "Quantity": 60,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10263_24",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10263,
+    "ProductID": 24,
+    "UnitPrice": 3.6,
+    "Quantity": 28,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10263_30",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10263,
+    "ProductID": 30,
+    "UnitPrice": 20.7,
+    "Quantity": 60,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10263_74",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10263,
+    "ProductID": 74,
+    "UnitPrice": 8.0,
+    "Quantity": 36,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10264_2",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10264,
+    "ProductID": 2,
+    "UnitPrice": 15.2,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10264_41",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10264,
+    "ProductID": 41,
+    "UnitPrice": 7.7,
+    "Quantity": 25,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10265_17",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10265,
+    "ProductID": 17,
+    "UnitPrice": 31.2,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10265_70",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10265,
+    "ProductID": 70,
+    "UnitPrice": 12.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10266_12",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10266,
+    "ProductID": 12,
+    "UnitPrice": 30.4,
+    "Quantity": 12,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10267_40",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10267,
+    "ProductID": 40,
+    "UnitPrice": 14.7,
+    "Quantity": 50,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10267_59",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10267,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 70,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10267_76",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10267,
+    "ProductID": 76,
+    "UnitPrice": 14.4,
+    "Quantity": 15,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10268_29",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10268,
+    "ProductID": 29,
+    "UnitPrice": 99.0,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10268_72",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10268,
+    "ProductID": 72,
+    "UnitPrice": 27.8,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10269_33",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10269,
+    "ProductID": 33,
+    "UnitPrice": 2.0,
+    "Quantity": 60,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10269_72",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10269,
+    "ProductID": 72,
+    "UnitPrice": 27.8,
+    "Quantity": 20,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10270_36",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10270,
+    "ProductID": 36,
+    "UnitPrice": 15.2,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10270_43",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10270,
+    "ProductID": 43,
+    "UnitPrice": 36.8,
+    "Quantity": 25,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10271_33",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10271,
+    "ProductID": 33,
+    "UnitPrice": 2.0,
+    "Quantity": 24,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10272_20",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10272,
+    "ProductID": 20,
+    "UnitPrice": 64.8,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10272_31",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10272,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10272_72",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10272,
+    "ProductID": 72,
+    "UnitPrice": 27.8,
+    "Quantity": 24,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10273_10",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10273,
+    "ProductID": 10,
+    "UnitPrice": 24.8,
+    "Quantity": 24,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10273_31",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10273,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 15,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10273_33",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10273,
+    "ProductID": 33,
+    "UnitPrice": 2.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10273_40",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10273,
+    "ProductID": 40,
+    "UnitPrice": 14.7,
+    "Quantity": 60,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10273_76",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10273,
+    "ProductID": 76,
+    "UnitPrice": 14.4,
+    "Quantity": 33,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10274_71",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10274,
+    "ProductID": 71,
+    "UnitPrice": 17.2,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10274_72",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10274,
+    "ProductID": 72,
+    "UnitPrice": 27.8,
+    "Quantity": 7,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10275_24",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10275,
+    "ProductID": 24,
+    "UnitPrice": 3.6,
+    "Quantity": 12,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10275_59",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10275,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 6,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10276_10",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10276,
+    "ProductID": 10,
+    "UnitPrice": 24.8,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10276_13",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10276,
+    "ProductID": 13,
+    "UnitPrice": 4.8,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10277_28",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10277,
+    "ProductID": 28,
+    "UnitPrice": 36.4,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10277_62",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10277,
+    "ProductID": 62,
+    "UnitPrice": 39.4,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10278_44",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10278,
+    "ProductID": 44,
+    "UnitPrice": 15.5,
+    "Quantity": 16,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10278_59",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10278,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10278_63",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10278,
+    "ProductID": 63,
+    "UnitPrice": 35.1,
+    "Quantity": 8,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10278_73",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10278,
+    "ProductID": 73,
+    "UnitPrice": 12.0,
+    "Quantity": 25,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10279_17",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10279,
+    "ProductID": 17,
+    "UnitPrice": 31.2,
+    "Quantity": 15,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10280_24",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10280,
+    "ProductID": 24,
+    "UnitPrice": 3.6,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10280_55",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10280,
+    "ProductID": 55,
+    "UnitPrice": 19.2,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10280_75",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10280,
+    "ProductID": 75,
+    "UnitPrice": 6.2,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10281_19",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10281,
+    "ProductID": 19,
+    "UnitPrice": 7.3,
+    "Quantity": 1,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10281_24",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10281,
+    "ProductID": 24,
+    "UnitPrice": 3.6,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10281_35",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10281,
+    "ProductID": 35,
+    "UnitPrice": 14.4,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10282_30",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10282,
+    "ProductID": 30,
+    "UnitPrice": 20.7,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10282_57",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10282,
+    "ProductID": 57,
+    "UnitPrice": 15.6,
+    "Quantity": 2,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10283_15",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10283,
+    "ProductID": 15,
+    "UnitPrice": 12.4,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10283_19",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10283,
+    "ProductID": 19,
+    "UnitPrice": 7.3,
+    "Quantity": 18,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10283_60",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10283,
+    "ProductID": 60,
+    "UnitPrice": 27.2,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10283_72",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10283,
+    "ProductID": 72,
+    "UnitPrice": 27.8,
+    "Quantity": 3,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10284_27",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10284,
+    "ProductID": 27,
+    "UnitPrice": 35.1,
+    "Quantity": 15,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10284_44",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10284,
+    "ProductID": 44,
+    "UnitPrice": 15.5,
+    "Quantity": 21,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10284_60",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10284,
+    "ProductID": 60,
+    "UnitPrice": 27.2,
+    "Quantity": 20,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10284_67",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10284,
+    "ProductID": 67,
+    "UnitPrice": 11.2,
+    "Quantity": 5,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10285_1",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10285,
+    "ProductID": 1,
+    "UnitPrice": 14.4,
+    "Quantity": 45,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10285_40",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10285,
+    "ProductID": 40,
+    "UnitPrice": 14.7,
+    "Quantity": 40,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10285_53",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10285,
+    "ProductID": 53,
+    "UnitPrice": 26.2,
+    "Quantity": 36,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10286_35",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10286,
+    "ProductID": 35,
+    "UnitPrice": 14.4,
+    "Quantity": 100,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10286_62",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10286,
+    "ProductID": 62,
+    "UnitPrice": 39.4,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10287_16",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10287,
+    "ProductID": 16,
+    "UnitPrice": 13.9,
+    "Quantity": 40,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10287_34",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10287,
+    "ProductID": 34,
+    "UnitPrice": 11.2,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10287_46",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10287,
+    "ProductID": 46,
+    "UnitPrice": 9.6,
+    "Quantity": 15,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10288_54",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10288,
+    "ProductID": 54,
+    "UnitPrice": 5.9,
+    "Quantity": 10,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10288_68",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10288,
+    "ProductID": 68,
+    "UnitPrice": 10.0,
+    "Quantity": 3,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10289_3",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10289,
+    "ProductID": 3,
+    "UnitPrice": 8.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10289_64",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10289,
+    "ProductID": 64,
+    "UnitPrice": 26.6,
+    "Quantity": 9,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10290_5",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10290,
+    "ProductID": 5,
+    "UnitPrice": 17.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10290_29",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10290,
+    "ProductID": 29,
+    "UnitPrice": 99.0,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10290_49",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10290,
+    "ProductID": 49,
+    "UnitPrice": 16.0,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10290_77",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10290,
+    "ProductID": 77,
+    "UnitPrice": 10.4,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10291_13",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10291,
+    "ProductID": 13,
+    "UnitPrice": 4.8,
+    "Quantity": 20,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10291_44",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10291,
+    "ProductID": 44,
+    "UnitPrice": 15.5,
+    "Quantity": 24,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10291_51",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10291,
+    "ProductID": 51,
+    "UnitPrice": 42.4,
+    "Quantity": 2,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10292_20",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10292,
+    "ProductID": 20,
+    "UnitPrice": 64.8,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10293_18",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10293,
+    "ProductID": 18,
+    "UnitPrice": 50.0,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10293_24",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10293,
+    "ProductID": 24,
+    "UnitPrice": 3.6,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10293_63",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10293,
+    "ProductID": 63,
+    "UnitPrice": 35.1,
+    "Quantity": 5,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10293_75",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10293,
+    "ProductID": 75,
+    "UnitPrice": 6.2,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10294_1",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10294,
+    "ProductID": 1,
+    "UnitPrice": 14.4,
+    "Quantity": 18,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10294_17",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10294,
+    "ProductID": 17,
+    "UnitPrice": 31.2,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10294_43",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10294,
+    "ProductID": 43,
+    "UnitPrice": 36.8,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10294_60",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10294,
+    "ProductID": 60,
+    "UnitPrice": 27.2,
+    "Quantity": 21,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10294_75",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10294,
+    "ProductID": 75,
+    "UnitPrice": 6.2,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10295_56",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10295,
+    "ProductID": 56,
+    "UnitPrice": 30.4,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10296_11",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10296,
+    "ProductID": 11,
+    "UnitPrice": 16.8,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10296_16",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10296,
+    "ProductID": 16,
+    "UnitPrice": 13.9,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10296_69",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10296,
+    "ProductID": 69,
+    "UnitPrice": 28.8,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10297_39",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10297,
+    "ProductID": 39,
+    "UnitPrice": 14.4,
+    "Quantity": 60,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10297_72",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10297,
+    "ProductID": 72,
+    "UnitPrice": 27.8,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10298_2",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10298,
+    "ProductID": 2,
+    "UnitPrice": 15.2,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10298_36",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10298,
+    "ProductID": 36,
+    "UnitPrice": 15.2,
+    "Quantity": 40,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10298_59",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10298,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 30,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10298_62",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10298,
+    "ProductID": 62,
+    "UnitPrice": 39.4,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10299_19",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10299,
+    "ProductID": 19,
+    "UnitPrice": 7.3,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10299_70",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10299,
+    "ProductID": 70,
+    "UnitPrice": 12.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10300_66",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10300,
+    "ProductID": 66,
+    "UnitPrice": 13.6,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10300_68",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10300,
+    "ProductID": 68,
+    "UnitPrice": 10.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10301_40",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10301,
+    "ProductID": 40,
+    "UnitPrice": 14.7,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10301_56",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10301,
+    "ProductID": 56,
+    "UnitPrice": 30.4,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10302_17",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10302,
+    "ProductID": 17,
+    "UnitPrice": 31.2,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10302_28",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10302,
+    "ProductID": 28,
+    "UnitPrice": 36.4,
+    "Quantity": 28,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10302_43",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10302,
+    "ProductID": 43,
+    "UnitPrice": 36.8,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10303_40",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10303,
+    "ProductID": 40,
+    "UnitPrice": 14.7,
+    "Quantity": 40,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10303_65",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10303,
+    "ProductID": 65,
+    "UnitPrice": 16.8,
+    "Quantity": 30,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10303_68",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10303,
+    "ProductID": 68,
+    "UnitPrice": 10.0,
+    "Quantity": 15,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10304_49",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10304,
+    "ProductID": 49,
+    "UnitPrice": 16.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10304_59",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10304,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10304_71",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10304,
+    "ProductID": 71,
+    "UnitPrice": 17.2,
+    "Quantity": 2,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10305_18",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10305,
+    "ProductID": 18,
+    "UnitPrice": 50.0,
+    "Quantity": 25,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10305_29",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10305,
+    "ProductID": 29,
+    "UnitPrice": 99.0,
+    "Quantity": 25,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10305_39",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10305,
+    "ProductID": 39,
+    "UnitPrice": 14.4,
+    "Quantity": 30,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10306_30",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10306,
+    "ProductID": 30,
+    "UnitPrice": 20.7,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10306_53",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10306,
+    "ProductID": 53,
+    "UnitPrice": 26.2,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10306_54",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10306,
+    "ProductID": 54,
+    "UnitPrice": 5.9,
+    "Quantity": 5,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10307_62",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10307,
+    "ProductID": 62,
+    "UnitPrice": 39.4,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10307_68",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10307,
+    "ProductID": 68,
+    "UnitPrice": 10.0,
+    "Quantity": 3,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10308_69",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10308,
+    "ProductID": 69,
+    "UnitPrice": 28.8,
+    "Quantity": 1,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10308_70",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10308,
+    "ProductID": 70,
+    "UnitPrice": 12.0,
+    "Quantity": 5,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10309_4",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10309,
+    "ProductID": 4,
+    "UnitPrice": 17.6,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10309_6",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10309,
+    "ProductID": 6,
+    "UnitPrice": 20.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10309_42",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10309,
+    "ProductID": 42,
+    "UnitPrice": 11.2,
+    "Quantity": 2,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10309_43",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10309,
+    "ProductID": 43,
+    "UnitPrice": 36.8,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10309_71",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10309,
+    "ProductID": 71,
+    "UnitPrice": 17.2,
+    "Quantity": 3,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10310_16",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10310,
+    "ProductID": 16,
+    "UnitPrice": 13.9,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10310_62",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10310,
+    "ProductID": 62,
+    "UnitPrice": 39.4,
+    "Quantity": 5,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10311_42",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10311,
+    "ProductID": 42,
+    "UnitPrice": 11.2,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10311_69",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10311,
+    "ProductID": 69,
+    "UnitPrice": 28.8,
+    "Quantity": 7,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10312_28",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10312,
+    "ProductID": 28,
+    "UnitPrice": 36.4,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10312_43",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10312,
+    "ProductID": 43,
+    "UnitPrice": 36.8,
+    "Quantity": 24,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10312_53",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10312,
+    "ProductID": 53,
+    "UnitPrice": 26.2,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10312_75",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10312,
+    "ProductID": 75,
+    "UnitPrice": 6.2,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10313_36",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10313,
+    "ProductID": 36,
+    "UnitPrice": 15.2,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10314_32",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10314,
+    "ProductID": 32,
+    "UnitPrice": 25.6,
+    "Quantity": 40,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10314_58",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10314,
+    "ProductID": 58,
+    "UnitPrice": 10.6,
+    "Quantity": 30,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10314_62",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10314,
+    "ProductID": 62,
+    "UnitPrice": 39.4,
+    "Quantity": 25,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10315_34",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10315,
+    "ProductID": 34,
+    "UnitPrice": 11.2,
+    "Quantity": 14,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10315_70",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10315,
+    "ProductID": 70,
+    "UnitPrice": 12.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10316_41",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10316,
+    "ProductID": 41,
+    "UnitPrice": 7.7,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10316_62",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10316,
+    "ProductID": 62,
+    "UnitPrice": 39.4,
+    "Quantity": 70,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10317_1",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10317,
+    "ProductID": 1,
+    "UnitPrice": 14.4,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10318_41",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10318,
+    "ProductID": 41,
+    "UnitPrice": 7.7,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10318_76",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10318,
+    "ProductID": 76,
+    "UnitPrice": 14.4,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10319_17",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10319,
+    "ProductID": 17,
+    "UnitPrice": 31.2,
+    "Quantity": 8,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10319_28",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10319,
+    "ProductID": 28,
+    "UnitPrice": 36.4,
+    "Quantity": 14,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10319_76",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10319,
+    "ProductID": 76,
+    "UnitPrice": 14.4,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10320_71",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10320,
+    "ProductID": 71,
+    "UnitPrice": 17.2,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10321_35",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10321,
+    "ProductID": 35,
+    "UnitPrice": 14.4,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10322_52",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10322,
+    "ProductID": 52,
+    "UnitPrice": 5.6,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10323_15",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10323,
+    "ProductID": 15,
+    "UnitPrice": 12.4,
+    "Quantity": 5,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10323_25",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10323,
+    "ProductID": 25,
+    "UnitPrice": 11.2,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10323_39",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10323,
+    "ProductID": 39,
+    "UnitPrice": 14.4,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10324_16",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10324,
+    "ProductID": 16,
+    "UnitPrice": 13.9,
+    "Quantity": 21,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10324_35",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10324,
+    "ProductID": 35,
+    "UnitPrice": 14.4,
+    "Quantity": 70,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10324_46",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10324,
+    "ProductID": 46,
+    "UnitPrice": 9.6,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10324_59",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10324,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 40,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10324_63",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10324,
+    "ProductID": 63,
+    "UnitPrice": 35.1,
+    "Quantity": 80,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10325_6",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10325,
+    "ProductID": 6,
+    "UnitPrice": 20.0,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10325_13",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10325,
+    "ProductID": 13,
+    "UnitPrice": 4.8,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10325_14",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10325,
+    "ProductID": 14,
+    "UnitPrice": 18.6,
+    "Quantity": 9,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10325_31",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10325,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10325_72",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10325,
+    "ProductID": 72,
+    "UnitPrice": 27.8,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10326_4",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10326,
+    "ProductID": 4,
+    "UnitPrice": 17.6,
+    "Quantity": 24,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10326_57",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10326,
+    "ProductID": 57,
+    "UnitPrice": 15.6,
+    "Quantity": 16,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10326_75",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10326,
+    "ProductID": 75,
+    "UnitPrice": 6.2,
+    "Quantity": 50,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10327_2",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10327,
+    "ProductID": 2,
+    "UnitPrice": 15.2,
+    "Quantity": 25,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10327_11",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10327,
+    "ProductID": 11,
+    "UnitPrice": 16.8,
+    "Quantity": 50,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10327_30",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10327,
+    "ProductID": 30,
+    "UnitPrice": 20.7,
+    "Quantity": 35,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10327_58",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10327,
+    "ProductID": 58,
+    "UnitPrice": 10.6,
+    "Quantity": 30,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10328_59",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10328,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 9,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10328_65",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10328,
+    "ProductID": 65,
+    "UnitPrice": 16.8,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10328_68",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10328,
+    "ProductID": 68,
+    "UnitPrice": 10.0,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10329_19",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10329,
+    "ProductID": 19,
+    "UnitPrice": 7.3,
+    "Quantity": 10,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10329_30",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10329,
+    "ProductID": 30,
+    "UnitPrice": 20.7,
+    "Quantity": 8,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10329_38",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10329,
+    "ProductID": 38,
+    "UnitPrice": 210.8,
+    "Quantity": 20,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10329_56",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10329,
+    "ProductID": 56,
+    "UnitPrice": 30.4,
+    "Quantity": 12,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10330_26",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10330,
+    "ProductID": 26,
+    "UnitPrice": 24.9,
+    "Quantity": 50,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10330_72",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10330,
+    "ProductID": 72,
+    "UnitPrice": 27.8,
+    "Quantity": 25,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10331_54",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10331,
+    "ProductID": 54,
+    "UnitPrice": 5.9,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10332_18",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10332,
+    "ProductID": 18,
+    "UnitPrice": 50.0,
+    "Quantity": 40,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10332_42",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10332,
+    "ProductID": 42,
+    "UnitPrice": 11.2,
+    "Quantity": 10,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10332_47",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10332,
+    "ProductID": 47,
+    "UnitPrice": 7.6,
+    "Quantity": 16,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10333_14",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10333,
+    "ProductID": 14,
+    "UnitPrice": 18.6,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10333_21",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10333,
+    "ProductID": 21,
+    "UnitPrice": 8.0,
+    "Quantity": 10,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10333_71",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10333,
+    "ProductID": 71,
+    "UnitPrice": 17.2,
+    "Quantity": 40,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10334_52",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10334,
+    "ProductID": 52,
+    "UnitPrice": 5.6,
+    "Quantity": 8,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10334_68",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10334,
+    "ProductID": 68,
+    "UnitPrice": 10.0,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10335_2",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10335,
+    "ProductID": 2,
+    "UnitPrice": 15.2,
+    "Quantity": 7,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10335_31",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10335,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 25,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10335_32",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10335,
+    "ProductID": 32,
+    "UnitPrice": 25.6,
+    "Quantity": 6,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10335_51",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10335,
+    "ProductID": 51,
+    "UnitPrice": 42.4,
+    "Quantity": 48,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10336_4",
+  "transformed_at": "2025-10-08T09:15:50.745712+00:00",
+  "data": {
+    "OrderID": 10336,
+    "ProductID": 4,
+    "UnitPrice": 17.6,
+    "Quantity": 18,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10337_23",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10337,
+    "ProductID": 23,
+    "UnitPrice": 7.2,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10337_26",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10337,
+    "ProductID": 26,
+    "UnitPrice": 24.9,
+    "Quantity": 24,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10337_36",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10337,
+    "ProductID": 36,
+    "UnitPrice": 15.2,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10337_37",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10337,
+    "ProductID": 37,
+    "UnitPrice": 20.8,
+    "Quantity": 28,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10337_72",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10337,
+    "ProductID": 72,
+    "UnitPrice": 27.8,
+    "Quantity": 25,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10338_17",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10338,
+    "ProductID": 17,
+    "UnitPrice": 31.2,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10338_30",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10338,
+    "ProductID": 30,
+    "UnitPrice": 20.7,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10339_4",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10339,
+    "ProductID": 4,
+    "UnitPrice": 17.6,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10339_17",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10339,
+    "ProductID": 17,
+    "UnitPrice": 31.2,
+    "Quantity": 70,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10339_62",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10339,
+    "ProductID": 62,
+    "UnitPrice": 39.4,
+    "Quantity": 28,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10340_18",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10340,
+    "ProductID": 18,
+    "UnitPrice": 50.0,
+    "Quantity": 20,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10340_41",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10340,
+    "ProductID": 41,
+    "UnitPrice": 7.7,
+    "Quantity": 12,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10340_43",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10340,
+    "ProductID": 43,
+    "UnitPrice": 36.8,
+    "Quantity": 40,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10341_33",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10341,
+    "ProductID": 33,
+    "UnitPrice": 2.0,
+    "Quantity": 8,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10341_59",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10341,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 9,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10342_2",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10342,
+    "ProductID": 2,
+    "UnitPrice": 15.2,
+    "Quantity": 24,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10342_31",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10342,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 56,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10342_36",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10342,
+    "ProductID": 36,
+    "UnitPrice": 15.2,
+    "Quantity": 40,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10342_55",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10342,
+    "ProductID": 55,
+    "UnitPrice": 19.2,
+    "Quantity": 40,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10343_64",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10343,
+    "ProductID": 64,
+    "UnitPrice": 26.6,
+    "Quantity": 50,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10343_68",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10343,
+    "ProductID": 68,
+    "UnitPrice": 10.0,
+    "Quantity": 4,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10343_76",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10343,
+    "ProductID": 76,
+    "UnitPrice": 14.4,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10344_4",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10344,
+    "ProductID": 4,
+    "UnitPrice": 17.6,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10344_8",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10344,
+    "ProductID": 8,
+    "UnitPrice": 32.0,
+    "Quantity": 70,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10345_8",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10345,
+    "ProductID": 8,
+    "UnitPrice": 32.0,
+    "Quantity": 70,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10345_19",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10345,
+    "ProductID": 19,
+    "UnitPrice": 7.3,
+    "Quantity": 80,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10345_42",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10345,
+    "ProductID": 42,
+    "UnitPrice": 11.2,
+    "Quantity": 9,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10346_17",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10346,
+    "ProductID": 17,
+    "UnitPrice": 31.2,
+    "Quantity": 36,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10346_56",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10346,
+    "ProductID": 56,
+    "UnitPrice": 30.4,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10347_25",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10347,
+    "ProductID": 25,
+    "UnitPrice": 11.2,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10347_39",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10347,
+    "ProductID": 39,
+    "UnitPrice": 14.4,
+    "Quantity": 50,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10347_40",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10347,
+    "ProductID": 40,
+    "UnitPrice": 14.7,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10347_75",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10347,
+    "ProductID": 75,
+    "UnitPrice": 6.2,
+    "Quantity": 6,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10348_1",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10348,
+    "ProductID": 1,
+    "UnitPrice": 14.4,
+    "Quantity": 15,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10348_23",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10348,
+    "ProductID": 23,
+    "UnitPrice": 7.2,
+    "Quantity": 25,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10349_54",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10349,
+    "ProductID": 54,
+    "UnitPrice": 5.9,
+    "Quantity": 24,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10350_50",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10350,
+    "ProductID": 50,
+    "UnitPrice": 13.0,
+    "Quantity": 15,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10350_69",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10350,
+    "ProductID": 69,
+    "UnitPrice": 28.8,
+    "Quantity": 18,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10351_38",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10351,
+    "ProductID": 38,
+    "UnitPrice": 210.8,
+    "Quantity": 20,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10351_41",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10351,
+    "ProductID": 41,
+    "UnitPrice": 7.7,
+    "Quantity": 13,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10351_44",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10351,
+    "ProductID": 44,
+    "UnitPrice": 15.5,
+    "Quantity": 77,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10351_65",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10351,
+    "ProductID": 65,
+    "UnitPrice": 16.8,
+    "Quantity": 10,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10352_24",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10352,
+    "ProductID": 24,
+    "UnitPrice": 3.6,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10352_54",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10352,
+    "ProductID": 54,
+    "UnitPrice": 5.9,
+    "Quantity": 20,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10353_11",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10353,
+    "ProductID": 11,
+    "UnitPrice": 16.8,
+    "Quantity": 12,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10353_38",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10353,
+    "ProductID": 38,
+    "UnitPrice": 210.8,
+    "Quantity": 50,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10354_1",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10354,
+    "ProductID": 1,
+    "UnitPrice": 14.4,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10354_29",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10354,
+    "ProductID": 29,
+    "UnitPrice": 99.0,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10355_24",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10355,
+    "ProductID": 24,
+    "UnitPrice": 3.6,
+    "Quantity": 25,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10355_57",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10355,
+    "ProductID": 57,
+    "UnitPrice": 15.6,
+    "Quantity": 25,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10356_31",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10356,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10356_55",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10356,
+    "ProductID": 55,
+    "UnitPrice": 19.2,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10356_69",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10356,
+    "ProductID": 69,
+    "UnitPrice": 28.8,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10357_10",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10357,
+    "ProductID": 10,
+    "UnitPrice": 24.8,
+    "Quantity": 30,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10357_26",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10357,
+    "ProductID": 26,
+    "UnitPrice": 24.9,
+    "Quantity": 16,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10357_60",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10357,
+    "ProductID": 60,
+    "UnitPrice": 27.2,
+    "Quantity": 8,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10358_24",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10358,
+    "ProductID": 24,
+    "UnitPrice": 3.6,
+    "Quantity": 10,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10358_34",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10358,
+    "ProductID": 34,
+    "UnitPrice": 11.2,
+    "Quantity": 10,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10358_36",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10358,
+    "ProductID": 36,
+    "UnitPrice": 15.2,
+    "Quantity": 20,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10359_16",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10359,
+    "ProductID": 16,
+    "UnitPrice": 13.9,
+    "Quantity": 56,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10359_31",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10359,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 70,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10359_60",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10359,
+    "ProductID": 60,
+    "UnitPrice": 27.2,
+    "Quantity": 80,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10360_28",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10360,
+    "ProductID": 28,
+    "UnitPrice": 36.4,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10360_29",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10360,
+    "ProductID": 29,
+    "UnitPrice": 99.0,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10360_38",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10360,
+    "ProductID": 38,
+    "UnitPrice": 210.8,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10360_49",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10360,
+    "ProductID": 49,
+    "UnitPrice": 16.0,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10360_54",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10360,
+    "ProductID": 54,
+    "UnitPrice": 5.9,
+    "Quantity": 28,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10361_39",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10361,
+    "ProductID": 39,
+    "UnitPrice": 14.4,
+    "Quantity": 54,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10361_60",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10361,
+    "ProductID": 60,
+    "UnitPrice": 27.2,
+    "Quantity": 55,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10362_25",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10362,
+    "ProductID": 25,
+    "UnitPrice": 11.2,
+    "Quantity": 50,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10362_51",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10362,
+    "ProductID": 51,
+    "UnitPrice": 42.4,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10362_54",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10362,
+    "ProductID": 54,
+    "UnitPrice": 5.9,
+    "Quantity": 24,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10363_31",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10363,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10363_75",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10363,
+    "ProductID": 75,
+    "UnitPrice": 6.2,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10363_76",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10363,
+    "ProductID": 76,
+    "UnitPrice": 14.4,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10364_69",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10364,
+    "ProductID": 69,
+    "UnitPrice": 28.8,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10364_71",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10364,
+    "ProductID": 71,
+    "UnitPrice": 17.2,
+    "Quantity": 5,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10365_11",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10365,
+    "ProductID": 11,
+    "UnitPrice": 16.8,
+    "Quantity": 24,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10366_65",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10366,
+    "ProductID": 65,
+    "UnitPrice": 16.8,
+    "Quantity": 5,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10366_77",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10366,
+    "ProductID": 77,
+    "UnitPrice": 10.4,
+    "Quantity": 5,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10367_34",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10367,
+    "ProductID": 34,
+    "UnitPrice": 11.2,
+    "Quantity": 36,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10367_54",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10367,
+    "ProductID": 54,
+    "UnitPrice": 5.9,
+    "Quantity": 18,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10367_65",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10367,
+    "ProductID": 65,
+    "UnitPrice": 16.8,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10367_77",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10367,
+    "ProductID": 77,
+    "UnitPrice": 10.4,
+    "Quantity": 7,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10368_21",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10368,
+    "ProductID": 21,
+    "UnitPrice": 8.0,
+    "Quantity": 5,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10368_28",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10368,
+    "ProductID": 28,
+    "UnitPrice": 36.4,
+    "Quantity": 13,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10368_57",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10368,
+    "ProductID": 57,
+    "UnitPrice": 15.6,
+    "Quantity": 25,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10368_64",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10368,
+    "ProductID": 64,
+    "UnitPrice": 26.6,
+    "Quantity": 35,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10369_29",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10369,
+    "ProductID": 29,
+    "UnitPrice": 99.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10369_56",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10369,
+    "ProductID": 56,
+    "UnitPrice": 30.4,
+    "Quantity": 18,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10370_1",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10370,
+    "ProductID": 1,
+    "UnitPrice": 14.4,
+    "Quantity": 15,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10370_64",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10370,
+    "ProductID": 64,
+    "UnitPrice": 26.6,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10370_74",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10370,
+    "ProductID": 74,
+    "UnitPrice": 8.0,
+    "Quantity": 20,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10371_36",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10371,
+    "ProductID": 36,
+    "UnitPrice": 15.2,
+    "Quantity": 6,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10372_20",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10372,
+    "ProductID": 20,
+    "UnitPrice": 64.8,
+    "Quantity": 12,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10372_38",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10372,
+    "ProductID": 38,
+    "UnitPrice": 210.8,
+    "Quantity": 40,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10372_60",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10372,
+    "ProductID": 60,
+    "UnitPrice": 27.2,
+    "Quantity": 70,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10372_72",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10372,
+    "ProductID": 72,
+    "UnitPrice": 27.8,
+    "Quantity": 42,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10373_58",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10373,
+    "ProductID": 58,
+    "UnitPrice": 10.6,
+    "Quantity": 80,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10373_71",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10373,
+    "ProductID": 71,
+    "UnitPrice": 17.2,
+    "Quantity": 50,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10374_31",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10374,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10374_58",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10374,
+    "ProductID": 58,
+    "UnitPrice": 10.6,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10375_14",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10375,
+    "ProductID": 14,
+    "UnitPrice": 18.6,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10375_54",
+  "transformed_at": "2025-10-08T09:15:50.750787+00:00",
+  "data": {
+    "OrderID": 10375,
+    "ProductID": 54,
+    "UnitPrice": 5.9,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10376_31",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10376,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 42,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10377_28",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10377,
+    "ProductID": 28,
+    "UnitPrice": 36.4,
+    "Quantity": 20,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10377_39",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10377,
+    "ProductID": 39,
+    "UnitPrice": 14.4,
+    "Quantity": 20,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10378_71",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10378,
+    "ProductID": 71,
+    "UnitPrice": 17.2,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10379_41",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10379,
+    "ProductID": 41,
+    "UnitPrice": 7.7,
+    "Quantity": 8,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10379_63",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10379,
+    "ProductID": 63,
+    "UnitPrice": 35.1,
+    "Quantity": 16,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10379_65",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10379,
+    "ProductID": 65,
+    "UnitPrice": 16.8,
+    "Quantity": 20,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10380_30",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10380,
+    "ProductID": 30,
+    "UnitPrice": 20.7,
+    "Quantity": 18,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10380_53",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10380,
+    "ProductID": 53,
+    "UnitPrice": 26.2,
+    "Quantity": 20,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10380_60",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10380,
+    "ProductID": 60,
+    "UnitPrice": 27.2,
+    "Quantity": 6,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10380_70",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10380,
+    "ProductID": 70,
+    "UnitPrice": 12.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10381_74",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10381,
+    "ProductID": 74,
+    "UnitPrice": 8.0,
+    "Quantity": 14,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10382_5",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10382,
+    "ProductID": 5,
+    "UnitPrice": 17.0,
+    "Quantity": 32,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10382_18",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10382,
+    "ProductID": 18,
+    "UnitPrice": 50.0,
+    "Quantity": 9,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10382_29",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10382,
+    "ProductID": 29,
+    "UnitPrice": 99.0,
+    "Quantity": 14,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10382_33",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10382,
+    "ProductID": 33,
+    "UnitPrice": 2.0,
+    "Quantity": 60,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10382_74",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10382,
+    "ProductID": 74,
+    "UnitPrice": 8.0,
+    "Quantity": 50,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10383_13",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10383,
+    "ProductID": 13,
+    "UnitPrice": 4.8,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10383_50",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10383,
+    "ProductID": 50,
+    "UnitPrice": 13.0,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10383_56",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10383,
+    "ProductID": 56,
+    "UnitPrice": 30.4,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10384_20",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10384,
+    "ProductID": 20,
+    "UnitPrice": 64.8,
+    "Quantity": 28,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10384_60",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10384,
+    "ProductID": 60,
+    "UnitPrice": 27.2,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10385_7",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10385,
+    "ProductID": 7,
+    "UnitPrice": 24.0,
+    "Quantity": 10,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10385_60",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10385,
+    "ProductID": 60,
+    "UnitPrice": 27.2,
+    "Quantity": 20,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10385_68",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10385,
+    "ProductID": 68,
+    "UnitPrice": 10.0,
+    "Quantity": 8,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10386_24",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10386,
+    "ProductID": 24,
+    "UnitPrice": 3.6,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10386_34",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10386,
+    "ProductID": 34,
+    "UnitPrice": 11.2,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10387_24",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10387,
+    "ProductID": 24,
+    "UnitPrice": 3.6,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10387_28",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10387,
+    "ProductID": 28,
+    "UnitPrice": 36.4,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10387_59",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10387,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10387_71",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10387,
+    "ProductID": 71,
+    "UnitPrice": 17.2,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10388_45",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10388,
+    "ProductID": 45,
+    "UnitPrice": 7.6,
+    "Quantity": 15,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10388_52",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10388,
+    "ProductID": 52,
+    "UnitPrice": 5.6,
+    "Quantity": 20,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10388_53",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10388,
+    "ProductID": 53,
+    "UnitPrice": 26.2,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10389_10",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10389,
+    "ProductID": 10,
+    "UnitPrice": 24.8,
+    "Quantity": 16,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10389_55",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10389,
+    "ProductID": 55,
+    "UnitPrice": 19.2,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10389_62",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10389,
+    "ProductID": 62,
+    "UnitPrice": 39.4,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10389_70",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10389,
+    "ProductID": 70,
+    "UnitPrice": 12.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10390_31",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10390,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 60,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10390_35",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10390,
+    "ProductID": 35,
+    "UnitPrice": 14.4,
+    "Quantity": 40,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10390_46",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10390,
+    "ProductID": 46,
+    "UnitPrice": 9.6,
+    "Quantity": 45,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10390_72",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10390,
+    "ProductID": 72,
+    "UnitPrice": 27.8,
+    "Quantity": 24,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10391_13",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10391,
+    "ProductID": 13,
+    "UnitPrice": 4.8,
+    "Quantity": 18,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10392_69",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10392,
+    "ProductID": 69,
+    "UnitPrice": 28.8,
+    "Quantity": 50,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10393_2",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10393,
+    "ProductID": 2,
+    "UnitPrice": 15.2,
+    "Quantity": 25,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10393_14",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10393,
+    "ProductID": 14,
+    "UnitPrice": 18.6,
+    "Quantity": 42,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10393_25",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10393,
+    "ProductID": 25,
+    "UnitPrice": 11.2,
+    "Quantity": 7,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10393_26",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10393,
+    "ProductID": 26,
+    "UnitPrice": 24.9,
+    "Quantity": 70,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10393_31",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10393,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 32,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10394_13",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10394,
+    "ProductID": 13,
+    "UnitPrice": 4.8,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10394_62",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10394,
+    "ProductID": 62,
+    "UnitPrice": 39.4,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10395_46",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10395,
+    "ProductID": 46,
+    "UnitPrice": 9.6,
+    "Quantity": 28,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10395_53",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10395,
+    "ProductID": 53,
+    "UnitPrice": 26.2,
+    "Quantity": 70,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10395_69",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10395,
+    "ProductID": 69,
+    "UnitPrice": 28.8,
+    "Quantity": 8,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10396_23",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10396,
+    "ProductID": 23,
+    "UnitPrice": 7.2,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10396_71",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10396,
+    "ProductID": 71,
+    "UnitPrice": 17.2,
+    "Quantity": 60,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10396_72",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10396,
+    "ProductID": 72,
+    "UnitPrice": 27.8,
+    "Quantity": 21,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10397_21",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10397,
+    "ProductID": 21,
+    "UnitPrice": 8.0,
+    "Quantity": 10,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10397_51",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10397,
+    "ProductID": 51,
+    "UnitPrice": 42.4,
+    "Quantity": 18,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10398_35",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10398,
+    "ProductID": 35,
+    "UnitPrice": 14.4,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10398_55",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10398,
+    "ProductID": 55,
+    "UnitPrice": 19.2,
+    "Quantity": 120,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10399_68",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10399,
+    "ProductID": 68,
+    "UnitPrice": 10.0,
+    "Quantity": 60,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10399_71",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10399,
+    "ProductID": 71,
+    "UnitPrice": 17.2,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10399_76",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10399,
+    "ProductID": 76,
+    "UnitPrice": 14.4,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10399_77",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10399,
+    "ProductID": 77,
+    "UnitPrice": 10.4,
+    "Quantity": 14,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10400_29",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10400,
+    "ProductID": 29,
+    "UnitPrice": 99.0,
+    "Quantity": 21,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10400_35",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10400,
+    "ProductID": 35,
+    "UnitPrice": 14.4,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10400_49",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10400,
+    "ProductID": 49,
+    "UnitPrice": 16.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10401_30",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10401,
+    "ProductID": 30,
+    "UnitPrice": 20.7,
+    "Quantity": 18,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10401_56",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10401,
+    "ProductID": 56,
+    "UnitPrice": 30.4,
+    "Quantity": 70,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10401_65",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10401,
+    "ProductID": 65,
+    "UnitPrice": 16.8,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10401_71",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10401,
+    "ProductID": 71,
+    "UnitPrice": 17.2,
+    "Quantity": 60,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10402_23",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10402,
+    "ProductID": 23,
+    "UnitPrice": 7.2,
+    "Quantity": 60,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10402_63",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10402,
+    "ProductID": 63,
+    "UnitPrice": 35.1,
+    "Quantity": 65,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10403_16",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10403,
+    "ProductID": 16,
+    "UnitPrice": 13.9,
+    "Quantity": 21,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10403_48",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10403,
+    "ProductID": 48,
+    "UnitPrice": 10.2,
+    "Quantity": 70,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10404_26",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10404,
+    "ProductID": 26,
+    "UnitPrice": 24.9,
+    "Quantity": 30,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10404_42",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10404,
+    "ProductID": 42,
+    "UnitPrice": 11.2,
+    "Quantity": 40,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10404_49",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10404,
+    "ProductID": 49,
+    "UnitPrice": 16.0,
+    "Quantity": 30,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10405_3",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10405,
+    "ProductID": 3,
+    "UnitPrice": 8.0,
+    "Quantity": 50,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10406_1",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10406,
+    "ProductID": 1,
+    "UnitPrice": 14.4,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10406_21",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10406,
+    "ProductID": 21,
+    "UnitPrice": 8.0,
+    "Quantity": 30,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10406_28",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10406,
+    "ProductID": 28,
+    "UnitPrice": 36.4,
+    "Quantity": 42,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10406_36",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10406,
+    "ProductID": 36,
+    "UnitPrice": 15.2,
+    "Quantity": 5,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10406_40",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10406,
+    "ProductID": 40,
+    "UnitPrice": 14.7,
+    "Quantity": 2,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10407_11",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10407,
+    "ProductID": 11,
+    "UnitPrice": 16.8,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10407_69",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10407,
+    "ProductID": 69,
+    "UnitPrice": 28.8,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10407_71",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10407,
+    "ProductID": 71,
+    "UnitPrice": 17.2,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10408_37",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10408,
+    "ProductID": 37,
+    "UnitPrice": 20.8,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10408_54",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10408,
+    "ProductID": 54,
+    "UnitPrice": 5.9,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10408_62",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10408,
+    "ProductID": 62,
+    "UnitPrice": 39.4,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10409_14",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10409,
+    "ProductID": 14,
+    "UnitPrice": 18.6,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10409_21",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10409,
+    "ProductID": 21,
+    "UnitPrice": 8.0,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10410_33",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10410,
+    "ProductID": 33,
+    "UnitPrice": 2.0,
+    "Quantity": 49,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10410_59",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10410,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 16,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10411_41",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10411,
+    "ProductID": 41,
+    "UnitPrice": 7.7,
+    "Quantity": 25,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10411_44",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10411,
+    "ProductID": 44,
+    "UnitPrice": 15.5,
+    "Quantity": 40,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10411_59",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10411,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 9,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10412_14",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10412,
+    "ProductID": 14,
+    "UnitPrice": 18.6,
+    "Quantity": 20,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10413_1",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10413,
+    "ProductID": 1,
+    "UnitPrice": 14.4,
+    "Quantity": 24,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10413_62",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10413,
+    "ProductID": 62,
+    "UnitPrice": 39.4,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10413_76",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10413,
+    "ProductID": 76,
+    "UnitPrice": 14.4,
+    "Quantity": 14,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10414_19",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10414,
+    "ProductID": 19,
+    "UnitPrice": 7.3,
+    "Quantity": 18,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10414_33",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10414,
+    "ProductID": 33,
+    "UnitPrice": 2.0,
+    "Quantity": 50,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10415_17",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10415,
+    "ProductID": 17,
+    "UnitPrice": 31.2,
+    "Quantity": 2,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10415_33",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10415,
+    "ProductID": 33,
+    "UnitPrice": 2.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10416_19",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10416,
+    "ProductID": 19,
+    "UnitPrice": 7.3,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10416_53",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10416,
+    "ProductID": 53,
+    "UnitPrice": 26.2,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10416_57",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10416,
+    "ProductID": 57,
+    "UnitPrice": 15.6,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10417_38",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10417,
+    "ProductID": 38,
+    "UnitPrice": 210.8,
+    "Quantity": 50,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10417_46",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10417,
+    "ProductID": 46,
+    "UnitPrice": 9.6,
+    "Quantity": 2,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10417_68",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10417,
+    "ProductID": 68,
+    "UnitPrice": 10.0,
+    "Quantity": 36,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10417_77",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10417,
+    "ProductID": 77,
+    "UnitPrice": 10.4,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10418_2",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10418,
+    "ProductID": 2,
+    "UnitPrice": 15.2,
+    "Quantity": 60,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10418_47",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10418,
+    "ProductID": 47,
+    "UnitPrice": 7.6,
+    "Quantity": 55,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10418_61",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10418,
+    "ProductID": 61,
+    "UnitPrice": 22.8,
+    "Quantity": 16,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10418_74",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10418,
+    "ProductID": 74,
+    "UnitPrice": 8.0,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10419_60",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10419,
+    "ProductID": 60,
+    "UnitPrice": 27.2,
+    "Quantity": 60,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10419_69",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10419,
+    "ProductID": 69,
+    "UnitPrice": 28.8,
+    "Quantity": 20,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10420_9",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10420,
+    "ProductID": 9,
+    "UnitPrice": 77.6,
+    "Quantity": 20,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10420_13",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10420,
+    "ProductID": 13,
+    "UnitPrice": 4.8,
+    "Quantity": 2,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10420_70",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10420,
+    "ProductID": 70,
+    "UnitPrice": 12.0,
+    "Quantity": 8,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10420_73",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10420,
+    "ProductID": 73,
+    "UnitPrice": 12.0,
+    "Quantity": 20,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10421_19",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10421,
+    "ProductID": 19,
+    "UnitPrice": 7.3,
+    "Quantity": 4,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10421_26",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10421,
+    "ProductID": 26,
+    "UnitPrice": 24.9,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10421_53",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10421,
+    "ProductID": 53,
+    "UnitPrice": 26.2,
+    "Quantity": 15,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10421_77",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10421,
+    "ProductID": 77,
+    "UnitPrice": 10.4,
+    "Quantity": 10,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10422_26",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10422,
+    "ProductID": 26,
+    "UnitPrice": 24.9,
+    "Quantity": 2,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10423_31",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10423,
+    "ProductID": 31,
+    "UnitPrice": 10.0,
+    "Quantity": 14,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10423_59",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10423,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10424_35",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10424,
+    "ProductID": 35,
+    "UnitPrice": 14.4,
+    "Quantity": 60,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10424_38",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10424,
+    "ProductID": 38,
+    "UnitPrice": 210.8,
+    "Quantity": 49,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10424_68",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10424,
+    "ProductID": 68,
+    "UnitPrice": 10.0,
+    "Quantity": 30,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10425_55",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10425,
+    "ProductID": 55,
+    "UnitPrice": 19.2,
+    "Quantity": 10,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10425_76",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10425,
+    "ProductID": 76,
+    "UnitPrice": 14.4,
+    "Quantity": 20,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10426_56",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10426,
+    "ProductID": 56,
+    "UnitPrice": 30.4,
+    "Quantity": 5,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10426_64",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10426,
+    "ProductID": 64,
+    "UnitPrice": 26.6,
+    "Quantity": 7,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10427_14",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10427,
+    "ProductID": 14,
+    "UnitPrice": 18.6,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10428_46",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10428,
+    "ProductID": 46,
+    "UnitPrice": 9.6,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10429_50",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10429,
+    "ProductID": 50,
+    "UnitPrice": 13.0,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10429_63",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10429,
+    "ProductID": 63,
+    "UnitPrice": 35.1,
+    "Quantity": 35,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10430_17",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10430,
+    "ProductID": 17,
+    "UnitPrice": 31.2,
+    "Quantity": 45,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10430_21",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10430,
+    "ProductID": 21,
+    "UnitPrice": 8.0,
+    "Quantity": 50,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10430_56",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10430,
+    "ProductID": 56,
+    "UnitPrice": 30.4,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10430_59",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10430,
+    "ProductID": 59,
+    "UnitPrice": 44.0,
+    "Quantity": 70,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10431_17",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10431,
+    "ProductID": 17,
+    "UnitPrice": 31.2,
+    "Quantity": 50,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10431_40",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10431,
+    "ProductID": 40,
+    "UnitPrice": 14.7,
+    "Quantity": 50,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10431_47",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10431,
+    "ProductID": 47,
+    "UnitPrice": 7.6,
+    "Quantity": 30,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10432_26",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10432,
+    "ProductID": 26,
+    "UnitPrice": 24.9,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10432_54",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10432,
+    "ProductID": 54,
+    "UnitPrice": 5.9,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10433_56",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10433,
+    "ProductID": 56,
+    "UnitPrice": 30.4,
+    "Quantity": 28,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10434_11",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10434,
+    "ProductID": 11,
+    "UnitPrice": 16.8,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10434_76",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10434,
+    "ProductID": 76,
+    "UnitPrice": 14.4,
+    "Quantity": 18,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10435_2",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10435,
+    "ProductID": 2,
+    "UnitPrice": 15.2,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10435_22",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10435,
+    "ProductID": 22,
+    "UnitPrice": 16.8,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10435_72",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10435,
+    "ProductID": 72,
+    "UnitPrice": 27.8,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10436_46",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10436,
+    "ProductID": 46,
+    "UnitPrice": 9.6,
+    "Quantity": 5,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10436_56",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10436,
+    "ProductID": 56,
+    "UnitPrice": 30.4,
+    "Quantity": 40,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10436_64",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10436,
+    "ProductID": 64,
+    "UnitPrice": 26.6,
+    "Quantity": 30,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "10436_75",
+  "transformed_at": "2025-10-08T09:15:50.751403+00:00",
+  "data": {
+    "OrderID": 10436,
+    "ProductID": 75,
+    "UnitPrice": 6.2,
+    "Quantity": 24,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11022_69",
+  "transformed_at": "2025-10-08T09:15:50.804328+00:00",
+  "data": {
+    "OrderID": 11022,
+    "ProductID": 69,
+    "UnitPrice": 36.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11023_7",
+  "transformed_at": "2025-10-08T09:15:50.804328+00:00",
+  "data": {
+    "OrderID": 11023,
+    "ProductID": 7,
+    "UnitPrice": 30.0,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11023_43",
+  "transformed_at": "2025-10-08T09:15:50.804328+00:00",
+  "data": {
+    "OrderID": 11023,
+    "ProductID": 43,
+    "UnitPrice": 46.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11024_26",
+  "transformed_at": "2025-10-08T09:15:50.804328+00:00",
+  "data": {
+    "OrderID": 11024,
+    "ProductID": 26,
+    "UnitPrice": 31.23,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11024_33",
+  "transformed_at": "2025-10-08T09:15:50.804328+00:00",
+  "data": {
+    "OrderID": 11024,
+    "ProductID": 33,
+    "UnitPrice": 2.5,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11024_65",
+  "transformed_at": "2025-10-08T09:15:50.804328+00:00",
+  "data": {
+    "OrderID": 11024,
+    "ProductID": 65,
+    "UnitPrice": 21.05,
+    "Quantity": 21,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11024_71",
+  "transformed_at": "2025-10-08T09:15:50.804328+00:00",
+  "data": {
+    "OrderID": 11024,
+    "ProductID": 71,
+    "UnitPrice": 21.5,
+    "Quantity": 50,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11025_1",
+  "transformed_at": "2025-10-08T09:15:50.804328+00:00",
+  "data": {
+    "OrderID": 11025,
+    "ProductID": 1,
+    "UnitPrice": 18.0,
+    "Quantity": 10,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11025_13",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11025,
+    "ProductID": 13,
+    "UnitPrice": 6.0,
+    "Quantity": 20,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11026_18",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11026,
+    "ProductID": 18,
+    "UnitPrice": 62.5,
+    "Quantity": 8,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11026_51",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11026,
+    "ProductID": 51,
+    "UnitPrice": 53.0,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11027_24",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11027,
+    "ProductID": 24,
+    "UnitPrice": 4.5,
+    "Quantity": 30,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11027_62",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11027,
+    "ProductID": 62,
+    "UnitPrice": 49.3,
+    "Quantity": 21,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11028_55",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11028,
+    "ProductID": 55,
+    "UnitPrice": 24.0,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11028_59",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11028,
+    "ProductID": 59,
+    "UnitPrice": 55.0,
+    "Quantity": 24,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11029_56",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11029,
+    "ProductID": 56,
+    "UnitPrice": 38.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11029_63",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11029,
+    "ProductID": 63,
+    "UnitPrice": 43.9,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11030_2",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11030,
+    "ProductID": 2,
+    "UnitPrice": 19.0,
+    "Quantity": 100,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11030_5",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11030,
+    "ProductID": 5,
+    "UnitPrice": 21.35,
+    "Quantity": 70,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11030_29",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11030,
+    "ProductID": 29,
+    "UnitPrice": 123.79,
+    "Quantity": 60,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11030_59",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11030,
+    "ProductID": 59,
+    "UnitPrice": 55.0,
+    "Quantity": 100,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11031_1",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11031,
+    "ProductID": 1,
+    "UnitPrice": 18.0,
+    "Quantity": 45,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11031_13",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11031,
+    "ProductID": 13,
+    "UnitPrice": 6.0,
+    "Quantity": 80,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11031_24",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11031,
+    "ProductID": 24,
+    "UnitPrice": 4.5,
+    "Quantity": 21,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11031_64",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11031,
+    "ProductID": 64,
+    "UnitPrice": 33.25,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11031_71",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11031,
+    "ProductID": 71,
+    "UnitPrice": 21.5,
+    "Quantity": 16,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11032_36",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11032,
+    "ProductID": 36,
+    "UnitPrice": 19.0,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11032_38",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11032,
+    "ProductID": 38,
+    "UnitPrice": 263.5,
+    "Quantity": 25,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11032_59",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11032,
+    "ProductID": 59,
+    "UnitPrice": 55.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11033_53",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11033,
+    "ProductID": 53,
+    "UnitPrice": 32.8,
+    "Quantity": 70,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11033_69",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11033,
+    "ProductID": 69,
+    "UnitPrice": 36.0,
+    "Quantity": 36,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11034_21",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11034,
+    "ProductID": 21,
+    "UnitPrice": 10.0,
+    "Quantity": 15,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11034_44",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11034,
+    "ProductID": 44,
+    "UnitPrice": 19.45,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11034_61",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11034,
+    "ProductID": 61,
+    "UnitPrice": 28.5,
+    "Quantity": 6,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11035_1",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11035,
+    "ProductID": 1,
+    "UnitPrice": 18.0,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11035_35",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11035,
+    "ProductID": 35,
+    "UnitPrice": 18.0,
+    "Quantity": 60,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11035_42",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11035,
+    "ProductID": 42,
+    "UnitPrice": 14.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11035_54",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11035,
+    "ProductID": 54,
+    "UnitPrice": 7.45,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11036_13",
+  "transformed_at": "2025-10-08T09:15:50.804652+00:00",
+  "data": {
+    "OrderID": 11036,
+    "ProductID": 13,
+    "UnitPrice": 6.0,
+    "Quantity": 7,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11036_59",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11036,
+    "ProductID": 59,
+    "UnitPrice": 55.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11037_70",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11037,
+    "ProductID": 70,
+    "UnitPrice": 15.0,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11038_40",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11038,
+    "ProductID": 40,
+    "UnitPrice": 18.4,
+    "Quantity": 5,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11038_52",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11038,
+    "ProductID": 52,
+    "UnitPrice": 7.0,
+    "Quantity": 2,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11038_71",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11038,
+    "ProductID": 71,
+    "UnitPrice": 21.5,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11039_28",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11039,
+    "ProductID": 28,
+    "UnitPrice": 45.6,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11039_35",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11039,
+    "ProductID": 35,
+    "UnitPrice": 18.0,
+    "Quantity": 24,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11039_49",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11039,
+    "ProductID": 49,
+    "UnitPrice": 20.0,
+    "Quantity": 60,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11039_57",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11039,
+    "ProductID": 57,
+    "UnitPrice": 19.5,
+    "Quantity": 28,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11040_21",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11040,
+    "ProductID": 21,
+    "UnitPrice": 10.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11041_2",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11041,
+    "ProductID": 2,
+    "UnitPrice": 19.0,
+    "Quantity": 30,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11041_63",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11041,
+    "ProductID": 63,
+    "UnitPrice": 43.9,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11042_44",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11042,
+    "ProductID": 44,
+    "UnitPrice": 19.45,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11042_61",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11042,
+    "ProductID": 61,
+    "UnitPrice": 28.5,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11043_11",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11043,
+    "ProductID": 11,
+    "UnitPrice": 21.0,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11044_62",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11044,
+    "ProductID": 62,
+    "UnitPrice": 49.3,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11045_33",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11045,
+    "ProductID": 33,
+    "UnitPrice": 2.5,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11045_51",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11045,
+    "ProductID": 51,
+    "UnitPrice": 53.0,
+    "Quantity": 24,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11046_12",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11046,
+    "ProductID": 12,
+    "UnitPrice": 38.0,
+    "Quantity": 20,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11046_32",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11046,
+    "ProductID": 32,
+    "UnitPrice": 32.0,
+    "Quantity": 15,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11046_35",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11046,
+    "ProductID": 35,
+    "UnitPrice": 18.0,
+    "Quantity": 18,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11047_1",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11047,
+    "ProductID": 1,
+    "UnitPrice": 18.0,
+    "Quantity": 25,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11047_5",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11047,
+    "ProductID": 5,
+    "UnitPrice": 21.35,
+    "Quantity": 30,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11048_68",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11048,
+    "ProductID": 68,
+    "UnitPrice": 12.5,
+    "Quantity": 42,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11049_2",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11049,
+    "ProductID": 2,
+    "UnitPrice": 19.0,
+    "Quantity": 10,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11049_12",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11049,
+    "ProductID": 12,
+    "UnitPrice": 38.0,
+    "Quantity": 4,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11050_76",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11050,
+    "ProductID": 76,
+    "UnitPrice": 18.0,
+    "Quantity": 50,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11051_24",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11051,
+    "ProductID": 24,
+    "UnitPrice": 4.5,
+    "Quantity": 10,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11052_43",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11052,
+    "ProductID": 43,
+    "UnitPrice": 46.0,
+    "Quantity": 30,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11052_61",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11052,
+    "ProductID": 61,
+    "UnitPrice": 28.5,
+    "Quantity": 10,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11053_18",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11053,
+    "ProductID": 18,
+    "UnitPrice": 62.5,
+    "Quantity": 35,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11053_32",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11053,
+    "ProductID": 32,
+    "UnitPrice": 32.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11053_64",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11053,
+    "ProductID": 64,
+    "UnitPrice": 33.25,
+    "Quantity": 25,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11054_33",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11054,
+    "ProductID": 33,
+    "UnitPrice": 2.5,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11054_67",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11054,
+    "ProductID": 67,
+    "UnitPrice": 14.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11055_24",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11055,
+    "ProductID": 24,
+    "UnitPrice": 4.5,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11055_25",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11055,
+    "ProductID": 25,
+    "UnitPrice": 14.0,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11055_51",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11055,
+    "ProductID": 51,
+    "UnitPrice": 53.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11055_57",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11055,
+    "ProductID": 57,
+    "UnitPrice": 19.5,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11056_7",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11056,
+    "ProductID": 7,
+    "UnitPrice": 30.0,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11056_55",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11056,
+    "ProductID": 55,
+    "UnitPrice": 24.0,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11056_60",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11056,
+    "ProductID": 60,
+    "UnitPrice": 34.0,
+    "Quantity": 50,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11057_70",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11057,
+    "ProductID": 70,
+    "UnitPrice": 15.0,
+    "Quantity": 3,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11058_21",
+  "transformed_at": "2025-10-08T09:15:50.805161+00:00",
+  "data": {
+    "OrderID": 11058,
+    "ProductID": 21,
+    "UnitPrice": 10.0,
+    "Quantity": 3,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11058_60",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11058,
+    "ProductID": 60,
+    "UnitPrice": 34.0,
+    "Quantity": 21,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11058_61",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11058,
+    "ProductID": 61,
+    "UnitPrice": 28.5,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11059_13",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11059,
+    "ProductID": 13,
+    "UnitPrice": 6.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11059_17",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11059,
+    "ProductID": 17,
+    "UnitPrice": 39.0,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11059_60",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11059,
+    "ProductID": 60,
+    "UnitPrice": 34.0,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11060_60",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11060,
+    "ProductID": 60,
+    "UnitPrice": 34.0,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11060_77",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11060,
+    "ProductID": 77,
+    "UnitPrice": 13.0,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11061_60",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11061,
+    "ProductID": 60,
+    "UnitPrice": 34.0,
+    "Quantity": 15,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11062_53",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11062,
+    "ProductID": 53,
+    "UnitPrice": 32.8,
+    "Quantity": 10,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11062_70",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11062,
+    "ProductID": 70,
+    "UnitPrice": 15.0,
+    "Quantity": 12,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11063_34",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11063,
+    "ProductID": 34,
+    "UnitPrice": 14.0,
+    "Quantity": 30,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11063_40",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11063,
+    "ProductID": 40,
+    "UnitPrice": 18.4,
+    "Quantity": 40,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11063_41",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11063,
+    "ProductID": 41,
+    "UnitPrice": 9.65,
+    "Quantity": 30,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11064_17",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11064,
+    "ProductID": 17,
+    "UnitPrice": 39.0,
+    "Quantity": 77,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11064_41",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11064,
+    "ProductID": 41,
+    "UnitPrice": 9.65,
+    "Quantity": 12,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11064_53",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11064,
+    "ProductID": 53,
+    "UnitPrice": 32.8,
+    "Quantity": 25,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11064_55",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11064,
+    "ProductID": 55,
+    "UnitPrice": 24.0,
+    "Quantity": 4,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11064_68",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11064,
+    "ProductID": 68,
+    "UnitPrice": 12.5,
+    "Quantity": 55,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11065_30",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11065,
+    "ProductID": 30,
+    "UnitPrice": 25.89,
+    "Quantity": 4,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11065_54",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11065,
+    "ProductID": 54,
+    "UnitPrice": 7.45,
+    "Quantity": 20,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11066_16",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11066,
+    "ProductID": 16,
+    "UnitPrice": 17.45,
+    "Quantity": 3,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11066_19",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11066,
+    "ProductID": 19,
+    "UnitPrice": 9.2,
+    "Quantity": 42,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11066_34",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11066,
+    "ProductID": 34,
+    "UnitPrice": 14.0,
+    "Quantity": 35,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11067_41",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11067,
+    "ProductID": 41,
+    "UnitPrice": 9.65,
+    "Quantity": 9,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11068_28",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11068,
+    "ProductID": 28,
+    "UnitPrice": 45.6,
+    "Quantity": 8,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11068_43",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11068,
+    "ProductID": 43,
+    "UnitPrice": 46.0,
+    "Quantity": 36,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11068_77",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11068,
+    "ProductID": 77,
+    "UnitPrice": 13.0,
+    "Quantity": 28,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11069_39",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11069,
+    "ProductID": 39,
+    "UnitPrice": 18.0,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11070_1",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11070,
+    "ProductID": 1,
+    "UnitPrice": 18.0,
+    "Quantity": 40,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11070_2",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11070,
+    "ProductID": 2,
+    "UnitPrice": 19.0,
+    "Quantity": 20,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11070_16",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11070,
+    "ProductID": 16,
+    "UnitPrice": 17.45,
+    "Quantity": 30,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11070_31",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11070,
+    "ProductID": 31,
+    "UnitPrice": 12.5,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11071_7",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11071,
+    "ProductID": 7,
+    "UnitPrice": 30.0,
+    "Quantity": 15,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11071_13",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11071,
+    "ProductID": 13,
+    "UnitPrice": 6.0,
+    "Quantity": 10,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11072_2",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11072,
+    "ProductID": 2,
+    "UnitPrice": 19.0,
+    "Quantity": 8,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11072_41",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11072,
+    "ProductID": 41,
+    "UnitPrice": 9.65,
+    "Quantity": 40,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11072_50",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11072,
+    "ProductID": 50,
+    "UnitPrice": 16.25,
+    "Quantity": 22,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11072_64",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11072,
+    "ProductID": 64,
+    "UnitPrice": 33.25,
+    "Quantity": 130,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11073_11",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11073,
+    "ProductID": 11,
+    "UnitPrice": 21.0,
+    "Quantity": 10,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11073_24",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11073,
+    "ProductID": 24,
+    "UnitPrice": 4.5,
+    "Quantity": 20,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11074_16",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11074,
+    "ProductID": 16,
+    "UnitPrice": 17.45,
+    "Quantity": 14,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11075_2",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11075,
+    "ProductID": 2,
+    "UnitPrice": 19.0,
+    "Quantity": 10,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11075_46",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11075,
+    "ProductID": 46,
+    "UnitPrice": 12.0,
+    "Quantity": 30,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11075_76",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11075,
+    "ProductID": 76,
+    "UnitPrice": 18.0,
+    "Quantity": 2,
+    "Discount": 0.15
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11076_6",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11076,
+    "ProductID": 6,
+    "UnitPrice": 25.0,
+    "Quantity": 20,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11076_14",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11076,
+    "ProductID": 14,
+    "UnitPrice": 23.25,
+    "Quantity": 20,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11076_19",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11076,
+    "ProductID": 19,
+    "UnitPrice": 9.2,
+    "Quantity": 10,
+    "Discount": 0.25
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_2",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 2,
+    "UnitPrice": 19.0,
+    "Quantity": 24,
+    "Discount": 0.2
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_3",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 3,
+    "UnitPrice": 10.0,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_4",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 4,
+    "UnitPrice": 22.0,
+    "Quantity": 1,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_6",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 6,
+    "UnitPrice": 25.0,
+    "Quantity": 1,
+    "Discount": 0.02
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_7",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 7,
+    "UnitPrice": 30.0,
+    "Quantity": 1,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_8",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 8,
+    "UnitPrice": 40.0,
+    "Quantity": 2,
+    "Discount": 0.1
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_10",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 10,
+    "UnitPrice": 31.0,
+    "Quantity": 1,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_12",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 12,
+    "UnitPrice": 38.0,
+    "Quantity": 2,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_13",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 13,
+    "UnitPrice": 6.0,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_14",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 14,
+    "UnitPrice": 23.25,
+    "Quantity": 1,
+    "Discount": 0.03
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_16",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 16,
+    "UnitPrice": 17.45,
+    "Quantity": 2,
+    "Discount": 0.03
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_20",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 20,
+    "UnitPrice": 81.0,
+    "Quantity": 1,
+    "Discount": 0.04
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_23",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 23,
+    "UnitPrice": 9.0,
+    "Quantity": 2,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_32",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 32,
+    "UnitPrice": 32.0,
+    "Quantity": 1,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_39",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 39,
+    "UnitPrice": 18.0,
+    "Quantity": 2,
+    "Discount": 0.05
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_41",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 41,
+    "UnitPrice": 9.65,
+    "Quantity": 3,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_46",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 46,
+    "UnitPrice": 12.0,
+    "Quantity": 3,
+    "Discount": 0.02
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_52",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 52,
+    "UnitPrice": 7.0,
+    "Quantity": 2,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_55",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 55,
+    "UnitPrice": 24.0,
+    "Quantity": 2,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_60",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 60,
+    "UnitPrice": 34.0,
+    "Quantity": 2,
+    "Discount": 0.06
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_64",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 64,
+    "UnitPrice": 33.25,
+    "Quantity": 2,
+    "Discount": 0.03
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_66",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 66,
+    "UnitPrice": 17.0,
+    "Quantity": 1,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_73",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 73,
+    "UnitPrice": 15.0,
+    "Quantity": 2,
+    "Discount": 0.01
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_75",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 75,
+    "UnitPrice": 7.75,
+    "Quantity": 4,
+    "Discount": 0
+  },
+  "metadata": {}
+},
+{
+  "entity_name": "Order_Details",
+  "record_id": "11077_77",
+  "transformed_at": "2025-10-08T09:15:50.805600+00:00",
+  "data": {
+    "OrderID": 11077,
+    "ProductID": 77,
+    "UnitPrice": 13.0,
+    "Quantity": 2,
+    "Discount": 0
+  },
+  "metadata": {}
+}
+]

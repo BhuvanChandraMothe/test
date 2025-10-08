@@ -15,7 +15,7 @@
 ### Complete ClientConfig Parameters
 
 ```python
-from odc.config.models import ClientConfig
+from covasant_odata.config.models import ClientConfig
 
 config = ClientConfig(
     # ========== CONNECTION METHOD 1: Using SAP Module (Recommended) ==========
@@ -180,7 +180,7 @@ sap_module="NORTHWIND"   # → Northwind OData service
 ### Check Available Modules
 
 ```python
-from odc.config.sap_module_mapping import SAPModuleMapping
+from covasant_odata.config.sap_module_mapping import SAPModuleMapping
 
 # Get all available modules
 modules = SAPModuleMapping.get_all_modules()
@@ -695,4 +695,4 @@ filter_condition="Status eq 'Active'"
 
 ---
 
-**Package**: `sap-odata-connector-testcov` | **Version**: 1.0.0
+**Package**: `covasant_sap_odata_connector` | **Version**: 1.0.0

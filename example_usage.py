@@ -4,8 +4,8 @@ This file demonstrates how to use the connector from anywhere after installation
 """
 
 import asyncio
-from odc.connector import SAPODataConnector
-from odc.config.models import ClientConfig
+from covasant_odata.connector import SAPODataConnector
+from covasant_odata.config.models import ClientConfig
 
 
 async def main():

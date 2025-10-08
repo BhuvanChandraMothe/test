@@ -1,0 +1,43 @@
+{
+  "entity_name": "Category_Sales_for_1997",
+  "command_id": "Category_Sales_for_1997_enhanced_page_1",
+  "timestamp": "2025-10-08T09:15:56.379225+00:00",
+  "metadata": {},
+  "raw_response": {
+    "@odata.context": "https://services.odata.org/V4/Northwind/Northwind.svc/$metadata#Category_Sales_for_1997",
+    "value": [
+      {
+        "CategoryName": "Beverages",
+        "CategorySales": 102074.31
+      },
+      {
+        "CategoryName": "Condiments",
+        "CategorySales": 55277.6
+      },
+      {
+        "CategoryName": "Confections",
+        "CategorySales": 80894.14
+      },
+      {
+        "CategoryName": "Dairy Products",
+        "CategorySales": 114749.78
+      },
+      {
+        "CategoryName": "Grains/Cereals",
+        "CategorySales": 55948.82
+      },
+      {
+        "CategoryName": "Meat/Poultry",
+        "CategorySales": 81338.06
+      },
+      {
+        "CategoryName": "Produce",
+        "CategorySales": 53019.98
+      },
+      {
+        "CategoryName": "Seafood",
+        "CategorySales": 65544.18
+      }
+    ]
+  }
+}

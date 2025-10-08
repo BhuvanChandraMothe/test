@@ -1,6 +1,6 @@
 import asyncio
-from odc.connector import SAPODataConnector
-from odc.config.models import ClientConfig
+from covasant_odata.connector import SAPODataConnector
+from covasant_odata.config.models import ClientConfig
 
 async def simple_demo():
     
@@ -33,7 +33,7 @@ async def simple_demo():
         
         # Test 1: Get all Products - logs are automatic!
         # print("\nFetching Products...")
-        products = await connector.get_data(selected_entities=["Products","Reviews"])
+        products = await connector.get_data(selected_entities=["Products","Reviews"], batch_size=500)
         # print(f"Done! Retrieved {products['execution_stats']['records_processed']} products")
         
         # Test 2: Get all Reviews - logs are automatic!

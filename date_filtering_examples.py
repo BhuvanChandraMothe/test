@@ -5,8 +5,8 @@ Shows how to filter data between specific date ranges
 
 import asyncio
 from datetime import datetime
-from odc.config.models import ClientConfig
-from odc.connector import SAPODataConnector
+from covasant_odata.config.models import ClientConfig
+from covasant_odata.connector import SAPODataConnector
 
 
 async def date_filtering_examples():

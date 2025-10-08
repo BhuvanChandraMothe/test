@@ -3,14 +3,14 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "sap-odata-connector-testcov"
-version = "1.0.0"
+name = "covasant_sap_odata_connector"
+version = "1.0.1"
 description = "A powerful Python library for connecting to SAP OData services"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "Bhuvan Chandra Mothe", email = "bhuvan.dumpmail@gmail.com"}
+    {name = "Covasant Technologies", email = "info@covasant.com"}
 ]
 keywords = ["sap", "odata", "connector", "api", "rest", "data", "integration", "etl"]
 classifiers = [
@@ -53,6 +53,7 @@ dependencies = [
     "tenacity>=9.1.0",
     "tqdm>=4.67.0",
     "uvicorn>=0.36.0",
+    "colorama>=0.4.6",
 ]
 
 [project.optional-dependencies]
@@ -67,14 +68,10 @@ bigquery = [
     "google-cloud-bigquery>=3.0.0",
 ]
 
-[project.urls]
-Homepage = "https://github.com/yourusername/sap-odata-connector"
-Documentation = "https://github.com/yourusername/sap-odata-connector/docs"
-Repository = "https://github.com/yourusername/sap-odata-connector"
-"Bug Tracker" = "https://github.com/yourusername/sap-odata-connector/issues"
+
 
 [tool.setuptools.packages.find]
 exclude = ["tests*", "examples*", "docs*", "demo_output*", "logs*", "venv*", "test_*"]
 
 [tool.setuptools.package-data]
-odc = ["config/*.yaml", "config/*.json"]
+covasant_odata = ["config/*.yaml", "config/*.json"]

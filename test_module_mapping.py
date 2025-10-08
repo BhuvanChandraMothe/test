@@ -4,9 +4,9 @@ Tests the ES5 module with your existing credentials
 """
 
 import asyncio
-from odc.config.models import ClientConfig
-from odc.connector import SAPODataConnector
-from odc.config.sap_module_mapping import SAPModuleMapping
+from covasant_odata.config.models import ClientConfig
+from covasant_odata.connector import SAPODataConnector
+from covasant_odata.config.sap_module_mapping import SAPModuleMapping
 
 
 async def test_es5_module_mapping():

@@ -1,0 +1,2738 @@
+[
+{
+  "entity_name": "Images",
+  "record_id": "HT-1000_FOL34000000000004EXT42000000000001",
+  "transformed_at": "2025-10-08T08:59:18.904518+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1000",
+    "Id": "FOL34000000000004EXT42000000000001"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1000',Id='FOL34000000000004EXT42000000000001')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1000',Id='FOL34000000000004EXT42000000000001')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1000',Id='FOL34000000000004EXT42000000000001')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1001_FOL34000000000004EXT42000000000002",
+  "transformed_at": "2025-10-08T08:59:18.904518+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1001",
+    "Id": "FOL34000000000004EXT42000000000002"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1001',Id='FOL34000000000004EXT42000000000002')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1001',Id='FOL34000000000004EXT42000000000002')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1001',Id='FOL34000000000004EXT42000000000002')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1002_FOL34000000000004EXT42000000000003",
+  "transformed_at": "2025-10-08T08:59:18.904518+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1002",
+    "Id": "FOL34000000000004EXT42000000000003"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1002',Id='FOL34000000000004EXT42000000000003')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1002',Id='FOL34000000000004EXT42000000000003')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1002',Id='FOL34000000000004EXT42000000000003')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1003_FOL34000000000004EXT42000000000004",
+  "transformed_at": "2025-10-08T08:59:18.904518+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1003",
+    "Id": "FOL34000000000004EXT42000000000004"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1003',Id='FOL34000000000004EXT42000000000004')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1003',Id='FOL34000000000004EXT42000000000004')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1003',Id='FOL34000000000004EXT42000000000004')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1007_FOL34000000000004EXT42000000000005",
+  "transformed_at": "2025-10-08T08:59:18.904518+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1007",
+    "Id": "FOL34000000000004EXT42000000000005"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1007',Id='FOL34000000000004EXT42000000000005')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1007',Id='FOL34000000000004EXT42000000000005')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1007',Id='FOL34000000000004EXT42000000000005')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1010_FOL34000000000004EXT42000000000006",
+  "transformed_at": "2025-10-08T08:59:18.904518+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1010",
+    "Id": "FOL34000000000004EXT42000000000006"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1010',Id='FOL34000000000004EXT42000000000006')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1010',Id='FOL34000000000004EXT42000000000006')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1010',Id='FOL34000000000004EXT42000000000006')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1011_FOL34000000000004EXT42000000000007",
+  "transformed_at": "2025-10-08T08:59:18.904518+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1011",
+    "Id": "FOL34000000000004EXT42000000000007"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1011',Id='FOL34000000000004EXT42000000000007')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1011',Id='FOL34000000000004EXT42000000000007')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1011',Id='FOL34000000000004EXT42000000000007')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1020_FOL34000000000004EXT42000000000008",
+  "transformed_at": "2025-10-08T08:59:18.904518+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1020",
+    "Id": "FOL34000000000004EXT42000000000008"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1020',Id='FOL34000000000004EXT42000000000008')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1020',Id='FOL34000000000004EXT42000000000008')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1020',Id='FOL34000000000004EXT42000000000008')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1021_FOL34000000000004EXT42000000000009",
+  "transformed_at": "2025-10-08T08:59:18.904518+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1021",
+    "Id": "FOL34000000000004EXT42000000000009"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1021',Id='FOL34000000000004EXT42000000000009')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1021',Id='FOL34000000000004EXT42000000000009')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1021',Id='FOL34000000000004EXT42000000000009')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1022_FOL34000000000004EXT46000000000001",
+  "transformed_at": "2025-10-08T08:59:18.904518+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1022",
+    "Id": "FOL34000000000004EXT46000000000001"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1022',Id='FOL34000000000004EXT46000000000001')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1022',Id='FOL34000000000004EXT46000000000001')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1022',Id='FOL34000000000004EXT46000000000001')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1023_FOL34000000000004EXT46000000000002",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1023",
+    "Id": "FOL34000000000004EXT46000000000002"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1023',Id='FOL34000000000004EXT46000000000002')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1023',Id='FOL34000000000004EXT46000000000002')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1023',Id='FOL34000000000004EXT46000000000002')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1030_FOL34000000000004EXT42000000000012",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1030",
+    "Id": "FOL34000000000004EXT42000000000012"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1030',Id='FOL34000000000004EXT42000000000012')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1030',Id='FOL34000000000004EXT42000000000012')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1030',Id='FOL34000000000004EXT42000000000012')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1031_FOL34000000000004EXT42000000000013",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1031",
+    "Id": "FOL34000000000004EXT42000000000013"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1031',Id='FOL34000000000004EXT42000000000013')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1031',Id='FOL34000000000004EXT42000000000013')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1031',Id='FOL34000000000004EXT42000000000013')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1032_FOL34000000000004EXT46000000000030",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1032",
+    "Id": "FOL34000000000004EXT46000000000030"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1032',Id='FOL34000000000004EXT46000000000030')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1032',Id='FOL34000000000004EXT46000000000030')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1032',Id='FOL34000000000004EXT46000000000030')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1035_FOL34000000000004EXT42000000000015",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1035",
+    "Id": "FOL34000000000004EXT42000000000015"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1035',Id='FOL34000000000004EXT42000000000015')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1035',Id='FOL34000000000004EXT42000000000015')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1035',Id='FOL34000000000004EXT42000000000015')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1036_FOL34000000000004EXT46000000000035",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1036",
+    "Id": "FOL34000000000004EXT46000000000035"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1036',Id='FOL34000000000004EXT46000000000035')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1036',Id='FOL34000000000004EXT46000000000035')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1036',Id='FOL34000000000004EXT46000000000035')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1037_FOL34000000000004EXT46000000000040",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1037",
+    "Id": "FOL34000000000004EXT46000000000040"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1037',Id='FOL34000000000004EXT46000000000040')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1037',Id='FOL34000000000004EXT46000000000040')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1037',Id='FOL34000000000004EXT46000000000040')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1040_FOL34000000000004EXT42000000000018",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1040",
+    "Id": "FOL34000000000004EXT42000000000018"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1040',Id='FOL34000000000004EXT42000000000018')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1040',Id='FOL34000000000004EXT42000000000018')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1040',Id='FOL34000000000004EXT42000000000018')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1041_FOL34000000000004EXT42000000000019",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1041",
+    "Id": "FOL34000000000004EXT42000000000019"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1041',Id='FOL34000000000004EXT42000000000019')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1041',Id='FOL34000000000004EXT42000000000019')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1041',Id='FOL34000000000004EXT42000000000019')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1042_FOL34000000000004EXT42000000000020",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1042",
+    "Id": "FOL34000000000004EXT42000000000020"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1042',Id='FOL34000000000004EXT42000000000020')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1042',Id='FOL34000000000004EXT42000000000020')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1042',Id='FOL34000000000004EXT42000000000020')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1050_FOL34000000000004EXT42000000000021",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1050",
+    "Id": "FOL34000000000004EXT42000000000021"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1050',Id='FOL34000000000004EXT42000000000021')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1050',Id='FOL34000000000004EXT42000000000021')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1050',Id='FOL34000000000004EXT42000000000021')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1051_FOL34000000000004EXT42000000000022",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1051",
+    "Id": "FOL34000000000004EXT42000000000022"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1051',Id='FOL34000000000004EXT42000000000022')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1051',Id='FOL34000000000004EXT42000000000022')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1051',Id='FOL34000000000004EXT42000000000022')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1052_FOL34000000000004EXT42000000000023",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1052",
+    "Id": "FOL34000000000004EXT42000000000023"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1052',Id='FOL34000000000004EXT42000000000023')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1052',Id='FOL34000000000004EXT42000000000023')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1052',Id='FOL34000000000004EXT42000000000023')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1055_FOL34000000000004EXT42000000000024",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1055",
+    "Id": "FOL34000000000004EXT42000000000024"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1055',Id='FOL34000000000004EXT42000000000024')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1055',Id='FOL34000000000004EXT42000000000024')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1055',Id='FOL34000000000004EXT42000000000024')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1056_FOL34000000000004EXT42000000000025",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1056",
+    "Id": "FOL34000000000004EXT42000000000025"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1056',Id='FOL34000000000004EXT42000000000025')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1056',Id='FOL34000000000004EXT42000000000025')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1056',Id='FOL34000000000004EXT42000000000025')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1060_FOL34000000000004EXT42000000000026",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1060",
+    "Id": "FOL34000000000004EXT42000000000026"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1060',Id='FOL34000000000004EXT42000000000026')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1060',Id='FOL34000000000004EXT42000000000026')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1060',Id='FOL34000000000004EXT42000000000026')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1061_FOL34000000000004EXT42000000000027",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1061",
+    "Id": "FOL34000000000004EXT42000000000027"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1061',Id='FOL34000000000004EXT42000000000027')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1061',Id='FOL34000000000004EXT42000000000027')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1061',Id='FOL34000000000004EXT42000000000027')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1062_FOL34000000000004EXT42000000000028",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1062",
+    "Id": "FOL34000000000004EXT42000000000028"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1062',Id='FOL34000000000004EXT42000000000028')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1062',Id='FOL34000000000004EXT42000000000028')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1062',Id='FOL34000000000004EXT42000000000028')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1063_FOL34000000000004EXT42000000000029",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1063",
+    "Id": "FOL34000000000004EXT42000000000029"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1063',Id='FOL34000000000004EXT42000000000029')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1063',Id='FOL34000000000004EXT42000000000029')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1063',Id='FOL34000000000004EXT42000000000029')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1064_FOL34000000000004EXT42000000000030",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1064",
+    "Id": "FOL34000000000004EXT42000000000030"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1064',Id='FOL34000000000004EXT42000000000030')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1064',Id='FOL34000000000004EXT42000000000030')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1064',Id='FOL34000000000004EXT42000000000030')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1065_FOL34000000000004EXT42000000000031",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1065",
+    "Id": "FOL34000000000004EXT42000000000031"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1065',Id='FOL34000000000004EXT42000000000031')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1065',Id='FOL34000000000004EXT42000000000031')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1065',Id='FOL34000000000004EXT42000000000031')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1066_FOL34000000000004EXT42000000000032",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1066",
+    "Id": "FOL34000000000004EXT42000000000032"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1066',Id='FOL34000000000004EXT42000000000032')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1066',Id='FOL34000000000004EXT42000000000032')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1066',Id='FOL34000000000004EXT42000000000032')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1067_FOL34000000000004EXT42000000000033",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1067",
+    "Id": "FOL34000000000004EXT42000000000033"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1067',Id='FOL34000000000004EXT42000000000033')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1067',Id='FOL34000000000004EXT42000000000033')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1067',Id='FOL34000000000004EXT42000000000033')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1068_FOL34000000000004EXT42000000000034",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1068",
+    "Id": "FOL34000000000004EXT42000000000034"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1068',Id='FOL34000000000004EXT42000000000034')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1068',Id='FOL34000000000004EXT42000000000034')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1068',Id='FOL34000000000004EXT42000000000034')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1069_FOL34000000000004EXT42000000000035",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1069",
+    "Id": "FOL34000000000004EXT42000000000035"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1069',Id='FOL34000000000004EXT42000000000035')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1069',Id='FOL34000000000004EXT42000000000035')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1069',Id='FOL34000000000004EXT42000000000035')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1070_FOL34000000000004EXT42000000000036",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1070",
+    "Id": "FOL34000000000004EXT42000000000036"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1070',Id='FOL34000000000004EXT42000000000036')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1070',Id='FOL34000000000004EXT42000000000036')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1070',Id='FOL34000000000004EXT42000000000036')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1071_FOL34000000000004EXT42000000000037",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1071",
+    "Id": "FOL34000000000004EXT42000000000037"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1071',Id='FOL34000000000004EXT42000000000037')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1071',Id='FOL34000000000004EXT42000000000037')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1071',Id='FOL34000000000004EXT42000000000037')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1072_FOL34000000000004EXT42000000000038",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1072",
+    "Id": "FOL34000000000004EXT42000000000038"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1072',Id='FOL34000000000004EXT42000000000038')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1072',Id='FOL34000000000004EXT42000000000038')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1072',Id='FOL34000000000004EXT42000000000038')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1073_FOL34000000000004EXT42000000000039",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1073",
+    "Id": "FOL34000000000004EXT42000000000039"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1073',Id='FOL34000000000004EXT42000000000039')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1073',Id='FOL34000000000004EXT42000000000039')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1073',Id='FOL34000000000004EXT42000000000039')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1080_FOL34000000000004EXT42000000000040",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1080",
+    "Id": "FOL34000000000004EXT42000000000040"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1080',Id='FOL34000000000004EXT42000000000040')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1080',Id='FOL34000000000004EXT42000000000040')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1080',Id='FOL34000000000004EXT42000000000040')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1081_FOL34000000000004EXT42000000000041",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1081",
+    "Id": "FOL34000000000004EXT42000000000041"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1081',Id='FOL34000000000004EXT42000000000041')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1081',Id='FOL34000000000004EXT42000000000041')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1081',Id='FOL34000000000004EXT42000000000041')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1082_FOL34000000000004EXT42000000000042",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1082",
+    "Id": "FOL34000000000004EXT42000000000042"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1082',Id='FOL34000000000004EXT42000000000042')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1082',Id='FOL34000000000004EXT42000000000042')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1082',Id='FOL34000000000004EXT42000000000042')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1083_FOL34000000000004EXT42000000000043",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1083",
+    "Id": "FOL34000000000004EXT42000000000043"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1083',Id='FOL34000000000004EXT42000000000043')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1083',Id='FOL34000000000004EXT42000000000043')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1083',Id='FOL34000000000004EXT42000000000043')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1085_FOL34000000000004EXT42000000000044",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1085",
+    "Id": "FOL34000000000004EXT42000000000044"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1085',Id='FOL34000000000004EXT42000000000044')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1085',Id='FOL34000000000004EXT42000000000044')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1085',Id='FOL34000000000004EXT42000000000044')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1090_FOL34000000000004EXT42000000000045",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1090",
+    "Id": "FOL34000000000004EXT42000000000045"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1090',Id='FOL34000000000004EXT42000000000045')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1090',Id='FOL34000000000004EXT42000000000045')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1090',Id='FOL34000000000004EXT42000000000045')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1091_FOL34000000000004EXT42000000000046",
+  "transformed_at": "2025-10-08T08:59:18.905194+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1091",
+    "Id": "FOL34000000000004EXT42000000000046"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1091',Id='FOL34000000000004EXT42000000000046')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1091',Id='FOL34000000000004EXT42000000000046')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1091',Id='FOL34000000000004EXT42000000000046')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1092_FOL34000000000004EXT42000000000047",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1092",
+    "Id": "FOL34000000000004EXT42000000000047"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1092',Id='FOL34000000000004EXT42000000000047')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1092',Id='FOL34000000000004EXT42000000000047')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1092',Id='FOL34000000000004EXT42000000000047')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1095_FOL34000000000004EXT42000000000079",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1095",
+    "Id": "FOL34000000000004EXT42000000000079"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1095',Id='FOL34000000000004EXT42000000000079')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1095',Id='FOL34000000000004EXT42000000000079')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1095',Id='FOL34000000000004EXT42000000000079')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1096_FOL34000000000004EXT42000000000080",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1096",
+    "Id": "FOL34000000000004EXT42000000000080"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1096',Id='FOL34000000000004EXT42000000000080')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1096',Id='FOL34000000000004EXT42000000000080')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1096',Id='FOL34000000000004EXT42000000000080')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1097_FOL34000000000004EXT42000000000081",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1097",
+    "Id": "FOL34000000000004EXT42000000000081"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1097',Id='FOL34000000000004EXT42000000000081')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1097',Id='FOL34000000000004EXT42000000000081')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1097',Id='FOL34000000000004EXT42000000000081')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1100_FOL34000000000004EXT42000000000048",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1100",
+    "Id": "FOL34000000000004EXT42000000000048"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1100',Id='FOL34000000000004EXT42000000000048')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1100',Id='FOL34000000000004EXT42000000000048')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1100',Id='FOL34000000000004EXT42000000000048')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1101_FOL34000000000004EXT42000000000049",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1101",
+    "Id": "FOL34000000000004EXT42000000000049"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1101',Id='FOL34000000000004EXT42000000000049')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1101',Id='FOL34000000000004EXT42000000000049')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1101',Id='FOL34000000000004EXT42000000000049')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1102_FOL34000000000004EXT42000000000050",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1102",
+    "Id": "FOL34000000000004EXT42000000000050"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1102',Id='FOL34000000000004EXT42000000000050')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1102',Id='FOL34000000000004EXT42000000000050')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1102',Id='FOL34000000000004EXT42000000000050')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1103_FOL34000000000004EXT42000000000051",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1103",
+    "Id": "FOL34000000000004EXT42000000000051"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1103',Id='FOL34000000000004EXT42000000000051')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1103',Id='FOL34000000000004EXT42000000000051')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1103',Id='FOL34000000000004EXT42000000000051')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1104_FOL34000000000004EXT42000000000052",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1104",
+    "Id": "FOL34000000000004EXT42000000000052"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1104',Id='FOL34000000000004EXT42000000000052')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1104',Id='FOL34000000000004EXT42000000000052')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1104',Id='FOL34000000000004EXT42000000000052')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1105_FOL34000000000004EXT42000000000053",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1105",
+    "Id": "FOL34000000000004EXT42000000000053"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1105',Id='FOL34000000000004EXT42000000000053')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1105',Id='FOL34000000000004EXT42000000000053')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1105',Id='FOL34000000000004EXT42000000000053')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1106_FOL34000000000004EXT42000000000054",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1106",
+    "Id": "FOL34000000000004EXT42000000000054"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1106',Id='FOL34000000000004EXT42000000000054')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1106',Id='FOL34000000000004EXT42000000000054')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1106',Id='FOL34000000000004EXT42000000000054')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1107_FOL34000000000004EXT42000000000055",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1107",
+    "Id": "FOL34000000000004EXT42000000000055"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1107',Id='FOL34000000000004EXT42000000000055')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1107',Id='FOL34000000000004EXT42000000000055')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1107',Id='FOL34000000000004EXT42000000000055')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1110_FOL34000000000004EXT42000000000056",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1110",
+    "Id": "FOL34000000000004EXT42000000000056"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1110',Id='FOL34000000000004EXT42000000000056')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1110',Id='FOL34000000000004EXT42000000000056')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1110',Id='FOL34000000000004EXT42000000000056')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1111_FOL34000000000004EXT42000000000057",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1111",
+    "Id": "FOL34000000000004EXT42000000000057"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1111',Id='FOL34000000000004EXT42000000000057')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1111',Id='FOL34000000000004EXT42000000000057')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1111',Id='FOL34000000000004EXT42000000000057')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1112_FOL34000000000004EXT42000000000058",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1112",
+    "Id": "FOL34000000000004EXT42000000000058"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1112',Id='FOL34000000000004EXT42000000000058')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1112',Id='FOL34000000000004EXT42000000000058')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1112',Id='FOL34000000000004EXT42000000000058')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1113_FOL34000000000004EXT42000000000059",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1113",
+    "Id": "FOL34000000000004EXT42000000000059"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1113',Id='FOL34000000000004EXT42000000000059')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1113',Id='FOL34000000000004EXT42000000000059')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1113',Id='FOL34000000000004EXT42000000000059')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1114_FOL34000000000004EXT42000000000060",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1114",
+    "Id": "FOL34000000000004EXT42000000000060"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1114',Id='FOL34000000000004EXT42000000000060')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1114',Id='FOL34000000000004EXT42000000000060')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1114',Id='FOL34000000000004EXT42000000000060')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1115_FOL34000000000004EXT42000000000061",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1115",
+    "Id": "FOL34000000000004EXT42000000000061"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1115',Id='FOL34000000000004EXT42000000000061')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1115',Id='FOL34000000000004EXT42000000000061')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1115',Id='FOL34000000000004EXT42000000000061')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1116_FOL34000000000004EXT42000000000062",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1116",
+    "Id": "FOL34000000000004EXT42000000000062"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1116',Id='FOL34000000000004EXT42000000000062')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1116',Id='FOL34000000000004EXT42000000000062')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1116',Id='FOL34000000000004EXT42000000000062')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1117_FOL34000000000004EXT42000000000063",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1117",
+    "Id": "FOL34000000000004EXT42000000000063"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1117',Id='FOL34000000000004EXT42000000000063')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1117',Id='FOL34000000000004EXT42000000000063')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1117',Id='FOL34000000000004EXT42000000000063')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1118_FOL34000000000004EXT42000000000064",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1118",
+    "Id": "FOL34000000000004EXT42000000000064"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1118',Id='FOL34000000000004EXT42000000000064')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1118',Id='FOL34000000000004EXT42000000000064')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1118',Id='FOL34000000000004EXT42000000000064')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1119_FOL34000000000004EXT42000000000101",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1119",
+    "Id": "FOL34000000000004EXT42000000000101"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1119',Id='FOL34000000000004EXT42000000000101')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1119',Id='FOL34000000000004EXT42000000000101')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1119',Id='FOL34000000000004EXT42000000000101')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1120_FOL34000000000004EXT42000000000065",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1120",
+    "Id": "FOL34000000000004EXT42000000000065"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1120',Id='FOL34000000000004EXT42000000000065')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1120',Id='FOL34000000000004EXT42000000000065')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1120',Id='FOL34000000000004EXT42000000000065')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1137_FOL34000000000004EXT46000000000051",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1137",
+    "Id": "FOL34000000000004EXT46000000000051"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1137',Id='FOL34000000000004EXT46000000000051')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1137',Id='FOL34000000000004EXT46000000000051')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1137',Id='FOL34000000000004EXT46000000000051')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1138_FOL34000000000004EXT42000000000067",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1138",
+    "Id": "FOL34000000000004EXT42000000000067"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1138',Id='FOL34000000000004EXT42000000000067')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1138',Id='FOL34000000000004EXT42000000000067')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1138',Id='FOL34000000000004EXT42000000000067')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1210_FOL34000000000004EXT42000000000068",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1210",
+    "Id": "FOL34000000000004EXT42000000000068"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1210',Id='FOL34000000000004EXT42000000000068')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1210',Id='FOL34000000000004EXT42000000000068')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1210',Id='FOL34000000000004EXT42000000000068')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1251_FOL34000000000004EXT42000000000116",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1251",
+    "Id": "FOL34000000000004EXT42000000000116"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1251',Id='FOL34000000000004EXT42000000000116')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1251',Id='FOL34000000000004EXT42000000000116')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1251',Id='FOL34000000000004EXT42000000000116')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1251_FOL34000000000004EXT42000000000117",
+  "transformed_at": "2025-10-08T08:59:18.905705+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1251",
+    "Id": "FOL34000000000004EXT42000000000117"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1251',Id='FOL34000000000004EXT42000000000117')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1251',Id='FOL34000000000004EXT42000000000117')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1251',Id='FOL34000000000004EXT42000000000117')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1251_FOL34000000000004EXT42000000000118",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1251",
+    "Id": "FOL34000000000004EXT42000000000118"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1251',Id='FOL34000000000004EXT42000000000118')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1251',Id='FOL34000000000004EXT42000000000118')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1251',Id='FOL34000000000004EXT42000000000118')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1251_FOL34000000000004EXT42000000000119",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1251",
+    "Id": "FOL34000000000004EXT42000000000119"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1251',Id='FOL34000000000004EXT42000000000119')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1251',Id='FOL34000000000004EXT42000000000119')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1251',Id='FOL34000000000004EXT42000000000119')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1252_FOL34000000000004EXT46000000000083",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1252",
+    "Id": "FOL34000000000004EXT46000000000083"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1252',Id='FOL34000000000004EXT46000000000083')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1252',Id='FOL34000000000004EXT46000000000083')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1252',Id='FOL34000000000004EXT46000000000083')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1252_FOL34000000000004EXT46000000000085",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1252",
+    "Id": "FOL34000000000004EXT46000000000085"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1252',Id='FOL34000000000004EXT46000000000085')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1252',Id='FOL34000000000004EXT46000000000085')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1252',Id='FOL34000000000004EXT46000000000085')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1252_FOL34000000000004EXT46000000000086",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1252",
+    "Id": "FOL34000000000004EXT46000000000086"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1252',Id='FOL34000000000004EXT46000000000086')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1252',Id='FOL34000000000004EXT46000000000086')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1252',Id='FOL34000000000004EXT46000000000086')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1253_FOL34000000000004EXT42000000000124",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1253",
+    "Id": "FOL34000000000004EXT42000000000124"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000124')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000124')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000124')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1253_FOL34000000000004EXT42000000000125",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1253",
+    "Id": "FOL34000000000004EXT42000000000125"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000125')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000125')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000125')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1253_FOL34000000000004EXT42000000000126",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1253",
+    "Id": "FOL34000000000004EXT42000000000126"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000126')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000126')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000126')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1253_FOL34000000000004EXT42000000000127",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1253",
+    "Id": "FOL34000000000004EXT42000000000127"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000127')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000127')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000127')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1253_FOL34000000000004EXT42000000000128",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1253",
+    "Id": "FOL34000000000004EXT42000000000128"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000128')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000128')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1253',Id='FOL34000000000004EXT42000000000128')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1254_FOL34000000000004EXT42000000000129",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1254",
+    "Id": "FOL34000000000004EXT42000000000129"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1254',Id='FOL34000000000004EXT42000000000129')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1254',Id='FOL34000000000004EXT42000000000129')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1254',Id='FOL34000000000004EXT42000000000129')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1254_FOL34000000000004EXT42000000000130",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1254",
+    "Id": "FOL34000000000004EXT42000000000130"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1254',Id='FOL34000000000004EXT42000000000130')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1254',Id='FOL34000000000004EXT42000000000130')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1254',Id='FOL34000000000004EXT42000000000130')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1254_FOL34000000000004EXT42000000000131",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1254",
+    "Id": "FOL34000000000004EXT42000000000131"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1254',Id='FOL34000000000004EXT42000000000131')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1254',Id='FOL34000000000004EXT42000000000131')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1254',Id='FOL34000000000004EXT42000000000131')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1254_FOL34000000000004EXT42000000000132",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1254",
+    "Id": "FOL34000000000004EXT42000000000132"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1254',Id='FOL34000000000004EXT42000000000132')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1254',Id='FOL34000000000004EXT42000000000132')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1254',Id='FOL34000000000004EXT42000000000132')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1255_FOL34000000000004EXT42000000000133",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1255",
+    "Id": "FOL34000000000004EXT42000000000133"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1255',Id='FOL34000000000004EXT42000000000133')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1255',Id='FOL34000000000004EXT42000000000133')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1255',Id='FOL34000000000004EXT42000000000133')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1255_FOL34000000000004EXT42000000000134",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1255",
+    "Id": "FOL34000000000004EXT42000000000134"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1255',Id='FOL34000000000004EXT42000000000134')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1255',Id='FOL34000000000004EXT42000000000134')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1255',Id='FOL34000000000004EXT42000000000134')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1255_FOL34000000000004EXT42000000000135",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1255",
+    "Id": "FOL34000000000004EXT42000000000135"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1255',Id='FOL34000000000004EXT42000000000135')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1255',Id='FOL34000000000004EXT42000000000135')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1255',Id='FOL34000000000004EXT42000000000135')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1256_FOL34000000000004EXT42000000000136",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1256",
+    "Id": "FOL34000000000004EXT42000000000136"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1256',Id='FOL34000000000004EXT42000000000136')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1256',Id='FOL34000000000004EXT42000000000136')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1256',Id='FOL34000000000004EXT42000000000136')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1256_FOL34000000000004EXT42000000000137",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1256",
+    "Id": "FOL34000000000004EXT42000000000137"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1256',Id='FOL34000000000004EXT42000000000137')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1256',Id='FOL34000000000004EXT42000000000137')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1256',Id='FOL34000000000004EXT42000000000137')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1256_FOL34000000000004EXT42000000000138",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1256",
+    "Id": "FOL34000000000004EXT42000000000138"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1256',Id='FOL34000000000004EXT42000000000138')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1256',Id='FOL34000000000004EXT42000000000138')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1256',Id='FOL34000000000004EXT42000000000138')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1257_FOL34000000000004EXT42000000000139",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1257",
+    "Id": "FOL34000000000004EXT42000000000139"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1257',Id='FOL34000000000004EXT42000000000139')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1257',Id='FOL34000000000004EXT42000000000139')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1257',Id='FOL34000000000004EXT42000000000139')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1257_FOL34000000000004EXT42000000000140",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1257",
+    "Id": "FOL34000000000004EXT42000000000140"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1257',Id='FOL34000000000004EXT42000000000140')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1257',Id='FOL34000000000004EXT42000000000140')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1257',Id='FOL34000000000004EXT42000000000140')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1257_FOL34000000000004EXT42000000000141",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1257",
+    "Id": "FOL34000000000004EXT42000000000141"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1257',Id='FOL34000000000004EXT42000000000141')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1257',Id='FOL34000000000004EXT42000000000141')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1257',Id='FOL34000000000004EXT42000000000141')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1257_FOL34000000000004EXT42000000000142",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1257",
+    "Id": "FOL34000000000004EXT42000000000142"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1257',Id='FOL34000000000004EXT42000000000142')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1257',Id='FOL34000000000004EXT42000000000142')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1257',Id='FOL34000000000004EXT42000000000142')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1258_FOL34000000000004EXT42000000000143",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1258",
+    "Id": "FOL34000000000004EXT42000000000143"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1258',Id='FOL34000000000004EXT42000000000143')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1258',Id='FOL34000000000004EXT42000000000143')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1258',Id='FOL34000000000004EXT42000000000143')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1258_FOL34000000000004EXT42000000000144",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1258",
+    "Id": "FOL34000000000004EXT42000000000144"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1258',Id='FOL34000000000004EXT42000000000144')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1258',Id='FOL34000000000004EXT42000000000144')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1258',Id='FOL34000000000004EXT42000000000144')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1258_FOL34000000000004EXT42000000000145",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1258",
+    "Id": "FOL34000000000004EXT42000000000145"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1258',Id='FOL34000000000004EXT42000000000145')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1258',Id='FOL34000000000004EXT42000000000145')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1258',Id='FOL34000000000004EXT42000000000145')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1500_FOL34000000000004EXT42000000000069",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1500",
+    "Id": "FOL34000000000004EXT42000000000069"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1500',Id='FOL34000000000004EXT42000000000069')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1500',Id='FOL34000000000004EXT42000000000069')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1500',Id='FOL34000000000004EXT42000000000069')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1501_FOL34000000000004EXT42000000000070",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1501",
+    "Id": "FOL34000000000004EXT42000000000070"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1501',Id='FOL34000000000004EXT42000000000070')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1501',Id='FOL34000000000004EXT42000000000070')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1501',Id='FOL34000000000004EXT42000000000070')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1502_FOL34000000000004EXT42000000000071",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1502",
+    "Id": "FOL34000000000004EXT42000000000071"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1502',Id='FOL34000000000004EXT42000000000071')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1502',Id='FOL34000000000004EXT42000000000071')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1502',Id='FOL34000000000004EXT42000000000071')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1600_FOL34000000000004EXT42000000000100",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1600",
+    "Id": "FOL34000000000004EXT42000000000100"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1600',Id='FOL34000000000004EXT42000000000100')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1600',Id='FOL34000000000004EXT42000000000100')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1600',Id='FOL34000000000004EXT42000000000100')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1601_FOL34000000000004EXT42000000000099",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1601",
+    "Id": "FOL34000000000004EXT42000000000099"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1601',Id='FOL34000000000004EXT42000000000099')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1601',Id='FOL34000000000004EXT42000000000099')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1601',Id='FOL34000000000004EXT42000000000099')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1602_FOL34000000000004EXT42000000000098",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1602",
+    "Id": "FOL34000000000004EXT42000000000098"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1602',Id='FOL34000000000004EXT42000000000098')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1602',Id='FOL34000000000004EXT42000000000098')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1602',Id='FOL34000000000004EXT42000000000098')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-1603_FOL34000000000004EXT42000000000097",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-1603",
+    "Id": "FOL34000000000004EXT42000000000097"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1603',Id='FOL34000000000004EXT42000000000097')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1603',Id='FOL34000000000004EXT42000000000097')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-1603',Id='FOL34000000000004EXT42000000000097')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-2000_FOL34000000000004EXT42000000000096",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-2000",
+    "Id": "FOL34000000000004EXT42000000000096"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2000',Id='FOL34000000000004EXT42000000000096')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2000',Id='FOL34000000000004EXT42000000000096')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2000',Id='FOL34000000000004EXT42000000000096')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-2001_FOL34000000000004EXT42000000000095",
+  "transformed_at": "2025-10-08T08:59:18.906572+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-2001",
+    "Id": "FOL34000000000004EXT42000000000095"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2001',Id='FOL34000000000004EXT42000000000095')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2001',Id='FOL34000000000004EXT42000000000095')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2001',Id='FOL34000000000004EXT42000000000095')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-2002_FOL34000000000004EXT42000000000090",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-2002",
+    "Id": "FOL34000000000004EXT42000000000090"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2002',Id='FOL34000000000004EXT42000000000090')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2002',Id='FOL34000000000004EXT42000000000090')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2002',Id='FOL34000000000004EXT42000000000090')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-2025_FOL34000000000004EXT42000000000094",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-2025",
+    "Id": "FOL34000000000004EXT42000000000094"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2025',Id='FOL34000000000004EXT42000000000094')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2025',Id='FOL34000000000004EXT42000000000094')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2025',Id='FOL34000000000004EXT42000000000094')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-2026_FOL34000000000004EXT42000000000093",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-2026",
+    "Id": "FOL34000000000004EXT42000000000093"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2026',Id='FOL34000000000004EXT42000000000093')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2026',Id='FOL34000000000004EXT42000000000093')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2026',Id='FOL34000000000004EXT42000000000093')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-2027_FOL34000000000004EXT42000000000092",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-2027",
+    "Id": "FOL34000000000004EXT42000000000092"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2027',Id='FOL34000000000004EXT42000000000092')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2027',Id='FOL34000000000004EXT42000000000092')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-2027',Id='FOL34000000000004EXT42000000000092')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-6100_FOL34000000000004EXT42000000000091",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-6100",
+    "Id": "FOL34000000000004EXT42000000000091"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6100',Id='FOL34000000000004EXT42000000000091')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6100',Id='FOL34000000000004EXT42000000000091')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6100',Id='FOL34000000000004EXT42000000000091')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-6101_FOL34000000000004EXT42000000000089",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-6101",
+    "Id": "FOL34000000000004EXT42000000000089"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6101',Id='FOL34000000000004EXT42000000000089')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6101',Id='FOL34000000000004EXT42000000000089')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6101',Id='FOL34000000000004EXT42000000000089')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-6102_FOL34000000000004EXT42000000000088",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-6102",
+    "Id": "FOL34000000000004EXT42000000000088"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6102',Id='FOL34000000000004EXT42000000000088')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6102',Id='FOL34000000000004EXT42000000000088')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6102',Id='FOL34000000000004EXT42000000000088')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-6110_FOL34000000000004EXT42000000000087",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-6110",
+    "Id": "FOL34000000000004EXT42000000000087"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6110',Id='FOL34000000000004EXT42000000000087')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6110',Id='FOL34000000000004EXT42000000000087')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6110',Id='FOL34000000000004EXT42000000000087')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-6111_FOL34000000000004EXT42000000000086",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-6111",
+    "Id": "FOL34000000000004EXT42000000000086"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6111',Id='FOL34000000000004EXT42000000000086')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6111',Id='FOL34000000000004EXT42000000000086')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6111',Id='FOL34000000000004EXT42000000000086')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-6120_FOL34000000000004EXT42000000000085",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-6120",
+    "Id": "FOL34000000000004EXT42000000000085"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6120',Id='FOL34000000000004EXT42000000000085')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6120',Id='FOL34000000000004EXT42000000000085')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6120',Id='FOL34000000000004EXT42000000000085')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-6121_FOL34000000000004EXT46000000000063",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-6121",
+    "Id": "FOL34000000000004EXT46000000000063"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6121',Id='FOL34000000000004EXT46000000000063')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6121',Id='FOL34000000000004EXT46000000000063')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6121',Id='FOL34000000000004EXT46000000000063')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-6122_FOL34000000000004EXT42000000000083",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-6122",
+    "Id": "FOL34000000000004EXT42000000000083"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6122',Id='FOL34000000000004EXT42000000000083')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6122',Id='FOL34000000000004EXT42000000000083')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6122',Id='FOL34000000000004EXT42000000000083')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-6123_FOL34000000000004EXT42000000000082",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-6123",
+    "Id": "FOL34000000000004EXT42000000000082"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6123',Id='FOL34000000000004EXT42000000000082')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6123',Id='FOL34000000000004EXT42000000000082')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6123',Id='FOL34000000000004EXT42000000000082')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-6130_FOL34000000000004EXT42000000000072",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-6130",
+    "Id": "FOL34000000000004EXT42000000000072"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6130',Id='FOL34000000000004EXT42000000000072')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6130',Id='FOL34000000000004EXT42000000000072')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6130',Id='FOL34000000000004EXT42000000000072')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-6131_FOL34000000000004EXT46000000000056",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-6131",
+    "Id": "FOL34000000000004EXT46000000000056"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6131',Id='FOL34000000000004EXT46000000000056')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6131',Id='FOL34000000000004EXT46000000000056')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6131',Id='FOL34000000000004EXT46000000000056')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-6132_FOL34000000000004EXT46000000000059",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-6132",
+    "Id": "FOL34000000000004EXT46000000000059"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6132',Id='FOL34000000000004EXT46000000000059')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6132',Id='FOL34000000000004EXT46000000000059')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-6132',Id='FOL34000000000004EXT46000000000059')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-7000_FOL34000000000004EXT42000000000078",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-7000",
+    "Id": "FOL34000000000004EXT42000000000078"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-7000',Id='FOL34000000000004EXT42000000000078')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-7000',Id='FOL34000000000004EXT42000000000078')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-7000',Id='FOL34000000000004EXT42000000000078')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-7010_FOL34000000000004EXT42000000000077",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-7010",
+    "Id": "FOL34000000000004EXT42000000000077"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-7010',Id='FOL34000000000004EXT42000000000077')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-7010',Id='FOL34000000000004EXT42000000000077')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-7010',Id='FOL34000000000004EXT42000000000077')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-7020_FOL34000000000004EXT42000000000076",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-7020",
+    "Id": "FOL34000000000004EXT42000000000076"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-7020',Id='FOL34000000000004EXT42000000000076')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-7020',Id='FOL34000000000004EXT42000000000076')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-7020',Id='FOL34000000000004EXT42000000000076')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-7030_FOL34000000000004EXT42000000000075",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-7030",
+    "Id": "FOL34000000000004EXT42000000000075"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-7030',Id='FOL34000000000004EXT42000000000075')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-7030',Id='FOL34000000000004EXT42000000000075')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-7030',Id='FOL34000000000004EXT42000000000075')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-8000_FOL34000000000004EXT46000000000069",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-8000",
+    "Id": "FOL34000000000004EXT46000000000069"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-8000',Id='FOL34000000000004EXT46000000000069')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-8000',Id='FOL34000000000004EXT46000000000069')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-8000',Id='FOL34000000000004EXT46000000000069')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-8001_FOL34000000000004EXT46000000000071",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-8001",
+    "Id": "FOL34000000000004EXT46000000000071"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-8001',Id='FOL34000000000004EXT46000000000071')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-8001',Id='FOL34000000000004EXT46000000000071')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-8001',Id='FOL34000000000004EXT46000000000071')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-8002_FOL34000000000004EXT42000000000104",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-8002",
+    "Id": "FOL34000000000004EXT42000000000104"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-8002',Id='FOL34000000000004EXT42000000000104')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-8002',Id='FOL34000000000004EXT42000000000104')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-8002',Id='FOL34000000000004EXT42000000000104')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-8003_FOL34000000000004EXT42000000000105",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-8003",
+    "Id": "FOL34000000000004EXT42000000000105"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-8003',Id='FOL34000000000004EXT42000000000105')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-8003',Id='FOL34000000000004EXT42000000000105')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-8003',Id='FOL34000000000004EXT42000000000105')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-9991_FOL34000000000004EXT42000000000115",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-9991",
+    "Id": "FOL34000000000004EXT42000000000115"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9991',Id='FOL34000000000004EXT42000000000115')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9991',Id='FOL34000000000004EXT42000000000115')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9991',Id='FOL34000000000004EXT42000000000115')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-9992_FOL34000000000004EXT42000000000114",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-9992",
+    "Id": "FOL34000000000004EXT42000000000114"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9992',Id='FOL34000000000004EXT42000000000114')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9992',Id='FOL34000000000004EXT42000000000114')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9992',Id='FOL34000000000004EXT42000000000114')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-9993_FOL34000000000004EXT42000000000113",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-9993",
+    "Id": "FOL34000000000004EXT42000000000113"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9993',Id='FOL34000000000004EXT42000000000113')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9993',Id='FOL34000000000004EXT42000000000113')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9993',Id='FOL34000000000004EXT42000000000113')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-9994_FOL34000000000004EXT42000000000112",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-9994",
+    "Id": "FOL34000000000004EXT42000000000112"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9994',Id='FOL34000000000004EXT42000000000112')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9994',Id='FOL34000000000004EXT42000000000112')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9994',Id='FOL34000000000004EXT42000000000112')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-9995_FOL34000000000004EXT42000000000111",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-9995",
+    "Id": "FOL34000000000004EXT42000000000111"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9995',Id='FOL34000000000004EXT42000000000111')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9995',Id='FOL34000000000004EXT42000000000111')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9995',Id='FOL34000000000004EXT42000000000111')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-9996_FOL34000000000004EXT42000000000110",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-9996",
+    "Id": "FOL34000000000004EXT42000000000110"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9996',Id='FOL34000000000004EXT42000000000110')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9996',Id='FOL34000000000004EXT42000000000110')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9996',Id='FOL34000000000004EXT42000000000110')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-9997_FOL34000000000004EXT42000000000109",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-9997",
+    "Id": "FOL34000000000004EXT42000000000109"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9997',Id='FOL34000000000004EXT42000000000109')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9997',Id='FOL34000000000004EXT42000000000109')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9997',Id='FOL34000000000004EXT42000000000109')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-9998_FOL34000000000004EXT46000000000076",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-9998",
+    "Id": "FOL34000000000004EXT46000000000076"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9998',Id='FOL34000000000004EXT46000000000076')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9998',Id='FOL34000000000004EXT46000000000076')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9998',Id='FOL34000000000004EXT46000000000076')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "HT-9999_FOL34000000000004EXT46000000000074",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "HT-9999",
+    "Id": "FOL34000000000004EXT46000000000074"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9999',Id='FOL34000000000004EXT46000000000074')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9999',Id='FOL34000000000004EXT46000000000074')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='HT-9999',Id='FOL34000000000004EXT46000000000074')/$value"
+    }
+  }
+},
+{
+  "entity_name": "Images",
+  "record_id": "PF-1000_FOL34000000000004EXT42000000000106",
+  "transformed_at": "2025-10-08T08:59:18.907133+00:00",
+  "data": {
+    "MimeType": "",
+    "ProductId": "PF-1000",
+    "Id": "FOL34000000000004EXT42000000000106"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='PF-1000',Id='FOL34000000000004EXT42000000000106')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='PF-1000',Id='FOL34000000000004EXT42000000000106')",
+      "type": "EPM_REF_APPS_SHOP.Image",
+      "content_type": "application/octet-stream",
+      "media_src": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Images(ProductId='PF-1000',Id='FOL34000000000004EXT42000000000106')/$value"
+    }
+  }
+}
+]

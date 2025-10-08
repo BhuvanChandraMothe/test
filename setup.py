@@ -22,14 +22,13 @@ def read_requirements():
     return []
 
 setup(
-    name='sap-odata-connector-testcov',
-    version='1.0.0',
-    author='Bhuvan Chandra Mothe',
-    author_email='bhuvan.dumpmail@gmail.com',  # Update with your email
+    name='covasant_sap_odata_connector',
+    version='1.0.1',
+    author='Covasant Technologies',
+    author_email='info@covasant.com',  
     description='A powerful Python library for connecting to SAP OData services with advanced features',
     long_description=read_long_description(),
     long_description_content_type='text/markdown',
-    url='https://github.com',  # Update with your repo URL
     packages=find_packages(exclude=['tests', 'examples', 'docs', 'demo_output*', 'logs', 'venv', 'test_*']),
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -60,12 +59,12 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'sap-odata-connector=odc.cli:main',  # Optional CLI entry point
+            'sap-odata-connector=covasant_odata.cli:main',  # Optional CLI entry point
         ],
     },
     include_package_data=True,
     package_data={
-        'odc': ['config/*.yaml', 'config/*.json'],
+        'covasant_odata': ['config/*.yaml', 'config/*.json'],
     },
     keywords='sap odata connector api rest data integration etl',
     project_urls={

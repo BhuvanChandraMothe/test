@@ -1,0 +1,13 @@
+{
+  "query_info": {
+    "entity_name": "ShoppingCartItems",
+    "filter_condition": null,
+    "select_fields": null,
+    "order_by": null,
+    "expand_relations": null,
+    "total_records": 0,
+    "timestamp": "2025-10-08T14:32:55.774779",
+    "filename": "20251008_143255_shoppingcartitems.json"
+  },
+  "data": []
+}

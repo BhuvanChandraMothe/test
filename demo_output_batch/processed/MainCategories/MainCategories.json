@@ -1,0 +1,98 @@
+[
+{
+  "entity_name": "MainCategories",
+  "record_id": "Computer Components",
+  "transformed_at": "2025-10-08T08:59:19.513572+00:00",
+  "data": {
+    "Id": "Computer Components",
+    "Name": "Computer Components"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/MainCategories('Computer%20Components')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/MainCategories('Computer%20Components')",
+      "type": "EPM_REF_APPS_SHOP.MainCategory"
+    }
+  }
+},
+{
+  "entity_name": "MainCategories",
+  "record_id": "Computer Systems",
+  "transformed_at": "2025-10-08T08:59:19.513572+00:00",
+  "data": {
+    "Id": "Computer Systems",
+    "Name": "Computer Systems"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/MainCategories('Computer%20Systems')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/MainCategories('Computer%20Systems')",
+      "type": "EPM_REF_APPS_SHOP.MainCategory"
+    }
+  }
+},
+{
+  "entity_name": "MainCategories",
+  "record_id": "Printers & Scanners",
+  "transformed_at": "2025-10-08T08:59:19.513572+00:00",
+  "data": {
+    "Id": "Printers & Scanners",
+    "Name": "Printers & Scanners"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/MainCategories('Printers%20%26%20Scanners')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/MainCategories('Printers%20%26%20Scanners')",
+      "type": "EPM_REF_APPS_SHOP.MainCategory"
+    }
+  }
+},
+{
+  "entity_name": "MainCategories",
+  "record_id": "Smartphones & Tablets",
+  "transformed_at": "2025-10-08T08:59:19.513572+00:00",
+  "data": {
+    "Id": "Smartphones & Tablets",
+    "Name": "Smartphones & Tablets"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/MainCategories('Smartphones%20%26%20Tablets')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/MainCategories('Smartphones%20%26%20Tablets')",
+      "type": "EPM_REF_APPS_SHOP.MainCategory"
+    }
+  }
+},
+{
+  "entity_name": "MainCategories",
+  "record_id": "Software",
+  "transformed_at": "2025-10-08T08:59:19.513572+00:00",
+  "data": {
+    "Id": "Software",
+    "Name": "Software"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/MainCategories('Software')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/MainCategories('Software')",
+      "type": "EPM_REF_APPS_SHOP.MainCategory"
+    }
+  }
+},
+{
+  "entity_name": "MainCategories",
+  "record_id": "TV, Video & HiFi",
+  "transformed_at": "2025-10-08T08:59:19.513572+00:00",
+  "data": {
+    "Id": "TV, Video & HiFi",
+    "Name": "TV, Video & HiFi"
+  },
+  "metadata": {
+    "__metadata": {
+      "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/MainCategories('TV%2C%20Video%20%26%20HiFi')",
+      "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/MainCategories('TV%2C%20Video%20%26%20HiFi')",
+      "type": "EPM_REF_APPS_SHOP.MainCategory"
+    }
+  }
+}
+]

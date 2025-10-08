@@ -6,8 +6,8 @@ Includes positive and negative test cases
 import pytest
 import asyncio
 from unittest.mock import Mock, patch, AsyncMock
-from odc.connector import SAPODataConnector
-from odc.config.models import ClientConfig
+from covasant_odata.connector import SAPODataConnector
+from covasant_odata.config.models import ClientConfig
 
 
 class TestConnectorInitialization:

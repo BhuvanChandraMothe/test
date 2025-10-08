@@ -1,4 +1,4 @@
-from odc.monitoring.metrics import get_metrics_collector
+from covasant_odata.monitoring.metrics import get_metrics_collector
 
 # Get metrics in Prometheus format
 metrics = get_metrics_collector()
@@ -9,7 +9,7 @@ print(prometheus_text)
 
 
 # import fastapi
-# from odc.monitoring.metrics import get_metrics_collector
+# from covasant_odata.monitoring.metrics import get_metrics_collector
 
 # app = fastapi.FastAPI(title='Odata Metrics')
 

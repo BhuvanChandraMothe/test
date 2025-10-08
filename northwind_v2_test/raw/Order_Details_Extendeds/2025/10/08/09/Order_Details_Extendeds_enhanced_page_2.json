@@ -1,0 +1,912 @@
+{
+  "entity_name": "Order_Details_Extendeds",
+  "command_id": "Order_Details_Extendeds_enhanced_page_2",
+  "timestamp": "2025-10-08T09:15:53.127847+00:00",
+  "metadata": {},
+  "raw_response": {
+    "@odata.context": "https://services.odata.org/V4/Northwind/Northwind.svc/$metadata#Order_Details_Extendeds",
+    "value": [
+      {
+        "OrderID": 10888,
+        "ProductID": 2,
+        "ProductName": "Chang",
+        "UnitPrice": 19.0,
+        "Quantity": 20,
+        "Discount": 0,
+        "ExtendedPrice": 380.0
+      },
+      {
+        "OrderID": 10888,
+        "ProductID": 68,
+        "ProductName": "Scottish Longbreads",
+        "UnitPrice": 12.5,
+        "Quantity": 18,
+        "Discount": 0,
+        "ExtendedPrice": 225.0
+      },
+      {
+        "OrderID": 10889,
+        "ProductID": 11,
+        "ProductName": "Queso Cabrales",
+        "UnitPrice": 21.0,
+        "Quantity": 40,
+        "Discount": 0,
+        "ExtendedPrice": 840.0
+      },
+      {
+        "OrderID": 10889,
+        "ProductID": 38,
+        "ProductName": "Côte de Blaye",
+        "UnitPrice": 263.5,
+        "Quantity": 40,
+        "Discount": 0,
+        "ExtendedPrice": 10540.0
+      },
+      {
+        "OrderID": 10890,
+        "ProductID": 17,
+        "ProductName": "Alice Mutton",
+        "UnitPrice": 39.0,
+        "Quantity": 15,
+        "Discount": 0,
+        "ExtendedPrice": 585.0
+      },
+      {
+        "OrderID": 10890,
+        "ProductID": 34,
+        "ProductName": "Sasquatch Ale",
+        "UnitPrice": 14.0,
+        "Quantity": 10,
+        "Discount": 0,
+        "ExtendedPrice": 140.0
+      },
+      {
+        "OrderID": 10890,
+        "ProductID": 41,
+        "ProductName": "Jack's New England Clam Chowder",
+        "UnitPrice": 9.65,
+        "Quantity": 14,
+        "Discount": 0,
+        "ExtendedPrice": 135.1
+      },
+      {
+        "OrderID": 10893,
+        "ProductID": 8,
+        "ProductName": "Northwoods Cranberry Sauce",
+        "UnitPrice": 40.0,
+        "Quantity": 30,
+        "Discount": 0,
+        "ExtendedPrice": 1200.0
+      },
+      {
+        "OrderID": 10893,
+        "ProductID": 24,
+        "ProductName": "Guaraná Fantástica",
+        "UnitPrice": 4.5,
+        "Quantity": 10,
+        "Discount": 0,
+        "ExtendedPrice": 45.0
+      },
+      {
+        "OrderID": 10893,
+        "ProductID": 29,
+        "ProductName": "Thüringer Rostbratwurst",
+        "UnitPrice": 123.79,
+        "Quantity": 24,
+        "Discount": 0,
+        "ExtendedPrice": 2970.96
+      },
+      {
+        "OrderID": 10893,
+        "ProductID": 30,
+        "ProductName": "Nord-Ost Matjeshering",
+        "UnitPrice": 25.89,
+        "Quantity": 35,
+        "Discount": 0,
+        "ExtendedPrice": 906.15
+      },
+      {
+        "OrderID": 10893,
+        "ProductID": 36,
+        "ProductName": "Inlagd Sill",
+        "UnitPrice": 19.0,
+        "Quantity": 20,
+        "Discount": 0,
+        "ExtendedPrice": 380.0
+      },
+      {
+        "OrderID": 10895,
+        "ProductID": 24,
+        "ProductName": "Guaraná Fantástica",
+        "UnitPrice": 4.5,
+        "Quantity": 110,
+        "Discount": 0,
+        "ExtendedPrice": 495.0
+      },
+      {
+        "OrderID": 10895,
+        "ProductID": 39,
+        "ProductName": "Chartreuse verte",
+        "UnitPrice": 18.0,
+        "Quantity": 45,
+        "Discount": 0,
+        "ExtendedPrice": 810.0
+      },
+      {
+        "OrderID": 10895,
+        "ProductID": 40,
+        "ProductName": "Boston Crab Meat",
+        "UnitPrice": 18.4,
+        "Quantity": 91,
+        "Discount": 0,
+        "ExtendedPrice": 1674.4
+      },
+      {
+        "OrderID": 10895,
+        "ProductID": 60,
+        "ProductName": "Camembert Pierrot",
+        "UnitPrice": 34.0,
+        "Quantity": 100,
+        "Discount": 0,
+        "ExtendedPrice": 3400.0
+      },
+      {
+        "OrderID": 10896,
+        "ProductID": 45,
+        "ProductName": "Rogede sild",
+        "UnitPrice": 9.5,
+        "Quantity": 15,
+        "Discount": 0,
+        "ExtendedPrice": 142.5
+      },
+      {
+        "OrderID": 10896,
+        "ProductID": 56,
+        "ProductName": "Gnocchi di nonna Alice",
+        "UnitPrice": 38.0,
+        "Quantity": 16,
+        "Discount": 0,
+        "ExtendedPrice": 608.0
+      },
+      {
+        "OrderID": 10897,
+        "ProductID": 29,
+        "ProductName": "Thüringer Rostbratwurst",
+        "UnitPrice": 123.79,
+        "Quantity": 80,
+        "Discount": 0,
+        "ExtendedPrice": 9903.2
+      },
+      {
+        "OrderID": 10897,
+        "ProductID": 30,
+        "ProductName": "Nord-Ost Matjeshering",
+        "UnitPrice": 25.89,
+        "Quantity": 36,
+        "Discount": 0,
+        "ExtendedPrice": 932.04
+      },
+      {
+        "OrderID": 10898,
+        "ProductID": 13,
+        "ProductName": "Konbu",
+        "UnitPrice": 6.0,
+        "Quantity": 5,
+        "Discount": 0,
+        "ExtendedPrice": 30.0
+      },
+      {
+        "OrderID": 10901,
+        "ProductID": 41,
+        "ProductName": "Jack's New England Clam Chowder",
+        "UnitPrice": 9.65,
+        "Quantity": 30,
+        "Discount": 0,
+        "ExtendedPrice": 289.5
+      },
+      {
+        "OrderID": 10901,
+        "ProductID": 71,
+        "ProductName": "Flotemysost",
+        "UnitPrice": 21.5,
+        "Quantity": 30,
+        "Discount": 0,
+        "ExtendedPrice": 645.0
+      },
+      {
+        "OrderID": 10903,
+        "ProductID": 13,
+        "ProductName": "Konbu",
+        "UnitPrice": 6.0,
+        "Quantity": 40,
+        "Discount": 0,
+        "ExtendedPrice": 240.0
+      },
+      {
+        "OrderID": 10903,
+        "ProductID": 65,
+        "ProductName": "Louisiana Fiery Hot Pepper Sauce",
+        "UnitPrice": 21.05,
+        "Quantity": 21,
+        "Discount": 0,
+        "ExtendedPrice": 442.05
+      },
+      {
+        "OrderID": 10903,
+        "ProductID": 68,
+        "ProductName": "Scottish Longbreads",
+        "UnitPrice": 12.5,
+        "Quantity": 20,
+        "Discount": 0,
+        "ExtendedPrice": 250.0
+      },
+      {
+        "OrderID": 10904,
+        "ProductID": 58,
+        "ProductName": "Escargots de Bourgogne",
+        "UnitPrice": 13.25,
+        "Quantity": 15,
+        "Discount": 0,
+        "ExtendedPrice": 198.75
+      },
+      {
+        "OrderID": 10904,
+        "ProductID": 62,
+        "ProductName": "Tarte au sucre",
+        "UnitPrice": 49.3,
+        "Quantity": 35,
+        "Discount": 0,
+        "ExtendedPrice": 1725.5
+      },
+      {
+        "OrderID": 10906,
+        "ProductID": 61,
+        "ProductName": "Sirop d'érable",
+        "UnitPrice": 28.5,
+        "Quantity": 15,
+        "Discount": 0,
+        "ExtendedPrice": 427.5
+      },
+      {
+        "OrderID": 10907,
+        "ProductID": 75,
+        "ProductName": "Rhönbräu Klosterbier",
+        "UnitPrice": 7.75,
+        "Quantity": 14,
+        "Discount": 0,
+        "ExtendedPrice": 108.5
+      },
+      {
+        "OrderID": 10909,
+        "ProductID": 7,
+        "ProductName": "Uncle Bob's Organic Dried Pears",
+        "UnitPrice": 30.0,
+        "Quantity": 12,
+        "Discount": 0,
+        "ExtendedPrice": 360.0
+      },
+      {
+        "OrderID": 10909,
+        "ProductID": 16,
+        "ProductName": "Pavlova",
+        "UnitPrice": 17.45,
+        "Quantity": 15,
+        "Discount": 0,
+        "ExtendedPrice": 261.75
+      },
+      {
+        "OrderID": 10909,
+        "ProductID": 41,
+        "ProductName": "Jack's New England Clam Chowder",
+        "UnitPrice": 9.65,
+        "Quantity": 5,
+        "Discount": 0,
+        "ExtendedPrice": 48.25
+      },
+      {
+        "OrderID": 10910,
+        "ProductID": 19,
+        "ProductName": "Teatime Chocolate Biscuits",
+        "UnitPrice": 9.2,
+        "Quantity": 12,
+        "Discount": 0,
+        "ExtendedPrice": 110.4
+      },
+      {
+        "OrderID": 10910,
+        "ProductID": 49,
+        "ProductName": "Maxilaku",
+        "UnitPrice": 20.0,
+        "Quantity": 10,
+        "Discount": 0,
+        "ExtendedPrice": 200.0
+      },
+      {
+        "OrderID": 10910,
+        "ProductID": 61,
+        "ProductName": "Sirop d'érable",
+        "UnitPrice": 28.5,
+        "Quantity": 5,
+        "Discount": 0,
+        "ExtendedPrice": 142.5
+      },
+      {
+        "OrderID": 10911,
+        "ProductID": 1,
+        "ProductName": "Chai",
+        "UnitPrice": 18.0,
+        "Quantity": 10,
+        "Discount": 0,
+        "ExtendedPrice": 180.0
+      },
+      {
+        "OrderID": 10911,
+        "ProductID": 17,
+        "ProductName": "Alice Mutton",
+        "UnitPrice": 39.0,
+        "Quantity": 12,
+        "Discount": 0,
+        "ExtendedPrice": 468.0
+      },
+      {
+        "OrderID": 10911,
+        "ProductID": 67,
+        "ProductName": "Laughing Lumberjack Lager",
+        "UnitPrice": 14.0,
+        "Quantity": 15,
+        "Discount": 0,
+        "ExtendedPrice": 210.0
+      },
+      {
+        "OrderID": 10913,
+        "ProductID": 58,
+        "ProductName": "Escargots de Bourgogne",
+        "UnitPrice": 13.25,
+        "Quantity": 15,
+        "Discount": 0,
+        "ExtendedPrice": 198.75
+      },
+      {
+        "OrderID": 10914,
+        "ProductID": 71,
+        "ProductName": "Flotemysost",
+        "UnitPrice": 21.5,
+        "Quantity": 25,
+        "Discount": 0,
+        "ExtendedPrice": 537.5
+      },
+      {
+        "OrderID": 10915,
+        "ProductID": 17,
+        "ProductName": "Alice Mutton",
+        "UnitPrice": 39.0,
+        "Quantity": 10,
+        "Discount": 0,
+        "ExtendedPrice": 390.0
+      },
+      {
+        "OrderID": 10915,
+        "ProductID": 33,
+        "ProductName": "Geitost",
+        "UnitPrice": 2.5,
+        "Quantity": 30,
+        "Discount": 0,
+        "ExtendedPrice": 75.0
+      },
+      {
+        "OrderID": 10915,
+        "ProductID": 54,
+        "ProductName": "Tourtière",
+        "UnitPrice": 7.45,
+        "Quantity": 10,
+        "Discount": 0,
+        "ExtendedPrice": 74.5
+      },
+      {
+        "OrderID": 10916,
+        "ProductID": 16,
+        "ProductName": "Pavlova",
+        "UnitPrice": 17.45,
+        "Quantity": 6,
+        "Discount": 0,
+        "ExtendedPrice": 104.7
+      },
+      {
+        "OrderID": 10916,
+        "ProductID": 32,
+        "ProductName": "Mascarpone Fabioli",
+        "UnitPrice": 32.0,
+        "Quantity": 6,
+        "Discount": 0,
+        "ExtendedPrice": 192.0
+      },
+      {
+        "OrderID": 10916,
+        "ProductID": 57,
+        "ProductName": "Ravioli Angelo",
+        "UnitPrice": 19.5,
+        "Quantity": 20,
+        "Discount": 0,
+        "ExtendedPrice": 390.0
+      },
+      {
+        "OrderID": 10917,
+        "ProductID": 30,
+        "ProductName": "Nord-Ost Matjeshering",
+        "UnitPrice": 25.89,
+        "Quantity": 1,
+        "Discount": 0,
+        "ExtendedPrice": 25.89
+      },
+      {
+        "OrderID": 10917,
+        "ProductID": 60,
+        "ProductName": "Camembert Pierrot",
+        "UnitPrice": 34.0,
+        "Quantity": 10,
+        "Discount": 0,
+        "ExtendedPrice": 340.0
+      },
+      {
+        "OrderID": 10919,
+        "ProductID": 16,
+        "ProductName": "Pavlova",
+        "UnitPrice": 17.45,
+        "Quantity": 24,
+        "Discount": 0,
+        "ExtendedPrice": 418.8
+      },
+      {
+        "OrderID": 10919,
+        "ProductID": 25,
+        "ProductName": "NuNuCa Nuß-Nougat-Creme",
+        "UnitPrice": 14.0,
+        "Quantity": 24,
+        "Discount": 0,
+        "ExtendedPrice": 336.0
+      },
+      {
+        "OrderID": 10919,
+        "ProductID": 40,
+        "ProductName": "Boston Crab Meat",
+        "UnitPrice": 18.4,
+        "Quantity": 20,
+        "Discount": 0,
+        "ExtendedPrice": 368.0
+      },
+      {
+        "OrderID": 10920,
+        "ProductID": 50,
+        "ProductName": "Valkoinen suklaa",
+        "UnitPrice": 16.25,
+        "Quantity": 24,
+        "Discount": 0,
+        "ExtendedPrice": 390.0
+      },
+      {
+        "OrderID": 10921,
+        "ProductID": 35,
+        "ProductName": "Steeleye Stout",
+        "UnitPrice": 18.0,
+        "Quantity": 10,
+        "Discount": 0,
+        "ExtendedPrice": 180.0
+      },
+      {
+        "OrderID": 10921,
+        "ProductID": 63,
+        "ProductName": "Vegie-spread",
+        "UnitPrice": 43.9,
+        "Quantity": 40,
+        "Discount": 0,
+        "ExtendedPrice": 1756.0
+      },
+      {
+        "OrderID": 10922,
+        "ProductID": 17,
+        "ProductName": "Alice Mutton",
+        "UnitPrice": 39.0,
+        "Quantity": 15,
+        "Discount": 0,
+        "ExtendedPrice": 585.0
+      },
+      {
+        "OrderID": 10922,
+        "ProductID": 24,
+        "ProductName": "Guaraná Fantástica",
+        "UnitPrice": 4.5,
+        "Quantity": 35,
+        "Discount": 0,
+        "ExtendedPrice": 157.5
+      },
+      {
+        "OrderID": 10924,
+        "ProductID": 75,
+        "ProductName": "Rhönbräu Klosterbier",
+        "UnitPrice": 7.75,
+        "Quantity": 6,
+        "Discount": 0,
+        "ExtendedPrice": 46.5
+      },
+      {
+        "OrderID": 10926,
+        "ProductID": 11,
+        "ProductName": "Queso Cabrales",
+        "UnitPrice": 21.0,
+        "Quantity": 2,
+        "Discount": 0,
+        "ExtendedPrice": 42.0
+      },
+      {
+        "OrderID": 10926,
+        "ProductID": 13,
+        "ProductName": "Konbu",
+        "UnitPrice": 6.0,
+        "Quantity": 10,
+        "Discount": 0,
+        "ExtendedPrice": 60.0
+      },
+      {
+        "OrderID": 10926,
+        "ProductID": 19,
+        "ProductName": "Teatime Chocolate Biscuits",
+        "UnitPrice": 9.2,
+        "Quantity": 7,
+        "Discount": 0,
+        "ExtendedPrice": 64.4
+      },
+      {
+        "OrderID": 10926,
+        "ProductID": 72,
+        "ProductName": "Mozzarella di Giovanni",
+        "UnitPrice": 34.8,
+        "Quantity": 10,
+        "Discount": 0,
+        "ExtendedPrice": 348.0
+      },
+      {
+        "OrderID": 10927,
+        "ProductID": 20,
+        "ProductName": "Sir Rodney's Marmalade",
+        "UnitPrice": 81.0,
+        "Quantity": 5,
+        "Discount": 0,
+        "ExtendedPrice": 405.0
+      },
+      {
+        "OrderID": 10927,
+        "ProductID": 52,
+        "ProductName": "Filo Mix",
+        "UnitPrice": 7.0,
+        "Quantity": 5,
+        "Discount": 0,
+        "ExtendedPrice": 35.0
+      },
+      {
+        "OrderID": 10927,
+        "ProductID": 76,
+        "ProductName": "Lakkalikööri",
+        "UnitPrice": 18.0,
+        "Quantity": 20,
+        "Discount": 0,
+        "ExtendedPrice": 360.0
+      },
+      {
+        "OrderID": 10928,
+        "ProductID": 47,
+        "ProductName": "Zaanse koeken",
+        "UnitPrice": 9.5,
+        "Quantity": 5,
+        "Discount": 0,
+        "ExtendedPrice": 47.5
+      },
+      {
+        "OrderID": 10928,
+        "ProductID": 76,
+        "ProductName": "Lakkalikööri",
+        "UnitPrice": 18.0,
+        "Quantity": 5,
+        "Discount": 0,
+        "ExtendedPrice": 90.0
+      },
+      {
+        "OrderID": 10929,
+        "ProductID": 21,
+        "ProductName": "Sir Rodney's Scones",
+        "UnitPrice": 10.0,
+        "Quantity": 60,
+        "Discount": 0,
+        "ExtendedPrice": 600.0
+      },
+      {
+        "OrderID": 10929,
+        "ProductID": 75,
+        "ProductName": "Rhönbräu Klosterbier",
+        "UnitPrice": 7.75,
+        "Quantity": 49,
+        "Discount": 0,
+        "ExtendedPrice": 379.75
+      },
+      {
+        "OrderID": 10929,
+        "ProductID": 77,
+        "ProductName": "Original Frankfurter grüne Soße",
+        "UnitPrice": 13.0,
+        "Quantity": 15,
+        "Discount": 0,
+        "ExtendedPrice": 195.0
+      },
+      {
+        "OrderID": 10930,
+        "ProductID": 21,
+        "ProductName": "Sir Rodney's Scones",
+        "UnitPrice": 10.0,
+        "Quantity": 36,
+        "Discount": 0,
+        "ExtendedPrice": 360.0
+      },
+      {
+        "OrderID": 10930,
+        "ProductID": 27,
+        "ProductName": "Schoggi Schokolade",
+        "UnitPrice": 43.9,
+        "Quantity": 25,
+        "Discount": 0,
+        "ExtendedPrice": 1097.5
+      },
+      {
+        "OrderID": 10931,
+        "ProductID": 57,
+        "ProductName": "Ravioli Angelo",
+        "UnitPrice": 19.5,
+        "Quantity": 30,
+        "Discount": 0,
+        "ExtendedPrice": 585.0
+      },
+      {
+        "OrderID": 10932,
+        "ProductID": 72,
+        "ProductName": "Mozzarella di Giovanni",
+        "UnitPrice": 34.8,
+        "Quantity": 16,
+        "Discount": 0,
+        "ExtendedPrice": 556.8
+      },
+      {
+        "OrderID": 10933,
+        "ProductID": 53,
+        "ProductName": "Perth Pasties",
+        "UnitPrice": 32.8,
+        "Quantity": 2,
+        "Discount": 0,
+        "ExtendedPrice": 65.6
+      },
+      {
+        "OrderID": 10933,
+        "ProductID": 61,
+        "ProductName": "Sirop d'érable",
+        "UnitPrice": 28.5,
+        "Quantity": 30,
+        "Discount": 0,
+        "ExtendedPrice": 855.0
+      },
+      {
+        "OrderID": 10934,
+        "ProductID": 6,
+        "ProductName": "Grandma's Boysenberry Spread",
+        "UnitPrice": 25.0,
+        "Quantity": 20,
+        "Discount": 0,
+        "ExtendedPrice": 500.0
+      },
+      {
+        "OrderID": 10935,
+        "ProductID": 1,
+        "ProductName": "Chai",
+        "UnitPrice": 18.0,
+        "Quantity": 21,
+        "Discount": 0,
+        "ExtendedPrice": 378.0
+      },
+      {
+        "OrderID": 10937,
+        "ProductID": 28,
+        "ProductName": "Rössle Sauerkraut",
+        "UnitPrice": 45.6,
+        "Quantity": 8,
+        "Discount": 0,
+        "ExtendedPrice": 364.8
+      },
+      {
+        "OrderID": 10937,
+        "ProductID": 34,
+        "ProductName": "Sasquatch Ale",
+        "UnitPrice": 14.0,
+        "Quantity": 20,
+        "Discount": 0,
+        "ExtendedPrice": 280.0
+      },
+      {
+        "OrderID": 10940,
+        "ProductID": 7,
+        "ProductName": "Uncle Bob's Organic Dried Pears",
+        "UnitPrice": 30.0,
+        "Quantity": 8,
+        "Discount": 0,
+        "ExtendedPrice": 240.0
+      },
+      {
+        "OrderID": 10940,
+        "ProductID": 13,
+        "ProductName": "Konbu",
+        "UnitPrice": 6.0,
+        "Quantity": 20,
+        "Discount": 0,
+        "ExtendedPrice": 120.0
+      },
+      {
+        "OrderID": 10941,
+        "ProductID": 72,
+        "ProductName": "Mozzarella di Giovanni",
+        "UnitPrice": 34.8,
+        "Quantity": 50,
+        "Discount": 0,
+        "ExtendedPrice": 1740.0
+      },
+      {
+        "OrderID": 10942,
+        "ProductID": 49,
+        "ProductName": "Maxilaku",
+        "UnitPrice": 20.0,
+        "Quantity": 28,
+        "Discount": 0,
+        "ExtendedPrice": 560.0
+      },
+      {
+        "OrderID": 10943,
+        "ProductID": 13,
+        "ProductName": "Konbu",
+        "UnitPrice": 6.0,
+        "Quantity": 15,
+        "Discount": 0,
+        "ExtendedPrice": 90.0
+      },
+      {
+        "OrderID": 10943,
+        "ProductID": 22,
+        "ProductName": "Gustaf's Knäckebröd",
+        "UnitPrice": 21.0,
+        "Quantity": 21,
+        "Discount": 0,
+        "ExtendedPrice": 441.0
+      },
+      {
+        "OrderID": 10943,
+        "ProductID": 46,
+        "ProductName": "Spegesild",
+        "UnitPrice": 12.0,
+        "Quantity": 15,
+        "Discount": 0,
+        "ExtendedPrice": 180.0
+      },
+      {
+        "OrderID": 10944,
+        "ProductID": 56,
+        "ProductName": "Gnocchi di nonna Alice",
+        "UnitPrice": 38.0,
+        "Quantity": 18,
+        "Discount": 0,
+        "ExtendedPrice": 684.0
+      },
+      {
+        "OrderID": 10945,
+        "ProductID": 13,
+        "ProductName": "Konbu",
+        "UnitPrice": 6.0,
+        "Quantity": 20,
+        "Discount": 0,
+        "ExtendedPrice": 120.0
+      },
+      {
+        "OrderID": 10945,
+        "ProductID": 31,
+        "ProductName": "Gorgonzola Telino",
+        "UnitPrice": 12.5,
+        "Quantity": 10,
+        "Discount": 0,
+        "ExtendedPrice": 125.0
+      },
+      {
+        "OrderID": 10946,
+        "ProductID": 10,
+        "ProductName": "Ikura",
+        "UnitPrice": 31.0,
+        "Quantity": 25,
+        "Discount": 0,
+        "ExtendedPrice": 775.0
+      },
+      {
+        "OrderID": 10946,
+        "ProductID": 24,
+        "ProductName": "Guaraná Fantástica",
+        "UnitPrice": 4.5,
+        "Quantity": 25,
+        "Discount": 0,
+        "ExtendedPrice": 112.5
+      },
+      {
+        "OrderID": 10946,
+        "ProductID": 77,
+        "ProductName": "Original Frankfurter grüne Soße",
+        "UnitPrice": 13.0,
+        "Quantity": 40,
+        "Discount": 0,
+        "ExtendedPrice": 520.0
+      },
+      {
+        "OrderID": 10947,
+        "ProductID": 59,
+        "ProductName": "Raclette Courdavault",
+        "UnitPrice": 55.0,
+        "Quantity": 4,
+        "Discount": 0,
+        "ExtendedPrice": 220.0
+      },
+      {
+        "OrderID": 10948,
+        "ProductID": 50,
+        "ProductName": "Valkoinen suklaa",
+        "UnitPrice": 16.25,
+        "Quantity": 9,
+        "Discount": 0,
+        "ExtendedPrice": 146.25
+      },
+      {
+        "OrderID": 10948,
+        "ProductID": 51,
+        "ProductName": "Manjimup Dried Apples",
+        "UnitPrice": 53.0,
+        "Quantity": 40,
+        "Discount": 0,
+        "ExtendedPrice": 2120.0
+      },
+      {
+        "OrderID": 10948,
+        "ProductID": 55,
+        "ProductName": "Pâté chinois",
+        "UnitPrice": 24.0,
+        "Quantity": 4,
+        "Discount": 0,
+        "ExtendedPrice": 96.0
+      },
+      {
+        "OrderID": 10949,
+        "ProductID": 6,
+        "ProductName": "Grandma's Boysenberry Spread",
+        "UnitPrice": 25.0,
+        "Quantity": 12,
+        "Discount": 0,
+        "ExtendedPrice": 300.0
+      },
+      {
+        "OrderID": 10949,
+        "ProductID": 10,
+        "ProductName": "Ikura",
+        "UnitPrice": 31.0,
+        "Quantity": 30,
+        "Discount": 0,
+        "ExtendedPrice": 930.0
+      },
+      {
+        "OrderID": 10949,
+        "ProductID": 17,
+        "ProductName": "Alice Mutton",
+        "UnitPrice": 39.0,
+        "Quantity": 6,
+        "Discount": 0,
+        "ExtendedPrice": 234.0
+      }
+    ],
+    "@odata.nextLink": "Order_Details_Extendeds?$top=900&$skiptoken=0,10949,17,'Alice%20Mutton',6,39.0000"
+  }
+}
