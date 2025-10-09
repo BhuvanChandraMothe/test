@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "covasant_sap_odata_connector"
-version = "1.0.2"
+version = "1.0.3"
 description = "A powerful Python library for connecting to SAP OData services with OData V2 and V4 support"
 readme = "README.md"
 requires-python = ">=3.8"

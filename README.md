@@ -714,4 +714,4 @@ filter_condition="Status eq 'Active'"
 
 ---
 
-**Package**: `covasant_sap_odata_connector` | **Version**: 1.0.2 | **OData**: V2 & V4 Support
+**Package**: `covasant_sap_odata_connector` | **Version**: 1.0.3 | **OData**: V2 & V4 Support

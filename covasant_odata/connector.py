@@ -449,6 +449,9 @@ class SAPODataConnector:
                    query_options=query_options,
                    execution_config=self.exec_config.to_dict())
         
+        # Validate query options against OData version
+        self._validate_query_options(query_options)
+        
         try:
             # Check if this is a simple single-entity query that can be optimized
             lightweight_check = (entity_name and not selected_entities and 
@@ -730,20 +733,18 @@ class SAPODataConnector:
                         if next_link_url:
                             # There's more data - continue with nextLink
                             skip += len(page_records)  # Update skip for logging purposes
-                        elif total_count and len(all_records) < total_count:
-                            # No nextLink but we haven't reached total_count yet
-                            # Continue with skip/top (fallback for buggy V4 services)
-                            skip += len(page_records)
-                            logger.info(f"No nextLink but continuing: {len(all_records)}/{total_count} records fetched, using skip/top")
+                        elif len(page_records) < page_size:
+                            # Got fewer records than requested - this is the last page
+                            logger.info(f"Reached last page: Reached last page (got {len(page_records)} records, expected {page_size})")
+                            break
+                        elif total_count and len(all_records) >= total_count:
+                            # We've reached the total count
+                            logger.info(f"All available records fetched: All available records fetched: {total_count}")
+                            break
                         else:
-                            # No nextLink and no total_count, or we've reached the end
-                            logger.info("Reached last page: No nextLink in response")
-                            break
-                        
-                        # Safety check to prevent infinite loops
-                        if requests_made > 1000:  # Max 500,000 records (1000 * 500)
-                            logger.warning("Safety limit reached: Safety limit reached: 1000 requests made")
-                            break
+                            # No nextLink but got full page - continue with skip/top
+                            skip += len(page_records)
+                            logger.info(f"Continuing pagination: No nextLink but got full page, continuing with skip/top (skip={skip})")
                             
                     else:
                         error_text = await response.text()
@@ -901,6 +902,72 @@ class SAPODataConnector:
             
         except Exception as e:
             logger.warning(f"Failed to save query results: {e}")
+    
+    def _validate_query_options(self, query_options: Dict[str, Any]):
+        """
+        Validate query options against OData version capabilities
+        
+        Raises warnings/errors for unsupported features based on OData version.
+        """
+        # Check if we have metadata service initialized
+        if not hasattr(self, 'metadata_service') or not self.metadata_service:
+            logger.warning("Metadata service not initialized - skipping query validation")
+            return
+        
+        # Get OData version
+        odata_version = getattr(self.metadata_service, 'odata_version', 'Unknown')
+        
+        # Check for V4-only features
+        group_by = query_options.get('group_by')
+        aggregate_functions = query_options.get('aggregate_functions')
+        
+        if group_by or aggregate_functions:
+            if odata_version == 'V2':
+                error_msg = (
+                    f"\n{'='*70}\n"
+                    f"UNSUPPORTED FEATURE DETECTED\n"
+                    f"{'='*70}\n"
+                    f"Feature: {'group_by' if group_by else 'aggregate_functions'}\n"
+                    f"Value: {group_by or aggregate_functions}\n"
+                    f"OData Version: {odata_version}\n"
+                    f"\n"
+                    f"The '$apply' system query option (required for grouping and\n"
+                    f"aggregation) is NOT supported in OData V2 services.\n"
+                    f"\n"
+                    f"This feature requires OData V4 with the Data Aggregation Extension.\n"
+                    f"\n"
+                    f"Solutions:\n"
+                    f"  1. Fetch data and group in Python (recommended)\n"
+                    f"  2. Use a V4 service with aggregation support\n"
+                    f"  3. Create a CDS view with pre-aggregated data in SAP\n"
+                    f"{'='*70}\n"
+                )
+                logger.error(error_msg)
+                raise ValueError(
+                    f"group_by and aggregate_functions are not supported in OData V2. "
+                    f"Current service is {odata_version}. Please fetch data and group in Python instead."
+                )
+            elif odata_version == 'V4':
+                # V4 service - warn that not all V4 services support $apply
+                logger.warning(
+                    f"\n{'='*70}\n"
+                    f" WARNING: Using V4-only feature\n"
+                    f"{'='*70}\n"
+                    f"Feature: {'group_by' if group_by else 'aggregate_functions'}\n"
+                    f"OData Version: {odata_version}\n"
+                    f"\n"
+                    f"Note: Not all OData V4 services support the $apply system query option.\n"
+                    f"The Data Aggregation Extension is OPTIONAL in OData V4.\n"
+                    f"\n"
+                    f"If this query fails with a 400 error mentioning '$apply', the service\n"
+                    f"does not support aggregation. In that case, fetch data and group in Python.\n"
+                    f"{'='*70}\n"
+                )
+            else:
+                logger.warning(
+                    f"Unknown OData version: {odata_version}. "
+                    f"group_by/aggregate_functions may not be supported."
+                )
     
     def _determine_entities_to_process(
         self, 

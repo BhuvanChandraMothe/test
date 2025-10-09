@@ -39,7 +39,14 @@ async def main():
         # print(f"  Commands executed: {cat['execution_stats']['commands_executed']}")
         
         
-        result = await connector.get_data(selected_entities=["Products","Images","SubCategories","ShoppingCarts","Suppliers"])
+        #result = await connector.get_data(selected_entities=["Products","Images","SubCategories","ShoppingCarts","Suppliers"])
+        
+        result = await connector.get_data(entity_name="Products", group_by="SupplierId")
+        
+        print(f"\n[SUCCESS] Fetched {result['execution_stats']['records_processed']} records")
+        print(f"  Duration: {result['execution_stats']['duration_seconds']:.2f} seconds")
+        print(f"  Batch size: 20 (should fetch 3 batches: 20+20+10=50)")
+        print(f"  Expected: 50 records, Got: {result['execution_stats']['records_processed']} records")
         
         # print(f"\n[SUCCESS] Fetched {result['execution_stats']['records_processed']} records")
         # print(f"  Duration: {result['execution_stats']['duration_seconds']:.2f} seconds")

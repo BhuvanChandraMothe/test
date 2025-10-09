@@ -1,0 +1,1174 @@
+{
+  "query_info": {
+    "entity_name": "Products",
+    "filter_condition": null,
+    "select_fields": null,
+    "order_by": null,
+    "expand_relations": null,
+    "total_records": 20,
+    "timestamp": "2025-10-09T15:28:46.485145",
+    "filename": "20251009_152846_products.json"
+  },
+  "data": [
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1000')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1000')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "3.67",
+      "Name": "Notebook Basic 15",
+      "Description": "Notebook Basic 15 with 2,80 GHz quad core, 15\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "18",
+      "DimensionHeight": "3",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "30",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1000",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1000.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Systems",
+      "MainCategoryName": "Computer Systems",
+      "MeasureUnit": "each",
+      "Price": "956.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 3,
+      "SubCategoryId": "Notebooks",
+      "SubCategoryName": "Notebooks",
+      "SupplierId": "100000046",
+      "SupplierName": "SAP",
+      "WeightMeasure": "4.2",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1000')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1000')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1000')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1000')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1000')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1001')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1001')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "2.71",
+      "Name": "Notebook Basic 17",
+      "Description": "Notebook Basic 17 with 2,80 GHz quad core, 17\" LCD, 4 GB DDR3 RAM, 500 GB Hard Disc, Windows 8 Pro",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "17",
+      "DimensionHeight": "3.1",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "29",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1001",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1001.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Systems",
+      "MainCategoryName": "Computer Systems",
+      "MeasureUnit": "each",
+      "Price": "1249.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 7,
+      "SubCategoryId": "Notebooks",
+      "SubCategoryName": "Notebooks",
+      "SupplierId": "100000047",
+      "SupplierName": "Becker Berlin",
+      "WeightMeasure": "4.5",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1001')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1001')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1001')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1001')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1001')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1002')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1002')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "2.93",
+      "Name": "Notebook Basic 18",
+      "Description": "Notebook Basic 18 with 2,80 GHz quad core, 18\" LCD, 8 GB DDR3 RAM, 1000 GB Hard Disc, Windows 8 Pro",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "19",
+      "DimensionHeight": "2.5",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "28",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1002",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1002.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Systems",
+      "MainCategoryName": "Computer Systems",
+      "MeasureUnit": "each",
+      "Price": "1570.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 15,
+      "SubCategoryId": "Notebooks",
+      "SubCategoryName": "Notebooks",
+      "SupplierId": "100000048",
+      "SupplierName": "DelBont Industries",
+      "WeightMeasure": "4.2",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1002')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1002')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1002')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1002')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1002')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1003')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1003')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "3.11",
+      "Name": "Notebook Basic 19",
+      "Description": "Notebook Basic 19 with 2,80 GHz quad core, 19\" LCD, 8 GB DDR3 RAM, 1000 GB Hard Disc, Windows 8 Pro",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "21",
+      "DimensionHeight": "4",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "32",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1003",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1003.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Systems",
+      "MainCategoryName": "Computer Systems",
+      "MeasureUnit": "each",
+      "Price": "1650.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 9,
+      "SubCategoryId": "Notebooks",
+      "SubCategoryName": "Notebooks",
+      "SupplierId": "100000049",
+      "SupplierName": "Talpa",
+      "WeightMeasure": "4.2",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1003')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1003')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1003')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1003')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1003')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1007')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1007')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "2.64",
+      "Name": "ITelO Vault",
+      "Description": "Digital Organizer with State-of-the-Art Storage Encryption",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "22",
+      "DimensionHeight": "3",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "32",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1007",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1007.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Components",
+      "MainCategoryName": "Computer Components",
+      "MeasureUnit": "each",
+      "Price": "299.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 11,
+      "SubCategoryId": "PDAs & Organizers",
+      "SubCategoryName": "PDAs & Organizers",
+      "SupplierId": "100000050",
+      "SupplierName": "Panorama Studios",
+      "WeightMeasure": "0.2",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1007')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1007')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1007')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1007')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1007')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1010')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1010')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "2.17",
+      "Name": "Notebook Professional 15",
+      "Description": "Notebook Professional 15 with 2,80 GHz quad core, 15\" Multitouch LCD, 8 GB DDR3 RAM, 500 GB SSD - DVD-Writer (DVD-R/+R/-RW/-RAM),Windows 8 Pro",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "20",
+      "DimensionHeight": "3",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "33",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1010",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1010.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Systems",
+      "MainCategoryName": "Computer Systems",
+      "MeasureUnit": "each",
+      "Price": "1999.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 6,
+      "SubCategoryId": "Notebooks",
+      "SubCategoryName": "Notebooks",
+      "SupplierId": "100000051",
+      "SupplierName": "TECUM",
+      "WeightMeasure": "4.3",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1010')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1010')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1010')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1010')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1010')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "3.08",
+      "Name": "Notebook Professional 17",
+      "Description": "Notebook Professional 17 with 2,80 GHz quad core, 17\" Multitouch LCD, 8 GB DDR3 RAM, 500 GB SSD - DVD-Writer (DVD-R/+R/-RW/-RAM),Windows 8 Pro",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "23",
+      "DimensionHeight": "2",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "33",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1011",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1011.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Systems",
+      "MainCategoryName": "Computer Systems",
+      "MeasureUnit": "each",
+      "Price": "2299.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 12,
+      "SubCategoryId": "Notebooks",
+      "SubCategoryName": "Notebooks",
+      "SupplierId": "100000052",
+      "SupplierName": "Asia High tech",
+      "WeightMeasure": "4.1",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1020')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1020')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "5.00",
+      "Name": "ITelO Vault Net",
+      "Description": "Digital Organizer with State-of-the-Art Encryption for Storage and Network Communications",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "1.8",
+      "DimensionHeight": "17",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "10",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1020",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1020.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Components",
+      "MainCategoryName": "Computer Components",
+      "MeasureUnit": "each",
+      "Price": "459.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 1,
+      "SubCategoryId": "PDAs & Organizers",
+      "SubCategoryName": "PDAs & Organizers",
+      "SupplierId": "100000053",
+      "SupplierName": "Laurent",
+      "WeightMeasure": "0.16",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1020')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1020')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1020')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1020')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1020')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1021')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1021')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "3.00",
+      "Name": "ITelO Vault SAT",
+      "Description": "Digital Organizer with State-of-the-Art Encryption for Storage and Secure Stellite Link",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "1.7",
+      "DimensionHeight": "18",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "11",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1021",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1021.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Components",
+      "MainCategoryName": "Computer Components",
+      "MeasureUnit": "each",
+      "Price": "149.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 6,
+      "SubCategoryId": "PDAs & Organizers",
+      "SubCategoryName": "PDAs & Organizers",
+      "SupplierId": "100000054",
+      "SupplierName": "AVANTEL",
+      "WeightMeasure": "0.18",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1021')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1021')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1021')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1021')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1021')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1022')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1022')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "3.75",
+      "Name": "Comfort Easy",
+      "Description": "32 GB Digital Assistant with high-resolution color screen",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "1.5",
+      "DimensionHeight": "14",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "84",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1022",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1022.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Components",
+      "MainCategoryName": "Computer Components",
+      "MeasureUnit": "each",
+      "Price": "1679.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 4,
+      "SubCategoryId": "PDAs & Organizers",
+      "SubCategoryName": "PDAs & Organizers",
+      "SupplierId": "100000055",
+      "SupplierName": "Telecomunicaciones Star",
+      "WeightMeasure": "0.2",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1022')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1022')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1022')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1022')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1022')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1023')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1023')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "3.50",
+      "Name": "Comfort Senior",
+      "Description": "64 GB Digital Assistant with high-resolution color screen and synthesized voice output",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "1.6",
+      "DimensionHeight": "13",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "80",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1023",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1023.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Components",
+      "MainCategoryName": "Computer Components",
+      "MeasureUnit": "each",
+      "Price": "512.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 2,
+      "SubCategoryId": "PDAs & Organizers",
+      "SubCategoryName": "PDAs & Organizers",
+      "SupplierId": "100000056",
+      "SupplierName": "Pear Computing Services",
+      "WeightMeasure": "0.8",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1023')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1023')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1023')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1023')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1023')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1030')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1030')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "2.67",
+      "Name": "Ergo Screen E-I",
+      "Description": "Optimum Hi-Resolution max. 1920 x 1080 @ 85Hz, Dot Pitch: 0.27mm",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "12",
+      "DimensionHeight": "36",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "37",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1030",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1030.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Components",
+      "MainCategoryName": "Computer Components",
+      "MeasureUnit": "each",
+      "Price": "230.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 15,
+      "SubCategoryId": "Flat Screen Monitors",
+      "SubCategoryName": "Flat Screen Monitors",
+      "SupplierId": "100000057",
+      "SupplierName": "Alpine Systems",
+      "WeightMeasure": "21",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1030')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1030')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1030')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1030')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1030')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1031')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1031')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "3.17",
+      "Name": "Ergo Screen E-II",
+      "Description": "Optimum Hi-Resolution max. 1920 x 1200 @ 85Hz, Dot Pitch: 0.26mm",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "19",
+      "DimensionHeight": "43",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "40.8",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1031",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1031.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Components",
+      "MainCategoryName": "Computer Components",
+      "MeasureUnit": "each",
+      "Price": "285.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 12,
+      "SubCategoryId": "Flat Screen Monitors",
+      "SubCategoryName": "Flat Screen Monitors",
+      "SupplierId": "100000058",
+      "SupplierName": "New Line Design",
+      "WeightMeasure": "21",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1031')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1031')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1031')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1031')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1031')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1032')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1032')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "2.67",
+      "Name": "Ergo Screen E-III",
+      "Description": "Optimum Hi-Resolution max. 2560 x 1440 @ 85Hz, Dot Pitch: 0.25mm",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "19",
+      "DimensionHeight": "43",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "40.8",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1032",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1032.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Components",
+      "MainCategoryName": "Computer Components",
+      "MeasureUnit": "each",
+      "Price": "345.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 12,
+      "SubCategoryId": "Flat Screen Monitors",
+      "SubCategoryName": "Flat Screen Monitors",
+      "SupplierId": "100000059",
+      "SupplierName": "HEPA Tec",
+      "WeightMeasure": "21",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1032')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1032')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1032')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1032')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1032')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1035')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1035')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "2.50",
+      "Name": "Flat Basic",
+      "Description": "Optimum Hi-Resolution max. 1600 x 1200 @ 85Hz, Dot Pitch: 0.24mm",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "20",
+      "DimensionHeight": "41",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "39",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1035",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1035.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Components",
+      "MainCategoryName": "Computer Components",
+      "MeasureUnit": "each",
+      "Price": "399.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 2,
+      "SubCategoryId": "Flat Screen Monitors",
+      "SubCategoryName": "Flat Screen Monitors",
+      "SupplierId": "100000060",
+      "SupplierName": "Anav Ideon",
+      "WeightMeasure": "14",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1035')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1035')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1035')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1035')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1035')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1036')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1036')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "3.00",
+      "Name": "Flat Future",
+      "Description": "Optimum Hi-Resolution max. 2048 x 1080 @ 85Hz, Dot Pitch: 0.26mm",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "26",
+      "DimensionHeight": "46",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "45",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1036",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1036.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Components",
+      "MainCategoryName": "Computer Components",
+      "MeasureUnit": "each",
+      "Price": "430.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 2,
+      "SubCategoryId": "Flat Screen Monitors",
+      "SubCategoryName": "Flat Screen Monitors",
+      "SupplierId": "100000061",
+      "SupplierName": "Robert Brown Entertainment",
+      "WeightMeasure": "15",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1036')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1036')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1036')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1036')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1036')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1037')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1037')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "3.64",
+      "Name": "Flat XL",
+      "Description": "Optimum Hi-Resolution max. 2016 x 1512 @ 85Hz, Dot Pitch: 0.24mm",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "22.1",
+      "DimensionHeight": "39.1",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "54.5",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1037",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1037.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Components",
+      "MainCategoryName": "Computer Components",
+      "MeasureUnit": "each",
+      "Price": "1230.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 11,
+      "SubCategoryId": "Flat Screen Monitors",
+      "SubCategoryName": "Flat Screen Monitors",
+      "SupplierId": "100000062",
+      "SupplierName": "Mexican Oil Trading Company",
+      "WeightMeasure": "17",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1037')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1037')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1037')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1037')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1037')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1040')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1040')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "3.00",
+      "Name": "Laser Professional Eco",
+      "Description": "Print 2400 dpi image quality color documents at speeds of up to 32 ppm (color) or 36 ppm (monochrome), letter/A4. Powerful 500 MHz processor, 512MB of memory",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "46",
+      "DimensionHeight": "30",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "51",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1040",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1040.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Printers & Scanners",
+      "MainCategoryName": "Printers & Scanners",
+      "MeasureUnit": "each",
+      "Price": "830.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 12,
+      "SubCategoryId": "Laser Printers",
+      "SubCategoryName": "Laser Printers",
+      "SupplierId": "100000063",
+      "SupplierName": "Meliva",
+      "WeightMeasure": "32",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1040')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1040')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1040')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1040')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1040')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1041')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1041')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "2.93",
+      "Name": "Laser Basic",
+      "Description": "Up to 22 ppm color or 24 ppm monochrome A4/letter, powerful 500 MHz processor and 128MB of memory",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "42",
+      "DimensionHeight": "26",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "48",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1041",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1041.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Printers & Scanners",
+      "MainCategoryName": "Printers & Scanners",
+      "MeasureUnit": "each",
+      "Price": "490.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 14,
+      "SubCategoryId": "Laser Printers",
+      "SubCategoryName": "Laser Printers",
+      "SupplierId": "100000064",
+      "SupplierName": "Compostela",
+      "WeightMeasure": "23",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1041')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1041')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1041')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1041')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1041')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1042')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1042')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "3.25",
+      "Name": "Laser Allround",
+      "Description": "Print up to 25 ppm letter and 24 ppm A4 color or monochrome, with a first-page-out-time of less than 13 seconds for monochrome and less than 15 seconds for color",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "50",
+      "DimensionHeight": "65",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "53",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1042",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1042.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Printers & Scanners",
+      "MainCategoryName": "Printers & Scanners",
+      "MeasureUnit": "each",
+      "Price": "349.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 4,
+      "SubCategoryId": "Laser Printers",
+      "SubCategoryName": "Laser Printers",
+      "SupplierId": "100000065",
+      "SupplierName": "Pateu",
+      "WeightMeasure": "17",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1042')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1042')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1042')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1042')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1042')/Images"
+        }
+      }
+    }
+  ]
+}

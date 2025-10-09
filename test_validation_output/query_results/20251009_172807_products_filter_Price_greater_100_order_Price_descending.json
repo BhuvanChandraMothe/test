@@ -1,0 +1,304 @@
+{
+  "query_info": {
+    "entity_name": "Products",
+    "filter_condition": "Price gt 100",
+    "select_fields": null,
+    "order_by": "Price desc",
+    "expand_relations": null,
+    "total_records": 5,
+    "timestamp": "2025-10-09T17:28:07.548119",
+    "filename": "20251009_172807_products_filter_Price_greater_100_order_Price_descending.json"
+  },
+  "data": [
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1502')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1502')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "1.50",
+      "Name": "Server Power Pro",
+      "Description": "Dual socket, quad-core processing server with 1644 MHz Front Side Bus with 100Gb connectivity",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "27.3",
+      "DimensionHeight": "37",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "22",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1502",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1502.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Systems",
+      "MainCategoryName": "Computer Systems",
+      "MeasureUnit": "each",
+      "Price": "25000.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 2,
+      "SubCategoryId": "Servers",
+      "SubCategoryName": "Servers",
+      "SupplierId": "100000071",
+      "SupplierName": "Tessile Casa Di Roma",
+      "WeightMeasure": "35",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1502')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1502')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1502')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1502')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1502')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1501')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1501')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "2.38",
+      "Name": "Server Professional",
+      "Description": "Dual socket, quad-core processing server with 1644 MHz Front Side Bus with 10Gb connectivity",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "30",
+      "DimensionHeight": "27",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "29",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1501",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1501.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Systems",
+      "MainCategoryName": "Computer Systems",
+      "MeasureUnit": "each",
+      "Price": "15000.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 13,
+      "SubCategoryId": "Servers",
+      "SubCategoryName": "Servers",
+      "SupplierId": "100000070",
+      "SupplierName": "JaTeCo",
+      "WeightMeasure": "25",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1501')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1501')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1501')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1501')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1501')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1500')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1500')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "2.00",
+      "Name": "Server Basic",
+      "Description": "Dual socket, quad-core processing server with 1333 MHz Front Side Bus with 10Gb connectivity",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "35",
+      "DimensionHeight": "23",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "34",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1500",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1500.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Systems",
+      "MainCategoryName": "Computer Systems",
+      "MeasureUnit": "each",
+      "Price": "5000.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 5,
+      "SubCategoryId": "Servers",
+      "SubCategoryName": "Servers",
+      "SupplierId": "100000069",
+      "SupplierName": "Getr\u00e4nkegro\u00dfhandel Janssen",
+      "WeightMeasure": "18",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1500')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1500')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1500')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1500')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1500')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1210')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1210')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "4.40",
+      "Name": "PC Power Station",
+      "Description": "PC Power Station with 3,4 Ghz quad-core, 32 GB DDR3 SDRAM, feels like a PC, Windows 8 Pro",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "31",
+      "DimensionHeight": "43",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "28",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1210",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1210.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Systems",
+      "MainCategoryName": "Computer Systems",
+      "MeasureUnit": "each",
+      "Price": "2399.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 5,
+      "SubCategoryId": "PCs",
+      "SubCategoryName": "PCs",
+      "SupplierId": "100000068",
+      "SupplierName": "Quimica Madrilenos",
+      "WeightMeasure": "2.3",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1210')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1210')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1210')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1210')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1210')/Images"
+        }
+      }
+    },
+    {
+      "__metadata": {
+        "id": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')",
+        "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')",
+        "type": "EPM_REF_APPS_SHOP.Product"
+      },
+      "AverageRating": "3.08",
+      "Name": "Notebook Professional 17",
+      "Description": "Notebook Professional 17 with 2,80 GHz quad core, 17\" Multitouch LCD, 8 GB DDR3 RAM, 500 GB SSD - DVD-Writer (DVD-R/+R/-RW/-RAM),Windows 8 Pro",
+      "StockQuantity": 0,
+      "CurrencyCode": "",
+      "DimensionDepth": "23",
+      "DimensionHeight": "2",
+      "DimensionUnit": "cm",
+      "DimensionWidth": "33",
+      "HasReviewOfCurrentUser": false,
+      "Id": "HT-1011",
+      "ImageUrl": "/sap/public/bc/NWDEMO_MODEL/IMAGES/HT-1011.jpg",
+      "IsFavoriteOfCurrentUser": false,
+      "LastModified": "/Date(1759971660000)/",
+      "MainCategoryId": "Computer Systems",
+      "MainCategoryName": "Computer Systems",
+      "MeasureUnit": "each",
+      "Price": "2299.00",
+      "QuantityUnit": "EA",
+      "RatingCount": 12,
+      "SubCategoryId": "Notebooks",
+      "SubCategoryName": "Notebooks",
+      "SupplierId": "100000052",
+      "SupplierName": "Asia High tech",
+      "WeightMeasure": "4.1",
+      "WeightUnit": "kg",
+      "ReviewAggregates": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')/ReviewAggregates"
+        }
+      },
+      "Reviews": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')/Reviews"
+        }
+      },
+      "SubCategory": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')/SubCategory"
+        }
+      },
+      "Supplier": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')/Supplier"
+        }
+      },
+      "Images": {
+        "__deferred": {
+          "uri": "https://SAPES5.SAPDEVCENTER.COM:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/Products('HT-1011')/Images"
+        }
+      }
+    }
+  ]
+}

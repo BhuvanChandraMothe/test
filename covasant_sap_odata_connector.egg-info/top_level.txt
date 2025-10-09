@@ -1,3 +1,0 @@
-covasant_odata
-dist
-quick_test
