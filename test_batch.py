@@ -2,7 +2,6 @@ from covasant_odata.config.models import ClientConfig
 from covasant_odata.connector import SAPODataConnector
 import asyncio
 
-
 async def main():
     config = ClientConfig(
         # service_url="https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/",
@@ -40,10 +39,10 @@ async def main():
         # print(f"  Commands executed: {cat['execution_stats']['commands_executed']}")
         
         
-        result = await connector.get_data()
+        result = await connector.get_data(selected_entities=["Products","Images","SubCategories","ShoppingCarts","Suppliers"])
         
-        print(f"\n[SUCCESS] Fetched {result['execution_stats']['records_processed']} records")
-        print(f"  Duration: {result['execution_stats']['duration_seconds']:.2f} seconds")
+        # print(f"\n[SUCCESS] Fetched {result['execution_stats']['records_processed']} records")
+        # print(f"  Duration: {result['execution_stats']['duration_seconds']:.2f} seconds")
         # Note: 'pages_fetched' only exists for simple queries (entity_name)
         # For full pipeline (selected_entities), use 'commands_executed' instead
         

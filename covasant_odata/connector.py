@@ -495,6 +495,7 @@ class SAPODataConnector:
                 entity_name, selected_entities
             )
             
+            self.stats.entities_processed = len(entities_to_process)
             # Phase 1: Discovery and Planning
             await self._discovery_phase_with_query_options(
                 entities_to_process, query_options
@@ -1021,6 +1022,8 @@ class SAPODataConnector:
                 query_options.get('aggregate_functions'),
                 query_options.get('search_query')
             ])
+            entity_counts = await self.count_service.get_entity_counts(entities_to_process)
+
             
             if has_complex_query:
                 # For complex queries, we can't easily predict count, so use conservative estimates

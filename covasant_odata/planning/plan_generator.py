@@ -378,6 +378,10 @@ class PlanGenerator:
                 
                 record_count = entity_counts.get(entity_name, 0)
                 
+                if record_count == 0:
+                    logger.warning(f"Entity {entity_name} has no records, skipping.")
+                    continue
+                
                 # Calculate pages and priority
                 total_pages = max(1, math.ceil(record_count / self.batch_size))
                 priority = self._calculate_priority(record_count, level_idx)
